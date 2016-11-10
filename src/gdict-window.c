@@ -412,7 +412,7 @@ get_context_from_loader (GdictWindow *window)
     {
       gchar *detail;
       
-      detail = g_strdup_printf (_("No dictionary source available with name '%s'"),
+      detail = g_strdup_printf (_("No dictionary source available with name “%s”"),
       				window->source_name);
 
       gdict_show_error_dialog (GTK_WINDOW (window),
@@ -432,7 +432,7 @@ get_context_from_loader (GdictWindow *window)
     {
       gchar *detail;
       
-      detail = g_strdup_printf (_("No context available for source '%s'"),
+      detail = g_strdup_printf (_("No context available for source “%s”"),
       				gdict_source_get_description (source));
       				
       gdict_show_error_dialog (GTK_WINDOW (window),
@@ -495,7 +495,7 @@ gdict_window_set_word (GdictWindow *window,
     database = window->database;
 
   if (window->word)
-    title = g_strdup_printf (_("%s - Dictionary"), window->word);
+    title = g_strdup_printf (_("%s — Dictionary"), window->word);
   else
     title = g_strdup (_("Dictionary"));
   
@@ -849,7 +849,7 @@ gdict_window_cmd_save_as (GSimpleAction   *action,
         {
           gchar *message;
           
-          message = g_strdup_printf (_("Error while writing to '%s'"), filename);
+          message = g_strdup_printf (_("Error while writing to “%s”"), filename);
           
           gdict_show_gerror_dialog (GTK_WINDOW (window),
                                     message,

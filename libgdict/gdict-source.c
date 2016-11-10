@@ -430,7 +430,7 @@ gdict_source_create_context (GdictSource           *source,
     default:
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_PARSE,
-                   _("Invalid transport type '%d'"),
+                   _("Invalid transport type “%d”"),
                    transport);
       return NULL;
     }
@@ -458,7 +458,7 @@ gdict_source_parse (GdictSource  *source,
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_PARSE,
-                   _("No '%s' group found inside the dictionary source definition"),
+                   _("No “%s” group found inside the dictionary source definition"),
                    SOURCE_GROUP);
       
       return FALSE;
@@ -474,7 +474,7 @@ gdict_source_parse (GdictSource  *source,
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_PARSE,
-                   _("Unable to get the '%s' key inside the dictionary "
+                   _("Unable to get the “%s” key inside the dictionary "
                      "source definition: %s"),
                    SOURCE_KEY_NAME,
                    parse_error->message);
@@ -498,7 +498,7 @@ gdict_source_parse (GdictSource  *source,
         {
           g_set_error (error, GDICT_SOURCE_ERROR,
                        GDICT_SOURCE_ERROR_PARSE,
-                       _("Unable to get the '%s' key inside the dictionary "
+                       _("Unable to get the “%s” key inside the dictionary "
                          "source definition: %s"),
                        SOURCE_KEY_DESCRIPTION,
                        parse_error->message);
@@ -522,7 +522,7 @@ gdict_source_parse (GdictSource  *source,
         {
           g_set_error (error, GDICT_SOURCE_ERROR,
                        GDICT_SOURCE_ERROR_PARSE,
-                       _("Unable to get the '%s' key inside the dictionary "
+                       _("Unable to get the “%s” key inside the dictionary "
                          "source definition: %s"),
                        SOURCE_KEY_DATABASE,
                        parse_error->message);
@@ -547,7 +547,7 @@ gdict_source_parse (GdictSource  *source,
         {
           g_set_error (error, GDICT_SOURCE_ERROR,
                        GDICT_SOURCE_ERROR_PARSE,
-                       _("Unable to get the '%s' key inside the dictionary "
+                       _("Unable to get the “%s” key inside the dictionary "
                          "source definition: %s"),
                        SOURCE_KEY_STRATEGY,
                        parse_error->message);
@@ -572,7 +572,7 @@ gdict_source_parse (GdictSource  *source,
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
       		   GDICT_SOURCE_ERROR_PARSE,
-      		   _("Unable to get the '%s' key inside the dictionary "
+      		   _("Unable to get the “%s” key inside the dictionary "
       		     "source definition file: %s"),
       		   SOURCE_KEY_TRANSPORT,
       		   parse_error->message);
@@ -775,7 +775,7 @@ gdict_source_to_data (GdictSource  *source,
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_INVALID_TRANSPORT,
-                   _("Dictionary source '%s' has invalid transport '%s'"),
+                   _("Dictionary source “%s” has invalid transport “%s”"),
                    priv->name,
                    valid_transports[priv->transport]);
       

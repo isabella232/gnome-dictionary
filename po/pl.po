@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-23 00:15+0200\n"
-"PO-Revision-Date: 2016-08-23 00:17+0200\n"
+"POT-Creation-Date: 2016-11-12 12:51+0100\n"
+"PO-Revision-Date: 2016-11-12 12:52+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -71,7 +71,7 @@ msgid "Quit"
 msgstr "Zakończ"
 
 #: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
+msgid "_Save a Copy…"
 msgstr "Zapi_sz kopię…"
 
 #: ../src/gdict-app-menus.ui.h:7
@@ -103,30 +103,26 @@ msgid "Dictionary Sources"
 msgstr "Źródła słownika"
 
 #: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "Dostępne _słowniki"
-
-#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "Dostępne str_ategie"
 
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "_Przejdź"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "_Poprzednia definicja"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "_Następna definicja"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "Pie_rwsza definicja"
 
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "_Ostatnia definicja"
 
@@ -203,7 +199,7 @@ msgid "Strategies"
 msgstr "Strategie"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "Słownik"
 
@@ -218,7 +214,7 @@ msgstr "Domyślna baza danych"
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "Nazwa konkretnej bazy danych lub meta-bazy używanej na serwerze słownika. "
@@ -232,7 +228,7 @@ msgstr "Domyślna strategia wyszukiwania"
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
 "Nazwa domyślnej strategii wyszukiwania w słowniku (jeśli jest dostępna). "
 "Domyślna strategia to „exact”, która dokładnie dopasowuje słowa."
@@ -264,24 +260,24 @@ msgstr "Słowniki tajsko-angielskie Longdo"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Brak połączenia do serwera słownika „%s:%d”"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
 "Wyszukanie komputera „%s” się nie powiodło: nie odnaleziono odpowiednich "
 "zasobów"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "Wyszukanie komputera „%s” się nie powiodło: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr ""
 "Wyszukanie komputera „%s” się nie powiodło: nie odnaleziono zdalnego "
 "komputera"
@@ -289,7 +285,7 @@ msgstr ""
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
 "Nie można połączyć się do serwera słownika „%s:%d”. Odpowiedź serwera: %d "
@@ -299,44 +295,44 @@ msgstr ""
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "Nie można przetworzyć odpowiedzi serwera\n"
 ": „%s”"
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
 msgstr "Nie odnaleziono definicji „%s”"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
 msgstr "Nieprawidłowa baza danych „%s”"
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "Nieprawidłowa strategia „%s”"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "Błędne polecenie „%s”"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Błędne parametry dla polecenia „%s”"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
 msgstr "Nie odnaleziono baz danych na serwerze „%s”"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
 msgstr "Nie odnaleziono strategii na serwerze słownika na „%s”"
 
 #: ../libgdict/gdict-client-context.c:1745
@@ -355,7 +351,7 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Przekroczono czas połączenia z serwerem słownika „%s:%d”"
 
 #: ../libgdict/gdict-client-context.c:1891
@@ -376,18 +372,18 @@ msgstr "Nie można ustawić kanału jako nieblokujący: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Nie można połączyć się z serwerem słownika „%s:%d”"
 
-#: ../libgdict/gdict-database-chooser.c:374
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Ponownie wczytuje listę dostępnych baz"
 
-#: ../libgdict/gdict-database-chooser.c:386
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Czyści listę dostępnych baz"
 
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Błąd podczas dopasowywania"
@@ -410,24 +406,24 @@ msgstr "Błąd podczas pobierania definicji"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
 msgstr "Nieprawidłowy typ transportu „%d”"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
 msgstr "Nie odnaleziono grupy „%s” wewnątrz definicji źródła słownika"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr "Nie można pobrać klucza „%s” wewnątrz definicji źródła słownika: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr ""
 "Nie można pobrać klucza „%s” wewnątrz pliku definicji źródła słownika: %s"
 
@@ -438,7 +434,7 @@ msgstr "Źródło słownika nie posiada nazwy"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "Źródło słownika „%s” ma nieprawidłowy transport „%s”"
 
 #: ../libgdict/gdict-source-chooser.c:280
@@ -543,7 +539,7 @@ msgstr "Dodanie źródła słownika"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Usunąć „%s”?"
 
 #: ../src/gdict-pref-dialog.c:374
@@ -561,7 +557,7 @@ msgstr "_Usuń"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "Nie można usunąć źródła „%s”"
 
 #: ../src/gdict-pref-dialog.c:443
@@ -601,7 +597,7 @@ msgstr "Pomo_c"
 
 #: ../src/gdict-window.c:415
 #, c-format
-msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "Nie odnaleziono źródła słownika o nazwie „%s”"
 
 #: ../src/gdict-window.c:419
@@ -610,7 +606,7 @@ msgstr "Nie można odnaleźć źródła słownika"
 
 #: ../src/gdict-window.c:435
 #, c-format
-msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "Brak kontekstu dla źródła „%s”"
 
 #: ../src/gdict-window.c:439
@@ -619,7 +615,7 @@ msgstr "Nie można utworzyć kontekstu"
 
 #: ../src/gdict-window.c:498
 #, c-format
-msgid "%s - Dictionary"
+msgid "%s — Dictionary"
 msgstr "%s — słownik"
 
 #: ../src/gdict-window.c:821
@@ -636,7 +632,7 @@ msgstr "Dokument bez nazwy"
 
 #: ../src/gdict-window.c:852
 #, c-format
-msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
 msgstr "Błąd podczas zapisywania do „%s”"
 
 #. speller
@@ -654,14 +650,14 @@ msgstr "Podwójne kliknięcie wybiera strategię do użycia"
 msgid "Double-click on the source to use"
 msgstr "Podwójne kliknięcie wybiera źródło"
 
-#: ../src/gdict-window.c:1424
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "Podobne słowa"
 
-#: ../src/gdict-window.c:1455
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "Dostępne strategie"
 
-#: ../src/gdict-window.c:1471
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "Źródła słowników"

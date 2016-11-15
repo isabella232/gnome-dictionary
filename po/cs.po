@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-02-02 08:57+0000\n"
-"PO-Revision-Date: 2016-02-02 21:01+0100\n"
+"POT-Creation-Date: 2016-11-12 11:49+0000\n"
+"PO-Revision-Date: 2016-11-15 14:50+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -38,7 +38,6 @@ msgid "Default Dictionary Server"
 msgstr "Výchozí server se slovníkem"
 
 #: ../data/org.gnome.Dictionary.appdata.xml.in.h:1
-#| msgid "Dictionary"
 msgid "GNOME Dictionary"
 msgstr "Slovník GNOME"
 
@@ -80,7 +79,7 @@ msgid "Quit"
 msgstr "Ukončit"
 
 #: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
+msgid "_Save a Copy…"
 msgstr "_Uložit kopii…"
 
 #: ../src/gdict-app-menus.ui.h:7
@@ -112,30 +111,26 @@ msgid "Dictionary Sources"
 msgstr "Zdroje slovníků"
 
 #: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "_Dostupné slovníky"
-
-#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "Dostupné _metody"
 
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "Pře_jít"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "_Předchozí definice"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "_Následující definice"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "_První definice"
 
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "Po_slední definice"
 
@@ -176,22 +171,18 @@ msgid "Print"
 msgstr "Tisk"
 
 #: ../src/gdict-source-dialog.ui.h:1
-#| msgid "_Description:"
 msgid "_Description"
 msgstr "_Popis"
 
 #: ../src/gdict-source-dialog.ui.h:2
-#| msgid "_Port:"
 msgid "_Port"
 msgstr "_Port"
 
 #: ../src/gdict-source-dialog.ui.h:3
-#| msgid "Hostname"
 msgid "_Hostname"
 msgstr "Název počí_tače"
 
 #: ../src/gdict-source-dialog.ui.h:4
-#| msgid "_Transport:"
 msgid "_Transport"
 msgstr "_Přenos"
 
@@ -216,7 +207,7 @@ msgid "Strategies"
 msgstr "Metody"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "Slovník"
 
@@ -231,7 +222,7 @@ msgstr "Výchozí používaná databáze"
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "Název výchozí konkrétní databáze nebo metadatabáze, kterou chcete používat "
@@ -245,7 +236,7 @@ msgstr "Výchozí používaná metoda hledání"
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
 "Název výchozí metody hledání, kterou používat ve zdroji slovníku, je-li k "
 "dispozici. Výchozí metoda je „exact“, to je hledat přesně odpovídající slova."
@@ -277,28 +268,28 @@ msgstr "Thajsko-anglické slovníky Longdo"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Žádné spojení se serverem se slovníkem na „%s:%d“"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr "Vyhledávání názvu počítače „%s“ selhalo: nenalezen vhodný zdroj"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "Vyhledávání počítače „%s“ selhalo: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr "Vyhledávání počítače „%s“ selhalo: počítač nenalezen"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
 "Nelze se připojit k serveru se slovníkem „%s:%d“. Server odpověděl s kódem "
@@ -308,45 +299,45 @@ msgstr ""
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "Nelze zpracovat odpověď serveru se slovníkem\n"
 ": „%s“"
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
 msgstr "Nenalezena žádná definice „%s“"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
-msgstr "Neplatná databáze '%s'"
+msgid "Invalid database “%s”"
+msgstr "Neplatná databáze „%s“"
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "Neplatná metoda „%s“"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "Špatný příkaz „%s“"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Špatné parametry příkazu „%s“"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
-msgstr "Na serveru se slovníkem na „%s“ nenalezeny žádné databáze"
+msgid "No databases found on dictionary server at “%s”"
+msgstr "Na serveru se slovníkem na „%s“ nebyly nalezeny žádné databáze"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
-msgstr "Na serveru se slovníkem na „%s“ nenalezeny žádné metody"
+msgid "No strategies found on dictionary server at “%s”"
+msgstr "Na serveru se slovníkem na „%s“ nebyly nalezeny žádné metody"
 
 #: ../libgdict/gdict-client-context.c:1745
 #, c-format
@@ -364,7 +355,7 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Vypršel limit spojení pro server se slovníkem na „%s:%d“"
 
 #: ../libgdict/gdict-client-context.c:1891
@@ -385,18 +376,18 @@ msgstr "Nelze nastavit kanál na neblokující: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "Nelze se připojit k serveru se slovníkem na %s:%d"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
+msgstr "Nelze se připojit k serveru se slovníkem na „%s:%d“"
 
-#: ../libgdict/gdict-database-chooser.c:374
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Znovu načíst seznam dostupných databází"
 
-#: ../libgdict/gdict-database-chooser.c:386
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Smazat seznam dostupných databází"
 
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Chyba při porovnávání"
@@ -419,24 +410,24 @@ msgstr "Chyba při získávání definice"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
 msgstr "Neplatný typ přenosu „%d“"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
 msgstr "V definici zdroje slovníku nebyla nalezena skupina „%s“"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr "Nelze získat klíč „%s“ v definici zdroje slovníku: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr "Nelze získat klíč „%s“ v souboru definicí zdroje slovníku: %s"
 
 #: ../libgdict/gdict-source.c:769
@@ -446,7 +437,7 @@ msgstr "Zdroj slovníku nemá název"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "Zdroj slovníku „%s“ má neplatný typ přenosu „%s“"
 
 #: ../libgdict/gdict-source-chooser.c:280
@@ -554,7 +545,7 @@ msgstr "Přidat zdroj slovníku"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Odstranit „%s“?"
 
 #: ../src/gdict-pref-dialog.c:374
@@ -572,7 +563,7 @@ msgstr "Odst_ranit"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "Nelze odstranit zdroj „%s“"
 
 #: ../src/gdict-pref-dialog.c:443
@@ -612,7 +603,7 @@ msgstr "_Nápověda"
 
 #: ../src/gdict-window.c:415
 #, c-format
-msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "Zdroj slovníku s názvem „%s“ není k dispozici"
 
 #: ../src/gdict-window.c:419
@@ -621,7 +612,7 @@ msgstr "Nelze najít zdroj slovníku"
 
 #: ../src/gdict-window.c:435
 #, c-format
-msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "Pro zdroj „%s“ není k dispozici kontext"
 
 #: ../src/gdict-window.c:439
@@ -630,8 +621,8 @@ msgstr "Nelze vytvořit kontext"
 
 #: ../src/gdict-window.c:498
 #, c-format
-msgid "%s - Dictionary"
-msgstr "%s - Slovník"
+msgid "%s — Dictionary"
+msgstr "%s — Slovník"
 
 #: ../src/gdict-window.c:821
 msgid "Save a Copy"
@@ -647,7 +638,7 @@ msgstr "Nepojmenovaný dokument"
 
 #: ../src/gdict-window.c:852
 #, c-format
-msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
 msgstr "Chyba při zápisu do „%s“"
 
 #. speller
@@ -665,182 +656,15 @@ msgstr "Klikněte dvakrát na odpovídající metodu pro její použití"
 msgid "Double-click on the source to use"
 msgstr "Klikněte dvakrát na zdroj pro jeho použití"
 
-#: ../src/gdict-window.c:1424
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "Podobná slova"
 
-#: ../src/gdict-window.c:1455
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "Dostupné metody"
 
-#: ../src/gdict-window.c:1471
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "Zdroje slovníků"
 
-#~ msgid "_File"
-#~ msgstr "_Soubor"
-
-#~ msgid "_Edit"
-#~ msgstr "_Upravit"
-
-#~ msgid "_Copy"
-#~ msgstr "_Kopírovat"
-
-#~ msgid "Select _All"
-#~ msgstr "Vybrat vš_e"
-
-#~ msgid "Find Ne_xt"
-#~ msgstr "Najít _následující"
-
-#~ msgid "Find Pre_vious"
-#~ msgstr "Najít _předchozí"
-
-#~ msgid "H_ostname:"
-#~ msgstr "_Název počítače:"
-
-#~ msgid "Client Name"
-#~ msgstr "Název klienta"
-
-#~ msgid "The name of the client of the context object"
-#~ msgstr "Název klienta objektu kontextu"
-
-#~ msgid "The hostname of the dictionary server to connect to"
-#~ msgstr "Název serveru se slovníkem, ke kterému se připojovat"
-
-#~ msgid "Port"
-#~ msgstr "Port"
-
-#~ msgid "The port of the dictionary server to connect to"
-#~ msgstr "Port serveru se slovníkem, ke kterému se připojovat"
-
-#~ msgid "Status"
-#~ msgstr "Stav"
-
-#~ msgid "The status code as returned by the dictionary server"
-#~ msgstr "Kód stavu vrácený serverem se slovníkem"
-
-#~ msgid "Local Only"
-#~ msgstr "Jen místní"
-
-#~ msgid "Whether the context uses only local dictionaries or not"
-#~ msgstr "Jestli kontext používá jen místní slovníky nebo ne"
-
-#~ msgid "Filename"
-#~ msgstr "Název souboru"
-
-#~ msgid "The filename used by this dictionary source"
-#~ msgstr "Název souboru používaného tímto zdrojem slovníku"
-
-#~ msgid "Name"
-#~ msgstr "Název"
-
-#~ msgid "The display name of this dictionary source"
-#~ msgstr "Zobrazovaný název tohoto zdroje slovníku"
-
-#~ msgid "Description"
-#~ msgstr "Popis"
-
-#~ msgid "The description of this dictionary source"
-#~ msgstr "Popis tohoto zdroje slovníku"
-
-#~ msgid "Editable"
-#~ msgstr "Upravitelný"
-
-#~ msgid "Whether the dictionary source is editable or not"
-#~ msgstr "Zda lze zdroj slovníku upravovat či nikoliv"
-
-#~ msgid "Database"
-#~ msgstr "Databáze"
-
-#~ msgid "The default database of this dictionary source"
-#~ msgstr "Výchozí databáze tohoto zdroje slovníku"
-
-#~ msgid "Strategy"
-#~ msgstr "Metoda"
-
-#~ msgid "The default strategy of this dictionary source"
-#~ msgstr "Výchozí metoda tohoto zdroje slovníku"
-
-#~ msgid "Transport"
-#~ msgstr "Přenos"
-
-#~ msgid "The transport mechanism used by this dictionary source"
-#~ msgstr "Mechanismus přenosu používaný tímto zdrojem slovníku"
-
-#~ msgid "Context"
-#~ msgstr "Kontext"
-
-#~ msgid "The GdictContext bound to this source"
-#~ msgstr "GdictContext svázaný s tímto zdrojem"
-
-#~ msgid "Paths"
-#~ msgstr "Cesty"
-
-#~ msgid "Search paths used by this object"
-#~ msgstr "Cesty pro hledání používané tímto objektem"
-
-#~ msgid "Sources"
-#~ msgstr "Zdroje"
-
-#~ msgid "Dictionary sources found"
-#~ msgstr "Nalezené zdroje slovníků"
-
-#~ msgid "The GdictContext object used to get the word definition"
-#~ msgstr "Objekt GdictContext používaný pro získání definice slova"
-
-#~ msgid "The database used to query the GdictContext"
-#~ msgstr "Databáze používaná pro hledání v GdictContext"
-
-#~ msgid "The strategy used to query the GdictContext"
-#~ msgstr "Metoda používaná pro hledání v GdictContext"
-
-#~ msgid "Double-click on the database to use"
-#~ msgstr "Klikněte dvakrát na databázi, kterou chcete používat"
-
-#~ msgid "Available dictionaries"
-#~ msgstr "Dostupné slovníky"
-
-#~ msgid "_New"
-#~ msgstr "_Nový"
-
-#~ msgid "S_tatusbar"
-#~ msgstr "S_tavový řádek"
-
-#~ msgid "Not found"
-#~ msgstr "Nenalezeno"
-
-#~ msgid "F_ind:"
-#~ msgstr "_Hledat:"
-
-#~ msgid "_Previous"
-#~ msgstr "_Předchozí"
-
-#~ msgid "_Next"
-#~ msgstr "_Následující"
-
-#~ msgid "Searching for '%s'..."
-#~ msgstr "Hledá se „%s“…"
-
-#~ msgid "No definitions found"
-#~ msgstr "Nenalezeny žádné definice"
-
-#~ msgid "A definition found"
-#~ msgid_plural "%d definitions found"
-#~ msgstr[0] "Nalezena definice"
-#~ msgstr[1] "Nalezeny %d definice"
-#~ msgstr[2] "Nalezeno %d definic"
-
-#~ msgid "Dictionary source `%s' selected"
-#~ msgstr "Vybrán zdroj slovníku „%s“"
-
-#~ msgid "Strategy `%s' selected"
-#~ msgstr "Vybrána metoda „%s“"
-
-#~ msgid "Database `%s' selected"
-#~ msgstr "Vybrána databáze „%s“"
-
-#~ msgid "Word `%s' selected"
-#~ msgstr "Vybráno slovo „%s“"
-
-#~ msgid "Look _up"
-#~ msgstr "_Hledat"

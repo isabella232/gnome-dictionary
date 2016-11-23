@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-01-24 20:56+0000\n"
-"PO-Revision-Date: 2016-01-24 23:51+0100\n"
+"POT-Creation-Date: 2016-11-18 08:13+0000\n"
+"PO-Revision-Date: 2016-11-23 16:58+0100\n"
 "Last-Translator: Meskó Balázs <meskobalazs@gmail.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: ../data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -41,13 +41,15 @@ msgstr "Szavak meghatározásainak és helyesírásának keresése online szót�
 
 #: ../data/org.gnome.Dictionary.appdata.xml.in.h:3
 msgid ""
-"GNOME Dictionary is a simple dictionary application that looks up definitions of words online. "
-"Though it looks up English definitions by default, you can easily switch to Spanish or add "
-"other online dictionaries using the DICT protocol to suit your needs."
+"GNOME Dictionary is a simple dictionary application that looks up "
+"definitions of words online. Though it looks up English definitions by "
+"default, you can easily switch to Spanish or add other online dictionaries "
+"using the DICT protocol to suit your needs."
 msgstr ""
-"A GNOME Szótár egy egyszerű szótáralkalmazás, amely szavak definícióit keresi ki online. Noha "
-"alapesetben angol definíciókat keres, egyszerűen át lehet váltani spanyolra, vagy más online "
-"szótárak is felvehetők a DICT protokoll használatával."
+"A GNOME Szótár egy egyszerű szótáralkalmazás, amely szavak definícióit "
+"keresi ki online. Noha alapesetben angol definíciókat keres, egyszerűen át "
+"lehet váltani spanyolra, vagy más online szótárak is felvehetők a DICT "
+"protokoll használatával."
 
 #: ../src/gdict-app-menus.ui.h:1
 msgid "_New Window"
@@ -70,7 +72,7 @@ msgid "Quit"
 msgstr "Kilépés"
 
 #: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
+msgid "_Save a Copy…"
 msgstr "Más_olat mentése…"
 
 #: ../src/gdict-app-menus.ui.h:7
@@ -102,30 +104,26 @@ msgid "Dictionary Sources"
 msgstr "Szótárforrások"
 
 #: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "Elérhető _szótárak"
-
-#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "Elérhető st_ratégiák"
 
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "_Ugrás"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "_Előző meghatározás"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "_Következő meghatározás"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "El_ső meghatározás"
 
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "_Utolsó meghatározás"
 
@@ -202,7 +200,7 @@ msgid "Strategies"
 msgstr "Stratégiák"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "Szótár"
 
@@ -216,12 +214,13 @@ msgstr "Alapértelmezett adatbázis"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
 msgid ""
-"The name of the default individual database or meta-database to use on a dictionary source. An "
-"exclamation mark (\"!\") means that all the databases present in a dictionary source should be "
-"searched"
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
+"present in a dictionary source should be searched"
 msgstr ""
-"A szótárforráson használandó egyedi adatbázis vagy meta-adatbázis neve. A felkiáltójel („!”) "
-"azt jelenti, hogy a gnome-dictionary az adott kiszolgálón fellelhető összes adatbázisban keres"
+"A szótárforráson használandó egyedi adatbázis vagy meta-adatbázis neve. A "
+"felkiáltójel („!”) azt jelenti, hogy az adott kiszolgálón fellelhető összes "
+"adatbázisban kell keresni"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:3
 msgid "The default search strategy to use"
@@ -229,12 +228,12 @@ msgstr "Az alapértelmezésben használandó keresési stratégia"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
 msgid ""
-"The name of the default search strategy to use on a dictionary source, if available. The "
-"default strategy is 'exact', that is match exact words."
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
-"Egy szótárforráson alkalmazott alapértelmezett keresési stratégia neve, ha elérhető. Az "
-"„exact” keresési stratégia azt jelenti, hogy csak a pontosan egyező szavak fognak találatot "
-"adni."
+"Egy szótárforráson alkalmazott alapértelmezett keresési stratégia neve, ha "
+"elérhető. Az „exact” keresési stratégia azt jelenti, hogy csak a pontosan "
+"egyező szavak fognak találatot adni."
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:5
 msgid "The font to be used when printing"
@@ -249,7 +248,8 @@ msgid "The name of the dictionary source used"
 msgstr "A szótárforrásként használandó adatbázis neve"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:8
-msgid "The name of the dictionary source used to retrieve the definitions of words."
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
 msgstr "A szavak meghatározásainak letöltésére használt szótárforrás neve."
 
 #: ../data/spanish.desktop.in.h:1
@@ -262,73 +262,73 @@ msgstr "Longdo thai-angol szótárak"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Nincs kapcsolat a(z) „%s:%d” szótárkiszolgálóhoz"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr "„%s” gépnév feloldása sikertelen: nem találhatók alkalmas erőforrások"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "„%s” kikeresése sikertelen: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr "„%s” kikeresése sikertelen: a kiszolgáló nem található"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied with code %d (server "
-"down)"
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
+"with code %d (server down)"
 msgstr ""
-"Nem lehet kapcsolódni „%s:%d” szótárkiszolgálóhoz. A kiszolgáló a következő kódot adta "
-"válaszul: %d (a kiszolgáló nem fut)"
+"Nem lehet kapcsolódni „%s:%d” szótárkiszolgálóhoz. A kiszolgáló a következő "
+"kódot adta válaszul: %d (a kiszolgáló nem fut)"
 
 #: ../libgdict/gdict-client-context.c:1194
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr "Nem értelmezhető a szótárkiszolgáló válasza: „%s”"
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
-msgstr "Nem található „%s” meghatározása"
+msgid "No definitions found for “%s”"
+msgstr "Nem található a(z) „%s” meghatározása"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
 msgstr "Érvénytelen adatbázis: „%s”"
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "Érvénytelen stratégia: „%s”"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "Hibás parancs: „%s”"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Hibás paraméterek a következő parancshoz: „%s”"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
 msgstr "Nem található adatbázis a(z) „%s” szótárkiszolgálón"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
 msgstr "Nem találhatók stratégiák a(z) „%s” szótárkiszolgálón"
 
 #: ../libgdict/gdict-client-context.c:1745
@@ -347,15 +347,16 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr "A kapcsolódás túllépte az időkorlátot a(z) %s:%d szótárkiszolgálón"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
+msgstr "A kapcsolódás túllépte az időkorlátot a(z) „%s:%d” szótárkiszolgálón"
 
 #: ../libgdict/gdict-client-context.c:1891
 #, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Nincs megadva a szótárkiszolgáló gépneve"
 
-#: ../libgdict/gdict-client-context.c:1927 ../libgdict/gdict-client-context.c:1942
+#: ../libgdict/gdict-client-context.c:1927
+#: ../libgdict/gdict-client-context.c:1942
 #, c-format
 msgid "Unable to create socket"
 msgstr "A foglalat nem hozható létre"
@@ -367,18 +368,18 @@ msgstr "A csatorna nem állítható nem blokkolóra: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Nem lehet kapcsolódni a(z) „%s:%d” szótárkiszolgálóhoz"
 
-#: ../libgdict/gdict-database-chooser.c:374
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "A rendelkezésre álló adatbázisok listájának újratöltése"
 
-#: ../libgdict/gdict-database-chooser.c:386
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "A rendelkezésre álló adatbázisok listájának törlése"
 
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Hiba történt az illesztéskor"
@@ -401,24 +402,25 @@ msgstr "Hiba a meghatározás letöltése közben"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
 msgstr "Érvénytelen átviteltípus: „%d”"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
 msgstr "Nem található „%s” csoport a szótárforrás-meghatározásban"
 
-#: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501 ../libgdict/gdict-source.c:525
-#: ../libgdict/gdict-source.c:550
+#: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
+#: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr "Nem található „%s” kulcs „%s” szótárforrás-meghatározásban"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
+msgstr "Nem található „%s” kulcs a(z) „%s” szótárforrás-meghatározásban"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr "Nem található „%s” kulcs „%s” szótárforrás-meghatározási fájlban"
+msgid ""
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
+msgstr "Nem található „%s” kulcs a(z) „%s” szótárforrás-meghatározási fájlban"
 
 #: ../libgdict/gdict-source.c:769
 #, c-format
@@ -427,7 +429,7 @@ msgstr "A szótárforrásnak nincs neve"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "A(z) „%s” szótárforrás átvitele érvénytelen: „%s”"
 
 #: ../libgdict/gdict-source-chooser.c:280
@@ -531,14 +533,15 @@ msgstr "Szótárforrás hozzáadása"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Eltávolítja ezt: „%s”?"
 
 #: ../src/gdict-pref-dialog.c:374
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Ez véglegesen eltávolítja a szótárforrást a listából"
 
-#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:564 ../src/gdict-window.c:824
+#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:564
+#: ../src/gdict-window.c:824
 msgid "_Cancel"
 msgstr "_Mégse"
 
@@ -548,7 +551,7 @@ msgstr "_Eltávolítás"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "A(z) „%s” forrás nem távolítható el"
 
 #: ../src/gdict-pref-dialog.c:443
@@ -588,7 +591,7 @@ msgstr "_Súgó"
 
 #: ../src/gdict-window.c:415
 #, c-format
-msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "Nem található a(z) „%s” nevű szótárforrás"
 
 #: ../src/gdict-window.c:419
@@ -597,7 +600,7 @@ msgstr "Nem található szótárforrás"
 
 #: ../src/gdict-window.c:435
 #, c-format
-msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "Nincs elérhető kontextus a(z) „%s” forráshoz"
 
 #: ../src/gdict-window.c:439
@@ -606,7 +609,7 @@ msgstr "Nem hozható létre a kontextus"
 
 #: ../src/gdict-window.c:498
 #, c-format
-msgid "%s - Dictionary"
+msgid "%s — Dictionary"
 msgstr "%s – Szótár"
 
 #: ../src/gdict-window.c:821
@@ -623,8 +626,8 @@ msgstr "Névtelen dokumentum"
 
 #: ../src/gdict-window.c:852
 #, c-format
-msgid "Error while writing to '%s'"
-msgstr "Hiba történt „%s” írásakor"
+msgid "Error while writing to “%s”"
+msgstr "Hiba történt a(z) „%s” írásakor"
 
 #. speller
 #: ../src/gdict-window.c:1213
@@ -641,17 +644,23 @@ msgstr "Kattintson duplán a használandó keresési stratégiára"
 msgid "Double-click on the source to use"
 msgstr "Kattintson duplán a használandó szótáron"
 
-#: ../src/gdict-window.c:1424
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "Hasonló szavak"
 
-#: ../src/gdict-window.c:1455
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "Elérhető stratégiák"
 
-#: ../src/gdict-window.c:1471
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "Szótárforrások"
+
+#~ msgid "_Save a Copy..."
+#~ msgstr "Más_olat mentése…"
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "Elérhető _szótárak"
 
 #~ msgid "H_ostname:"
 #~ msgstr "_Gépnév:"

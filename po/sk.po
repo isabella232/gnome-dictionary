@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: gnome-dictionary\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-01-23 20:58+0000\n"
-"PO-Revision-Date: 2016-01-23 23:35+0100\n"
+"POT-Creation-Date: 2016-11-23 20:31+0000\n"
+"PO-Revision-Date: 2017-01-19 21:37+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.11\n"
 
 # Dictionary source desription
 #: ../data/default.desktop.in.h:1
@@ -74,9 +74,8 @@ msgstr "O programe"
 msgid "Quit"
 msgstr "Ukončiť"
 
-# menu /file
 #: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
+msgid "_Save a Copy…"
 msgstr "_Uložiť kópiu…"
 
 # menu /file
@@ -114,37 +113,33 @@ msgstr "Podobné s_lová"
 msgid "Dictionary Sources"
 msgstr "Zdroje slovníkov"
 
-#: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "_Dostupné slovníky"
-
 # menu /view
-#: ../src/gdict-app-menus.ui.h:15
+#: ../src/gdict-app-menus.ui.h:14
 msgid "Available St_rategies"
 msgstr "Dostupné p_ostupy"
 
 # menu /
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "Prejsť _na"
 
 # menu /go
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "_Predchádzajúca definícia"
 
 # menu /go
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "Ď_alšia definícia"
 
 # menu /go
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "P_rvá definícia"
 
 # menu /go
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "Pos_ledná definícia"
 
@@ -237,7 +232,7 @@ msgstr "Postupy"
 
 # desktop entry name
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1528
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "Slovník"
 
@@ -254,7 +249,7 @@ msgstr "Predvolená databáza, ktorá sa má použiť"
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "Názov databázy, ktorá sa má na serveri použiť. Výkričník („!“) znamená, že "
@@ -269,7 +264,7 @@ msgstr "Predvolená stratégia vyhľadávania, ktorá sa má použiť"
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
 "Názov predvolenej stratégie vyhľadávania, ktorá sa použije pre zdroj "
 "slovníka, ak je dostupný. Predvolená stratégia je „exact“, ktorá hľadá "
@@ -310,28 +305,28 @@ msgstr "thajsko-anglické slovníky Longdo "
 # %d -> port
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Nie je nadviazané spojenie k serveru slovníka „%s:%d“'"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr "Zlyhalo hľadanie názvu hostiteľa „%s“: nenájdené vhodné zdroje"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "Zlyhalo hľadanie hostiteľa „%s“: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr "Zlyhalo hľadanie hostiteľa „%s“: hostiteľ nenájdený"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
 "Nepodarilo sa pripojiť k serveru slovníka „%s:%d“. Server odpovedal kódom %d "
@@ -341,46 +336,46 @@ msgstr ""
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "Nepodarilo sa analyzovať odpoveď zo servera slovníka\n"
 ": „%s“"
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
 msgstr "Nenašli sa žiadne vysvetlenia pre „%s“"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
 msgstr "Neplatná databáza „%s“"
 
 # PM: kurnik prečo sú taký stručný a nedajú sem aspon searching strategy kto tomu má rozumiet - je to tu x krát a keby som to celé nečítal tak netuším o čom je reč. nahlás im bug
 # PK: nechapem, podla zdrojaka by to malo byt jasne
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "Neplatná stratégia „%s“"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "Zlý príkaz „%s“"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Zlé parametre pre príkaz „%s“"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
 msgstr "Nenašli sa žiadne databázy na serveri slovníka „%s“"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
 msgstr "Nenašli sa žiadne stratégie na serveri slovníka „%s“"
 
 #: ../libgdict/gdict-client-context.c:1745
@@ -399,7 +394,7 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Časový limit pripojenia pre server slovníka „%s:%d“ vypršal"
 
 #: ../libgdict/gdict-client-context.c:1891
@@ -420,20 +415,20 @@ msgstr "Nepodarilo sa nastaviť kanál ako neblokovaný: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Nepodarilo sa pripojiť k serveru slovníka „%s:%d“"
 
 # tooltip_text
-#: ../libgdict/gdict-database-chooser.c:374
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Obnoví zoznam dostupných databáz"
 
 # tooltip_text
-#: ../libgdict/gdict-database-chooser.c:386
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Vymaže zoznam dostupných databáz"
 
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Chyba počas porovnávania"
@@ -458,12 +453,12 @@ msgstr "Chyba počas získavania vysvetlenia"
 # PK: oni pouzivaju enum na hodnoty, cize toto je nejake cislo ktore neni v enum
 #: ../libgdict/gdict-source.c:433
 #, c-format
-msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
 msgstr "Neplatný typ prenosu „%d“"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
 msgstr "V definícii zdroja slovníka nebola nájdená skupina „%s“"
 
 # PM: asi sa myslí obsah kľúča
@@ -472,13 +467,13 @@ msgstr "V definícii zdroja slovníka nebola nájdená skupina „%s“"
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr "Nepodarilo sa získať kľúč „%s“ v definícii zdroja slovníka: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr "Nepodarilo sa získať kľúč „%s“ v súbore definície zdroja slovníka: %s"
 
 #: ../libgdict/gdict-source.c:769
@@ -488,7 +483,7 @@ msgstr "Slovníkový zdroj nemá názov"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "Slovníkový zdroj „%s“ ma priradený neplatný prenos „%s“"
 
 # tooltip_text
@@ -606,7 +601,7 @@ msgstr "Pridanie zdroja slovníka"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Odstrániť „%s“?"
 
 #: ../src/gdict-pref-dialog.c:374
@@ -624,7 +619,7 @@ msgstr "O_dstrániť"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "Nepodarilo sa odstrániť zdroj „%s“"
 
 # dialog window title
@@ -666,7 +661,7 @@ msgstr "_Pomocník"
 
 #: ../src/gdict-window.c:415
 #, c-format
-msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "Nie je dostupný žiadny zdroj slovníka s názvom „%s“"
 
 #: ../src/gdict-window.c:419
@@ -678,7 +673,7 @@ msgstr "Nepodarilo sa nájsť zdroj slovníka"
 # * https://bugzilla.gnome.org/show_bug.cgi?id=687751
 #: ../src/gdict-window.c:435
 #, c-format
-msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "Nie je dostupný žiadny kontext pre zdroj „%s“"
 
 # * https://bugzilla.gnome.org/show_bug.cgi?id=687751
@@ -688,8 +683,8 @@ msgstr "Nepodarilo sa vytvoriť kontext"
 
 #: ../src/gdict-window.c:498
 #, c-format
-msgid "%s - Dictionary"
-msgstr "%s - slovník"
+msgid "%s — Dictionary"
+msgstr "%s — slovník"
 
 #: ../src/gdict-window.c:821
 msgid "Save a Copy"
@@ -705,7 +700,7 @@ msgstr "Nepomenovaný dokument"
 
 #: ../src/gdict-window.c:852
 #, c-format
-msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
 msgstr "Chyba počas zápisu do „%s“"
 
 #. speller
@@ -723,20 +718,27 @@ msgstr "Dvojitým kliknutím na porovnávaciu stratégiu ju nastavíte"
 msgid "Double-click on the source to use"
 msgstr "Dvojitým kliknutím na zdroj ho nastavíte"
 
-#: ../src/gdict-window.c:1425
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "Podobné slová"
 
 # PM: bolo by fajn keby sa názvy tých postupov dali preložiť
 # "Match hedword exactly" asi tomu čo nevie anglicky vela nepovie
 #  * https://bugzilla.gnome.org/show_bug.cgi?id=687747
-#: ../src/gdict-window.c:1456
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "Dostupné stratégie"
 
-#: ../src/gdict-window.c:1472
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "Zdroje slovníkov"
+
+# menu /file
+#~ msgid "_Save a Copy..."
+#~ msgstr "_Uložiť kópiu…"
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "_Dostupné slovníky"
 
 # menu /
 #~ msgid "_File"

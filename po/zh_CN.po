@@ -343,7 +343,7 @@ msgstr "无效的策略“%s”"
 #: ../libgdict/gdict-client-context.c:1269
 #, c-format
 msgid "Bad command '%s'"
-msgstr "错误的名称“%s”"
+msgstr "错误的命令“%s”"
 
 #: ../libgdict/gdict-client-context.c:1284
 #, c-format

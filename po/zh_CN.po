@@ -9,17 +9,16 @@
 # chiachen <luojiazhen@gmail.com>, 2011.
 # Aron Xu <happyaron.xu@gmail.com>, 2009, 2011.
 # Tong Hui <tonghuix@gmail.com>, 2013.
-# Dingzhong Chen <wsxy162@gmail.com>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-31 16:15+0000\n"
-"PO-Revision-Date: 2016-04-01 00:42+0800\n"
-"Last-Translator: Dingzhong Chen <wsxy162@gmail.com>\n"
-"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"POT-Creation-Date: 2016-11-12 11:47+0000\n"
+"PO-Revision-Date: 2016-12-10 15:51+0800\n"
+"Last-Translator: Mandy Wang <wangmychn@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +51,7 @@ msgstr ""
 
 #: ../src/gdict-app-menus.ui.h:1
 msgid "_New Window"
-msgstr "新窗口(_N)"
+msgstr "新建窗口(_N)"
 
 #: ../src/gdict-app-menus.ui.h:2
 msgid "Preferences"
@@ -103,26 +102,30 @@ msgid "Dictionary Sources"
 msgstr "字典源"
 
 #: ../src/gdict-app-menus.ui.h:14
+msgid "Available _Dictionaries"
+msgstr "可用词典(_D)"
+
+#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "可用策略(_R)"
 
-#: ../src/gdict-app-menus.ui.h:15
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Go"
 msgstr "转到(_G)"
 
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Previous Definition"
 msgstr "上一个定义(_P)"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_Next Definition"
 msgstr "下一个定义(_N)"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_First Definition"
 msgstr "第一个定义(_F)"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:20
 msgid "_Last Definition"
 msgstr "最后一个定义(_L)"
 
@@ -199,7 +202,7 @@ msgid "Strategies"
 msgstr "策略"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
 msgid "Dictionary"
 msgstr "字典"
 
@@ -366,15 +369,15 @@ msgstr "无法将频道设定为非屏蔽：%s"
 msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgstr "无法连接到“%s:%d”的字典服务器"
 
-#: ../libgdict/gdict-database-chooser.c:375
+#: ../libgdict/gdict-database-chooser.c:374
 msgid "Reload the list of available databases"
 msgstr "重新装入可用数据库列表"
 
-#: ../libgdict/gdict-database-chooser.c:387
+#: ../libgdict/gdict-database-chooser.c:386
 msgid "Clear the list of available databases"
 msgstr "清除可用数据库列表"
 
-#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "匹配时出错"
@@ -470,7 +473,7 @@ msgstr ""
 "Funda Wang <fundawang@linux.net.cn>\n"
 "tuhaihe <1132321739qq@gmail.com>\n"
 "Tong Hui <tonghuix@gmail.com>\n"
-"Dingzhong Chen <wsxy162@gmail.com>"
+"Mandy Wang <wangmychn@gmail.com>"
 
 #: ../src/gdict-about.c:55
 msgid "Look up words in dictionaries"
@@ -637,23 +640,17 @@ msgstr "双击要使用的匹配策略"
 msgid "Double-click on the source to use"
 msgstr "双击要使用的源"
 
-#: ../src/gdict-window.c:1410
+#: ../src/gdict-window.c:1424
 msgid "Similar words"
 msgstr "相似单词"
 
-#: ../src/gdict-window.c:1441
+#: ../src/gdict-window.c:1455
 msgid "Available strategies"
 msgstr "可用策略"
 
-#: ../src/gdict-window.c:1457
+#: ../src/gdict-window.c:1471
 msgid "Dictionary sources"
 msgstr "字典源"
-
-#~ msgid "Available _Dictionaries"
-#~ msgstr "可用词典(_D)"
-
-#~ msgid "H_ostname:"
-#~ msgstr "主机名(_O)："
 
 #~ msgid "_File"
 #~ msgstr "文件(_F)"
@@ -675,6 +672,9 @@ msgstr "字典源"
 
 #~ msgid "S_tatusbar"
 #~ msgstr "状态栏(_T)"
+
+#~ msgid "H_ostname:"
+#~ msgstr "主机名(_O)："
 
 #~ msgid "Client Name"
 #~ msgstr "客户名"

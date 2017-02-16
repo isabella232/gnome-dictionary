@@ -21,8 +21,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-28 13:39+0200\n"
+"Report-Msgid-Bugs-To: "
+"http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-11-23 20:31+0000\n"
 "PO-Revision-Date: 2016-08-28 13:38+0200\n"
 "Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -80,8 +81,10 @@ msgid "Quit"
 msgstr "Afslut"
 
 #: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
-msgstr "_Gem en kopi..."
+#, fuzzy
+#| msgid "Save a Copy"
+msgid "_Save a Copy…"
+msgstr "Gem en kopi"
 
 #: ../src/gdict-app-menus.ui.h:7
 msgid "P_review"
@@ -112,31 +115,27 @@ msgid "Dictionary Sources"
 msgstr "Ordbogskilder"
 
 #: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "Tilgængelige ord_bøger"
-
-#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "Tilgængelige st_rategier"
 
 # Tilhører tilsyneladende menuen med "forrige", "næste" etc.
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "_Gå til"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "_Forrige definition"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "_Næste definition"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "_Første definition"
 
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "_Sidste definition"
 
@@ -213,7 +212,7 @@ msgid "Strategies"
 msgstr "Strategier"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "Ordbog"
 
@@ -228,7 +227,7 @@ msgstr "Standarddatabasen der skal benyttes"
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "Navnet på den forvalgte individuelle database eller meta-database der skal "
@@ -242,7 +241,7 @@ msgstr "Standardsøgestrategi der skal benyttes"
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
 "Navnet af standardsøgestrategien der benyttes på en ordbogskilde, hvis "
 "tilgængelig. Standardstrategien er \"exact\", det vil sige træf identiske "
@@ -275,28 +274,29 @@ msgstr "Longdo Thai-Engelsk ordbøger"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Ingen forbindelse til ordbogsserveren på \"%s:%d\""
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr "Opslag på værtsnavn \"%s\" slog fejl: ingen passende ressourcer fundet"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
+msgstr ""
+"Opslag på værtsnavn \"%s\" slog fejl: ingen passende ressourcer fundet"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "Opslag slog fejl på vært \"%s\": %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr "Opslag slog fejl på vært \"%s\": vært ikke fundet"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
 "Kan ikke forbinde til ordbogsserveren \"%s:%d\". Denne server svarede med "
@@ -306,44 +306,44 @@ msgstr ""
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "Kan ikke fortolke ordbogsserverens svar\n"
 ": \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
 msgstr "Ingen definitioner fundet for \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
 msgstr "Ugyldig database \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "Ugyldig strategi \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "Ugyldig kommando \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Ugyldige parametre til kommandoen \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
 msgstr "Ingen databaser fundet på ordbogsserveren på \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
 msgstr "Ingen strategier fundet på ordbogsserveren på \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1745
@@ -362,7 +362,7 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Udløbstid for forbindelse til ordbogsserveren på \"%s:%d\""
 
 #: ../libgdict/gdict-client-context.c:1891
@@ -383,19 +383,19 @@ msgstr "Kunne ikke sætte kanalen op som ikke-blokerende: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Kunne ikke forbinde til ordbogsserveren på \"%s:%d\""
 
-#: ../libgdict/gdict-database-chooser.c:374
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Genindlæs listen af tilgængelige databaser"
 
-#: ../libgdict/gdict-database-chooser.c:386
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Ryd listen af tilgængelige databaser"
 
 # Søgning er måske ikke det mest præcise
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Fejl under søgning"
@@ -418,24 +418,24 @@ msgstr "Fejl under overførsel af definition"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
 msgstr "Ugyldig transporttype \"%d\""
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
 msgstr "Ingen \"%s\"-gruppe fundet i ordbogskildens definition"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr "Kan ikke finde \"%s\"-nøglen i ordbogskildens definition: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr "Kan ikke finde \"%s\"-nøglen i ordbogskildens definitionsfil: %s"
 
 #: ../libgdict/gdict-source.c:769
@@ -445,7 +445,7 @@ msgstr "Ordbogskilden har ikke noget navn"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "Ordbogskilden \"%s\" har ugyldig transport \"%s\""
 
 #: ../libgdict/gdict-source-chooser.c:280
@@ -555,7 +555,7 @@ msgstr "Tilføj ordbogskilde"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Fjern \"%s\"?"
 
 #: ../src/gdict-pref-dialog.c:374
@@ -573,7 +573,7 @@ msgstr "_Fjern"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "Kunne ikke fjerne kilden \"%s\""
 
 #: ../src/gdict-pref-dialog.c:443
@@ -613,7 +613,7 @@ msgstr "_Hjælp"
 
 #: ../src/gdict-window.c:415
 #, c-format
-msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "Ingen ordbogskilde tilgængelig med navnet \"%s\""
 
 #: ../src/gdict-window.c:419
@@ -622,7 +622,7 @@ msgstr "Kan ikke finde ordbogskilde"
 
 #: ../src/gdict-window.c:435
 #, c-format
-msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "Ingen kontekst tilgængelig for kilden \"%s\""
 
 #: ../src/gdict-window.c:439
@@ -630,8 +630,9 @@ msgid "Unable to create a context"
 msgstr "Kan ikke oprette kontekst"
 
 #: ../src/gdict-window.c:498
-#, c-format
-msgid "%s - Dictionary"
+#, c-format, fuzzy
+#| msgid "%s - Dictionary"
+msgid "%s — Dictionary"
 msgstr "%s - Ordbog"
 
 #: ../src/gdict-window.c:821
@@ -648,7 +649,7 @@ msgstr "Dokument uden titel"
 
 #: ../src/gdict-window.c:852
 #, c-format
-msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
 msgstr "Fejl under skrivning til \"%s\""
 
 #. speller
@@ -666,17 +667,23 @@ msgstr "Dobbeltklik på søgningsstrategien der skal benyttes"
 msgid "Double-click on the source to use"
 msgstr "Dobbeltklik på den kilde som skal benyttes"
 
-#: ../src/gdict-window.c:1424
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "Lignende ord"
 
-#: ../src/gdict-window.c:1455
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "Tilgængelige strategier"
 
-#: ../src/gdict-window.c:1471
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "Ordbogskilder"
+
+#~ msgid "_Save a Copy..."
+#~ msgstr "_Gem en kopi …"
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "Tilgængelige ord_bøger"
 
 #~ msgid "H_ostname:"
 #~ msgstr "V_ærtsnavn:"
@@ -792,7 +799,7 @@ msgstr "Ordbogskilder"
 #~ msgid "Paths"
 #~ msgstr "Stier"
 
-# Søg på stier ... vs søgestier. Sidstnævnte synes at være mere realistisk.
+#~ # Søg på stier ... vs søgestier. Sidstnævnte synes at være mere realistisk.
 #~ msgid "Search paths used by this object"
 #~ msgstr "Søgestier benyttet af dette objekt"
 
@@ -812,7 +819,7 @@ msgstr "Ordbogskilder"
 #~ msgstr "Strategien der bruges til forespørgsler til GdictContext'en"
 
 #~ msgid "Searching for '%s'..."
-#~ msgstr "Søger efter \"%s\"..."
+#~ msgstr "Søger efter \"%s\" …"
 
 #~ msgid "No definitions found"
 #~ msgstr "Ingen definitioner fundet"
@@ -859,12 +866,12 @@ msgstr "Ordbogskilder"
 #~ msgstr "Forhåndsvis dette dokument"
 
 #~ msgid "_Print..."
-#~ msgstr "_Udskriv..."
+#~ msgstr "_Udskriv …"
 
 #~ msgid "Print this document"
 #~ msgstr "Udskriv dette dokument"
 
-# bemærk: denne og følgende skal synkroniseres med senere tekster
+#~ # bemærk: denne og følgende skal synkroniseres med senere tekster
 #~ msgid "Find a word or phrase in the document"
 #~ msgstr "Find et ord eller en frase i dokumentet"
 
@@ -882,3 +889,4 @@ msgstr "Ordbogskilder"
 
 #~ msgid "_Contents"
 #~ msgstr "_Indhold"
+

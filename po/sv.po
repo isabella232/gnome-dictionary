@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-dictionary\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-23 20:31+0000\n"
-"PO-Revision-Date: 2017-02-03 10:12+0100\n"
+"POT-Creation-Date: 2017-02-21 14:28+0000\n"
+"PO-Revision-Date: 2017-02-22 00:10+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -65,8 +65,8 @@ msgid "About"
 msgstr "Om"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Avsluta"
+msgid "_Quit"
+msgstr "_Avsluta"
 
 #: ../src/gdict-app-menus.ui.h:6
 msgid "_Save a Copy…"

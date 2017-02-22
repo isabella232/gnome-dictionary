@@ -1,15 +1,15 @@
 # Kazakh translation for gnome-dictionary.
 # Copyright (C) 2014 gnome-dictionary's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-dictionary package.
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2014-2016.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2014-2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-23 20:31+0000\n"
-"PO-Revision-Date: 2016-12-13 08:27+0500\n"
+"POT-Creation-Date: 2017-02-21 23:11+0000\n"
+"PO-Revision-Date: 2017-02-22 13:07+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -61,8 +61,8 @@ msgid "About"
 msgstr "Осы туралы"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Шығу"
+msgid "_Quit"
+msgstr "_Шығу"
 
 #: ../src/gdict-app-menus.ui.h:6
 msgid "_Save a Copy…"
@@ -199,7 +199,7 @@ msgstr "Сөздік"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:3
 msgid "word;synonym;definition;spelling;"
-msgstr "сөз;синоним;анықтама;емле;"
+msgstr "word;synonym;definition;spelling;сөз;синоним;анықтама;емле;"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:1
 msgid "The default database to use"
@@ -211,16 +211,22 @@ msgid ""
 "dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
+"Сөздіктерді ұсынатын қайнар көзінде үнсіз келісім бойынша қолданылатын бөлек "
+"дерекқор немесе метадерекқор аты. Леп белгісі (\"!\") қойылса, онда іздеу "
+"қайнар көздегі барлық сөздіктер ішінде орындалады"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:3
 msgid "The default search strategy to use"
-msgstr ""
+msgstr "Қолданылатын үнсіз келісім стратегиясы"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is “exact”, that is match exact words."
 msgstr ""
+"Сөздіктерді ұсынатын қайнар көзінде қолжетерлік болса, үнсіз келісім бойынша "
+"қолданылатын стратегия. Бастапқы стратегия - \"exact\", яғни, тек толық "
+"сөздерді сәйкестендіру."
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:5
 msgid "The font to be used when printing"
@@ -228,16 +234,18 @@ msgstr "Баспаға шығару үшін қолданылатын қаріп
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:6
 msgid "The font to be used when printing a definition."
-msgstr ""
+msgstr "Анықтамасын шығару үшін қолданылатын қаріп."
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:7
 msgid "The name of the dictionary source used"
-msgstr ""
+msgstr "Сөздіктерді ұсынатын қайнар көзінің аты."
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:8
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr ""
+"Сөздер анықтамаларын алуға қолданылған сөздіктерді ұсынатын қайнар көзінің "
+"аты."
 
 #: ../data/spanish.desktop.in.h:1
 msgid "Spanish Dictionaries"
@@ -245,27 +253,28 @@ msgstr "Испан сөздіктері"
 
 #: ../data/thai.desktop.in.h:1
 msgid "Longdo Thai-English Dictionaries"
-msgstr ""
+msgstr "Longdo Тай-Ағылшын сөздіктері"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
 msgid "No connection to the dictionary server at “%s:%d”"
-msgstr ""
+msgstr "\"%s:%d\" бойынша орналасқан сөздіктер серверіне байланыс жоқ"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
 msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
+"\"%s\" хост атын іздеу сәтсіз аяқталды: сәйкес келетін ресурстар табылмады"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
 msgid "Lookup failed for host “%s”: %s"
-msgstr ""
+msgstr "\"%s\" хостын іздеу сәтсіз аяқталды: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
 msgid "Lookup failed for host “%s”: host not found"
-msgstr ""
+msgstr "\"%s\" хостын іздеу сәтсіз аяқталды: хост табылмады"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
@@ -273,6 +282,8 @@ msgid ""
 "Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
+"\"%s:%d\" бойынша орналасқан сөздіктер серверіне байланысу мүмкін емес. "
+"Сервер %d кодымен жауап берді (сервер өшіп тұр)"
 
 #: ../libgdict/gdict-client-context.c:1194
 #, c-format
@@ -280,6 +291,8 @@ msgid ""
 "Unable to parse the dictionary server reply\n"
 ": “%s”"
 msgstr ""
+"Сөздіктер серверінің жауабын талдау мүмкін емес\n"
+": “%s”"
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
@@ -309,17 +322,19 @@ msgstr "\"%s\" командасы үшін қате параметр"
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
 msgid "No databases found on dictionary server at “%s”"
-msgstr ""
+msgstr "\"%s\" бойынша орналасқан сөздіктер серверінен дерекқорлар табылмады"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
 msgid "No strategies found on dictionary server at “%s”"
-msgstr ""
+msgstr "\"%s\" бойынша орналасқан сөздіктер серверінен стратегиялар табылмады"
 
 #: ../libgdict/gdict-client-context.c:1745
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr ""
+"%s:%d бойынша орналасқан сөздіктер серверіне байланысты орнату сәтсіз "
+"аяқталды"
 
 #: ../libgdict/gdict-client-context.c:1784
 #, c-format
@@ -327,32 +342,36 @@ msgid ""
 "Error while reading reply from server:\n"
 "%s"
 msgstr ""
+"Серверден жауапты оқу қатемен аяқталды:\n"
+"%s"
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
 msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr ""
+"\"%s:%d\" бойынша орналасқан сөздіктер серверіне байланысты орнатуды күту "
+"уақыты бітті"
 
 #: ../libgdict/gdict-client-context.c:1891
 #, c-format
 msgid "No hostname defined for the dictionary server"
-msgstr ""
+msgstr "Сөздіктер сервері үшін хост аты берілмеген"
 
 #: ../libgdict/gdict-client-context.c:1927
 #: ../libgdict/gdict-client-context.c:1942
 #, c-format
 msgid "Unable to create socket"
-msgstr ""
+msgstr "Сокетті жасау мүмкін емес"
 
 #: ../libgdict/gdict-client-context.c:1968
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
-msgstr ""
+msgstr "Арнаны блоктаушы емес ретінде орнату мүмкін емес: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
 msgid "Unable to connect to the dictionary server at “%s:%d”"
-msgstr ""
+msgstr "\"%s:%d\" бойынша орналасқан сөздіктер серверіне байланысу мүмкін емес"
 
 #: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
@@ -386,24 +405,28 @@ msgstr "Анықтамасын алу қатесі"
 #: ../libgdict/gdict-source.c:433
 #, c-format
 msgid "Invalid transport type “%d”"
-msgstr ""
+msgstr "\"%d\" көлік түрі қате"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
 msgid "No “%s” group found inside the dictionary source definition"
-msgstr ""
+msgstr "Сөздікті ұсынатын қайнар көзінің анықтамасында \"%s\" тобы табылмады"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
 msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr ""
+"\"%s\" кілтін сөздіктерді ұсынатын қайнар көзінің анықтамасынан алу мүмкін "
+"емес: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
 msgid ""
 "Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr ""
+"\"%s\" кілтін сөздіктерді ұсынатын қайнар көзінің анықтамасы файлынан алу "
+"мүмкін емес: %s"
 
 #: ../libgdict/gdict-source.c:769
 #, c-format
@@ -413,7 +436,7 @@ msgstr "Сөздікті ұсынатын қайнар көзінің аты ж�
 #: ../libgdict/gdict-source.c:778
 #, c-format
 msgid "Dictionary source “%s” has invalid transport “%s”"
-msgstr ""
+msgstr "\"%s\" сөздіктерді ұсынатын қайнар көзінің \"%s\" көлік түрі қате"
 
 #: ../libgdict/gdict-source-chooser.c:280
 msgid "Reload the list of available sources"
@@ -425,7 +448,7 @@ msgstr "Ұқсас сөздер тізімін тазарту"
 
 #: ../libgdict/gdict-strategy-chooser.c:350
 msgid "Reload the list of available strategies"
-msgstr ""
+msgstr "Қолжетерлік стратегиялар тізімін қайта жүктеу"
 
 #: ../libgdict/gdict-strategy-chooser.c:361
 msgid "Clear the list of available strategies"
@@ -433,7 +456,7 @@ msgstr "Қолжетерлік стратегиялар тізімін таза�
 
 #: ../libgdict/gdict-utils.c:96
 msgid "GDict debugging flags to set"
-msgstr ""
+msgstr "Орнату үшін GDict жөндеу жалаушалары"
 
 #: ../libgdict/gdict-utils.c:96 ../libgdict/gdict-utils.c:98
 msgid "FLAGS"
@@ -441,7 +464,7 @@ msgstr "ЖАЛАУШАЛАР"
 
 #: ../libgdict/gdict-utils.c:98
 msgid "GDict debugging flags to unset"
-msgstr ""
+msgstr "Орнатуды алып тастау үшін GDict жөндеу жалаушалары"
 
 #: ../libgdict/gdict-utils.c:157
 msgid "GDict Options"
@@ -515,6 +538,7 @@ msgstr "\"%s\" өшіру керек пе?"
 #: ../src/gdict-pref-dialog.c:374
 msgid "This will permanently remove the dictionary source from the list."
 msgstr ""
+"Бұл әрекет сөздіктерді ұсынатын қайнар көзін тізімнен толығымен өшіреді."
 
 #: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:564
 #: ../src/gdict-window.c:824
@@ -568,7 +592,7 @@ msgstr "_Көмек"
 #: ../src/gdict-window.c:415
 #, c-format
 msgid "No dictionary source available with name “%s”"
-msgstr ""
+msgstr "\"%s\" аты бойынша сөздіктер ұсынатын қайнар көзі табылмады"
 
 #: ../src/gdict-window.c:419
 msgid "Unable to find dictionary source"
@@ -585,7 +609,6 @@ msgstr "Контекстті жасау мүмкін емес"
 
 #: ../src/gdict-window.c:498
 #, c-format
-#| msgid "%s - Dictionary"
 msgid "%s — Dictionary"
 msgstr "%s — сөздік"
 

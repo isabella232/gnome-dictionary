@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-01-20 11:00+0000\n"
-"PO-Revision-Date: 2017-02-09 23:27+0100\n"
+"POT-Creation-Date: 2017-02-21 23:11+0000\n"
+"PO-Revision-Date: 2017-02-24 23:36+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: ../data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -61,8 +61,8 @@ msgid "About"
 msgstr "Informazions"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Jes"
+msgid "_Quit"
+msgstr "_Jes"
 
 #: ../src/gdict-app-menus.ui.h:6
 msgid "_Save a Copy…"

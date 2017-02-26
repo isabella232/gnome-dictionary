@@ -25,10 +25,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-23 20:31+0000\n"
-"PO-Revision-Date: 2017-01-15 10:00-0200\n"
+"POT-Creation-Date: 2017-02-24 22:37+0000\n"
+"PO-Revision-Date: 2017-02-25 22:42-0200\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -81,8 +81,9 @@ msgid "About"
 msgstr "Sobre"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Sair"
+#| msgid "Quit"
+msgid "_Quit"
+msgstr "S_air"
 
 #: ../src/gdict-app-menus.ui.h:6
 msgid "_Save a Copy…"
@@ -423,7 +424,8 @@ msgstr "Tipo de transporte “%d” inválido"
 #: ../libgdict/gdict-source.c:461
 #, c-format
 msgid "No “%s” group found inside the dictionary source definition"
-msgstr "Nenhum grupo “%s” localizado dentro da definição da fonte de dicionário"
+msgstr ""
+"Nenhum grupo “%s” localizado dentro da definição da fonte de dicionário"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550

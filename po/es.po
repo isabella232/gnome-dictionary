@@ -10,15 +10,15 @@
 # Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999.
 # Manuel de Vega Barreiro <barreiro@arrakis.es> 2000-2001.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-12 11:49+0000\n"
-"PO-Revision-Date: 2016-11-17 15:22+0100\n"
+"POT-Creation-Date: 2017-02-24 22:37+0000\n"
+"PO-Revision-Date: 2017-02-27 10:01+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -72,11 +72,11 @@ msgid "About"
 msgstr "Acerca de"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Salir"
+#| msgid "Quit"
+msgid "_Quit"
+msgstr "_Salir"
 
 #: ../src/gdict-app-menus.ui.h:6
-#| msgid "Save a Copy"
 msgid "_Save a Copy…"
 msgstr "_Guardar una copia…"
 
@@ -218,10 +218,6 @@ msgid "The default database to use"
 msgstr "La base de datos predeterminada"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
-#| msgid ""
-#| "The name of the default individual database or meta-database to use on a "
-#| "dictionary source. An exclamation mark (\"!\") means that all the "
-#| "databases present in a dictionary source should be searched"
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (“!”) means that all the databases "
@@ -237,9 +233,6 @@ msgid "The default search strategy to use"
 msgstr "La estrategia de búsqueda a utilizar"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
-#| msgid ""
-#| "The name of the default search strategy to use on a dictionary source, if "
-#| "available. The default strategy is 'exact', that is match exact words."
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is “exact”, that is match exact words."
@@ -277,13 +270,11 @@ msgstr "Diccionario Longdo Tailandés-Inglés"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-#| msgid "No connection to the dictionary server at '%s:%d'"
 msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Sin conexión al servidor de diccionarios en «%s:%d»"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-#| msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
 "Falló la búsqueda del nombre de equipo «%s»: no se encontraron recursos "
@@ -291,21 +282,16 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-#| msgid "Lookup failed for host '%s': %s"
 msgid "Lookup failed for host “%s”: %s"
 msgstr "Falló la búsqueda del equipo «%s»: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-#| msgid "Lookup failed for host '%s': host not found"
 msgid "Lookup failed for host “%s”: host not found"
 msgstr "Falló la búsqueda del equipo «%s»: equipo no encontrado"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
-#| msgid ""
-#| "Unable to connect to the dictionary server at '%s:%d'. The server replied "
-#| "with code %d (server down)"
 msgid ""
 "Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
@@ -315,9 +301,6 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1194
 #, c-format
-#| msgid ""
-#| "Unable to parse the dictionary server reply\n"
-#| ": '%s'"
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": “%s”"
@@ -327,44 +310,37 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-#| msgid "No definitions found for '%s'"
 msgid "No definitions found for “%s”"
 msgstr "No se encontraron definiciones para «%s»"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-#| msgid "Invalid database '%s'"
 msgid "Invalid database “%s”"
 msgstr "Base de datos no válida «%s»"
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-#| msgid "Invalid strategy '%s'"
 msgid "Invalid strategy “%s”"
 msgstr "Estrategia no válida «%s»"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-#| msgid "Bad command '%s'"
 msgid "Bad command “%s”"
 msgstr "Comando no válido «%s»"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-#| msgid "Bad parameters for command '%s'"
 msgid "Bad parameters for command “%s”"
 msgstr "Parámetros erróneos para el comando «%s»"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-#| msgid "No databases found on dictionary server at '%s'"
 msgid "No databases found on dictionary server at “%s”"
 msgstr ""
 "No se han encontrado bases de datos en el servidor de diccionarios en «%s»"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-#| msgid "No strategies found on dictionary server at '%s'"
 msgid "No strategies found on dictionary server at “%s”"
 msgstr "No se encontraron estrategias en el servidor en «%s»"
 
@@ -384,7 +360,6 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-#| msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Tiempo agotado para la conexión al servidor de diccionarios en «%s:%d»"
 
@@ -406,7 +381,6 @@ msgstr "Imposible establecer el canal como no bloqueante: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-#| msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Imposible conectar con el servidor de diccionario en «%s:%d»"
 
@@ -441,13 +415,11 @@ msgstr "Error al obtener la definición"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-#| msgid "Invalid transport type '%d'"
 msgid "Invalid transport type “%d”"
 msgstr "Tipo de transporte no válido «%d»"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-#| msgid "No '%s' group found inside the dictionary source definition"
 msgid "No “%s” group found inside the dictionary source definition"
 msgstr ""
 "No se encontró ningún grupo «%s» dentro de la definición de fuente de "
@@ -456,8 +428,6 @@ msgstr ""
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-#| msgid ""
-#| "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr ""
 "No es posible obtener la clave «%s» dentro de la definición de fuente de "
@@ -465,9 +435,6 @@ msgstr ""
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
-#| msgid ""
-#| "Unable to get the '%s' key inside the dictionary source definition file: "
-#| "%s"
 msgid ""
 "Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr ""
@@ -481,7 +448,6 @@ msgstr "La fuente de diccionario no tiene nombre"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-#| msgid "Dictionary source '%s' has invalid transport '%s'"
 msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "La fuente de diccionario «%s» tiene un transporte no válido «%s»"
 
@@ -587,7 +553,6 @@ msgstr "Añadir una fuente de diccionario"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-#| msgid "Remove \"%s\"?"
 msgid "Remove “%s”?"
 msgstr "¿Quiere quitar «%s»?"
 
@@ -606,7 +571,6 @@ msgstr "_Eliminar"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-#| msgid "Unable to remove source '%s'"
 msgid "Unable to remove source “%s”"
 msgstr "No se puede quitar la fuente «%s»"
 
@@ -647,7 +611,6 @@ msgstr "A_yuda"
 
 #: ../src/gdict-window.c:415
 #, c-format
-#| msgid "No dictionary source available with name '%s'"
 msgid "No dictionary source available with name “%s”"
 msgstr "No hay ninguna fuente de diccionario con el nombre «%s»"
 
@@ -657,7 +620,6 @@ msgstr "No es posible encontrar la fuente del diccionario"
 
 #: ../src/gdict-window.c:435
 #, c-format
-#| msgid "No context available for source '%s'"
 msgid "No context available for source “%s”"
 msgstr "No hay contexto disponible para la fuente «%s»"
 
@@ -667,7 +629,6 @@ msgstr "Imposible crear un contexto"
 
 #: ../src/gdict-window.c:498
 #, c-format
-#| msgid "%s - Dictionary"
 msgid "%s — Dictionary"
 msgstr "Diccionario - %s"
 
@@ -685,7 +646,6 @@ msgstr "Documento sin título"
 
 #: ../src/gdict-window.c:852
 #, c-format
-#| msgid "Error while writing to '%s'"
 msgid "Error while writing to “%s”"
 msgstr "Ocurrió un error al escribir en «%s»"
 

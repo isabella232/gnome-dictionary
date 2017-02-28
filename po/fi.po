@@ -21,10 +21,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-02-09 22:28+0000\n"
-"PO-Revision-Date: 2017-02-21 15:26+0200\n"
+"POT-Creation-Date: 2017-02-24 22:37+0000\n"
+"PO-Revision-Date: 2017-02-28 21:04+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -76,11 +76,11 @@ msgid "About"
 msgstr "Tietoja"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Lopeta"
+#| msgid "Quit"
+msgid "_Quit"
+msgstr "_Lopeta"
 
 #: ../src/gdict-app-menus.ui.h:6
-#| msgid "Save a Copy"
 msgid "_Save a Copy…"
 msgstr "_Tallenna kopio…"
 
@@ -224,10 +224,6 @@ msgid "The default database to use"
 msgstr "Käytettävä oletustietokanta"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
-#| msgid ""
-#| "The name of the default individual database or meta-database to use on a "
-#| "dictionary source. An exclamation mark (\"!\") means that all the "
-#| "databases present in a dictionary source should be searched"
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (“!”) means that all the databases "
@@ -242,9 +238,6 @@ msgid "The default search strategy to use"
 msgstr "Käytettävä oletushakustrategia"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
-#| msgid ""
-#| "The name of the default search strategy to use on a dictionary source, if "
-#| "available. The default strategy is 'exact', that is match exact words."
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is “exact”, that is match exact words."
@@ -279,13 +272,11 @@ msgstr "Longdon Thai–Englanti-sanakirjat"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-#| msgid "No connection to the dictionary server at '%s:%d'"
 msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Ei yhteyttä sanakirjapalvelimeen “%s:%d”"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-#| msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
 "Palvelimen “%s” osoitteen selvitys epäonnistui: tarvittavia resursseja ei "
@@ -293,21 +284,16 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-#| msgid "Lookup failed for host '%s': %s"
 msgid "Lookup failed for host “%s”: %s"
 msgstr "Haku sanakirjapalvelimelta “%s” epäonnistui: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-#| msgid "Lookup failed for host '%s': host not found"
 msgid "Lookup failed for host “%s”: host not found"
 msgstr "Haku sanakirjapalvelimelta “%s” epäonnistui: palvelinta ei löydy"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
-#| msgid ""
-#| "Unable to connect to the dictionary server at '%s:%d'. The server replied "
-#| "with code %d (server down)"
 msgid ""
 "Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
@@ -317,9 +303,6 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1194
 #, c-format
-#| msgid ""
-#| "Unable to parse the dictionary server reply\n"
-#| ": '%s'"
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": “%s”"
@@ -329,43 +312,36 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-#| msgid "No definitions found for '%s'"
 msgid "No definitions found for “%s”"
 msgstr "Sanalle “%s” ei löytynyt määritelmiä"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-#| msgid "Invalid database '%s'"
 msgid "Invalid database “%s”"
 msgstr "Virheellinen tietokanta “%s”"
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-#| msgid "Invalid strategy '%s'"
 msgid "Invalid strategy “%s”"
 msgstr "Virheellinen hakutapa “%s”"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-#| msgid "Bad command '%s'"
 msgid "Bad command “%s”"
 msgstr "Virheellinen komento “%s”"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-#| msgid "Bad parameters for command '%s'"
 msgid "Bad parameters for command “%s”"
 msgstr "Virheellisiä parametreja komennolle “%s”"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-#| msgid "No databases found on dictionary server at '%s'"
 msgid "No databases found on dictionary server at “%s”"
 msgstr "Sanakirjapalvelimelta “%s” ei löytynyt tietokantoja"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-#| msgid "No strategies found on dictionary server at '%s'"
 msgid "No strategies found on dictionary server at “%s”"
 msgstr "Sanakirjapalvelimelta “%s” ei löytynyt hakutapoja"
 
@@ -385,7 +361,6 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-#| msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Yhdistäminen sanakirjanpalvelimeen osoitteessa “%s:%d” aikakatkaistiin"
 
@@ -407,7 +382,6 @@ msgstr "Kanavaa ei voi asettaa non-blocking-tilaan: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-#| msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Sanakirjapalvelimeen osoitteessa “%s:%d” ei saatu yhteyttä"
 
@@ -442,29 +416,22 @@ msgstr "Määritelmän hakeminen epäonnistui"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-#| msgid "Invalid transport type '%d'"
 msgid "Invalid transport type “%d”"
 msgstr "Virheellinen yhteystapa: “%d”"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-#| msgid "No '%s' group found inside the dictionary source definition"
 msgid "No “%s” group found inside the dictionary source definition"
 msgstr "Ryhmää “%s” ei löydy sanakirjalähteen määrittelystä"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-#| msgid ""
-#| "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr "Avainta “%s” ei löydy sanakirjalähteen määrittelystä: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
-#| msgid ""
-#| "Unable to get the '%s' key inside the dictionary source definition file: "
-#| "%s"
 msgid ""
 "Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr "Avainta “%s” ei löydy sanakirjalähteen määrittelytiedostosta: %s"
@@ -476,7 +443,6 @@ msgstr "Sanakirjalähteellä ei ole nimeä"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-#| msgid "Dictionary source '%s' has invalid transport '%s'"
 msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "Sanakirjalähteellä “%s” on virheellinen siirtotapa “%s”"
 
@@ -585,7 +551,6 @@ msgstr "Lisää sanakirjalähde"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-#| msgid "Remove \"%s\"?"
 msgid "Remove “%s”?"
 msgstr "Poistetaanko “%s”?"
 
@@ -604,7 +569,6 @@ msgstr "_Poista"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-#| msgid "Unable to remove source '%s'"
 msgid "Unable to remove source “%s”"
 msgstr "Lähteen “%s” poistaminen epäonnistui"
 
@@ -645,7 +609,6 @@ msgstr "_Ohje"
 
 #: ../src/gdict-window.c:415
 #, c-format
-#| msgid "No dictionary source available with name '%s'"
 msgid "No dictionary source available with name “%s”"
 msgstr "Nimellä “%s” ei löydy sanakirjalähdettä"
 
@@ -655,7 +618,6 @@ msgstr "Sanakirjalähdettä ei löytynyt"
 
 #: ../src/gdict-window.c:435
 #, c-format
-#| msgid "No context available for source '%s'"
 msgid "No context available for source “%s”"
 msgstr "Lähteelle “%s” ei löydy kontekstia"
 
@@ -665,7 +627,6 @@ msgstr "Kontekstin luominen epäonnistui"
 
 #: ../src/gdict-window.c:498
 #, c-format
-#| msgid "%s - Dictionary"
 msgid "%s — Dictionary"
 msgstr "%s — sanakirja"
 
@@ -683,7 +644,6 @@ msgstr "Nimeämätön asiakirja"
 
 #: ../src/gdict-window.c:852
 #, c-format
-#| msgid "Error while writing to '%s'"
 msgid "Error while writing to “%s”"
 msgstr "Tiedostoon “%s” kirjoittaminen epäonnistui"
 

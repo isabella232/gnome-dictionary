@@ -12,7 +12,7 @@
 # Jochen Skulj <jochen@jochenskulj.de>, 2008.
 # Hendrik Richter <hendrikr@gnome.org>, 2004-2009.
 # Nathan-J. Hirschauer <nathanhirschauer@verfriemelt.org>, 2009.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2011-2012, 2016.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2011-2012, 2016-2017.
 # Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2011.
 # Wolfgang Stöggl <c72578@yahoo.de>, 2011, 2014-2015.
 # Daniel Winzen <d@winzen4.de>, 2012
@@ -21,10 +21,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-12 11:49+0000\n"
-"PO-Revision-Date: 2016-11-13 17:09+0100\n"
+"POT-Creation-Date: 2017-02-24 22:37+0000\n"
+"PO-Revision-Date: 2017-02-28 18:46+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -32,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #: ../data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -76,8 +76,8 @@ msgid "About"
 msgstr "Info"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Beenden"
+msgid "_Quit"
+msgstr "_Beenden"
 
 #: ../src/gdict-app-menus.ui.h:6
 msgid "_Save a Copy…"

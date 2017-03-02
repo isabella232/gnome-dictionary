@@ -10,10 +10,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-02-09 22:28+0000\n"
-"PO-Revision-Date: 2017-02-20 17:17+0100\n"
+"POT-Creation-Date: 2017-03-01 14:23+0000\n"
+"PO-Revision-Date: 2017-03-02 19:43+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -66,11 +66,11 @@ msgid "About"
 msgstr "Honi _buruz"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Irten"
+#| msgid "Quit"
+msgid "_Quit"
+msgstr "I_rten"
 
 #: ../src/gdict-app-menus.ui.h:6
-#| msgid "Save a Copy"
 msgid "_Save a Copy…"
 msgstr "_Gorde kopia bat…"
 
@@ -219,10 +219,6 @@ msgid "The default database to use"
 msgstr "Datu-base lehenetsia erabiltzeko"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
-#| msgid ""
-#| "The name of the default individual database or meta-database to use on a "
-#| "dictionary source. An exclamation mark (\"!\") means that all the "
-#| "databases present in a dictionary source should be searched"
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (“!”) means that all the databases "
@@ -238,9 +234,6 @@ msgid "The default search strategy to use"
 msgstr "Erabiliko den bilaketa-estrategia lehenetsia"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
-#| msgid ""
-#| "The name of the default search strategy to use on a dictionary source, if "
-#| "available. The default strategy is 'exact', that is match exact words."
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is “exact”, that is match exact words."
@@ -277,34 +270,27 @@ msgstr "Longdo Thailandiera-Ingelesa hiztegiak"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-#| msgid "No connection to the dictionary server at '%s:%d'"
 msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Ez dago hiztegi-zerbitzariarekin “%s:%d“ konexiorik"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-#| msgid "Lookup failed for hostname '%s': no suitable resources found"
 msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
 "“%s“ ostalariaren bilaketak huts egin du: ez da baliabide egokirik aurkitu"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-#| msgid "Lookup failed for host '%s': %s"
 msgid "Lookup failed for host “%s”: %s"
 msgstr "“%s“ ostalariaren bilaketak huts egin du: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-#| msgid "Lookup failed for host '%s': host not found"
 msgid "Lookup failed for host “%s”: host not found"
 msgstr "“%s“ ostalariaren bilaketak huts egin du: ez da ostalaria aurkitu"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
-#| msgid ""
-#| "Unable to connect to the dictionary server at '%s:%d'. The server replied "
-#| "with code %d (server down)"
 msgid ""
 "Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
@@ -314,9 +300,6 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1194
 #, c-format
-#| msgid ""
-#| "Unable to parse the dictionary server reply\n"
-#| ": '%s'"
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": “%s”"
@@ -326,43 +309,36 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-#| msgid "No definitions found for '%s'"
 msgid "No definitions found for “%s”"
 msgstr "Ez da “%s“ hitzaren definiziorik aurkitu"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-#| msgid "Invalid database '%s'"
 msgid "Invalid database “%s”"
 msgstr "“%s“ datu-base baliogabea"
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-#| msgid "Invalid strategy '%s'"
 msgid "Invalid strategy “%s”"
 msgstr "“%s“ estrategia baliogabea"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-#| msgid "Bad command '%s'"
 msgid "Bad command “%s”"
 msgstr "Okerreko “%s“ komandoa"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-#| msgid "Bad parameters for command '%s'"
 msgid "Bad parameters for command “%s”"
 msgstr "“%s“ komandoaren okerreko parametroak"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-#| msgid "No databases found on dictionary server at '%s'"
 msgid "No databases found on dictionary server at “%s”"
 msgstr "Ez da datu-baserik aurkitu “%s“ hiztegi-zerbitzarian"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-#| msgid "No strategies found on dictionary server at '%s'"
 msgid "No strategies found on dictionary server at “%s”"
 msgstr "Ez da estrategiarik aurkitu “%s“ hiztegi-zerbitzarian"
 
@@ -384,7 +360,6 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-#| msgid "Connection timeout for the dictionary server at '%s:%d'"
 msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Konexioak huts egin du “%s:%d“ hiztegi-zerbitzariarekin"
 
@@ -407,7 +382,6 @@ msgstr "Ezin da kanala ez-blokeatu gisa ezarri: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-#| msgid "Unable to connect to the dictionary server at '%s:%d'"
 msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Ezin da hiztegi-zerbitzariarekin “%s:%d“(e)n konektatu"
 
@@ -443,29 +417,22 @@ msgstr "Errorea definizioa eskuratzean"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-#| msgid "Invalid transport type '%d'"
 msgid "Invalid transport type “%d”"
 msgstr "“%d“ garraio-mota baliogabea"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-#| msgid "No '%s' group found inside the dictionary source definition"
 msgid "No “%s” group found inside the dictionary source definition"
 msgstr "Ez da “%s“ taldea aurkitu hiztegi-iturburuko definizio barruan"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-#| msgid ""
-#| "Unable to get the '%s' key inside the dictionary source definition: %s"
 msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr "Ezin da “%s“ gakoa hiztegi-iturburuko definizio barrukoa lortu: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
-#| msgid ""
-#| "Unable to get the '%s' key inside the dictionary source definition file: "
-#| "%s"
 msgid ""
 "Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr ""
@@ -478,7 +445,6 @@ msgstr "Hiztegi-iturburuak ez du izenik"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-#| msgid "Dictionary source '%s' has invalid transport '%s'"
 msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "“%s“ hiztegi-iturburuak “%s“ garraio baliogabea du"
 
@@ -586,7 +552,6 @@ msgstr "Gehitu hiztegiaren iturburua"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-#| msgid "Remove \"%s\"?"
 msgid "Remove “%s”?"
 msgstr "Kendu “%s“?"
 
@@ -605,7 +570,6 @@ msgstr "_Kendu"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-#| msgid "Unable to remove source '%s'"
 msgid "Unable to remove source “%s”"
 msgstr "Ezin da “%s“ iturburua ezabatu"
 
@@ -647,7 +611,6 @@ msgstr "_Laguntza"
 
 #: ../src/gdict-window.c:415
 #, c-format
-#| msgid "No dictionary source available with name '%s'"
 msgid "No dictionary source available with name “%s”"
 msgstr "Ez dago “%s“ izeneko hiztegi-iturbururik eskuragarri"
 
@@ -658,7 +621,6 @@ msgstr "Ezin da hiztegi-iturburua aurkitu"
 
 #: ../src/gdict-window.c:435
 #, c-format
-#| msgid "No context available for source '%s'"
 msgid "No context available for source “%s”"
 msgstr "Ez dago “%s“ iturburuaren testuingururik eskuragarri"
 
@@ -668,7 +630,6 @@ msgstr "Ezin izan da fitxategi-sistema sortu."
 
 #: ../src/gdict-window.c:498
 #, c-format
-#| msgid "%s - Dictionary"
 msgid "%s — Dictionary"
 msgstr "%s — Hiztegia"
 
@@ -686,7 +647,6 @@ msgstr "Izenik gabeko dokumentua"
 
 #: ../src/gdict-window.c:852
 #, c-format
-#| msgid "Error while writing to '%s'"
 msgid "Error while writing to “%s”"
 msgstr "Errorea “%s“ fitxategian idaztean"
 

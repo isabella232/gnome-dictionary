@@ -12,11 +12,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-02-12 20:56+0000\n"
-"PO-Revision-Date: 2016-02-13 02:05+0200\n"
-"Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
+"POT-Creation-Date: 2017-03-02 18:44+0000\n"
+"PO-Revision-Date: 2017-03-03 14:37+0200\n"
+"Last-Translator: Moo\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: ../data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -68,12 +68,12 @@ msgid "About"
 msgstr "Apie"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Išeiti"
+msgid "_Quit"
+msgstr "_Išeiti"
 
 #: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
-msgstr "Į_rašyti kopiją..."
+msgid "_Save a Copy…"
+msgstr "Į_rašyti kopiją…"
 
 #: ../src/gdict-app-menus.ui.h:7
 msgid "P_review"
@@ -104,30 +104,26 @@ msgid "Dictionary Sources"
 msgstr "Žodyno šaltiniai"
 
 #: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "Prieinami žo_dynai"
-
-#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "Prieinamos _strategijos"
 
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "_Eiti"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "_Ankstesnis apibrėžimas"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "_Kitas apibrėžimas"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "_Pirmas apibrėžimas"
 
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "Pas_kutinis apibrėžimas"
 
@@ -204,7 +200,7 @@ msgid "Strategies"
 msgstr "Strategijos"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "Žodynas"
 
@@ -219,7 +215,7 @@ msgstr "Numatytoji duomenų bazė"
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "Numatytosios žodyno šaltinyje naudojamos individualios duomenų bazės ar "
@@ -233,7 +229,7 @@ msgstr "Numatytoji paieškos strategija"
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
 "Numatytosios paieškos strategijos (jei tokia prieinama) naudojamos žodyno "
 "šaltinyje pavadinimas. Numatytoji strategija yra „exact“, t.y. atitikti "
@@ -266,28 +262,28 @@ msgstr "Longdo tailandiečių-anglų kalbų žodynai"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Nėra ryšio su žodyno serveriu „%s:%d“"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr "Nepavyko rasti kompiuterio „%s“: nerasta tinkamų resursų"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
+msgstr "Nepavyko rasti kompiuterio „%s“: nerasta tinkamų išteklių"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "Nepavyko rasti kompiuterio „%s“: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr "Nepavyko rasti kompiuterio „%s“: kompiuteris nerastas"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
 "Nepavyko prisijungti prie žodyno serverio „%s:%d“. Serveris grąžino kodą %d "
@@ -297,44 +293,44 @@ msgstr ""
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "Nepavyko apdoroti žodyno serverio atsako\n"
 ": „%s“"
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
 msgstr "„%s“ apibrėžimų nerasta"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
 msgstr "Netinkama duomenų bazė „%s“"
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "Netinkama strategija „%s“"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "Netinkama komanda „%s“"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Netinkami parametrai komandai „%s“"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
 msgstr "Žodyno serveryje „%s“ nerasta duomenų bazių"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
 msgstr "Žodyno serveryje „%s“ nerasta strategijų"
 
 #: ../libgdict/gdict-client-context.c:1745
@@ -353,8 +349,8 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr "Nepavyko prisijungti prie žodyno serverio „%s:%d“"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
+msgstr "Pasibaigė prisijungimui prie žodyno serverio „%s:%d“ skirtas laikas"
 
 #: ../libgdict/gdict-client-context.c:1891
 #, c-format
@@ -374,18 +370,18 @@ msgstr "Nepavyko nustatyti kanalo kaip ne blokuojamo: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Nepavyko prisijungti prie žodyno serverio „%s:%d“"
 
-#: ../libgdict/gdict-database-chooser.c:374
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Atnaujinti prieinamų duomenų bazių sąrašą"
 
-#: ../libgdict/gdict-database-chooser.c:386
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Išvalyti prieinamų duomenų bazių sąrašą"
 
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Klaida ieškant atitikmens"
@@ -408,24 +404,24 @@ msgstr "Klaida gaunant apibrėžimą"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-msgid "Invalid transport type '%d'"
-msgstr "Netinkamas transporto tipas „%d“"
+msgid "Invalid transport type “%d”"
+msgstr "Netinkamas perdavimo tipas „%d“"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
 msgstr "Žodyno šaltinio apibrėžme nerasta grupė „%s“"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr "Nepavyko gauti rakto „%s“ žodyno šaltinio apibrėžime: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr "Nepavyko gauti rakto „%s“ žodyno šaltinio apibrėžimo faile: %s"
 
 #: ../libgdict/gdict-source.c:769
@@ -435,8 +431,8 @@ msgstr "Žodynų šaltinis neturi pavadinimo"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
-msgstr "Žodyno šaltinis „%s“ turi netinkamą transportą „%s“"
+msgid "Dictionary source “%s” has invalid transport “%s”"
+msgstr "Žodyno šaltinis „%s“ turi netinkamą perdavimą „%s“"
 
 #: ../libgdict/gdict-source-chooser.c:280
 msgid "Reload the list of available sources"
@@ -539,7 +535,7 @@ msgstr "Pridėti žodyno šaltinį"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Pašalinti „%s“?"
 
 #: ../src/gdict-pref-dialog.c:374
@@ -558,7 +554,7 @@ msgstr "_Pašalinti"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "Nepavyko pašalinti šaltinio „%s“"
 
 #: ../src/gdict-pref-dialog.c:443
@@ -598,7 +594,7 @@ msgstr "_Žinynas"
 
 #: ../src/gdict-window.c:415
 #, c-format
-msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "Žodyno šaltinis pavadinimu „%s“ neprieinamas"
 
 #: ../src/gdict-window.c:419
@@ -607,7 +603,7 @@ msgstr "Nepavyko rasti žodyno šaltinio"
 
 #: ../src/gdict-window.c:435
 #, c-format
-msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "Šaltiniui „%s“ kontekstas neprieinamas"
 
 #: ../src/gdict-window.c:439
@@ -616,8 +612,8 @@ msgstr "Nepavyko sukurti konteksto"
 
 #: ../src/gdict-window.c:498
 #, c-format
-msgid "%s - Dictionary"
-msgstr "%s – Žodynas"
+msgid "%s — Dictionary"
+msgstr "%s — Žodynas"
 
 #: ../src/gdict-window.c:821
 msgid "Save a Copy"
@@ -633,7 +629,7 @@ msgstr "Bevardis dokumentas"
 
 #: ../src/gdict-window.c:852
 #, c-format
-msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
 msgstr "Klaida rašant į „%s“"
 
 #. speller
@@ -651,17 +647,23 @@ msgstr "Du kartus spragtelėkite naudotiną strategiją"
 msgid "Double-click on the source to use"
 msgstr "Dukart spragtelėkite naudotiną šaltinį"
 
-#: ../src/gdict-window.c:1424
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "Panašūs žodžiai"
 
-#: ../src/gdict-window.c:1455
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "Prieinamos strategijos"
 
-#: ../src/gdict-window.c:1471
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "Žodyno šaltiniai"
+
+#~ msgid "_Save a Copy..."
+#~ msgstr "Į_rašyti kopiją..."
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "Prieinami žo_dynai"
 
 #~ msgid "H_ostname:"
 #~ msgstr "Kompiuteri_o vardas:"

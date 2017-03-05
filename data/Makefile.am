@@ -55,4 +55,7 @@ gsettings_SCHEMAS = org.gnome.dictionary.gschema.xml
 
 @GSETTINGS_RULES@
 
+# Flatpak manifest
+EXTRA_DIST += org.gnome.Dictionary.json
+
 -include $(top_srcdir)/git.mk

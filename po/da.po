@@ -9,7 +9,7 @@
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
 # Kenneth Nielsen <k.nielsen81@gmail.com>, 2008, 2013-2014.
 # Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 15, 16.
-# Joe Hansen <joedalton2@yahoo.dk>, 2011.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011, 2017.
 #
 #
 # Husk at tilføje dig i credit-listen (besked id "translator-credits")
@@ -21,10 +21,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: "
-"http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-23 20:31+0000\n"
-"PO-Revision-Date: 2016-08-28 13:38+0200\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"dictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-03-02 18:44+0000\n"
+"PO-Revision-Date: 2017-03-02 13:38+0200\n"
 "Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -77,14 +77,12 @@ msgid "About"
 msgstr "Om"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Afslut"
+msgid "_Quit"
+msgstr "_Afslut"
 
 #: ../src/gdict-app-menus.ui.h:6
-#, fuzzy
-#| msgid "Save a Copy"
 msgid "_Save a Copy…"
-msgstr "Gem en kopi"
+msgstr "_Gem en kopi …"
 
 #: ../src/gdict-app-menus.ui.h:7
 msgid "P_review"
@@ -280,8 +278,7 @@ msgstr "Ingen forbindelse til ordbogsserveren på \"%s:%d\""
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
 msgid "Lookup failed for hostname “%s”: no suitable resources found"
-msgstr ""
-"Opslag på værtsnavn \"%s\" slog fejl: ingen passende ressourcer fundet"
+msgstr "Opslag på værtsnavn \"%s\" slog fejl: ingen passende ressourcer fundet"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
@@ -630,10 +627,9 @@ msgid "Unable to create a context"
 msgstr "Kan ikke oprette kontekst"
 
 #: ../src/gdict-window.c:498
-#, c-format, fuzzy
-#| msgid "%s - Dictionary"
+#, c-format
 msgid "%s — Dictionary"
-msgstr "%s - Ordbog"
+msgstr "%s — ordbog"
 
 #: ../src/gdict-window.c:821
 msgid "Save a Copy"
@@ -678,215 +674,4 @@ msgstr "Tilgængelige strategier"
 #: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "Ordbogskilder"
-
-#~ msgid "_Save a Copy..."
-#~ msgstr "_Gem en kopi …"
-
-#~ msgid "Available _Dictionaries"
-#~ msgstr "Tilgængelige ord_bøger"
-
-#~ msgid "H_ostname:"
-#~ msgstr "V_ærtsnavn:"
-
-#~ msgid "_File"
-#~ msgstr "_Fil"
-
-#~ msgid "_New"
-#~ msgstr "_Ny"
-
-#~ msgid "_Copy"
-#~ msgstr "_Kopiér"
-
-#~ msgid "Select _All"
-#~ msgstr "Markér _alt"
-
-#~ msgid "Find Ne_xt"
-#~ msgstr "Find n_æste"
-
-#~ msgid "Find Pre_vious"
-#~ msgstr "Find f_orrige"
-
-#~ msgid "S_tatusbar"
-#~ msgstr "S_tatusbjælke"
-
-#~ msgid "Client Name"
-#~ msgstr "Klientnavn"
-
-#~ msgid "The name of the client of the context object"
-#~ msgstr "Navnet på kontekst-objektets klient"
-
-#~ msgid "The hostname of the dictionary server to connect to"
-#~ msgstr "Værtsnavnet på ordbogsserveren der forbindes til"
-
-#~ msgid "Port"
-#~ msgstr "Port"
-
-#~ msgid "The port of the dictionary server to connect to"
-#~ msgstr "Porten på ordbogsserveren der forbindes til"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid "The status code as returned by the dictionary server"
-#~ msgstr "Statuskoden returneret af ordbogsserveren"
-
-#~ msgid "Local Only"
-#~ msgstr "Kun lokal"
-
-#~ msgid "Whether the context uses only local dictionaries or not"
-#~ msgstr "Om konteksten kun bruger lokale ordbøger"
-
-#~ msgid "Not found"
-#~ msgstr "Ikke fundet"
-
-#~ msgid "F_ind:"
-#~ msgstr "F_ind:"
-
-#~ msgid "_Previous"
-#~ msgstr "_Forrige"
-
-#~ msgid "_Next"
-#~ msgstr "_Næste"
-
-#~ msgid "Filename"
-#~ msgstr "Filnavn"
-
-#~ msgid "The filename used by this dictionary source"
-#~ msgstr "Filnavnet der benyttes af denne ordbogskilde"
-
-#~ msgid "Name"
-#~ msgstr "Navn"
-
-#~ msgid "The display name of this dictionary source"
-#~ msgstr "Kaldenavnet for denne ordbogskilde"
-
-#~ msgid "Description"
-#~ msgstr "Beskrivelse"
-
-#~ msgid "The description of this dictionary source"
-#~ msgstr "Beskrivelsen af denne ordbogskilde"
-
-#~ msgid "Editable"
-#~ msgstr "Kan redigeres"
-
-#~ msgid "Whether the dictionary source is editable or not"
-#~ msgstr "Om ordbogskilden kan redigeres eller ikke"
-
-#~ msgid "Database"
-#~ msgstr "Database"
-
-#~ msgid "The default database of this dictionary source"
-#~ msgstr "Denne ordbogskildes standarddatabase"
-
-#~ msgid "Strategy"
-#~ msgstr "Strategi"
-
-#~ msgid "The default strategy of this dictionary source"
-#~ msgstr "Denne ordbogskildes standardstrategi"
-
-#~ msgid "Transport"
-#~ msgstr "Transport"
-
-#~ msgid "The transport mechanism used by this dictionary source"
-#~ msgstr "Denne ordbogskildes transportmekanisme"
-
-#~ msgid "Context"
-#~ msgstr "Kontekst"
-
-#~ msgid "The GdictContext bound to this source"
-#~ msgstr "GdictContext bundet til denne kilde"
-
-#~ msgid "Paths"
-#~ msgstr "Stier"
-
-#~ # Søg på stier ... vs søgestier. Sidstnævnte synes at være mere realistisk.
-#~ msgid "Search paths used by this object"
-#~ msgstr "Søgestier benyttet af dette objekt"
-
-#~ msgid "Sources"
-#~ msgstr "Kilder"
-
-#~ msgid "Dictionary sources found"
-#~ msgstr "Ordbogskilder fundet"
-
-#~ msgid "The GdictContext object used to get the word definition"
-#~ msgstr "GdictContext-objektet der bruges til at hente orddefinitionen"
-
-#~ msgid "The database used to query the GdictContext"
-#~ msgstr "Den database der skal benyttes til forespørgsler GdictContext'en"
-
-#~ msgid "The strategy used to query the GdictContext"
-#~ msgstr "Strategien der bruges til forespørgsler til GdictContext'en"
-
-#~ msgid "Searching for '%s'..."
-#~ msgstr "Søger efter \"%s\" …"
-
-#~ msgid "No definitions found"
-#~ msgstr "Ingen definitioner fundet"
-
-#~ msgid "A definition found"
-#~ msgid_plural "%d definitions found"
-#~ msgstr[0] "Én definition fundet"
-#~ msgstr[1] "%d definitioner fundet"
-
-#~ msgid "Dictionary source `%s' selected"
-#~ msgstr "Ordbogskilde \"%s\" valgt"
-
-#~ msgid "Strategy `%s' selected"
-#~ msgstr "Strategi \"%s\" valgt"
-
-#~ msgid "Database `%s' selected"
-#~ msgstr "Database \"%s\" valgt"
-
-#~ msgid "Word `%s' selected"
-#~ msgstr "Ord \"%s\" valgt"
-
-#~ msgid "Double-click on the database to use"
-#~ msgstr "Dobbeltklik på databasen der skal benyttes"
-
-#~ msgid "Look _up"
-#~ msgstr "Slå _op"
-
-#~ msgid "Available dictionaries"
-#~ msgstr "Tilgængelige ordbøger"
-
-#~ msgid " - Look up words in dictionaries"
-#~ msgstr " - Slå ord op i ordbøger"
-
-#~ msgid "About Dictionary"
-#~ msgstr "Om Ordbog"
-
-#~ msgid "Available _Databases"
-#~ msgstr "Tilgængelige _databaser"
-
-#~ msgid "New look up"
-#~ msgstr "Nyt opslag"
-
-#~ msgid "Preview this document"
-#~ msgstr "Forhåndsvis dette dokument"
-
-#~ msgid "_Print..."
-#~ msgstr "_Udskriv …"
-
-#~ msgid "Print this document"
-#~ msgstr "Udskriv dette dokument"
-
-#~ # bemærk: denne og følgende skal synkroniseres med senere tekster
-#~ msgid "Find a word or phrase in the document"
-#~ msgstr "Find et ord eller en frase i dokumentet"
-
-#~ msgid "Go to the previous definition"
-#~ msgstr "Gå til forrige definition"
-
-#~ msgid "Go to the next definition"
-#~ msgstr "Gå til næste definition"
-
-#~ msgid "Go to the first definition"
-#~ msgstr "Gå til den første definition"
-
-#~ msgid "Go to the last definition"
-#~ msgstr "Gå til den sidste definition"
-
-#~ msgid "_Contents"
-#~ msgstr "_Indhold"
 

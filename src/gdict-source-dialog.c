@@ -443,9 +443,16 @@ on_dialog_response (GtkDialog *dialog,
       break;
 
     case GTK_RESPONSE_HELP:
+#if GTK_CHECK_VERSION (3, 22, 0)
+      gtk_show_uri_on_window (GTK_WINDOW (dialog),
+                              "help:gnome-dictionary/gnome-dictionary-add-source",
+                              gtk_get_current_event_time (), &err);
+#else
       gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
                     "help:gnome-dictionary/gnome-dictionary-add-source",
                     gtk_get_current_event_time (), &err);
+#endif
+
       if (err)
         {
           gdict_show_gerror_dialog (GTK_WINDOW (dialog),

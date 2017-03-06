@@ -8,11 +8,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-05-27 09:50+0000\n"
-"PO-Revision-Date: 2016-06-10 03:51+0700\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"POT-Creation-Date: 2017-02-24 22:37+0000\n"
+"PO-Revision-Date: 2017-03-05 17:37+0700\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: ../data/default.desktop.in.h:1
 msgid "Default Dictionary Server"
@@ -64,12 +64,12 @@ msgid "About"
 msgstr "Tentang"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Keluar"
+msgid "_Quit"
+msgstr "_Keluar"
 
 #: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
-msgstr "_Simpan Salinan..."
+msgid "_Save a Copy…"
+msgstr "_Simpan Salinan…"
 
 #: ../src/gdict-app-menus.ui.h:7
 msgid "P_review"
@@ -100,30 +100,26 @@ msgid "Dictionary Sources"
 msgstr "Sumber Kamus"
 
 #: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "Kamus Yang Terse_dia"
-
-#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "St_rategi Yang Tersedia"
 
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "_Menuju"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "_Penjelasan Sebelumnya"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "Penjelasa_n Selanjutnya"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "_Penjelasan Pertama"
 
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "Penje_lasan Terakhir"
 
@@ -200,7 +196,7 @@ msgid "Strategies"
 msgstr "Strategi"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "Kamus"
 
@@ -215,12 +211,12 @@ msgstr "Basis data default yang digunakan"
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
-"Nama basis data tunggal atau meta-basis data yang digunakan pada sumber "
-"kamus. Tanda eksklamasi (\"!\") berarti seluruh basis data yang ada dalam "
-"sumber kamus harus dicari."
+"Nama basis data tunggal bawaan atau meta-basis data yang digunakan pada "
+"sumber kamus. Tanda eksklamasi (\"!\") berarti seluruh basis data yang ada "
+"dalam sumber kamus harus dicari."
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:3
 msgid "The default search strategy to use"
@@ -229,10 +225,10 @@ msgstr "Strategi pencarian yang digunakan"
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
-"Nama dari strategi pencarian untuk dipergunakan pada sumber kamus, jika "
-"tersedia. Strategi defaultnya adalah 'pasti', yaitu pasti cocok katanya."
+"Nama dari strategi pencarian bawaan untuk digunakan pada sumber kamus, jika "
+"tersedia. Strategi bawaannya adalah \"pasti\", yaitu pasti cocok katanya."
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:5
 msgid "The font to be used when printing"
@@ -261,76 +257,77 @@ msgstr "Kamus Thailand-Inggris Longdo"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
-msgstr "Tiada sambungan ke server kamus pada '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
+msgstr "Tidak ada sambungan ke peladen kamus pada \"%s:%d\""
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr "Pencarian gagal untuk nama host '%s'. Tak menemukan sumber yang benar"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
+msgstr ""
+"Pencarian gagal untuk nama host \"%s\". Tidak menemukan sumber yang benar"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
-msgstr "Pencarian gagal untuk host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
+msgstr "Pencarian gagal untuk host \"%s\": %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
-msgstr "Pencarian gagal untuk host '%s': tidak ditemukan"
+msgid "Lookup failed for host “%s”: host not found"
+msgstr "Pencarian gagal untuk host \"%s\": tidak ditemukan"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
-"Tak dapat tersambung ke server kamus pada '%s:%d'. Server menjawab dengan "
-"kode %d (server mati)"
+"Tidak dapat tersambung ke peladen kamus pada \"%s:%d\". Peladen menjawab "
+"dengan kode %d (peladen mati)"
 
 #: ../libgdict/gdict-client-context.c:1194
 #, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
-"Tak dapat memproses balasan server kamus \n"
-": '%s'"
+"Tidak dapat memproses balasan peladen kamus \n"
+": \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
-msgstr "Tak menemukan penjelasan untuk '%s'"
+msgid "No definitions found for “%s”"
+msgstr "Tidak menemukan penjelasan untuk \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
-msgstr "Basis data salah '%s'"
+msgid "Invalid database “%s”"
+msgstr "Basis data tidak valid \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
-msgstr "Strategi salah '%s'"
+msgid "Invalid strategy “%s”"
+msgstr "Strategi tidak valid \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
-msgstr "Perintah salah '%s'"
+msgid "Bad command “%s”"
+msgstr "Perintah salah \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
-msgstr "Parameter salah untuk perintah '%s'"
+msgid "Bad parameters for command “%s”"
+msgstr "Parameter salah untuk perintah \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
-msgstr "Tak menemukan basis data pada server kamus pada '%s'"
+msgid "No databases found on dictionary server at “%s”"
+msgstr "Tidak menemukan basis data dalam peladen kamus pada \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
-msgstr "Tak menemukan strategi pada kamus kata pada '%s'"
+msgid "No strategies found on dictionary server at “%s”"
+msgstr "Tidak menemukan strategi dalam peladen kamus pada \"%s\""
 
 #: ../libgdict/gdict-client-context.c:1745
 #, c-format
@@ -348,8 +345,8 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr "Sambungan habis waktu ke server kamus pada '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
+msgstr "Sambungan waktu habis untuk peladen kamus pada \"%s:%d\""
 
 #: ../libgdict/gdict-client-context.c:1891
 #, c-format
@@ -369,18 +366,18 @@ msgstr "Tak dapat membuat kanal sebagai tanpa-halangan: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "Tak dapat menyambung ke server kamus pada '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
+msgstr "Tidak dapat menyambung ke peladen kamus pada \"%s:%d\""
 
-#: ../libgdict/gdict-database-chooser.c:374
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Baca ulang daftar basis data yang tersedia"
 
-#: ../libgdict/gdict-database-chooser.c:386
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Bersihkan daftar dari basis data tersedia"
 
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Error saat mencocokkan"
@@ -403,25 +400,26 @@ msgstr "Salah selagi menerima penjelasan"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-msgid "Invalid transport type '%d'"
-msgstr "Jenis transport salah '%d'"
+msgid "Invalid transport type “%d”"
+msgstr "Jenis transport tidak valid \"%d\""
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
-msgstr "Tak ada kelompok '%s' ditemukan dalam penjelasan sumber kamus"
+msgid "No “%s” group found inside the dictionary source definition"
+msgstr "Tidak ada kelompok \"%s\" yang ditemukan dalam penjelasan sumber kamus"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr "Gagal mendapatkan kunci '%s' dalam penjelasan sumber kamus: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
+msgstr "Gagal mendapatkan kunci \"%s\" dalam penjelasan sumber kamus: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr "Gagal mendapatkan kunci '%s' dalam berkas penjelasan sumber kamus: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
+msgstr ""
+"Gagal mendapatkan kunci \"%s\" dalam berkas penjelasan sumber kamus: %s"
 
 #: ../libgdict/gdict-source.c:769
 #, c-format
@@ -430,8 +428,8 @@ msgstr "Sumber kamus tidak memiliki nama"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
-msgstr "Sumber kamus '%s' memiliki transport '%s' yang salah"
+msgid "Dictionary source “%s” has invalid transport “%s”"
+msgstr "Sumber kamus \"%s\" memiliki transport \"%s\" yang tidak valid"
 
 #: ../libgdict/gdict-source-chooser.c:280
 msgid "Reload the list of available sources"
@@ -476,7 +474,8 @@ msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>, 2003-2005\n"
 "Andika Triwidada <andika@gmail.com>, 2010-2015\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2011\n"
-"Bonaventura Aditya Perdana <bonaditya@about.me>, 2012"
+"Bonaventura Aditya Perdana <bonaditya@about.me>, 2012\n"
+"Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017"
 
 #: ../src/gdict-about.c:55
 msgid "Look up words in dictionaries"
@@ -532,7 +531,7 @@ msgstr "Tambahkan Sumber Kamus"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Hapus \"%s\"?"
 
 #: ../src/gdict-pref-dialog.c:374
@@ -550,8 +549,8 @@ msgstr "Singki_rkan"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
-msgstr "Tak dapat membuang sumber '%s'"
+msgid "Unable to remove source “%s”"
+msgstr "Tidak dapat menghapus sumber \"%s\""
 
 #: ../src/gdict-pref-dialog.c:443
 msgid "Edit Dictionary Source"
@@ -590,8 +589,8 @@ msgstr "Ba_ntuan"
 
 #: ../src/gdict-window.c:415
 #, c-format
-msgid "No dictionary source available with name '%s'"
-msgstr "Tak ada sumber kamus dengan nama '%s'"
+msgid "No dictionary source available with name “%s”"
+msgstr "Tidak ada sumber kamus dengan nama \"%s\""
 
 #: ../src/gdict-window.c:419
 msgid "Unable to find dictionary source"
@@ -599,8 +598,8 @@ msgstr "Gagal menemukan sumber kamus"
 
 #: ../src/gdict-window.c:435
 #, c-format
-msgid "No context available for source '%s'"
-msgstr "Tak ada konteks tersedia untuk sumber '%s'"
+msgid "No context available for source “%s”"
+msgstr "Tidak ada konteks tersedia untuk sumber \"%s\""
 
 #: ../src/gdict-window.c:439
 msgid "Unable to create a context"
@@ -608,8 +607,8 @@ msgstr "Tak dapat membuat konteks"
 
 #: ../src/gdict-window.c:498
 #, c-format
-msgid "%s - Dictionary"
-msgstr "%s - Kamus"
+msgid "%s — Dictionary"
+msgstr "%s — Kamus"
 
 #: ../src/gdict-window.c:821
 msgid "Save a Copy"
@@ -625,8 +624,8 @@ msgstr "Dokumen belum berjudul"
 
 #: ../src/gdict-window.c:852
 #, c-format
-msgid "Error while writing to '%s'"
-msgstr "Error saat menulis ke: '%s'"
+msgid "Error while writing to “%s”"
+msgstr "Galat saat menulis ke: \"%s\""
 
 #. speller
 #: ../src/gdict-window.c:1213
@@ -643,14 +642,20 @@ msgstr "Klik ganda pada strategi yang cocok untuk dipakai"
 msgid "Double-click on the source to use"
 msgstr "Klik ganda pada sumber yang akan dipakai"
 
-#: ../src/gdict-window.c:1424
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "Kata yang sama"
 
-#: ../src/gdict-window.c:1455
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "Strategi tersedia"
 
-#: ../src/gdict-window.c:1471
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "Sumber kamus"
+
+#~ msgid "_Save a Copy..."
+#~ msgstr "_Simpan Salinan..."
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "Kamus Yang Terse_dia"

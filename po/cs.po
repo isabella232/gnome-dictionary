@@ -15,15 +15,15 @@
 # Petr Kovar <pknbe@volny.cz>, 2008, 2009.
 # Lucas Lommer <llommer@svn.gnome.org>, 2009 (just a small fix).
 # Adrian Guniš <andygun696@gmail.com>, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013, 2014, 2015, 2016.
+# Marek Černocký <marek@manet.cz>, 2010 (just a small fixes), 2011, 2012, 2013, 2014, 2015, 2016, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-12 11:49+0000\n"
-"PO-Revision-Date: 2016-11-15 14:50+0100\n"
+"POT-Creation-Date: 2017-03-02 18:44+0000\n"
+"PO-Revision-Date: 2017-03-08 17:00+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -75,8 +75,8 @@ msgid "About"
 msgstr "O aplikaci"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Ukončit"
+msgid "_Quit"
+msgstr "U_končit"
 
 #: ../src/gdict-app-menus.ui.h:6
 msgid "_Save a Copy…"

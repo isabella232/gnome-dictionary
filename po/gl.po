@@ -13,21 +13,23 @@
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011, 2012.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014, 2015, 2016.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013, 2014, 2015, 2016, 2017.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils-master-po-gl-14799\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-23 20:52+0100\n"
-"PO-Revision-Date: 2016-02-23 20:53+0200\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"dictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-02-24 22:37+0000\n"
+"PO-Revision-Date: 2017-03-11 03:26+0100\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: gnome-l10n-gl@gnome.org\n"
+"Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Gtranslator 2.91.7\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/default.desktop.in.h:1
@@ -72,12 +74,14 @@ msgid "About"
 msgstr "Sobre"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Saír"
+#| msgid "Quit"
+msgid "_Quit"
+msgstr "_Saír"
 
 #: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
-msgstr "_Gardar unha copia…"
+#| msgid "Save a Copy"
+msgid "_Save a Copy…"
+msgstr "_Gardar unha copia"
 
 #: ../src/gdict-app-menus.ui.h:7
 msgid "P_review"
@@ -108,30 +112,26 @@ msgid "Dictionary Sources"
 msgstr "Orixes de dicionarios"
 
 #: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "Dicionarios _dispoñíbeis"
-
-#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "Est_ratexias dispoñíbeis"
 
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "_Ir"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "Definición a_nterior"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "Definición _seguinte"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "_Primeira definición"
 
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "Ú_ltima definición"
 
@@ -208,7 +208,7 @@ msgid "Strategies"
 msgstr "Estratexias"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "Dicionario"
 
@@ -221,24 +221,31 @@ msgid "The default database to use"
 msgstr "A base de datos predeterminada que hai que usar"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
+#| msgid ""
+#| "The name of the default individual database or meta-database to use on a "
+#| "dictionary source. An exclamation mark (\"!\") means that all the "
+#| "databases present in a dictionary source should be searched"
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "O nome da base de datos individual predeterminada ou a meta base de datos "
-"para usar nunha orixe de dicionario. O signo de exclamación (\"!\") "
-"significa que se debería buscar en todas as bases de datos presentes nunha "
-"orixe de dicionarios"
+"para usar nunha orixe de dicionario. O signo de exclamación («!») significa "
+"que se debería buscar en todas as bases de datos presentes nunha orixe de "
+"dicionarios"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:3
 msgid "The default search strategy to use"
 msgstr "A estratexia predeterminada de busca que se debe usar"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
+#| msgid ""
+#| "The name of the default search strategy to use on a dictionary source, if "
+#| "available. The default strategy is 'exact', that is match exact words."
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
 "O nome da estratexia de busca predeterminada para usar nunha orixe de "
 "dicionario, se está dispoñíbel. A estratexia predeterminada é «exact», que é "
@@ -273,30 +280,37 @@ msgstr "Dicionarios de Longdo Tailandés-Inglés"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
-msgstr "Sen conexión ao servidor de dicionarios en '%s:%d'"
+#| msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
+msgstr "Sen conexión ao servidor de dicionarios en «%s:%d»"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
+#| msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
-"Produciuse un fallo na busca do nome do host «%s»: non se localizaron "
-"recursos apropiados"
+"Produciuse un fallo na busca do nome do host «%s»: non se localizaron os "
+"recursos axeitados"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+#| msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "Produciuse un fallo na busca do host «%s»: %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+#| msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr "Produciuse un fallo na busca do host «%s»: o host non foi localizado"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
+#| msgid ""
+#| "Unable to connect to the dictionary server at '%s:%d'. The server replied "
+#| "with code %d (server down)"
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
 "Non é posíbel conectar ao servidor de dicionarios en '%s:%d'. O servidor "
@@ -304,47 +318,57 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1194
 #, c-format
+#| msgid ""
+#| "Unable to parse the dictionary server reply\n"
+#| ": '%s'"
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "Non é posíbel analizar a resposta do servidor de dicionarios\n"
 ": «%s»"
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
+#| msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
 msgstr "Non se localizaron definicións para «%s»"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
+#| msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
 msgstr "A base de datos «%s» non é válida"
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+#| msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "A estratexia «%s» non é válida"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+#| msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "A orde «%s» non é correcta"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+#| msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Os parámetros da orde «%s» son incorrectos"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
+#| msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
 msgstr ""
 "Non se atopou ningunha base de datos no servidor de dicionarios en «%s»"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
+#| msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
 msgstr "Non se atopou ningunha estratexias no servidor de dicionarios en «%s»"
 
 #: ../libgdict/gdict-client-context.c:1745
@@ -363,7 +387,8 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
+#| msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr ""
 "Excedeuse o tempo de espera da conexión ao servidor de dicionarios en '%s:%d'"
 
@@ -385,18 +410,19 @@ msgstr "Non é posíbel definir o canal como non bloqueado: %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "Non é posíbel conectar co servidor do dicionario en '%s:%d'"
+#| msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
+msgstr "Non é posíbel conectar co servidor do dicionario en «%s:%d»"
 
-#: ../libgdict/gdict-database-chooser.c:374
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Recargar a lista de bases de datos dispoñíbeis"
 
-#: ../libgdict/gdict-database-chooser.c:386
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Limpar a lista de bases de datos dispoñíbeis"
 
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Produciuse un erro ao estabelecer a equivalencia"
@@ -419,27 +445,34 @@ msgstr "Produciuse un erro ao recuperar a definición"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-msgid "Invalid transport type '%d'"
-msgstr "O tipo de transporte non é válido '%d'"
+#| msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
+msgstr "O tipo de transporte non é válido «%d»"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
+#| msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
 msgstr ""
 "Non se atopou ningún grupo «%s» dentro da definición da orixe do dicionario"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+#| msgid ""
+#| "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr ""
 "Non é posíbel obter a chave «%s» dentro da definición da orixe do "
 "dicionario: %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
+#| msgid ""
+#| "Unable to get the '%s' key inside the dictionary source definition file: "
+#| "%s"
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr ""
 "Non é posíbel obter a chave «%s» dentro do ficheiro de definición de orixes "
 "de dicionario: %s"
@@ -451,7 +484,8 @@ msgstr "A orixe de dicionario non ten nome"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
+#| msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "A orixe de dicionario «%s» ten un transporte «%s» non válido"
 
 #: ../libgdict/gdict-source-chooser.c:280
@@ -557,7 +591,8 @@ msgstr "Engadir unha orixe de dicionario"
 
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+#| msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Quere retirar «%s»?"
 
 #: ../src/gdict-pref-dialog.c:374
@@ -575,7 +610,8 @@ msgstr "_Retirar"
 
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+#| msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "Non é posíbel retirar a orixe «%s»"
 
 #: ../src/gdict-pref-dialog.c:443
@@ -615,7 +651,8 @@ msgstr "_Axuda"
 
 #: ../src/gdict-window.c:415
 #, c-format
-msgid "No dictionary source available with name '%s'"
+#| msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "Non hai ningunha orixe de dicionario co nome «%s»"
 
 #: ../src/gdict-window.c:419
@@ -624,7 +661,8 @@ msgstr "Non é posíbel atopar a orixe do dicionario"
 
 #: ../src/gdict-window.c:435
 #, c-format
-msgid "No context available for source '%s'"
+#| msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "Non hai un contexto dispoñíbel para a orixe «%s»"
 
 #: ../src/gdict-window.c:439
@@ -633,8 +671,9 @@ msgstr "Non é posíbel crear un contexto"
 
 #: ../src/gdict-window.c:498
 #, c-format
-msgid "%s - Dictionary"
-msgstr "%s - Dicionario"
+#| msgid "%s - Dictionary"
+msgid "%s — Dictionary"
+msgstr "%s — Dicionario"
 
 #: ../src/gdict-window.c:821
 msgid "Save a Copy"
@@ -650,7 +689,8 @@ msgstr "Documento sen título"
 
 #: ../src/gdict-window.c:852
 #, c-format
-msgid "Error while writing to '%s'"
+#| msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
 msgstr "Produciuse un erro ao escribir en «%s»"
 
 #. speller
@@ -668,17 +708,23 @@ msgstr "Prema dúas veces na estratexia de coincidencia que se vai usar"
 msgid "Double-click on the source to use"
 msgstr "Prema dúas veces na orixe que se vai usar"
 
-#: ../src/gdict-window.c:1424
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "Palabras semellantes"
 
-#: ../src/gdict-window.c:1455
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "Estratexias dispoñíbeis"
 
-#: ../src/gdict-window.c:1471
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "orixes de dicionarios"
+
+#~ msgid "_Save a Copy..."
+#~ msgstr "_Gardar unha copia…"
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "Dicionarios _dispoñíbeis"
 
 #~ msgid "H_ostname:"
 #~ msgstr "Nome do _host:"

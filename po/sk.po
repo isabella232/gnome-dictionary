@@ -11,10 +11,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-23 20:31+0000\n"
-"PO-Revision-Date: 2017-01-19 21:37+0100\n"
+"POT-Creation-Date: 2017-03-08 16:01+0000\n"
+"PO-Revision-Date: 2017-03-12 19:08+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 
 # Dictionary source desription
 #: ../data/default.desktop.in.h:1
@@ -71,8 +71,8 @@ msgid "About"
 msgstr "O programe"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Ukončiť"
+msgid "_Quit"
+msgstr "U_končiť"
 
 #: ../src/gdict-app-menus.ui.h:6
 msgid "_Save a Copy…"
@@ -585,7 +585,7 @@ msgstr "SLOVÁ"
 msgid "Dictionary Preferences"
 msgstr "Nastavenia programu Slovník"
 
-#: ../src/gdict-app.c:130 ../src/gdict-source-dialog.c:452
+#: ../src/gdict-app.c:139 ../src/gdict-source-dialog.c:459
 msgid "There was an error while displaying help"
 msgstr "Pri zobrazovaní pomocníka sa vyskytla chyba"
 
@@ -608,7 +608,7 @@ msgstr "Odstrániť „%s“?"
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Týmto sa natrvalo odstráni slovníkový zdroj zo zoznamu."
 
-#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:564
+#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:571
 #: ../src/gdict-window.c:824
 msgid "_Cancel"
 msgstr "_Zrušiť"
@@ -642,20 +642,20 @@ msgstr "Nepodarilo sa uložiť zdrojový súbor"
 
 # menu /file
 #. we just allow closing the dialog
-#: ../src/gdict-source-dialog.c:560 ../src/gdict-source-dialog.c:574
+#: ../src/gdict-source-dialog.c:567 ../src/gdict-source-dialog.c:581
 msgid "_Close"
 msgstr "Za_vrieť"
 
-#: ../src/gdict-source-dialog.c:565
+#: ../src/gdict-source-dialog.c:572
 msgid "_Add"
 msgstr "Prid_ať"
 
-#: ../src/gdict-source-dialog.c:573
+#: ../src/gdict-source-dialog.c:580
 msgid "C_ancel"
 msgstr "Z_rušiť"
 
 #. The help button is always visible
-#: ../src/gdict-source-dialog.c:655
+#: ../src/gdict-source-dialog.c:662
 msgid "_Help"
 msgstr "_Pomocník"
 

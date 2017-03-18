@@ -7,22 +7,22 @@
 # Raivis Dejus <orvils@gmail.com>, 2006, 2007, 2009.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010, 2011.
 # Rudolfs <rudolfs.mazurs@gmail.com>, 2011.
-# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2014, 2016.
+# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2014, 2016, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-di"
-"ctionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-02-04 08:57+0000\n"
-"PO-Revision-Date: 2016-02-06 16:54+0200\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-d"
+"ictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-02-24 22:37+0000\n"
+"PO-Revision-Date: 2017-03-18 11:24+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
-"2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 :"
+" 2);\n"
 "X-Generator: Lokalize 2.0\n"
 
 #: ../data/default.desktop.in.h:1
@@ -30,7 +30,6 @@ msgid "Default Dictionary Server"
 msgstr "Noklusējuma vārdnīcas serveris"
 
 #: ../data/org.gnome.Dictionary.appdata.xml.in.h:1
-#| msgid "Dictionary"
 msgid "GNOME Dictionary"
 msgstr "GNOME vārdnīca"
 
@@ -74,12 +73,14 @@ msgid "About"
 msgstr "Par"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Iziet"
+#| msgid "Quit"
+msgid "_Quit"
+msgstr "I_ziet"
 
 #: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
-msgstr "_Saglabāt kopiju..."
+#| msgid "Save a Copy"
+msgid "_Save a Copy…"
+msgstr "_Saglabāt kopiju…"
 
 # gdictsrc/gdict-pref-dialog.c:161
 #: ../src/gdict-app-menus.ui.h:7
@@ -112,30 +113,26 @@ msgid "Dictionary Sources"
 msgstr "Vārdnīcas avoti"
 
 #: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "Pieejamās vār_dnīcas"
-
-#: ../src/gdict-app-menus.ui.h:15
 msgid "Available St_rategies"
 msgstr "Pieejamās st_ratēģijas"
 
-#: ../src/gdict-app-menus.ui.h:16
+#: ../src/gdict-app-menus.ui.h:15
 msgid "_Go"
 msgstr "_Iet"
 
-#: ../src/gdict-app-menus.ui.h:17
+#: ../src/gdict-app-menus.ui.h:16
 msgid "_Previous Definition"
 msgstr "Ie_priekšējā definīcija"
 
-#: ../src/gdict-app-menus.ui.h:18
+#: ../src/gdict-app-menus.ui.h:17
 msgid "_Next Definition"
 msgstr "_Nākamā definīcija"
 
-#: ../src/gdict-app-menus.ui.h:19
+#: ../src/gdict-app-menus.ui.h:18
 msgid "_First Definition"
 msgstr "Pirmā de_finīcija"
 
-#: ../src/gdict-app-menus.ui.h:20
+#: ../src/gdict-app-menus.ui.h:19
 msgid "_Last Definition"
 msgstr "Pē_dējā definīcija"
 
@@ -153,7 +150,6 @@ msgstr "Izņemt izvēlēto vārdnīcas avotu"
 
 # logview/actions.c:120
 #: ../src/gdict-pref-dialog.ui.h:4
-#| msgid "_Edit"
 msgid "Edit"
 msgstr "Rediģēt"
 
@@ -182,23 +178,19 @@ msgstr "Drukāt"
 
 # logview/zoom.c:183
 #: ../src/gdict-source-dialog.ui.h:1
-#| msgid "_Description:"
 msgid "_Description"
 msgstr "_Apraksts"
 
 # gdictsrc/gdict-pref-dialog.c:161
 #: ../src/gdict-source-dialog.ui.h:2
-#| msgid "_Port:"
 msgid "_Port"
 msgstr "_Ports"
 
 #: ../src/gdict-source-dialog.ui.h:3
-#| msgid "Hostname"
 msgid "_Hostname"
 msgstr "Servera n_osaukums"
 
 #: ../src/gdict-source-dialog.ui.h:4
-#| msgid "_Transport:"
 msgid "_Transport"
 msgstr "_Transports"
 
@@ -224,7 +216,7 @@ msgid "Strategies"
 msgstr "Stratēģijas"
 
 #: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+#: ../src/gdict-window.c:500 ../src/gdict-window.c:1502
 msgid "Dictionary"
 msgstr "Vārdnīca"
 
@@ -238,9 +230,13 @@ msgid "The default database to use"
 msgstr "Noklusējuma datubāze, ko lietot"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:2
+#| msgid ""
+#| "The name of the default individual database or meta-database to use on a "
+#| "dictionary source. An exclamation mark (\"!\") means that all the "
+#| "databases present in a dictionary source should be searched"
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "Noklusējuma individuālās datubāzes vai meta-datubāzes nosaukums, kuru "
@@ -253,9 +249,12 @@ msgid "The default search strategy to use"
 msgstr "Noklusējuma meklēšanas stratēģija, ko lietot"
 
 #: ../data/org.gnome.dictionary.gschema.xml.h:4
+#| msgid ""
+#| "The name of the default search strategy to use on a dictionary source, if "
+#| "available. The default strategy is 'exact', that is match exact words."
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
 "Noklusējuma meklēšanas stratēģijas nosaukums, kuru izmantot vārdnīcas avotā, "
 "ja tas ir pieejams. Noklusējuma stratēģija ir “exact”, kas nozīmē, lai vārdi "
@@ -289,28 +288,35 @@ msgstr "Longdo taju-angļu vārdnīcas"
 
 #: ../libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
+#| msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
 msgstr "Nav savienojuma ar vārdnīcas serveri vietā “%s:%d”"
 
 #: ../libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
+#| msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr "Uzmeklēšana neizdevās serverim “%s” — netika atrasts piemērots resurss"
 
 #: ../libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
+#| msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
 msgstr "Neizdevās uzmeklēšana serverim “%s” — %s"
 
 #: ../libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
+#| msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
 msgstr "Neizdevās uzmeklēšana serverim “%s” — serveris netika atrasts"
 
 #: ../libgdict/gdict-client-context.c:1175
 #, c-format
+#| msgid ""
+#| "Unable to connect to the dictionary server at '%s:%d'. The server replied "
+#| "with code %d (server down)"
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
 "Nevar savienoties ar vārdnīcas serveri vietā “%s:%d”. Serveris atgrieza kodu "
@@ -318,46 +324,56 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1194
 #, c-format
+#| msgid ""
+#| "Unable to parse the dictionary server reply\n"
+#| ": '%s'"
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "Neizdodas apstrādāt vārdnīcas servera atbildi\n"
 ": “%s”"
 
 #: ../libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
+#| msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
 msgstr "Netika atrastas “%s” definīcijas"
 
 #: ../libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
+#| msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
 msgstr "Nederīga datubāze “%s”"
 
 #: ../libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
+#| msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
 msgstr "Nederīga stratēģija “%s”"
 
 #: ../libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
+#| msgid "Bad command '%s'"
+msgid "Bad command “%s”"
 msgstr "Slikta komanda “%s”"
 
 #: ../libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
+#| msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
 msgstr "Nepareizi parametri komandai “%s”"
 
 #: ../libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
-msgstr "Netika atrastas datubāzes vārdnīcas serverī '%s'"
+#| msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
+msgstr "Netika atrastas datubāzes vārdnīcas serverī “%s”"
 
 #: ../libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
+#| msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
 msgstr "Netika atrastas stratēģijas vārdnīcas serverī “%s”"
 
 #: ../libgdict/gdict-client-context.c:1745
@@ -376,7 +392,8 @@ msgstr ""
 
 #: ../libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
+#| msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Savienojuma noildze ar vārdnīcas serveri “%s:%d”"
 
 #: ../libgdict/gdict-client-context.c:1891
@@ -398,18 +415,19 @@ msgstr "Nevarēja iestatīt kanālu kā nebloķējošo — %s"
 
 #: ../libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
+#| msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
 msgstr "Nevarēja savienoties ar vārdnīcas serveri vietā “%s:%d”"
 
-#: ../libgdict/gdict-database-chooser.c:374
+#: ../libgdict/gdict-database-chooser.c:375
 msgid "Reload the list of available databases"
 msgstr "Pārlādēt pieejamo datubāžu sarakstu"
 
-#: ../libgdict/gdict-database-chooser.c:386
+#: ../libgdict/gdict-database-chooser.c:387
 msgid "Clear the list of available databases"
 msgstr "Attīrīt pieejamo datubāžu sarakstu"
 
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
+#: ../libgdict/gdict-database-chooser.c:841 ../libgdict/gdict-speller.c:767
 #: ../libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Kļūda, meklējot atbilstību"
@@ -432,24 +450,31 @@ msgstr "Kļūda, saņemot definīciju"
 
 #: ../libgdict/gdict-source.c:433
 #, c-format
-msgid "Invalid transport type '%d'"
+#| msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
 msgstr "Nederīgs transporta veids “%d”"
 
 #: ../libgdict/gdict-source.c:461
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
+#| msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
 msgstr "Netika atrasta grupa “%s” vārdnīcas avota definīcijā"
 
 #: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
 #: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+#| msgid ""
+#| "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr "Nevarēja iegūt “%s” atslēgu vārdnīcas avota definīcijā — %s"
 
 #: ../libgdict/gdict-source.c:575
 #, c-format
+#| msgid ""
+#| "Unable to get the '%s' key inside the dictionary source definition file: "
+#| "%s"
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr "Nevarēja iegūt “%s” atslēgu vārdnīcas avota definīcijas datnē — %s"
 
 #: ../libgdict/gdict-source.c:769
@@ -459,7 +484,8 @@ msgstr "Vārdnīcas avotam nav nosaukuma"
 
 #: ../libgdict/gdict-source.c:778
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
+#| msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
 msgstr "Vārdnīcas avotam “%s” ir nepareizs transports “%s”"
 
 #: ../libgdict/gdict-source-chooser.c:280
@@ -557,7 +583,6 @@ msgid "There was an error while displaying help"
 msgstr "Gadījās kļūda, rādot palīdzību"
 
 #: ../src/gdict-pref-dialog.c:262
-#| msgid "Edit Dictionary Source"
 msgid "View Dictionary Source"
 msgstr "Skatīt vārdnīcas avotu"
 
@@ -569,7 +594,8 @@ msgstr "Pievienot vārdnīcas avotu"
 # logview/actions.c:127
 #: ../src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+#| msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Izņemt “%s”?"
 
 #: ../src/gdict-pref-dialog.c:374
@@ -584,14 +610,14 @@ msgstr "At_celt"
 # gnome-find/gnome-find.c:102 gsearchtool/gsearchtool.c:545
 # logview/actions.c:127
 #: ../src/gdict-pref-dialog.c:378
-#| msgid "Remove \"%s\"?"
 msgid "_Remove"
 msgstr "_Izņemt"
 
 # mini-utils/gless/gless.c:617
 #: ../src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+#| msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "Nevar izņemt avotu “%s”"
 
 #: ../src/gdict-pref-dialog.c:443
@@ -631,13 +657,13 @@ msgstr "At_celt"
 # gstripchart/gstripchart.c:1784 gstripchart/gstripchart.c:2071
 #. The help button is always visible
 #: ../src/gdict-source-dialog.c:655
-#| msgid "Help"
 msgid "_Help"
 msgstr "_Palīdzība"
 
 #: ../src/gdict-window.c:415
 #, c-format
-msgid "No dictionary source available with name '%s'"
+#| msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
 msgstr "Nav pieejams vārdnīcas avots ar nosaukumu “%s”"
 
 #: ../src/gdict-window.c:419
@@ -646,7 +672,8 @@ msgstr "Nevarēja atrast vārdnīcas avotu"
 
 #: ../src/gdict-window.c:435
 #, c-format
-msgid "No context available for source '%s'"
+#| msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
 msgstr "Nav pieejama konteksta avotam “%s”"
 
 # mini-utils/idetool/idetool.c:41
@@ -656,8 +683,9 @@ msgstr "Nevar izveidot kontekstu"
 
 #: ../src/gdict-window.c:498
 #, c-format
-msgid "%s - Dictionary"
-msgstr "%s - vārdnīca"
+#| msgid "%s - Dictionary"
+msgid "%s — Dictionary"
+msgstr "%s — vārdnīca"
 
 #: ../src/gdict-window.c:821
 msgid "Save a Copy"
@@ -673,7 +701,8 @@ msgstr "Nenosaukts dokuments"
 
 #: ../src/gdict-window.c:852
 #, c-format
-msgid "Error while writing to '%s'"
+#| msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
 msgstr "Kļūda, rakstot uz “%s”"
 
 #. speller
@@ -693,14 +722,20 @@ msgstr "Dubults klikšķis uz stratēģijas, lai to izmantotu"
 msgid "Double-click on the source to use"
 msgstr "Dubults klikšķis uz avota, lai to izmantotu"
 
-#: ../src/gdict-window.c:1424
+#: ../src/gdict-window.c:1410
 msgid "Similar words"
 msgstr "Līdzīgie vārdi"
 
-#: ../src/gdict-window.c:1455
+#: ../src/gdict-window.c:1441
 msgid "Available strategies"
 msgstr "Pieejamās stratēģijas"
 
-#: ../src/gdict-window.c:1471
+#: ../src/gdict-window.c:1457
 msgid "Dictionary sources"
 msgstr "Vārdnīcu avoti"
+
+#~ msgid "_Save a Copy..."
+#~ msgstr "_Saglabāt kopiju..."
+
+#~ msgid "Available _Dictionaries"
+#~ msgstr "Pieejamās vār_dnīcas"

@@ -1,3 +1,39 @@
+GNOME Dictionary 3.24.0                                               2017-03-20
+================================================================================
+Application
+ * Move more UI into the XML template (Emmanuele Bassi)
+ * Fix the DatabaseChooserButton construction (Emmanuele Bassi)
+ * Remove unused app menu item (Emmanuele Bassi)
+ * Store the appropriate window size (Emmanuele Bassi)
+ * Bump up the dependency on GLib and GTK+ (Emannuele Bassi)
+ * Use Unicode in translatable strings (Piotr Drąg)
+ * Add Ctrl+Q keyboard accelerator quit shortcut (Felipe Borges)
+ * Add Flatpak manifest (Emmanuele Bassi)
+ * Use gtk_show_uri_on_window() with newer GTK+ (Emmanuele Bassi)
+ * Use gtk_menu_popup_at_widget() with newer GTK+ (Emmanuele Bassi)
+ * Add Language headers to po files (Piotr Drąg)
+
+Library
+ * Use appropriate sizing for DB chooser (Emmanuele Bassi)
+ * Use get_instance_private() (Emmanuele Bassi)
+ * Fix DatabaseChooserButton annotations (Emmanuele Bassi)
+ * Use a symbolic icon in DatabaseChooserButton (Emmanuele Bassi)
+ * Include the right header in GdictClientContext (Emmanuele Bassi)
+
+Translations
+ * vi (Trần Ngọc Quân), fur (Fabio Tomat), fa (Arash Mousavi),
+   pt (Sérgio Cardeira), gd (GunChleoc), pt_BR (Rafael Fontenelle),
+   oc (Cédric Valmary), sv (Sebastian Rasmussen), nb (Kjartan Maraas),
+   id (Andika Triwidada), he (Yosef Or Boczko), pl (Piotr Drąg),
+   da (Ask Hjorth Larsen), en_GB (David King), zh_CN (Dz Chen),
+   de (Mario Blättermann), cs (Marek Cernock), es (Daniel Mustieles),
+   hu (Balázs Meskó), kk (Baurzhan Muftakhidinov), sk (Dušan Kazik),
+   fr (Claude Paroz), eu (Inaki Larranaga Murgoitio), fi (Jiri Grönroos),
+   zh_TW (Chao-Hsiung Liao), sr (Мирослав Николић), it (Milo Casagrande),
+   is (Sveinn í Felli), lt (Aurimas Černius), gl (Fran Dieguez),
+   ru (Yuri Myasoedov), ko (Changwoo Ryu), lv (Rūdolfs Mazurs),
+   ja (Kento Tsuji)
+
 GNOME Dictionary 3.20.0                                               2016-03-22
 ================================================================================
 Translations

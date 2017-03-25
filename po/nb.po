@@ -6,10 +6,10 @@
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-dictionary 3.23.x\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-02-09 22:28+0000\n"
-"PO-Revision-Date: 2017-02-12 13:44+0100\n"
+"Project-Id-Version: gnome-dictionary 3.24.x\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-03-20 08:29+0000\n"
+"PO-Revision-Date: 2017-03-25 18:18+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -60,8 +60,8 @@ msgid "About"
 msgstr "Om"
 
 #: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Avslutt"
+msgid "_Quit"
+msgstr "A_vslutt"
 
 #: ../src/gdict-app-menus.ui.h:6
 msgid "_Save a Copy…"
@@ -508,7 +508,7 @@ msgstr "ORD"
 msgid "Dictionary Preferences"
 msgstr "Brukervalg for ordbok"
 
-#: ../src/gdict-app.c:130 ../src/gdict-source-dialog.c:452
+#: ../src/gdict-app.c:139 ../src/gdict-source-dialog.c:459
 msgid "There was an error while displaying help"
 msgstr "Det oppstod en feil under visning av hjelp."
 
@@ -529,7 +529,7 @@ msgstr "Vil du fjerne «%s»?"
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Dette vil fjerne ordbokkilden fra listen permanent."
 
-#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:564
+#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:571
 #: ../src/gdict-window.c:824
 msgid "_Cancel"
 msgstr "A_vbryt"
@@ -561,20 +561,20 @@ msgid "Unable to save source file"
 msgstr "Klarte ikke å lagre kildefil"
 
 #. we just allow closing the dialog
-#: ../src/gdict-source-dialog.c:560 ../src/gdict-source-dialog.c:574
+#: ../src/gdict-source-dialog.c:567 ../src/gdict-source-dialog.c:581
 msgid "_Close"
 msgstr "_Lukk"
 
-#: ../src/gdict-source-dialog.c:565
+#: ../src/gdict-source-dialog.c:572
 msgid "_Add"
 msgstr "_Legg til"
 
-#: ../src/gdict-source-dialog.c:573
+#: ../src/gdict-source-dialog.c:580
 msgid "C_ancel"
 msgstr "A_vbryt"
 
 #. The help button is always visible
-#: ../src/gdict-source-dialog.c:655
+#: ../src/gdict-source-dialog.c:662
 msgid "_Help"
 msgstr "_Hjelp"
 

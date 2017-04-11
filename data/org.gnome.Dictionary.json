@@ -1,19 +1,14 @@
 {
     "app-id": "org.gnome.Dictionary",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "master",
+    "runtime-version": "3.24",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-dictionary",
-    "tags": ["nightly"],
-    "desktop-file-name-prefix": "(Nightly) ",
+    "tags": [],
     "finish-args": [
-        /* X11 + XShm access */
         "--share=ipc", "--socket=x11",
-        /* Wayland access */
         "--socket=wayland",
-        /* Needs to talk to the network: */
         "--share=network",
-        /* Needed for dconf to work */
         "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
         "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
@@ -37,7 +32,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://git.gnome.org/gnome-dictionary"
+                    "url": "git://git.gnome.org/gnome-dictionary",
+                    "branch": "gnome-3-24"
                 }
             ]
         }

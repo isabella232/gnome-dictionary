@@ -144,7 +144,6 @@ AC_CONFIG_FILES([
         Makefile
         libgdict/Makefile
         data/Makefile
-        docs/Makefile
         help/Makefile
         src/Makefile
 	po/Makefile.in

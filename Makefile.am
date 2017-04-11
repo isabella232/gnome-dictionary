@@ -1,4 +1,4 @@
-SUBDIRS = libgdict src data docs help po
+SUBDIRS = libgdict src data help po
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 

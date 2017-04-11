@@ -1,5 +1,3 @@
-mathlib = cc.find_library('m', required: false)
-
 app_sources = [
   'gdict-about.c',
   'gdict-about.h',
@@ -25,6 +23,8 @@ resources = gnome.compile_resources ('gdict-resources',
                                      source_dir: '.',
                                      c_name: 'gdict')
 
+mathlib = cc.find_library('m', required: false)
+
 executable('gnome-dictionary', app_sources + resources,
            c_args: [
              '-DHAVE_CONFIG_H',
@@ -35,7 +35,7 @@ executable('gnome-dictionary', app_sources + resources,
              '-DPKGDATADIR="@0@"'.format(join_paths(gdict_datadir, 'gnome-dictionary')),
              '-DGNOMELOCALEDIR="@0@"'.format(join_paths(gdict_datadir, 'locale')),
            ],
-           dependencies: libgdict_dep,
+           dependencies: [ libgdict_dep, mathlib ],
            include_directories: [
              root_dir,
              libgdict_inc,

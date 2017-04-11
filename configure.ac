@@ -1,6 +1,11 @@
 dnl -*- mode: m4 -*-
+m4_define([gdict_major_version], [3])
+m4_define([gdict_minor_version], [25])
+m4_define([gdict_micro_version], [1])
+m4_define([gdict_version], [gdict_major_version.gdict_minor_version.gdict_micro_version])
+
 AC_PREREQ(2.63)
-AC_INIT([gnome-dictionary], [3.24.0],
+AC_INIT([gnome-dictionary], [gdict_version],
 	[http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary],
 	[gnome-dictionary],
 	[http://live.gnome.org/GnomeUtils])
@@ -37,44 +42,12 @@ AC_SUBST(GLIB_MKENUMS)
 AC_SUBST(GLIB_GENMARSHAL)
 AC_SUBST(GLIB_COMPILE_RESOURCES)
 
-# Before making a release, the LT_VERSION string should be modified.
-# The string is of the form C:R:A.
-# - If interfaces have been changed or added, but binary compatibility has
-#   been preserved, change to C+1:0:A+1
-# - If binary compatibility has been broken (eg removed or changed interfaces)
-#   change to C+1:0:0
-# - If the interface is the same as the previous version, change to C:R+1:A
-LIBGDICT_LT_VERSION=10:0:0
-AC_SUBST(LIBGDICT_LT_VERSION)
-
 LT_PREREQ([2.2.6])
 LT_INIT([disable-static win32-dll])
 LT_LIB_M
 
 ## don't rerun to this point if we abort
 AC_CACHE_SAVE
-
-# For each cycle:
-# 	first release: increment major += 1, minor = micro = 0;
-# 	each release before API freeze: minor += 1;
-# 	each release after API freeze: micro += 1;
-# Even if this library is not part of the developers platform, we
-# follow the same rules: no ABI breakage (unless unavoidable) and
-# no API breakage past the API freeze.
-m4_define([gdict_major_version], [0])
-m4_define([gdict_minor_version], [12])
-m4_define([gdict_micro_version], [0])
-m4_define([gdict_version], [gdict_major_version.gdict_minor_version.gdict_micro_version])
-
-GDICT_MAJOR_VERSION=gdict_major_version
-GDICT_MINOR_VERSION=gdict_minor_version
-GDICT_MICRO_VERSION=gdict_micro_version
-GDICT_VERSION=gdict_version
-
-AC_SUBST(GDICT_MAJOR_VERSION)
-AC_SUBST(GDICT_MINOR_VERSION)
-AC_SUBST(GDICT_MICRO_VERSION)
-AC_SUBST(GDICT_VERSION)
 
 dnl Enable debug messages
 m4_define([debug_default], [m4_if(m4_eval(gdict_minor_version % 2), [1], [yes], [minimum])])
@@ -102,6 +75,10 @@ AS_CASE([$enable_debug],
 )
 
 AC_SUBST(GDICT_DEBUG_CFLAGS)
+
+AC_SUBST(GDICT_MAJOR_VERSION, [gdict_major_version])
+AC_SUBST(GDICT_MINOR_VERSION, [gdict_minor_version])
+AC_SUBST(GDICT_MICRO_VERSION, [gdict_micro_version])
 
 dnl IPv6 support
 msg_ipv6=no
@@ -163,14 +140,9 @@ PKG_CHECK_MODULES(GDICT,
                   glib-2.0 >= $GLIB_MIN_VERSION
                   gtk+-3.0 >= $GTK_MIN_VERSION)
 
-# Introspection
-GOBJECT_INTROSPECTION_CHECK([1.42.0])
-
 AC_CONFIG_FILES([
         Makefile
         libgdict/Makefile
-        libgdict/gdict-version.h
-        libgdict/gdict-1.0.pc
         data/Makefile
         docs/Makefile
         help/Makefile

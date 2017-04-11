@@ -11,6 +11,9 @@ AM_CPPFLAGS = \
 	-DGNOMELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"  \
 	-DGDICTSOURCESDIR=\""$(datadir)/gdict-1.0/sources"\" 	\
 	-DGDICT_ENABLE_INTERNALS=1 				\
+	-DGDICT_MAJOR_VERSION=$(GDICT_MAJOR_VERSION)		\
+	-DGDICT_MINOR_VERSION=$(GDICT_MINOR_VERSION)		\
+	-DGDICT_MICRO_VERSION=$(GDICT_MICRO_VERSION)		\
 	-DG_DISABLE_DEPRECATED					\
 	-DGDK_DISABLE_DEPRECATED				\
 	-UGTK_DISABLE_DEPRECATED				\
@@ -31,6 +34,7 @@ sources_h = \
 	gdict-speller.h			\
 	gdict-strategy-chooser.h 	\
 	gdict-utils.h			\
+	gdict.h				\
 	$(NULL)
 
 sources_h_priv = \
@@ -59,63 +63,24 @@ BUILT_SOURCES = \
 	gdict-marshal.h		\
 	gdict-marshal.c
 
-lib_LTLIBRARIES = libgdict-1.0.la
+noinst_LTLIBRARIES = libgdict-1.0.la
 
 # GNOME Dictionary shared library
 libgdict_1_0_la_SOURCES = $(BUILT_SOURCES) $(sources_h)	$(sources_h_priv) $(sources_c)
 libgdict_1_0_la_CFLAGS = $(GDICT_CFLAGS) $(GDICT_DEBUG_CFLAGS) $(MAINTAINER_CFLAGS)
 libgdict_1_0_la_LIBADD = $(GDICT_LIBS)
-libgdict_1_0_la_LDFLAGS = -version-info $(LIBGDICT_LT_VERSION)	-export-dynamic -no-undefined
-
-libgdict_includedir = $(includedir)/gdict-1.0/gdict
-libgdict_include_HEADERS = 	\
-	$(sources_h)		\
-	$(srcdir)/gdict.h	\
-	$(NULL)
-
-nodist_libgdict_include_HEADERS = \
-	gdict-enum-types.h	\
-	gdict-version.h		\
-	$(NULL)
+libgdict_1_0_la_LDFLAGS = -export-dynamic -no-undefined
 
 stamp_files = stamp-gdict-enum-types.h stamp-gdict-marshal.h
 
 CLEANFILES = $(stamp_files) $(BUILT_SOURCES)
-DISTCLEANFILES = gdict-version.h
-MAINTAINERCLEANFILES = $(stamp_files) $(gdict_built_files) gdict-version.h
+MAINTAINERCLEANFILES = $(stamp_files) $(gdict_built_files)
 
 EXTRA_DIST = 			\
-	gdict-version.h.in 	\
 	gdict-enum-types.h.in	\
 	gdict-enum-types.c.in	\
 	gdict-marshal.list	\
-	gdict-1.0.pc.in		\
 	$(NULL)
-
-# Introspection
-include $(INTROSPECTION_MAKEFILE)
-INTROSPECTION_GIRS =
-INTROSPECTION_SCANNER_ARGS = --warn-all
-
-if HAVE_INTROSPECTION
-INTROSPECTION_GIRS += Gdict-1.0.gir
-
-Gdict-1.0.gir: libgdict-1.0.la
-Gdict_1_0_gir_NAMESPACE = Gdict
-Gdict_1_0_gir_VERSION = 1.0
-Gdict_1_0_gir_INCLUDES = Gtk-3.0
-Gdict_1_0_gir_CFLAGS = $(AM_CPPFLAGS)
-Gdict_1_0_gir_LIBS = libgdict-1.0.la
-Gdict_1_0_gir_FILES = $(libgdict_1_0_la_SOURCES)
-
-girdir = $(datadir)/gir-1.0
-gir_DATA = $(INTROSPECTION_GIRS)
-
-typelibdir = $(libdir)/girepository-1.0
-typelib_DATA = $(INTROSPECTION_GIRS:.gir=.typelib)
-
-CLEANFILES += $(gir_DATA) $(typelib_DATA)
-endif
 
 gdict-marshal.h: stamp-gdict-marshal.h
 	@true
@@ -147,13 +112,5 @@ gdict-enum-types.c: gdict-enum-types.h gdict-enum-types.c.in Makefile
 	  $(addprefix $(srcdir)/,$(sources_h)) >> xgen-cetc \
 	&& cp xgen-cetc gdict-enum-types.c \
 	&& rm -f xgen-cetc
-
-pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = gdict-1.0.pc
-
-distclean-local:
-	if test $(srcdir) != .; then \
-		rm -f $(MAINTAINERCLEANFILES); \
-	fi
 
 -include $(top_srcdir)/git.mk

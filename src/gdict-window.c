@@ -31,15 +31,13 @@
 #include <glib/gi18n.h>
 #include <glib/gstdio.h>
 
-#include <libgdict/gdict.h>
-
+#include "gdict-about.h"
+#include "gdict-common.h"
 #include "gdict-database-chooser-button.h"
-#include "gdict-sidebar.h"
 #include "gdict-print.h"
 #include "gdict-pref-dialog.h"
-#include "gdict-about.h"
+#include "gdict-sidebar.h"
 #include "gdict-window.h"
-#include "gdict-common.h"
 
 #define GDICT_WINDOW_COLUMNS      56
 #define GDICT_WINDOW_ROWS         33

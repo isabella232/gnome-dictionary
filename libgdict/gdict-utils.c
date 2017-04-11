@@ -40,7 +40,6 @@
 #include "gdict-context-private.h"
 #include "gdict-debug.h"
 #include "gdict-utils.h"
-#include "gdict-version.h"
 #include "gdict-private.h"
 
 guint gdict_major_version = GDICT_MAJOR_VERSION;

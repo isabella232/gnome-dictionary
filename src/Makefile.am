@@ -5,6 +5,8 @@ bin_PROGRAMS = gnome-dictionary
 BUILT_SOURCES = gdict-resources.c
 
 gnome_dictionary_CPPFLAGS = \
+	-I$(top_srcdir)/libgdict \
+	-I$(top_builddir)/libgdict \
 	-DPREFIX=\""$(prefix)"\" \
 	-DSYSCONFDIR=\""$(sysconfdir)"\" \
 	-DLIBDIR=\""$(libdir)"\" \
@@ -13,13 +15,7 @@ gnome_dictionary_CPPFLAGS = \
 	-DGNOMELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	$(NULL)
 
-gnome_dictionary_CFLAGS = \
-	-I$(top_builddir) \
-	-I$(top_srcdir) \
-	-I$(top_srcdir)/libgdict \
-	-I$(top_builddir)/libgdict \
-	$(GDICT_CFLAGS) \
-	$(NULL)
+gnome_dictionary_CFLAGS = $(GDICT_CFLAGS)
 
 gnome_dictionary_SOURCES = \
 	gdict-about.c		\

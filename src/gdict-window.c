@@ -1196,7 +1196,7 @@ sidebar_page_changed_cb (GdictSidebar *sidebar,
 			 GdictWindow  *window)
 {
   const gchar *page_id;
-  const gchar *message;
+  const gchar *message G_GNUC_UNUSED;
 
   page_id = gdict_sidebar_current_page (sidebar);
 

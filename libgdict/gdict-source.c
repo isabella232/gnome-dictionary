@@ -51,7 +51,8 @@
 
 /* Common keys */
 #define SOURCE_KEY_NAME		"Name"
-#define SOURCE_KEY_DESCRIPTION	"Description"
+#define SOURCE_KEY_DESCRIPTION	"Description" /* Deprecated */
+#define SOURCE_KEY_COMMENT	"Comment"
 #define SOURCE_KEY_TRANSPORT	"Transport"
 #define SOURCE_KEY_DATABASE 	"Database"
 #define SOURCE_KEY_STRATEGY 	"Strategy"
@@ -487,11 +488,20 @@ gdict_source_parse (GdictSource  *source,
     }
   
   /* if present, fetch the localized description */
-  if (g_key_file_has_key (priv->keyfile, SOURCE_GROUP, SOURCE_KEY_DESCRIPTION, NULL))
+  const char *description_key;
+
+  if (g_key_file_has_key (priv->keyfile, SOURCE_GROUP, SOURCE_KEY_COMMENT, NULL))
+    description_key = SOURCE_KEY_COMMENT;
+  else if (g_key_file_has_key (priv->keyfile, SOURCE_GROUP, SOURCE_KEY_DESCRIPTION, NULL))
+    description_key = SOURCE_KEY_DESCRIPTION;
+  else
+    description_key = NULL;
+
+  if (description_key != NULL)
     {
       priv->description = g_key_file_get_locale_string (priv->keyfile,
                                                         SOURCE_GROUP,
-                                                        SOURCE_KEY_DESCRIPTION,
+                                                        description_key,
                                                         NULL,
                                                         &parse_error);
       if (parse_error)
@@ -500,7 +510,7 @@ gdict_source_parse (GdictSource  *source,
                        GDICT_SOURCE_ERROR_PARSE,
                        _("Unable to get the “%s” key inside the dictionary "
                          "source definition: %s"),
-                       SOURCE_KEY_DESCRIPTION,
+                       description_key,
                        parse_error->message);
                        
           g_error_free (parse_error);

@@ -154,8 +154,6 @@ AS_IF([test "x$have_ipv6" = "xyes"],
 
 GLIB_GSETTINGS
 
-GTK_DOC_CHECK([1.15], [--flavour no-tmpl])
-
 YELP_HELP_INIT
 
 GLIB_MIN_VERSION=2.42.0
@@ -175,9 +173,6 @@ AC_CONFIG_FILES([
         libgdict/gdict-1.0.pc
         data/Makefile
         docs/Makefile
-        docs/reference/Makefile
-        docs/reference/gdict/Makefile
-        docs/reference/gdict/version.xml
         help/Makefile
         src/Makefile
 	po/Makefile.in

@@ -9,11 +9,8 @@ EXTRA_DIST += $(man_MANS)
 gdictappdir = $(datadir)/applications
 gdictapp_in_files = org.gnome.Dictionary.desktop.in
 gdictapp_DATA = $(gdictapp_in_files:.desktop.in=.desktop)
-EXTRA_DIST += org.gnome.Dictionary.desktop.in.in
-CLEANFILES += $(gdictapp_in_files) $(gdictapp_DATA)
-
-$(gdictapp_in_files): $(gdictapp_in_files:.desktop.in=.desktop.in.in)
-	$(AM_V_GEN)sed -e "s|\@VERSION\@|@VERSION@|" $< > $@
+EXTRA_DIST += $(gdictapp_in_files)
+CLEANFILES += $(gdictapp_DATA)
 
 @INTLTOOL_DESKTOP_RULE@
 
@@ -33,9 +30,9 @@ appdatadir = $(datadir)/appdata
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 appdata_in_files = org.gnome.Dictionary.appdata.xml.in
 EXTRA_DIST += \
-							$(appdata_in_files) \
-							$(gsettings_SCHEMAS) \
-							$(NULL)
+	$(appdata_in_files) \
+	$(gsettings_SCHEMAS) \
+	$(NULL)
 CLEANFILES += $(appdata_DATA)
 
 # dictionary sources definitions

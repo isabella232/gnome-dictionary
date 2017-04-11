@@ -38,6 +38,7 @@ executable('gnome-dictionary', app_sources + resources,
            dependencies: libgdict_dep,
            include_directories: [
              root_dir,
+             libgdict_inc,
              include_directories('.'),
            ],
            install: true)

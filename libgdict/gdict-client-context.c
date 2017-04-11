@@ -1088,7 +1088,7 @@ gdict_client_context_lookup_server (GdictClientContext  *context,
                        GDICT_CLIENT_CONTEXT_ERROR_LOOKUP,
                        _("Lookup failed for host “%s”: %s"),
                        priv->hostname,
-                       gai_strerror (errno));
+                       g_strerror (errno));
           
           return FALSE;
         }

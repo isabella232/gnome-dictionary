@@ -86,6 +86,7 @@ libgdict_lib = static_library('libgdict-1.0',
                               link_args: libgdict_ldflags,
                               install: false)
 
-libgdict_dep = declare_dependency(link_with: libgdict_lib,
+libgdict_dep = declare_dependency(sources: libgdict_enums + libgdict_marshal,
+                                  link_with: libgdict_lib,
 				  include_directories: [ libgdict_inc ],
 				  dependencies: [ gio_dep, gtk_dep ])

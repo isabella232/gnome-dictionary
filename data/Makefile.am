@@ -15,14 +15,13 @@ CLEANFILES += $(gdictapp_DATA)
 @INTLTOOL_DESKTOP_RULE@
 
 dbusservicedir = $(datadir)/dbus-1/services
-dbusservice_DATA = org.gnome.Dictionary.service
+dbusservice_in_files = org.gnome.Dictionary.service.in
+dbusservice_DATA = $(dbusservice_in_files:.service.in=.service)
 
-org.gnome.Dictionary.service: Makefile
-	$(AM_V_GEN) (echo '[D-BUS Service]'; \
-		     echo 'Name=org.gnome.Dictionary'; \
-		     echo 'Exec=${bindir}/gnome-dictionary --gapplication-service') > $@.tmp && \
-		     mv $@.tmp $@
+org.gnome.Dictionary.service: $(dbusservice_in_files) Makefile
+	$(AM_V_GEN) $(SED) -e 's|\@bindir\@|@bindir@|' $< > $@
 
+EXTRA_DIST += $(dbusservice_in_files)
 CLEANFILES += $(dbusservice_DATA)
 
 @INTLTOOL_XML_RULE@

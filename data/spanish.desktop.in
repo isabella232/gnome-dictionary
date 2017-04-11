@@ -1,7 +1,7 @@
 [Dictionary Source]
 # Translators: Do not translate the Name key
 Name=spanish
-_Comment=Spanish Dictionaries
+Comment=Spanish Dictionaries
 Transport=dictd
 Hostname=es.dict.org
 Port=2628

@@ -25,14 +25,6 @@ else
         gtkdocize || exit $?
 fi
 
-INTLTOOLIZE=$(which intltoolize 2>/dev/null)
-if test -z $INTLTOOLIZE; then
-        echo "*** No intltoolize found, please install intltool ***"
-        exit 1
-else
-        intltoolize --force --copy --automake || exit $?
-fi
-
 AUTORECONF=$(which autoreconf 2>/dev/null)
 if test -z $AUTORECONF; then
         echo "*** No autoreconf found, please install it ***"

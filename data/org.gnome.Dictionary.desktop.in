@@ -1,10 +1,11 @@
 [Desktop Entry]
-_Name=Dictionary
-_Comment=Check word definitions and spellings in an online dictionary
-_Keywords=word;synonym;definition;spelling;
+Name=Dictionary
+Comment=Check word definitions and spellings in an online dictionary
+Keywords=word;synonym;definition;spelling;
 Exec=gnome-dictionary
 Terminal=false
 Type=Application
+# Translators: Do not translate the Icon key
 Icon=accessories-dictionary
 StartupNotify=true
 Categories=GNOME;GTK;Office;Dictionary;

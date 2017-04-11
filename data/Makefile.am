@@ -9,11 +9,14 @@ EXTRA_DIST += $(man_MANS)
 gdictappdir = $(datadir)/applications
 gdictapp_in_files = org.gnome.Dictionary.desktop.in
 gdictapp_DATA = $(gdictapp_in_files:.desktop.in=.desktop)
+
+org.gnome.Dictionary.desktop: $(gdictapp_in_files)
+	$(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+
 EXTRA_DIST += $(gdictapp_in_files)
 CLEANFILES += $(gdictapp_DATA)
 
-@INTLTOOL_DESKTOP_RULE@
-
+# DBus activation service
 dbusservicedir = $(datadir)/dbus-1/services
 dbusservice_in_files = org.gnome.Dictionary.service.in
 dbusservice_DATA = $(dbusservice_in_files:.service.in=.service)
@@ -24,14 +27,15 @@ org.gnome.Dictionary.service: $(dbusservice_in_files) Makefile
 EXTRA_DIST += $(dbusservice_in_files)
 CLEANFILES += $(dbusservice_DATA)
 
-@INTLTOOL_XML_RULE@
+# AppData
 appdatadir = $(datadir)/appdata
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 appdata_in_files = org.gnome.Dictionary.appdata.xml.in
-EXTRA_DIST += \
-	$(appdata_in_files) \
-	$(gsettings_SCHEMAS) \
-	$(NULL)
+
+org.gnome.Dictionary.appdata.xml: $(appdata_in_files) Makefile
+	$(AM_V_GEN)$(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
+
+EXTRA_DIST += $(appdata_in_files)
 CLEANFILES += $(appdata_DATA)
 
 # dictionary sources definitions
@@ -42,12 +46,22 @@ dictsource_in_files = \
 	thai.desktop.in \
 	$(NULL)
 dictsource_DATA = $(dictsource_in_files:.desktop.in=.desktop)
-@INTLTOOL_DESKTOP_RULE@
+
+default.desktop: default.desktop.in Makefile
+	$(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+
+spanish.desktop: spanish.desktop.in Makefile
+	$(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
+
+thai.desktop: thai.desktop.in Makefile
+	$(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 EXTRA_DIST += $(dictsource_in_files)
 CLEANFILES += $(dictsource_DATA)
 
+# GSettings
 gsettings_SCHEMAS = org.gnome.dictionary.gschema.xml
+EXTRA_DIST += $(gsettings_SCHEMAS)
 
 @GSETTINGS_RULES@
 

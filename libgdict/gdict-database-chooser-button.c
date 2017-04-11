@@ -313,11 +313,12 @@ gdict_database_chooser_button_clicked (GtkButton *button)
 
   if (active && !priv->is_loaded)
     {
+      context = gdict_database_chooser_get_context (GDICT_DATABASE_CHOOSER (priv->db_chooser));
+
       gtk_stack_set_visible_child_name (GTK_STACK (priv->stack), "spinner");
 
-      if (!priv->start_id)
+      if (priv->start_id == 0)
 	{
-	  context = gdict_database_chooser_get_context (GDICT_DATABASE_CHOOSER (priv->db_chooser));
 	  priv->start_id = g_signal_connect (context, "database-lookup-start",
 					     G_CALLBACK (lookup_start_cb),
 					     chooser_button);
@@ -326,7 +327,7 @@ gdict_database_chooser_button_clicked (GtkButton *button)
 					   chooser_button);
 	}
 
-      if (!priv->error_id)
+      if (priv->error_id == 0)
 	priv->error_id = g_signal_connect (context, "error",
 					   G_CALLBACK (error_cb),
 					   chooser_button);
@@ -697,7 +698,6 @@ gdict_database_chooser_button_set_current_database (GdictDatabaseChooserButton *
 {
   GdictDatabaseChooserButtonPrivate *priv =
     gdict_database_chooser_button_get_instance_private (chooser);
-  gboolean valid;
 
   g_return_val_if_fail (GDICT_IS_DATABASE_CHOOSER_BUTTON (chooser), FALSE);
 

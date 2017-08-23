@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils 0\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-06-28 17:43+0000\n"
-"PO-Revision-Date: 2017-08-20 23:07+0200\n"
+"POT-Creation-Date: 2017-08-20 21:08+0000\n"
+"PO-Revision-Date: 2017-08-23 17:47+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -61,7 +61,7 @@ msgstr "riječ;sinonim;značenje;pravopis;"
 #. Translators: Do not translate the Icon key
 #: data/org.gnome.Dictionary.desktop.in:10
 msgid "accessories-dictionary"
-msgstr ""
+msgstr "accessories-dictionary"
 
 #: data/org.gnome.dictionary.gschema.xml:6
 msgid "The default database to use"
@@ -111,7 +111,7 @@ msgstr ""
 #. Translators: Do not translate the Name key
 #: data/spanish.desktop.in:4
 msgid "spanish"
-msgstr ""
+msgstr "spanish"
 
 #: data/spanish.desktop.in:5
 msgid "Spanish Dictionaries"
@@ -120,7 +120,7 @@ msgstr "Španjolski rječnici"
 #. Translators: Do not translate the Name key
 #: data/thai.desktop.in:4
 msgid "Thai"
-msgstr ""
+msgstr "Thai"
 
 #: data/thai.desktop.in:5
 msgid "Longdo Thai-English Dictionaries"

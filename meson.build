@@ -5,7 +5,7 @@ project('gnome-dictionary', 'c', version: '3.25.90',
           'warning_level=1',
         ],
         license: 'GPLv2+',
-        meson_version: '>= 0.39.1')
+        meson_version: '>= 0.42.0')
 
 # Paths for the pkg-config file
 gdict_prefix = get_option('prefix')

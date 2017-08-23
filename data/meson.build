@@ -56,3 +56,5 @@ foreach s: sources
                   po_dir: po_dir,
                   type: 'desktop')
 endforeach
+
+install_man([ 'gnome-dictionary.1' ], install_dir: join_paths(gdict_mandir, 'man1'))

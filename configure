@@ -56,6 +56,8 @@ sanitycheck() {
 sanitycheck MESON 'meson'
 sanitycheck NINJA 'ninja' 'ninja-build'
 
+build_man='-Dbuild_man=false'
+
 while (($# > 0)); do
     case "${1%%=*}" in
 	--prefix) read_arg prefix "$@" || shift;;
@@ -68,6 +70,8 @@ while (($# > 0)); do
 	--libdir) read_arg libdir "$@" || shift;;
 	--mandir) read_arg mandir "$@" || shift;;
 	--includedir) read_arg includedir "$@" || shift;;
+	--enable-man) build_man='-Dbuild_man=true';;
+	--disable-man) build_man='-Dbuild_man=false';;
 	*) echo -e "\e[1;33mINFO\e[0m: Ignoring unknown option '$1'";;
     esac
     shift
@@ -124,6 +128,7 @@ exec ${MESON} \
 	--includedir=${includedir} \
 	--mandir=${mandir} \
 	--default-library shared \
+	${build_man} \
 	${srcdir}
 
 # vim: ai ts=8 noet sts=2 ft=sh

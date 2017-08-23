@@ -57,4 +57,28 @@ foreach s: sources
                   type: 'desktop')
 endforeach
 
-install_man([ 'gnome-dictionary.1' ], install_dir: join_paths(gdict_mandir, 'man1'))
+xsltproc = find_program('xsltproc', required: false)
+
+if get_option('build_man') and xsltproc.found()
+  xlstproc_flags = [
+    '--nonet',
+    '--stringparam', 'man.output.quietly', '1',
+    '--stringparam', 'funcsynopsis.style', 'ansi',
+    '--stringparam', 'man.th.extra1.suppress', '1',
+    '--stringparam', 'man.authors.section.enabled', '1',
+    '--stringparam', 'man.copyright.section.enabled', '1',
+  ]
+
+  custom_target('man pages',
+                input: 'gnome-dictionary.xml',
+                output: 'gnome-dictionary.1',
+                command: [
+                  xsltproc,
+                  xlstproc_flags,
+                  '-o', '@OUTPUT@',
+                  'http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl',
+                  '@INPUT@',
+                ],
+                install: true,
+                install_dir: join_paths(gdict_mandir, 'man1'))
+endif

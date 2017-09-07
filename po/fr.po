@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-06-28 17:43+0000\n"
-"PO-Revision-Date: 2017-08-22 16:18+0200\n"
+"POT-Creation-Date: 2017-08-22 14:18+0000\n"
+"PO-Revision-Date: 2017-09-07 16:18+0200\n"
 "Last-Translator: Charles Monzat <superboa@hotmail.fr>\n"
 "Language-Team: français <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -45,13 +45,13 @@ msgstr "Serveur de Dictionnaire par défaut"
 
 #: data/org.gnome.Dictionary.appdata.xml.in:6
 msgid "GNOME Dictionary"
-msgstr "Dictionnaire GNOME"
+msgstr "Dictionnaire de GNOME"
 
 #: data/org.gnome.Dictionary.appdata.xml.in:7
 #: data/org.gnome.Dictionary.desktop.in:4
 msgid "Check word definitions and spellings in an online dictionary"
 msgstr ""
-"Vérifier la définition et l'orthographe des mots dans un dictionnaire en "
+"Vérifier la définition et l’orthographe des mots dans un dictionnaire en "
 "ligne"
 
 #: data/org.gnome.Dictionary.appdata.xml.in:9
@@ -64,7 +64,7 @@ msgstr ""
 "Le Dictionnaire GNOME est une simple application de dictionnaire permettant "
 "de consulter des définitions de mots en ligne. Même si par défaut, ce sont "
 "les définitions anglaises qui sont recherchées, il est très facile de "
-"choisir une autre langue ou d'ajouter d'autres dictionnaires en ligne se "
+"choisir une autre langue ou d’ajouter d’autres dictionnaires en ligne se "
 "conformant au protocole DICT afin de répondre à vos propres besoins."
 
 #: data/org.gnome.Dictionary.desktop.in:3 src/gdict-about.c:60
@@ -92,7 +92,7 @@ msgid ""
 "present in a dictionary source should be searched"
 msgstr ""
 "Le nom de la base de données individuelle ou de la méta-base de données à "
-"utiliser avec le serveur de dictionnaire. Un point d'exclamation (« ! ») "
+"utiliser avec le serveur de dictionnaire. Un point d’exclamation (« ! ») "
 "indique que gnome-dictionary doit rechercher dans toutes les bases de "
 "données sur un serveur donné"
 
@@ -111,11 +111,11 @@ msgstr ""
 
 #: data/org.gnome.dictionary.gschema.xml:16
 msgid "The font to be used when printing"
-msgstr "La police utilisée lors de l'impression"
+msgstr "La police utilisée lors de l’impression"
 
 #: data/org.gnome.dictionary.gschema.xml:17
 msgid "The font to be used when printing a definition."
-msgstr "La police utilisée lors de l'impression d'une définition."
+msgstr "La police utilisée lors de l’impression d’une définition."
 
 #: data/org.gnome.dictionary.gschema.xml:21
 msgid "The name of the dictionary source used"
@@ -155,18 +155,18 @@ msgstr "Aucune connexion au serveur de dictionnaires « %s:%d »"
 #, c-format
 msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
-"La recherche de l'hôte « %s » a échoué : aucune ressource adaptée n'a été "
+"La recherche de l’hôte « %s » a échoué : aucune ressource adaptée n’a été "
 "trouvée"
 
 #: libgdict/gdict-client-context.c:1089
 #, c-format
 msgid "Lookup failed for host “%s”: %s"
-msgstr "La recherche de l'hôte « %s » a échoué : %s"
+msgstr "La recherche de l’hôte « %s » a échoué : %s"
 
 #: libgdict/gdict-client-context.c:1123
 #, c-format
 msgid "Lookup failed for host “%s”: host not found"
-msgstr "La recherche de l'hôte « %s » a échoué : hôte non trouvé"
+msgstr "La recherche de l’hôte « %s » a échoué : hôte non trouvé"
 
 #: libgdict/gdict-client-context.c:1175
 #, c-format
@@ -183,7 +183,7 @@ msgid ""
 "Unable to parse the dictionary server reply\n"
 ": “%s”"
 msgstr ""
-"Impossible d'analyser la réponse du serveur de dictionnaires\n"
+"Impossible d’analyser la réponse du serveur de dictionnaires\n"
 ": « %s »"
 
 #: libgdict/gdict-client-context.c:1223
@@ -242,7 +242,7 @@ msgstr "Expiration de la connexion au serveur de dictionnaires « %s:%d »"
 
 #: libgdict/gdict-client-context.c:1891
 msgid "No hostname defined for the dictionary server"
-msgstr "Aucun nom d'hôte défini pour le serveur de dictionnaire"
+msgstr "Aucun nom d’hôte défini pour le serveur de dictionnaire"
 
 #: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
 msgid "Unable to create socket"
@@ -281,7 +281,7 @@ msgstr "Une autre recherche est en cours"
 
 #: libgdict/gdict-defbox.c:2433 libgdict/gdict-speller.c:726
 msgid "Please wait until the current search ends."
-msgstr "Veuillez patienter jusqu'à la fin des recherches en cours."
+msgstr "Veuillez patienter jusqu’à la fin des recherches en cours."
 
 #: libgdict/gdict-defbox.c:2472
 msgid "Error while retrieving the definition"
@@ -296,7 +296,7 @@ msgstr "Type de transport non valide « %d »"
 #, c-format
 msgid "No “%s” group found inside the dictionary source definition"
 msgstr ""
-"Aucun groupe « %s » n'a été trouvé à l'intérieur de la définition de la "
+"Aucun groupe « %s » n’a été trouvé à l’intérieur de la définition de la "
 "source de dictionnaires"
 
 #: libgdict/gdict-source.c:478 libgdict/gdict-source.c:511
@@ -304,7 +304,7 @@ msgstr ""
 #, c-format
 msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
 msgstr ""
-"Impossible d'obtenir la clé « %s » à l'intérieur de la source de "
+"Impossible d’obtenir la clé « %s » à l’intérieur de la source de "
 "définitions : %s"
 
 #: libgdict/gdict-source.c:585
@@ -312,17 +312,17 @@ msgstr ""
 msgid ""
 "Unable to get the “%s” key inside the dictionary source definition file: %s"
 msgstr ""
-"Impossible d'obtenir la clé « %s » à l'intérieur du fichier de la source de "
+"Impossible d’obtenir la clé « %s » à l’intérieur du fichier de la source de "
 "définitions : %s"
 
 #: libgdict/gdict-source.c:779
 msgid "Dictionary source does not have name"
-msgstr "La source de Dictionnaire n'a pas de nom"
+msgstr "La source de Dictionnaire n’a pas de nom"
 
 #: libgdict/gdict-source.c:788
 #, c-format
 msgid "Dictionary source “%s” has invalid transport “%s”"
-msgstr "La source de dictionnaire « %s » n'a pas de transport valide « %s »"
+msgstr "La source de dictionnaire « %s » n’a pas de transport valide « %s »"
 
 #: libgdict/gdict-source-chooser.c:280
 msgid "Reload the list of available sources"
@@ -489,7 +489,7 @@ msgstr "Préférences de Dictionnaire"
 
 #: src/gdict-app.c:139 src/gdict-source-dialog.c:459
 msgid "There was an error while displaying help"
-msgstr "Il y a eu une erreur lors de l'affichage de l'aide"
+msgstr "Il y a eu une erreur lors de l’affichage de l’aide"
 
 #: src/gdict-pref-dialog.c:262
 msgid "View Dictionary Source"
@@ -552,11 +552,11 @@ msgstr "Source"
 
 #: src/gdict-pref-dialog.ui:187
 msgid "_Print font:"
-msgstr "_Police d'impression :"
+msgstr "_Police d’impression :"
 
 #: src/gdict-pref-dialog.ui:216
 msgid "Set the font used for printing the definitions"
-msgstr "Configure la police utilisée pour l'affichage des définitions"
+msgstr "Configure la police utilisée pour l’affichage des définitions"
 
 #: src/gdict-pref-dialog.ui:241
 msgid "Print"
@@ -565,7 +565,7 @@ msgstr "Imprimer"
 #: src/gdict-print.c:237 src/gdict-print.c:301
 #, c-format
 msgid "Unable to display the preview: %s"
-msgstr "Impossible d'afficher l'aperçu : %s"
+msgstr "Impossible d’afficher l’aperçu : %s"
 
 #: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:404
 msgid "Unable to create a source file"
@@ -573,7 +573,7 @@ msgstr "Impossible de créer un fichier source"
 
 #: src/gdict-source-dialog.c:332 src/gdict-source-dialog.c:424
 msgid "Unable to save source file"
-msgstr "Impossible d'enregistrer un fichier source"
+msgstr "Impossible d’enregistrer un fichier source"
 
 #. we just allow closing the dialog
 #: src/gdict-source-dialog.c:567 src/gdict-source-dialog.c:581
@@ -603,7 +603,7 @@ msgstr "_Port"
 
 #: src/gdict-source-dialog.ui:86
 msgid "_Hostname"
-msgstr "Nom d'_hôte"
+msgstr "Nom d’_hôte"
 
 #: src/gdict-source-dialog.ui:100
 msgid "_Transport"
@@ -667,7 +667,7 @@ msgstr "Document sans titre"
 #: src/gdict-window.c:850
 #, c-format
 msgid "Error while writing to “%s”"
-msgstr "Erreur lors de l'écriture vers « %s »"
+msgstr "Erreur lors de l’écriture vers « %s »"
 
 #. speller
 #: src/gdict-window.c:1211
@@ -677,7 +677,7 @@ msgstr "Double-cliquez sur le mot pour le rechercher"
 #. strat-chooser
 #: src/gdict-window.c:1217
 msgid "Double-click on the matching strategy to use"
-msgstr "Double-cliquez sur la stratégie correspondante pour l'utiliser"
+msgstr "Double-cliquez sur la stratégie correspondante pour l’utiliser"
 
 #. source-chooser
 #: src/gdict-window.c:1222

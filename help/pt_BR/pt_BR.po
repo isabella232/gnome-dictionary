@@ -2,21 +2,21 @@
 # Copyright (C) 2015 gnome-dictionary's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-dictionary package.
 # Gabriel Barreto <gabrieljbl@gmail.com>, 2013.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2013.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2013, 2017.
 # Felipe Braga <fbobraga@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
-"POT-Creation-Date: 2015-05-06 06:45+0000\n"
-"PO-Revision-Date: 2015-05-06 13:05-0200\n"
-"Last-Translator: Felipe Braga <fbobraga@gmail.com>\n"
+"POT-Creation-Date: 2017-06-29 14:34+0000\n"
+"PO-Revision-Date: 2017-09-08 19:19-0200\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Virtaal 1.0.0-beta1\n"
 "X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -24,16 +24,16 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Gabriel Barreto <gabrieljbl@gmail.com>, 2013\n"
-"Rafael Fontenelle <rafaelff@gnome.org>, 2013"
+"Rafael Fontenelle <rafaelff@gnome.org>, 2013, 2017"
 
 #. (itstool) path: credit/name
 #: C/definition.page:11 C/dictionary-select.page:11 C/find.page:10
 #: C/index.page:11 C/introduction.page:10 C/keyboard-shortcuts.page:11
 #: C/pref.page:9 C/print-font.page:11 C/print.page:12
 #: C/prob-retrieving-definition.page:11 C/save-definition.page:10
-#: C/similar-words.page:11 C/source-add-local.page:11
-#: C/sources-default.page:10 C/sources-delete.page:11 C/sources-edit.page:10
-#: C/sources.page:12 C/sources-select.page:12 C/text-copy.page:11
+#: C/similar-words.page:11 C/source-add-local.page:11 C/sources-default.page:10
+#: C/sources-delete.page:11 C/sources-edit.page:10 C/sources.page:12
+#: C/sources-select.page:12 C/text-copy.page:11
 msgid "Sindhu S"
 msgstr "Sindhu S"
 
@@ -265,20 +265,6 @@ msgstr "Preferências"
 msgid "Common problems and solutions"
 msgstr "Problemas comuns e soluções"
 
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/introduction.page:38
-msgctxt "_"
-msgid ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
-msgstr ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='ae1a66e90cffc304d8eae34adb737667'"
-
 #. (itstool) path: info/desc
 #: C/introduction.page:22
 msgid "What is <app>Dictionary</app>?"
@@ -315,6 +301,20 @@ msgstr ""
 #: C/introduction.page:37
 msgid "Dictionary"
 msgstr "Dicionário"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/introduction.page:38
+msgctxt "_"
+msgid ""
+"external ref='figures/gnome-dictionary.png' "
+"md5='80df283344ecd9b03b88309f8ee9912d'"
+msgstr ""
+"external ref='figures/gnome-dictionary.png' "
+"md5='ae1a66e90cffc304d8eae34adb737667'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:39
@@ -732,8 +732,11 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/print.page:84
+#| msgid ""
+#| "Chose your <link href=\"help:gnome-help/printing#paper\">printing "
+#| "settings</link>."
 msgid ""
-"Chose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
+"Choose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
 "link>."
 msgstr ""
 "Escolha suas <link href=\"help:gnome-help/printing#paper\">configurações de "
@@ -764,8 +767,8 @@ msgid ""
 "following:"
 msgstr ""
 "Se você vir a mensagem de erro <sys>Erro ao recuperar a definição</sys> ao "
-"consultar uma definição de qualquer dos <link xref=\"sources-"
-"select\">dicionários selecionados</link>, o problema é provavelmente um dos a "
+"consultar uma definição de qualquer dos <link xref=\"sources-select"
+"\">dicionários selecionados</link>, o problema é provavelmente um dos a "
 "seguir:"
 
 #. (itstool) path: item/p
@@ -827,8 +830,12 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/save-definition.page:38
+#| msgid ""
+#| "Chose where you want to save the definition to and a name for the file. "
+#| "You may want to add a <file>.txt</file> file extension to the end of the "
+#| "file name."
 msgid ""
-"Chose where you want to save the definition to and a name for the file. You "
+"Choose where you want to save the definition to and a name for the file. You "
 "may want to add a <file>.txt</file> file extension to the end of the file "
 "name."
 msgstr ""

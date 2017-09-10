@@ -1,5 +1,5 @@
 # Danish Translation of gnome-utils.
-# Copyright (C) 1999-2011, 2015-2016 Free Software Foundation, Inc.
+# Copyright (C) 1999-2011, 2015-2017 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-utils package.
 # Kenneth Christiansen <kenneth@ripen.dk>, 1998-2000.
 # Kim Schulz <kim@schulz.dk>, 1999.
@@ -8,7 +8,7 @@
 # Ole Laursen <olau@hardworking.dk>, 2001, 02, 03, 04.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
 # Kenneth Nielsen <k.nielsen81@gmail.com>, 2008, 2013-2014.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 15, 16.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 15, 16, 17.
 # Joe Hansen <joedalton2@yahoo.dk>, 2011, 2017.
 #
 #
@@ -21,11 +21,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: "
-"https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-06-28 17:43+0000\n"
-"PO-Revision-Date: 2017-03-02 13:38+0200\n"
-"Last-Translator: Kenneth Nielsen <k.nielsen81@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-dictionary&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-08-27 15:04+0000\n"
+"PO-Revision-Date: 2017-09-07 03:38+0200\n"
+"Last-Translator:  Kenneth Nielsen <k.nielsen81@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +37,7 @@ msgstr ""
 #. Translators: Do not translate the Name key
 #: data/default.desktop.in:4
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #: data/default.desktop.in:5
 msgid "Default Dictionary Server"
@@ -77,7 +76,7 @@ msgstr "ord;synonym;definition;stavning;"
 #. Translators: Do not translate the Icon key
 #: data/org.gnome.Dictionary.desktop.in:10
 msgid "accessories-dictionary"
-msgstr ""
+msgstr "accessories-dictionary"
 
 #: data/org.gnome.dictionary.gschema.xml:6
 msgid "The default database to use"
@@ -125,7 +124,7 @@ msgstr "Navnet på ordbogskilden der benyttes til at hente orddefinitioner."
 #. Translators: Do not translate the Name key
 #: data/spanish.desktop.in:4
 msgid "spanish"
-msgstr ""
+msgstr "spanish"
 
 #: data/spanish.desktop.in:5
 msgid "Spanish Dictionaries"
@@ -134,7 +133,7 @@ msgstr "Spansk-ordbøger"
 #. Translators: Do not translate the Name key
 #: data/thai.desktop.in:4
 msgid "Thai"
-msgstr ""
+msgstr "Thai"
 
 #: data/thai.desktop.in:5
 msgid "Longdo Thai-English Dictionaries"
@@ -689,5 +688,3 @@ msgstr "Tilgængelige strategier"
 #: src/gdict-window.c:1455
 msgid "Dictionary sources"
 msgstr "Ordbogskilder"
-
-

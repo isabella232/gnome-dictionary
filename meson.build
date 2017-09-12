@@ -1,4 +1,4 @@
-project('gnome-dictionary', 'c', version: '3.25.90',
+project('gnome-dictionary', 'c', version: '3.26.0',
         default_options: [
           'buildtype=debugoptimized',
           'c_std=c99',

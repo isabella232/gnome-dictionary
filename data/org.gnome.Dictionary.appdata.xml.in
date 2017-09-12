@@ -30,4 +30,14 @@
   </kudos>
   <project_group>GNOME</project_group>
   <translation type="gettext">gnome-dictionary</translation>
+  <releases>
+    <release version="3.26.0" date="2017-09-12">
+      <description>
+        <p>A new stable release of the venerable Dictionary for GNOME. This
+        time it's mostly build fixes to ensure a reliable experience for the
+        fine folks building applications for users; we also have documentation
+        fixes, and better localisation in many languages.</p>
+      </description>
+    </release>
+  </releases>
 </component>

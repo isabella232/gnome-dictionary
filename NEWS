@@ -1,3 +1,13 @@
+GNOME Dictionary 3.26.0                                               2017-09-12
+================================================================================
+• Update the gnome-dictionary man page and install it (#786319)
+• Ensure that desktop files and AppData metadata is valid
+
+Updated translations
+  Slovenian, Galician, Serbian, Finnish, Indonesian, Hungarian, Croatian,
+  French, Danish, Catalan, Basque, Brazilian Portuguese, French, Turkish,
+  Korean, Slovak, Belarusian, Latvian, Chinese (Taiwan), Italian
+
 GNOME Dictionary 3.25.90                                              2017-08-09
 ================================================================================
 • The GDict library is now private for GNOME Dictionary, and it is not

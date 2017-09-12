@@ -2,3 +2,4 @@
 /.gitignore                     export-ignore
 /gnome-dictionary.doap          export-ignore
 /build-aux/make_release.sh      export-ignore
+/docs/rfc2229.txt               export-ignore

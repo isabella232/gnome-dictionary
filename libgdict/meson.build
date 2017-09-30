@@ -80,7 +80,7 @@ libgdict_inc = include_directories('.')
 
 libgdict_lib = static_library('libgdict-1.0',
                               sources: sources_h_priv + sources_c + libgdict_enums + libgdict_marshal,
-                              dependencies: [ gio_dep, gtk_dep ],
+                              dependencies: [ gio_dep, gtk_dep, ipv6_deps ],
                               include_directories: [ root_dir, libgdict_inc ],
                               c_args: common_cflags + debug_cflags + libgdict_cflags,
                               link_args: libgdict_ldflags,
@@ -89,4 +89,4 @@ libgdict_lib = static_library('libgdict-1.0',
 libgdict_dep = declare_dependency(sources: libgdict_enums + libgdict_marshal,
                                   link_with: libgdict_lib,
 				  include_directories: [ libgdict_inc ],
-				  dependencies: [ gio_dep, gtk_dep ])
+				  dependencies: [ gio_dep, gtk_dep, ipv6_deps ])

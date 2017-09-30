@@ -85,6 +85,8 @@ elif buildtype == 'release'
   debug_cflags += [ '-DG_DISABLE_ASSERT', '-DG_DISABLE_CHECKS', '-DG_DISABLE_CAST_CHECKS', ]
 endif
 
+ipv6_deps = []
+
 use_ipv6 = get_option('use_ipv6')
 if use_ipv6
   ipv6_prog = '''
@@ -108,7 +110,7 @@ int main (void) {
       if not found_getaddrinfo and dep.found()
         has_getaddrinfo = cc.has_function('getaddrinfo', dependencies: dep)
         if has_getaddrinfo
-          add_project_link_arguments('-l@0@'.format(l), language: 'c')
+          ipv6_deps += dep
         endif
       endif
     endforeach

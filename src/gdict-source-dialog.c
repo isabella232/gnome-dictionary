@@ -310,7 +310,7 @@ build_new_source (GdictSourceDialog *dialog)
       
   error = NULL;
   data = gdict_source_to_data (source, &length, &error);
-  if (error)
+  if (error != NULL)
     {
       gdict_show_gerror_dialog (GTK_WINDOW (dialog),
 				_("Unable to create a source file"),
@@ -325,9 +325,15 @@ build_new_source (GdictSourceDialog *dialog)
   filename = g_build_filename (config_dir, name, NULL);
   g_free (config_dir);
   g_free (name);
-      
+
+  g_debug ("Saving new source '%s' (%s) at '%s'",
+           gdict_source_get_description (source),
+           gdict_source_get_name (source),
+           filename);
+
   g_file_set_contents (filename, data, length, &error);
-  if (error)
+
+  if (error != NULL)
     gdict_show_gerror_dialog (GTK_WINDOW (dialog),
        			      _("Unable to save source file"),
        			      error);
@@ -435,7 +441,7 @@ on_dialog_response (GtkDialog *dialog,
                     gpointer   user_data)
 {
   GError *err = NULL;
-  
+
   switch (response_id)
     {
     case GTK_RESPONSE_ACCEPT:

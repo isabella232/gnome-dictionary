@@ -1,3 +1,12 @@
+GNOME Dictionary 3.26.1                                               2017-10-01
+================================================================================
+Bug fixes
+• 777584 - menu for dictionary selection has too small size
+• 762589 - Can't add dictionary sources
+
+Updated translations
+  Russian, French, Greek, Persian, Polish
+
 GNOME Dictionary 3.26.0                                               2017-09-12
 ================================================================================
 • Update the gnome-dictionary man page and install it (#786319)

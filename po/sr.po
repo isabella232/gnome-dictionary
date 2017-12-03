@@ -23,7 +23,7 @@ msgstr ""
 #. Translators: Do not translate the Name key
 #: data/default.desktop.in:4
 msgid "Default"
-msgstr "Основно"
+msgstr "Default"
 
 #: data/default.desktop.in:5
 msgid "Default Dictionary Server"

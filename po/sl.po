@@ -653,7 +653,7 @@ msgid "Dictionary sources"
 msgstr "Viri slovarja"
 
 #~ msgid "Default"
-#~ msgstr "Privzeto"
+#~ msgstr "Default"
 
 #~ msgid "accessories-dictionary"
 #~ msgstr "accessories-dictionary"

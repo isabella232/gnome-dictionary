@@ -30,6 +30,9 @@
     "modules": [
         {
             "name": "gnome-dictionary",
+            "buildsystem": "meson",
+            "builddir": true,
+            "config-opts": [ "--libdir=/app/lib", "-Dbuild_man=false" ],
             "sources": [
                 {
                     "type": "git",

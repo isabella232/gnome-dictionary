@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: gnome-utils 0\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-08-20 21:08+0000\n"
-"PO-Revision-Date: 2017-08-23 17:47+0200\n"
+"POT-Creation-Date: 2018-03-05 15:27+0000\n"
+"PO-Revision-Date: 2018-03-07 15:44+0100\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2008-05-27 22:39+0000\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #. Translators: Do not translate the Name key
 #: data/default.desktop.in:4
@@ -220,10 +220,12 @@ msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Vrijeme čekanja poslužitelja rječnika na “%s:%d”"
 
 #: libgdict/gdict-client-context.c:1891
+#, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Naziv računala za poslužitelj rječnika nije određen"
 
 #: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
+#, c-format
 msgid "Unable to create socket"
 msgstr "Nemoguće stvaranje priključnice"
 
@@ -290,6 +292,7 @@ msgstr ""
 "Nemoguće dobivanje \"%s\" ključa unutar datoteke značenja izvora rječnika: %s"
 
 #: libgdict/gdict-source.c:779
+#, c-format
 msgid "Dictionary source does not have name"
 msgstr "Izvor rječnika nema naziv"
 
@@ -354,7 +357,7 @@ msgstr "Osobitosti"
 
 #: src/gdict-app-menus.ui:18
 msgid "Help"
-msgstr "Pomoć"
+msgstr "Priručnik"
 
 #: src/gdict-app-menus.ui:23
 msgid "About"
@@ -456,7 +459,7 @@ msgstr "RIJEČI"
 msgid "Dictionary Preferences"
 msgstr "Osobitosti rječnika"
 
-#: src/gdict-app.c:139 src/gdict-source-dialog.c:459
+#: src/gdict-app.c:139 src/gdict-source-dialog.c:465
 msgid "There was an error while displaying help"
 msgstr "Dogodila se greška pri prikazivanju pomoći"
 
@@ -477,7 +480,7 @@ msgstr "Ukloni \"%s\"?"
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Ovo će trajno ukloniti izvor rječnika s popisa."
 
-#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:571
+#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:577
 #: src/gdict-window.c:822
 msgid "_Cancel"
 msgstr "_Odustani"
@@ -515,7 +518,7 @@ msgstr "Uredi"
 msgid "Edit the currently selected dictionary source"
 msgstr "Uredi trenutno odabrani izvor rječnika"
 
-#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:170
+#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:171
 msgid "Source"
 msgstr "Izvor"
 
@@ -536,65 +539,65 @@ msgstr "Ispis"
 msgid "Unable to display the preview: %s"
 msgstr "Nemoguć prikaz pregleda: %s"
 
-#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:404
+#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:410
 msgid "Unable to create a source file"
 msgstr "Nemoguće stvaranje datoteke izvora"
 
-#: src/gdict-source-dialog.c:332 src/gdict-source-dialog.c:424
+#: src/gdict-source-dialog.c:338 src/gdict-source-dialog.c:430
 msgid "Unable to save source file"
 msgstr "Nemoguće spremanje datoteke izvora"
 
 #. we just allow closing the dialog
-#: src/gdict-source-dialog.c:567 src/gdict-source-dialog.c:581
+#: src/gdict-source-dialog.c:573 src/gdict-source-dialog.c:587
 msgid "_Close"
 msgstr "_Zatvori"
 
-#: src/gdict-source-dialog.c:572
+#: src/gdict-source-dialog.c:578
 msgid "_Add"
 msgstr "_Dodaj"
 
-#: src/gdict-source-dialog.c:580
+#: src/gdict-source-dialog.c:586
 msgid "C_ancel"
 msgstr "O_dustani"
 
 #. The help button is always visible
-#: src/gdict-source-dialog.c:662
+#: src/gdict-source-dialog.c:668
 msgid "_Help"
 msgstr "_Pomoć"
 
-#: src/gdict-source-dialog.ui:57
+#: src/gdict-source-dialog.ui:58
 msgid "_Description"
 msgstr "_Opis"
 
-#: src/gdict-source-dialog.ui:72
+#: src/gdict-source-dialog.ui:73
 msgid "_Port"
 msgstr "_Ulaz"
 
-#: src/gdict-source-dialog.ui:86
+#: src/gdict-source-dialog.ui:87
 msgid "_Hostname"
-msgstr "_Naziv računala"
+msgstr "_Naziv poslužitelja"
 
-#: src/gdict-source-dialog.ui:100
+#: src/gdict-source-dialog.ui:101
 msgid "_Transport"
 msgstr "_Prijenos"
 
-#: src/gdict-source-dialog.ui:114
+#: src/gdict-source-dialog.ui:115
 msgid "2628"
 msgstr "2628"
 
-#: src/gdict-source-dialog.ui:126
+#: src/gdict-source-dialog.ui:127
 msgid "dict.org"
 msgstr "dict.org"
 
-#: src/gdict-source-dialog.ui:138
+#: src/gdict-source-dialog.ui:139
 msgid "Source Name"
 msgstr "Naziv izvora"
 
-#: src/gdict-source-dialog.ui:197
+#: src/gdict-source-dialog.ui:198
 msgid "Dictionaries"
 msgstr "Rječnici"
 
-#: src/gdict-source-dialog.ui:222
+#: src/gdict-source-dialog.ui:223
 msgid "Strategies"
 msgstr "Strategije"
 

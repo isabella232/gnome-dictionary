@@ -473,13 +473,13 @@ static void
 font_button_font_set_cb (GdictPrefDialog *dialog,
                          GtkFontButton   *font_button)
 {
-  const gchar *font;
+  const char *font;
   
-  font = gtk_font_button_get_font_name (font_button);
+  font = gtk_font_chooser_get_font (GTK_FONT_CHOOSER (font_button));
   if (!font || font[0] == '\0')
     return;
 
-  if (dialog->print_font && (strcmp (dialog->print_font, font) == 0))
+  if (g_strcmp0 (dialog->print_font, font) == 0)
     return;
   
   g_free (dialog->print_font);
@@ -587,7 +587,7 @@ gdict_pref_dialog_init (GdictPrefDialog *dialog)
   build_sources_view (dialog);
 
   font = g_settings_get_string (dialog->settings, GDICT_SETTINGS_PRINT_FONT_KEY);
-  gtk_font_button_set_font_name (GTK_FONT_BUTTON (dialog->font_button), font);
+  gtk_font_chooser_set_font (GTK_FONT_CHOOSER (dialog->font_button), font);
   g_free (font);
   
   gtk_widget_show_all (dialog->preferences_notebook);

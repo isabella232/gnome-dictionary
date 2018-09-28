@@ -14,7 +14,7 @@ if desktop_file_validate.found()
        workdir: meson.current_build_dir())
 endif
 
-i18n.merge_file ('desktop',
+i18n.merge_file ('appdata',
                  input: 'org.gnome.Dictionary.appdata.xml.in',
                  output: 'org.gnome.Dictionary.appdata.xml',
                  install: true,
@@ -48,7 +48,7 @@ sources = [
 ]
 
 foreach s: sources
-  i18n.merge_file('desktop',
+  i18n.merge_file('sources',
                   input: '@0@.in'.format(s),
                   output: s,
                   install: true,

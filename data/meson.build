@@ -18,7 +18,7 @@ i18n.merge_file ('appdata',
                  input: 'org.gnome.Dictionary.appdata.xml.in',
                  output: 'org.gnome.Dictionary.appdata.xml',
                  install: true,
-                 install_dir: join_paths(gdict_datadir, 'appdata'),
+                 install_dir: join_paths(gdict_datadir, 'metainfo'),
                  po_dir: po_dir)
 
 appstream_util = find_program('appstream-util', required: false)

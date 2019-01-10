@@ -1350,7 +1350,7 @@ gdict_window_constructed (GObject *gobject)
    * the constructed() vfunc, so we need to use the global singleton
    */
   app = g_application_get_default ();
-  menu = gtk_application_get_menu_by_id (GTK_APPLICATION (app), "popup");
+  menu = gtk_application_get_menu_by_id (GTK_APPLICATION (app), "primary-menu");
   button = gtk_menu_button_new ();
   gtk_menu_button_set_menu_model (GTK_MENU_BUTTON (button), G_MENU_MODEL (menu));
   gtk_menu_button_set_direction (GTK_MENU_BUTTON (button), GTK_ARROW_NONE);

@@ -22,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
 "issues\n"
 "POT-Creation-Date: 2019-01-14 14:42+0000\n"
-"PO-Revision-Date: 2019-01-27 22:50+0900\n"
+"PO-Revision-Date: 2019-01-27 22:53+0900\n"
 "Last-Translator: Tsuji Kento <tuziemon@pclives.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -82,18 +82,13 @@ msgid "The default database to use"
 msgstr "デフォルトで使用するデータベース"
 
 #: data/org.gnome.dictionary.gschema.xml:7
-#, fuzzy
-#| msgid ""
-#| "The name of the default individual database or meta-database to use on a "
-#| "dictionary source. An exclamation mark (\"!\") means that all the "
-#| "databases present in a dictionary source should be searched"
 msgid ""
 "The name of the default individual database or meta-database to use on a "
 "dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "辞書ソースで使用するデフォルトの個人用データベースまたは個人用メタデータベー"
-"スの名前です。感嘆符 (\"!\") にすると、辞書ソースにあるすべてのデータベースを"
+"スの名前です。感嘆符 (“!”) にすると、辞書ソースにあるすべてのデータベースを"
 "検索対象にします。"
 
 #: data/org.gnome.dictionary.gschema.xml:11
@@ -101,15 +96,11 @@ msgid "The default search strategy to use"
 msgstr "デフォルトで使用する検索ルール"
 
 #: data/org.gnome.dictionary.gschema.xml:12
-#, fuzzy
-#| msgid ""
-#| "The name of the default search strategy to use on a dictionary source, if "
-#| "available. The default strategy is 'exact', that is match exact words."
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is “exact”, that is match exact words."
 msgstr ""
-"辞書ソースで使用するデフォルトの検索ルールです。デフォルトのルールは 'exact' "
+"辞書ソースで使用するデフォルトの検索ルールです。デフォルトのルールは“exact”"
 "で、単語全体にマッチするものを検索します。"
 
 #: data/org.gnome.dictionary.gschema.xml:16
@@ -148,95 +139,78 @@ msgid "Longdo Thai-English Dictionaries"
 msgstr "Longdo タイ-英語の辞書"
 
 #: libgdict/gdict-client-context.c:775
-#, fuzzy, c-format
-#| msgid "No connection to the dictionary server at '%s:%d'"
+#, c-format
 msgid "No connection to the dictionary server at “%s:%d”"
-msgstr "'%s:%d' に接続している辞書サーバーはありません"
+msgstr "“%s:%d”に接続している辞書サーバーはありません"
 
 #: libgdict/gdict-client-context.c:1058
-#, fuzzy, c-format
-#| msgid "Lookup failed for hostname '%s': no suitable resources found"
+#, c-format
 msgid "Lookup failed for hostname “%s”: no suitable resources found"
 msgstr ""
-"ホスト名 '%s' の検索に失敗しました: 適当なリソースが見つかりませんでした"
+"ホスト名“%s”の検索に失敗しました: 適当なリソースが見つかりませんでした"
 
 #: libgdict/gdict-client-context.c:1089
-#, fuzzy, c-format
-#| msgid "Lookup failed for host '%s': %s"
+#, c-format
 msgid "Lookup failed for host “%s”: %s"
-msgstr "ホスト '%s' の検索に失敗しました: %s"
+msgstr "ホスト“%s”の検索に失敗しました: %s"
 
 #: libgdict/gdict-client-context.c:1123
-#, fuzzy, c-format
-#| msgid "Lookup failed for host '%s': host not found"
+#, c-format
 msgid "Lookup failed for host “%s”: host not found"
-msgstr "ホスト '%s' の検索に失敗しました: ホストが見つかりませんでした"
+msgstr "ホスト“%s”の検索に失敗しました: ホストが見つかりませんでした"
 
 #: libgdict/gdict-client-context.c:1175
-#, fuzzy, c-format
-#| msgid ""
-#| "Unable to connect to the dictionary server at '%s:%d'. The server replied "
-#| "with code %d (server down)"
+#, c-format
 msgid ""
 "Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
-"'%s:%d' にある辞書サーバーに接続できません。そのサーバーがコード %d (サーバー"
+"“%s:%d”にある辞書サーバーに接続できません。そのサーバーがコード %d (サーバー"
 "がダウン) を返してきました"
 
 #: libgdict/gdict-client-context.c:1194
-#, fuzzy, c-format
-#| msgid ""
-#| "Unable to parse the dictionary server reply\n"
-#| ": '%s'"
+#, c-format
 msgid ""
 "Unable to parse the dictionary server reply\n"
 ": “%s”"
 msgstr ""
 "辞書サーバーの応答を解析できません\n"
-": '%s'"
+": “%s”"
 
 #: libgdict/gdict-client-context.c:1223
-#, fuzzy, c-format
-#| msgid "No definitions found for '%s'"
+#, c-format
 msgid "No definitions found for “%s”"
-msgstr "'%s' の意味が見つかりませんでした"
+msgstr "“%s”の意味が見つかりませんでした"
 
 #: libgdict/gdict-client-context.c:1238
-#, fuzzy, c-format
-#| msgid "Invalid database '%s'"
+#, c-format
 msgid "Invalid database “%s”"
-msgstr "データベース '%s' が間違っています"
+msgstr "データベース“%s”が間違っています"
 
 #: libgdict/gdict-client-context.c:1253
-#, fuzzy, c-format
-#| msgid "Invalid strategy '%s'"
+#, c-format
 msgid "Invalid strategy “%s”"
-msgstr "検索ルール '%s' が間違っています"
+msgstr "検索ルール“%s”が間違っています"
 
 #: libgdict/gdict-client-context.c:1268
-#, fuzzy, c-format
-#| msgid "Bad command '%s'"
+#, c-format
 msgid "Bad command “%s”"
-msgstr "コマンド '%s' が間違っています"
+msgstr "コマンド“%s”が間違っています"
 
 #: libgdict/gdict-client-context.c:1283
-#, fuzzy, c-format
-#| msgid "Bad parameters for command '%s'"
+#, c-format
 msgid "Bad parameters for command “%s”"
-msgstr "コマンド '%s' の引数が間違っています"
+msgstr "コマンド“%s”の引数が間違っています"
 
 #: libgdict/gdict-client-context.c:1298
-#, fuzzy, c-format
-#| msgid "No databases found on dictionary server at '%s'"
+#, c-format
 msgid "No databases found on dictionary server at “%s”"
-msgstr "'%s' にある辞書サーバーにデータベースがありませんでした"
+msgstr "“%s”にある辞書サーバーにデータベースがありませんでした"
 
 #: libgdict/gdict-client-context.c:1313
-#, fuzzy, c-format
-#| msgid "No strategies found on dictionary server at '%s'"
+#, c-format
 msgid "No strategies found on dictionary server at “%s”"
-msgstr "'%s' にある辞書サーバーに検索ルールがありませんでした"
+msgstr "“%s”にある辞書サーバーに検索ルールがありませんでした"
 
 #: libgdict/gdict-client-context.c:1745
 #, c-format
@@ -253,10 +227,9 @@ msgstr ""
 "%s"
 
 #: libgdict/gdict-client-context.c:1857
-#, fuzzy, c-format
-#| msgid "Connection timeout for the dictionary server at '%s:%d'"
+#, c-format
 msgid "Connection timeout for the dictionary server at “%s:%d”"
-msgstr "'%s:%d' の辞書サーバーに対する接続がタイムアウトしました"
+msgstr "“%s:%d”の辞書サーバーに対する接続がタイムアウトしました"
 
 #: libgdict/gdict-client-context.c:1891
 #, c-format
@@ -274,10 +247,9 @@ msgid "Unable to set the channel as non-blocking: %s"
 msgstr "チャンネルにブロック不可の属性を設定できません: %s"
 
 #: libgdict/gdict-client-context.c:1983
-#, fuzzy, c-format
-#| msgid "Unable to connect to the dictionary server at '%s:%d'"
+#, c-format
 msgid "Unable to connect to the dictionary server at “%s:%d”"
-msgstr "'%s:%d' にある辞書サーバーに接続できません"
+msgstr "“%s:%d”にある辞書サーバーに接続できません"
 
 #: libgdict/gdict-database-chooser.c:376
 msgid "Reload the list of available databases"
@@ -309,33 +281,26 @@ msgid "Error while retrieving the definition"
 msgstr "意味を取得する際にエラーが発生しました"
 
 #: libgdict/gdict-source.c:434
-#, fuzzy, c-format
-#| msgid "Invalid transport type '%d'"
+#, c-format
 msgid "Invalid transport type “%d”"
-msgstr "変換方法の種類 '%d' が間違っています"
+msgstr "変換方法の種類“%d”が間違っています"
 
 #: libgdict/gdict-source.c:462
-#, fuzzy, c-format
-#| msgid "No '%s' group found inside the dictionary source definition"
+#, c-format
 msgid "No “%s” group found inside the dictionary source definition"
-msgstr "辞書ソースの定義に '%s' というグループはありません"
+msgstr "辞書ソースの定義に“%s”というグループはありません"
 
 #: libgdict/gdict-source.c:478 libgdict/gdict-source.c:511
 #: libgdict/gdict-source.c:535 libgdict/gdict-source.c:560
-#, fuzzy, c-format
-#| msgid ""
-#| "Unable to get the '%s' key inside the dictionary source definition: %s"
+#, c-format
 msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
-msgstr "辞書ソースの定義内にある '%s' というキーを取得できません: %s"
+msgstr "辞書ソースの定義内にある“%s”というキーを取得できません: %s"
 
 #: libgdict/gdict-source.c:585
-#, fuzzy, c-format
-#| msgid ""
-#| "Unable to get the '%s' key inside the dictionary source definition file: "
-#| "%s"
+#, c-format
 msgid ""
 "Unable to get the “%s” key inside the dictionary source definition file: %s"
-msgstr "辞書ソースの定義ファイルにある '%s' というキーを取得できません: %s"
+msgstr "辞書ソースの定義ファイルにある“%s”というキーを取得できません: %s"
 
 #: libgdict/gdict-source.c:779
 #, c-format
@@ -343,10 +308,9 @@ msgid "Dictionary source does not have name"
 msgstr "辞書ソースに名前がありません"
 
 #: libgdict/gdict-source.c:788
-#, fuzzy, c-format
-#| msgid "Dictionary source '%s' has invalid transport '%s'"
+#, c-format
 msgid "Dictionary source “%s” has invalid transport “%s”"
-msgstr "辞書ソース '%s' の変換方法 '%s' が間違っています"
+msgstr "辞書ソース“%s”の変換方法“%s”が間違っています"
 
 #: libgdict/gdict-source-chooser.c:280
 msgid "Reload the list of available sources"
@@ -465,10 +429,8 @@ msgid "_Last Definition"
 msgstr "最後の意味へ(_L)"
 
 #: src/gdict-app-menus.ui:93
-#, fuzzy
-#| msgid "Preferences"
 msgid "Pr_eferences"
-msgstr "設定"
+msgstr "設定(_E)"
 
 #. The help button is always visible
 #: src/gdict-app-menus.ui:97 src/gdict-source-dialog.c:668
@@ -476,10 +438,8 @@ msgid "_Help"
 msgstr "ヘルプ(_H)"
 
 #: src/gdict-app-menus.ui:102
-#, fuzzy
-#| msgid "About Dictionary"
 msgid "_About Dictionary"
-msgstr "このアプリケーションについて"
+msgstr "このアプリケーションについて(_A)"
 
 #: src/gdict-app.c:47 src/gdict-app.c:76
 msgid "Words to look up"
@@ -530,10 +490,9 @@ msgid "Add Dictionary Source"
 msgstr "辞書ソースの追加"
 
 #: src/gdict-pref-dialog.c:372
-#, fuzzy, c-format
-#| msgid "Remove \"%s\"?"
+#, c-format
 msgid "Remove “%s”?"
-msgstr "\"%s\" を削除しますか?"
+msgstr "“%s”を削除しますか?"
 
 #: src/gdict-pref-dialog.c:374
 msgid "This will permanently remove the dictionary source from the list."
@@ -549,10 +508,9 @@ msgid "_Remove"
 msgstr "削除(_R)"
 
 #: src/gdict-pref-dialog.c:396
-#, fuzzy, c-format
-#| msgid "Unable to remove source '%s'"
+#, c-format
 msgid "Unable to remove source “%s”"
-msgstr "辞書 '%s' を削除できません"
+msgstr "辞書“%s”を削除できません"
 
 #: src/gdict-pref-dialog.c:443
 msgid "Edit Dictionary Source"
@@ -657,30 +615,27 @@ msgid "Strategies"
 msgstr "検索ルール"
 
 #: src/gdict-window.c:413
-#, fuzzy, c-format
-#| msgid "No dictionary source available with name '%s'"
+#, c-format
 msgid "No dictionary source available with name “%s”"
-msgstr "'%s' という名前で利用できる辞書ソースはありません"
+msgstr "“%s”という名前で利用できる辞書ソースはありません"
 
 #: src/gdict-window.c:417
 msgid "Unable to find dictionary source"
 msgstr "辞書ソースが見つかりません"
 
 #: src/gdict-window.c:433
-#, fuzzy, c-format
-#| msgid "No context available for source '%s'"
+#, c-format
 msgid "No context available for source “%s”"
-msgstr "'%s' というソースで利用できるコンテキストはありません"
+msgstr "“%s”というソースで利用できるコンテキストはありません"
 
 #: src/gdict-window.c:437
 msgid "Unable to create a context"
 msgstr "コンテキストを生成できません"
 
 #: src/gdict-window.c:496
-#, fuzzy, c-format
-#| msgid "%s - Dictionary"
+#, c-format
 msgid "%s — Dictionary"
-msgstr "%s - 辞書"
+msgstr "%s — 辞書"
 
 #: src/gdict-window.c:819
 msgid "Save a Copy"
@@ -695,10 +650,9 @@ msgid "Untitled document"
 msgstr "編集中のドキュメント"
 
 #: src/gdict-window.c:850
-#, fuzzy, c-format
-#| msgid "Error while writing to '%s'"
+#, c-format
 msgid "Error while writing to “%s”"
-msgstr "'%s' へ書き込む際にエラーが発生しました"
+msgstr "“%s”へ書き込む際にエラーが発生しました"
 
 #. speller
 #: src/gdict-window.c:1211

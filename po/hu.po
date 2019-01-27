@@ -1,6 +1,6 @@
-# Hungarian translation of gnome-utils.
-# Copyright (C) 1999 - 2006, 2007, 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-utils package.
+# Hungarian translation for gnome-dictionary.
+# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2019 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-dictionary package.
 #
 # Szabolcs Ban <shooby at gnome dot hu>, 1999, 2000.
 # Gergely Nagy <greg at gnome dot hu>, 2001.
@@ -9,17 +9,16 @@
 # Laszlo Dvornik <dvornik at gnome dot hu>, 2004.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014.
 # Mate ORY <orymate at gmail d0t com>, 2006.
-# Balázs Úr <urbalazs at gmail dot com>, 2012, 2013, 2015.
-# Balázs Úr <urbalazs@gmail.com>, 2017.
+# Balázs Úr <urbalazs at gmail dot com>, 2012, 2013, 2015, 2017, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-utils master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-04-12 14:48+0000\n"
-"PO-Revision-Date: 2017-05-14 21:01+0200\n"
+"Project-Id-Version: gnome-dictionary master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
+"issues\n"
+"POT-Creation-Date: 2019-01-14 14:42+0000\n"
+"PO-Revision-Date: 2019-01-27 17:08+0100\n"
 "Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: Hungarian <openscope at googlegroups dot com>\n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -224,10 +223,12 @@ msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "A kapcsolódás túllépte az időkorlátot a(z) „%s:%d” szótárkiszolgálón"
 
 #: libgdict/gdict-client-context.c:1891
+#, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Nincs megadva a szótárkiszolgáló gépneve"
 
 #: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
+#, c-format
 msgid "Unable to create socket"
 msgstr "A foglalat nem hozható létre"
 
@@ -293,6 +294,7 @@ msgid ""
 msgstr "Nem található „%s” kulcs a(z) „%s” szótárforrás-meghatározási fájlban"
 
 #: libgdict/gdict-source.c:779
+#, c-format
 msgid "Dictionary source does not have name"
 msgstr "A szótárforrásnak nincs neve"
 
@@ -357,76 +359,73 @@ msgid "_New Window"
 msgstr "Új _ablak"
 
 #: src/gdict-app-menus.ui:12
-msgid "Preferences"
-msgstr "Beállítások"
-
-#: src/gdict-app-menus.ui:18
-msgid "Help"
-msgstr "Súgó"
-
-#: src/gdict-app-menus.ui:23
-msgid "About"
-msgstr "Névjegy"
-
-#: src/gdict-app-menus.ui:27
-msgid "_Quit"
-msgstr "_Kilépés"
-
-#: src/gdict-app-menus.ui:37
 msgid "_Save a Copy…"
 msgstr "Más_olat mentése…"
 
-#: src/gdict-app-menus.ui:43
+#: src/gdict-app-menus.ui:18
 msgid "P_review"
 msgstr "Elő_nézet"
 
-#: src/gdict-app-menus.ui:48
+#: src/gdict-app-menus.ui:23
 msgid "_Print"
 msgstr "_Nyomtatás"
 
-#: src/gdict-app-menus.ui:55
+#: src/gdict-app-menus.ui:30
 msgid "_Find"
 msgstr "_Keresés"
 
-#: src/gdict-app-menus.ui:62
+#: src/gdict-app-menus.ui:37
 msgid "_View"
 msgstr "_Nézet"
 
-#: src/gdict-app-menus.ui:65
+#: src/gdict-app-menus.ui:40
 msgid "_Sidebar"
 msgstr "_Oldalsáv"
 
-#: src/gdict-app-menus.ui:72
+#: src/gdict-app-menus.ui:47
 msgid "Similar _Words"
 msgstr "_Hasonló szavak"
 
-#: src/gdict-app-menus.ui:77
+#: src/gdict-app-menus.ui:52
 msgid "Dictionary Sources"
 msgstr "Szótárforrások"
 
-#: src/gdict-app-menus.ui:82
+#: src/gdict-app-menus.ui:57
 msgid "Available St_rategies"
 msgstr "Elérhető st_ratégiák"
 
-#: src/gdict-app-menus.ui:89
+#: src/gdict-app-menus.ui:64
 msgid "_Go"
 msgstr "_Ugrás"
 
-#: src/gdict-app-menus.ui:92
+#: src/gdict-app-menus.ui:67
 msgid "_Previous Definition"
 msgstr "_Előző meghatározás"
 
-#: src/gdict-app-menus.ui:97
+#: src/gdict-app-menus.ui:72
 msgid "_Next Definition"
 msgstr "_Következő meghatározás"
 
-#: src/gdict-app-menus.ui:104
+#: src/gdict-app-menus.ui:79
 msgid "_First Definition"
 msgstr "El_ső meghatározás"
 
-#: src/gdict-app-menus.ui:109
+#: src/gdict-app-menus.ui:84
 msgid "_Last Definition"
 msgstr "_Utolsó meghatározás"
+
+#: src/gdict-app-menus.ui:93
+msgid "Pr_eferences"
+msgstr "_Beállítások"
+
+#. The help button is always visible
+#: src/gdict-app-menus.ui:97 src/gdict-source-dialog.c:668
+msgid "_Help"
+msgstr "_Súgó"
+
+#: src/gdict-app-menus.ui:102
+msgid "_About Dictionary"
+msgstr "A Szótár _névjegye"
 
 #: src/gdict-app.c:47 src/gdict-app.c:76
 msgid "Words to look up"
@@ -464,7 +463,7 @@ msgstr "SZAVAK"
 msgid "Dictionary Preferences"
 msgstr "Szótár beállításai"
 
-#: src/gdict-app.c:139 src/gdict-source-dialog.c:459
+#: src/gdict-app.c:139 src/gdict-source-dialog.c:465
 msgid "There was an error while displaying help"
 msgstr "Hiba történt a súgó megjelenítése közben"
 
@@ -485,7 +484,7 @@ msgstr "Eltávolítja ezt: „%s”?"
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Ez véglegesen eltávolítja a szótárforrást a listából"
 
-#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:571
+#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:577
 #: src/gdict-window.c:822
 msgid "_Cancel"
 msgstr "_Mégse"
@@ -523,7 +522,7 @@ msgstr "Szerkesztés"
 msgid "Edit the currently selected dictionary source"
 msgstr "A jelenleg kiválasztott szótárforrás szerkesztése"
 
-#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:170
+#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:171
 msgid "Source"
 msgstr "Forrás"
 
@@ -544,65 +543,60 @@ msgstr "Nyomtatás"
 msgid "Unable to display the preview: %s"
 msgstr "Az előnézet nem jeleníthető meg: %s"
 
-#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:404
+#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:410
 msgid "Unable to create a source file"
 msgstr "Nem hozható létre forrásfájl."
 
-#: src/gdict-source-dialog.c:332 src/gdict-source-dialog.c:424
+#: src/gdict-source-dialog.c:338 src/gdict-source-dialog.c:430
 msgid "Unable to save source file"
 msgstr "Nem menthető a forrásfájl"
 
 #. we just allow closing the dialog
-#: src/gdict-source-dialog.c:567 src/gdict-source-dialog.c:581
+#: src/gdict-source-dialog.c:573 src/gdict-source-dialog.c:587
 msgid "_Close"
 msgstr "_Bezárás"
 
-#: src/gdict-source-dialog.c:572
+#: src/gdict-source-dialog.c:578
 msgid "_Add"
 msgstr "_Hozzáadás"
 
-#: src/gdict-source-dialog.c:580
+#: src/gdict-source-dialog.c:586
 msgid "C_ancel"
 msgstr "Mé_gse"
 
-#. The help button is always visible
-#: src/gdict-source-dialog.c:662
-msgid "_Help"
-msgstr "_Súgó"
-
-#: src/gdict-source-dialog.ui:57
+#: src/gdict-source-dialog.ui:58
 msgid "_Description"
 msgstr "_Leírás"
 
-#: src/gdict-source-dialog.ui:72
+#: src/gdict-source-dialog.ui:73
 msgid "_Port"
 msgstr "_Port"
 
-#: src/gdict-source-dialog.ui:86
+#: src/gdict-source-dialog.ui:87
 msgid "_Hostname"
 msgstr "_Gépnév"
 
-#: src/gdict-source-dialog.ui:100
+#: src/gdict-source-dialog.ui:101
 msgid "_Transport"
 msgstr "Átvi_tel"
 
-#: src/gdict-source-dialog.ui:114
+#: src/gdict-source-dialog.ui:115
 msgid "2628"
 msgstr "2628"
 
-#: src/gdict-source-dialog.ui:126
+#: src/gdict-source-dialog.ui:127
 msgid "dict.org"
 msgstr "dict.org"
 
-#: src/gdict-source-dialog.ui:138
+#: src/gdict-source-dialog.ui:139
 msgid "Source Name"
 msgstr "Forrásnév"
 
-#: src/gdict-source-dialog.ui:197
+#: src/gdict-source-dialog.ui:198
 msgid "Dictionaries"
 msgstr "Szótárak"
 
-#: src/gdict-source-dialog.ui:222
+#: src/gdict-source-dialog.ui:223
 msgid "Strategies"
 msgstr "Stratégiák"
 
@@ -673,211 +667,3 @@ msgstr "Elérhető stratégiák"
 msgid "Dictionary sources"
 msgstr "Szótárforrások"
 
-#~ msgid "_Save a Copy..."
-#~ msgstr "Más_olat mentése…"
-
-#~ msgid "Available _Dictionaries"
-#~ msgstr "Elérhető _szótárak"
-
-#~ msgid "H_ostname:"
-#~ msgstr "_Gépnév:"
-
-#~ msgid "Client Name"
-#~ msgstr "Kliensnév"
-
-#~ msgid "The name of the client of the context object"
-#~ msgstr "A kontextusobjektumok kliensének neve"
-
-#~ msgid "The hostname of the dictionary server to connect to"
-#~ msgstr "A szótárkiszolgáló gépneve"
-
-#~ msgid "Port"
-#~ msgstr "Port"
-
-#~ msgid "The port of the dictionary server to connect to"
-#~ msgstr "A szótárkiszolgáló portja"
-
-#~ msgid "Status"
-#~ msgstr "Állapot"
-
-#~ msgid "The status code as returned by the dictionary server"
-#~ msgstr "A szótárkiszolgáló által visszaadott állapotkód"
-
-#~ msgid "Local Only"
-#~ msgstr "Csak helyi"
-
-#~ msgid "Whether the context uses only local dictionaries or not"
-#~ msgstr "A kontextus csak helyi szótárakat használjon-e?"
-
-#~ msgid "Filename"
-#~ msgstr "Fájlnév"
-
-#~ msgid "The filename used by this dictionary source"
-#~ msgstr "A szótárforrás által használandó fájlnév"
-
-#~ msgid "Name"
-#~ msgstr "Név"
-
-#~ msgid "The display name of this dictionary source"
-#~ msgstr "A szótárforrás megjelenített neve"
-
-#~ msgid "Description"
-#~ msgstr "Leírás"
-
-#~ msgid "The description of this dictionary source"
-#~ msgstr "A szótárforrás leírása"
-
-#~ msgid "Editable"
-#~ msgstr "Szerkeszthető"
-
-#~ msgid "Whether the dictionary source is editable or not"
-#~ msgstr "A szótárforrás szerkeszthető-e vagy sem"
-
-#~ msgid "Database"
-#~ msgstr "Adatbázis"
-
-#~ msgid "The default database of this dictionary source"
-#~ msgstr "A szótár forrásának alapértelmezett adatbázisa"
-
-#~ msgid "Strategy"
-#~ msgstr "Stratégia"
-
-#~ msgid "The default strategy of this dictionary source"
-#~ msgstr "Ezen szótárforrás alapértelmezett stratégiája"
-
-#~ msgid "Transport"
-#~ msgstr "Átvitel"
-
-#~ msgid "The transport mechanism used by this dictionary source"
-#~ msgstr "A szótárforrás elérésére használandó mechanizmus."
-
-#~ msgid "Context"
-#~ msgstr "Kontextus"
-
-#~ msgid "The GdictContext bound to this source"
-#~ msgstr "A forráshoz kötött GdictContext"
-
-#~ msgid "Paths"
-#~ msgstr "Útvonalak"
-
-#~ msgid "Search paths used by this object"
-#~ msgstr "Az objektum által használandó keresési útvonalak"
-
-#~ msgid "Sources"
-#~ msgstr "Források"
-
-#~ msgid "Dictionary sources found"
-#~ msgstr "Megtalált szótárforrások"
-
-#~ msgid "The GdictContext object used to get the word definition"
-#~ msgstr "A szavak meghatározásának lekérésére szolgáló GdictContext objektum"
-
-#~ msgid "The database used to query the GdictContext"
-#~ msgstr "A GdictContext lekérdezéséhez használatos adatbázis"
-
-#~ msgid "The strategy used to query the GdictContext"
-#~ msgstr "A GdictContext lekérdezéséhez használatos stratégia"
-
-#~ msgid "Double-click on the database to use"
-#~ msgstr "Kattintson duplán a használandó adatbázison"
-
-#~ msgid "Available dictionaries"
-#~ msgstr "Elérhető szótárak"
-
-#~ msgid "_File"
-#~ msgstr "_Fájl"
-
-#~ msgid "_New"
-#~ msgstr "Ú_j"
-
-#~ msgid "_Copy"
-#~ msgstr "_Másolás"
-
-#~ msgid "Select _All"
-#~ msgstr "Ö_sszes kijelölése"
-
-#~ msgid "Find Ne_xt"
-#~ msgstr "_Következő találat"
-
-#~ msgid "Find Pre_vious"
-#~ msgstr "Elő_ző találat"
-
-#~ msgid "S_tatusbar"
-#~ msgstr "Á_llapotsor"
-
-#~ msgid "Not found"
-#~ msgstr "Nincs találat"
-
-#~ msgid "F_ind:"
-#~ msgstr "_Keresés:"
-
-#~ msgid "_Previous"
-#~ msgstr "_Előző"
-
-#~ msgid "_Next"
-#~ msgstr "_Következő"
-
-#~ msgid "Searching for '%s'..."
-#~ msgstr "„%s” keresése…"
-
-#~ msgid "No definitions found"
-#~ msgstr "Nem találhatók meghatározások"
-
-#~ msgid "A definition found"
-#~ msgid_plural "%d definitions found"
-#~ msgstr[0] "Egy meghatározás található"
-#~ msgstr[1] "%d meghatározás található"
-
-#~ msgid "Dictionary source `%s' selected"
-#~ msgstr "A szótárforrás („%s”) kiválasztva"
-
-#~ msgid "Strategy `%s' selected"
-#~ msgstr "A(z) „%s” stratégia kiválasztva"
-
-#~ msgid "Database `%s' selected"
-#~ msgstr "A(z) „%s” adatbázis kiválasztva"
-
-#~ msgid "Word `%s' selected"
-#~ msgstr "A(z) „%s” szó kiválasztva"
-
-#~ msgid "Look _up"
-#~ msgstr "_Keresés"
-
-#~ msgid " - Look up words in dictionaries"
-#~ msgstr " – Szavak keresése a szótárakban"
-
-#~ msgid "About Dictionary"
-#~ msgstr "A Szótár névjegye"
-
-#~ msgid "Available _Databases"
-#~ msgstr "_Elérhető adatbázisok"
-
-#~ msgid "New look up"
-#~ msgstr "Új keresés"
-
-#~ msgid "Preview this document"
-#~ msgstr "A dokumentum előnézete"
-
-#~ msgid "_Print..."
-#~ msgstr "_Nyomtatás…"
-
-#~ msgid "Print this document"
-#~ msgstr "A jelenlegi dokumentum nyomtatása"
-
-#~ msgid "Find a word or phrase in the document"
-#~ msgstr "Szó vagy kifejezés keresése a dokumentumban"
-
-#~ msgid "Go to the previous definition"
-#~ msgstr "Ugrás az előző meghatározásra"
-
-#~ msgid "Go to the next definition"
-#~ msgstr "Ugrás a következő meghatározásra"
-
-#~ msgid "Go to the first definition"
-#~ msgstr "Ugrás az első meghatározásra"
-
-#~ msgid "Go to the last definition"
-#~ msgstr "Ugrás az utolsó meghatározásra"
-
-#~ msgid "_Contents"
-#~ msgstr "_Tartalom"

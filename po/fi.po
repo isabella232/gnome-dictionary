@@ -21,10 +21,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-06-28 17:43+0000\n"
-"PO-Revision-Date: 2017-08-15 20:55+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
+"issues\n"
+"POT-Creation-Date: 2019-01-14 14:42+0000\n"
+"PO-Revision-Date: 2019-02-05 21:40+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -33,7 +33,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-02-19 15:16:04+0000\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #. Translators: Do not translate the Name key
 #: data/default.desktop.in:4
@@ -236,10 +236,12 @@ msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Yhdistäminen sanakirjanpalvelimeen osoitteessa “%s:%d” aikakatkaistiin"
 
 #: libgdict/gdict-client-context.c:1891
+#, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Sanakirjapalvelimelle ei annettu verkkonimeä"
 
 #: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
+#, c-format
 msgid "Unable to create socket"
 msgstr "Pistokkeen luominen epäonnistui"
 
@@ -305,6 +307,7 @@ msgid ""
 msgstr "Avainta “%s” ei löydy sanakirjalähteen määrittelytiedostosta: %s"
 
 #: libgdict/gdict-source.c:779
+#, c-format
 msgid "Dictionary source does not have name"
 msgstr "Sanakirjalähteellä ei ole nimeä"
 
@@ -352,7 +355,7 @@ msgstr "Näytä GDict-valinnat"
 #: src/gdict-about.c:53
 msgid "translator-credits"
 msgstr ""
-"Jiri Grönroos, 2012-2017\n"
+"Jiri Grönroos, 2012-2019\n"
 "Niklas Laxström, 2012\n"
 "Tommi Vainikainen, 2009-2011\n"
 "Timo Jyrinki, 2008\n"
@@ -373,76 +376,73 @@ msgid "_New Window"
 msgstr "_Uusi ikkuna"
 
 #: src/gdict-app-menus.ui:12
-msgid "Preferences"
-msgstr "Asetukset"
-
-#: src/gdict-app-menus.ui:18
-msgid "Help"
-msgstr "Ohje"
-
-#: src/gdict-app-menus.ui:23
-msgid "About"
-msgstr "Tietoja"
-
-#: src/gdict-app-menus.ui:27
-msgid "_Quit"
-msgstr "_Lopeta"
-
-#: src/gdict-app-menus.ui:37
 msgid "_Save a Copy…"
 msgstr "_Tallenna kopio…"
 
-#: src/gdict-app-menus.ui:43
+#: src/gdict-app-menus.ui:18
 msgid "P_review"
 msgstr "_Esikatselu"
 
-#: src/gdict-app-menus.ui:48
+#: src/gdict-app-menus.ui:23
 msgid "_Print"
 msgstr "_Tulosta"
 
-#: src/gdict-app-menus.ui:55
+#: src/gdict-app-menus.ui:30
 msgid "_Find"
 msgstr "_Etsi"
 
-#: src/gdict-app-menus.ui:62
+#: src/gdict-app-menus.ui:37
 msgid "_View"
 msgstr "_Näytä"
 
-#: src/gdict-app-menus.ui:65
+#: src/gdict-app-menus.ui:40
 msgid "_Sidebar"
 msgstr "Sivu_palkki"
 
-#: src/gdict-app-menus.ui:72
+#: src/gdict-app-menus.ui:47
 msgid "Similar _Words"
 msgstr "_Samankaltaiset sanat"
 
-#: src/gdict-app-menus.ui:77
+#: src/gdict-app-menus.ui:52
 msgid "Dictionary Sources"
 msgstr "Sanakirjalähteet"
 
-#: src/gdict-app-menus.ui:82
+#: src/gdict-app-menus.ui:57
 msgid "Available St_rategies"
 msgstr "Käytettävissä olevat _hakutavat"
 
-#: src/gdict-app-menus.ui:89
+#: src/gdict-app-menus.ui:64
 msgid "_Go"
 msgstr "_Siirry"
 
-#: src/gdict-app-menus.ui:92
+#: src/gdict-app-menus.ui:67
 msgid "_Previous Definition"
 msgstr "E_dellinen määritelmä"
 
-#: src/gdict-app-menus.ui:97
+#: src/gdict-app-menus.ui:72
 msgid "_Next Definition"
 msgstr "_Seuraava määritelmä"
 
-#: src/gdict-app-menus.ui:104
+#: src/gdict-app-menus.ui:79
 msgid "_First Definition"
 msgstr "_Ensimmäinen määritelmä"
 
-#: src/gdict-app-menus.ui:109
+#: src/gdict-app-menus.ui:84
 msgid "_Last Definition"
 msgstr "_Viimeinen määritelmä"
+
+#: src/gdict-app-menus.ui:93
+msgid "Pr_eferences"
+msgstr "_Asetukset"
+
+#. The help button is always visible
+#: src/gdict-app-menus.ui:97 src/gdict-source-dialog.c:668
+msgid "_Help"
+msgstr "_Ohje"
+
+#: src/gdict-app-menus.ui:102
+msgid "_About Dictionary"
+msgstr "_Tietoja - Sanakirja"
 
 #: src/gdict-app.c:47 src/gdict-app.c:76
 msgid "Words to look up"
@@ -480,7 +480,7 @@ msgstr "SANAT"
 msgid "Dictionary Preferences"
 msgstr "Sanakirjan asetukset"
 
-#: src/gdict-app.c:139 src/gdict-source-dialog.c:459
+#: src/gdict-app.c:139 src/gdict-source-dialog.c:465
 msgid "There was an error while displaying help"
 msgstr "Ohjeen näyttäminen epäonnistui"
 
@@ -501,7 +501,7 @@ msgstr "Poistetaanko “%s”?"
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Tämä poistaa sanakirjan lähteen pysyvästi listalta."
 
-#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:571
+#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:577
 #: src/gdict-window.c:822
 msgid "_Cancel"
 msgstr "_Peru"
@@ -539,7 +539,7 @@ msgstr "Muokkaa"
 msgid "Edit the currently selected dictionary source"
 msgstr "Muokkaa valittua sanakirjalähdettä"
 
-#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:170
+#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:171
 msgid "Source"
 msgstr "Lähde"
 
@@ -560,65 +560,60 @@ msgstr "Tulosta"
 msgid "Unable to display the preview: %s"
 msgstr "Esikatselua ei voi näyttää: %s"
 
-#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:404
+#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:410
 msgid "Unable to create a source file"
 msgstr "Lähdetiedoston luominen epäonnistui"
 
-#: src/gdict-source-dialog.c:332 src/gdict-source-dialog.c:424
+#: src/gdict-source-dialog.c:338 src/gdict-source-dialog.c:430
 msgid "Unable to save source file"
 msgstr "Lähdetiedoston tallentaminen epäonnistui"
 
 #. we just allow closing the dialog
-#: src/gdict-source-dialog.c:567 src/gdict-source-dialog.c:581
+#: src/gdict-source-dialog.c:573 src/gdict-source-dialog.c:587
 msgid "_Close"
 msgstr "_Sulje"
 
-#: src/gdict-source-dialog.c:572
+#: src/gdict-source-dialog.c:578
 msgid "_Add"
 msgstr "_Lisää"
 
-#: src/gdict-source-dialog.c:580
+#: src/gdict-source-dialog.c:586
 msgid "C_ancel"
 msgstr "P_eru"
 
-#. The help button is always visible
-#: src/gdict-source-dialog.c:662
-msgid "_Help"
-msgstr "_Ohje"
-
-#: src/gdict-source-dialog.ui:57
+#: src/gdict-source-dialog.ui:58
 msgid "_Description"
 msgstr "_Kuvaus"
 
-#: src/gdict-source-dialog.ui:72
+#: src/gdict-source-dialog.ui:73
 msgid "_Port"
 msgstr "Po_rtti"
 
-#: src/gdict-source-dialog.ui:86
+#: src/gdict-source-dialog.ui:87
 msgid "_Hostname"
 msgstr "P_alvelin"
 
-#: src/gdict-source-dialog.ui:100
+#: src/gdict-source-dialog.ui:101
 msgid "_Transport"
 msgstr "_Yhteystapa"
 
-#: src/gdict-source-dialog.ui:114
+#: src/gdict-source-dialog.ui:115
 msgid "2628"
 msgstr "2628"
 
-#: src/gdict-source-dialog.ui:126
+#: src/gdict-source-dialog.ui:127
 msgid "dict.org"
 msgstr "dict.org"
 
-#: src/gdict-source-dialog.ui:138
+#: src/gdict-source-dialog.ui:139
 msgid "Source Name"
 msgstr "Lähteen nimi"
 
-#: src/gdict-source-dialog.ui:197
+#: src/gdict-source-dialog.ui:198
 msgid "Dictionaries"
 msgstr "Sanakirjat"
 
-#: src/gdict-source-dialog.ui:222
+#: src/gdict-source-dialog.ui:223
 msgid "Strategies"
 msgstr "Hakutavat"
 
@@ -688,6 +683,15 @@ msgstr "Käytettävissä olevat hakutavat"
 #: src/gdict-window.c:1455
 msgid "Dictionary sources"
 msgstr "Sanakirjalähteet"
+
+#~ msgid "Help"
+#~ msgstr "Ohje"
+
+#~ msgid "About"
+#~ msgstr "Tietoja"
+
+#~ msgid "_Quit"
+#~ msgstr "_Lopeta"
 
 #~ msgid "_Save a Copy..."
 #~ msgstr "Tallenna _kopio…"

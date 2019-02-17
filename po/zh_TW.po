@@ -1,29 +1,29 @@
 # Chinese (Taiwan) translation of gnome-utils.
 # Copyright (C) 1999-2007 Free Software Foundation, Inc.
+# Lin-Chieh Shangkuan <r93066@csie.ntu.edu.tw> 2006.
+#
 # Ming-Yen Hsu <myhsu@cyberdude.com>, 1999.
 # Abel Cheung <abel@oaka.org>, 2001, 02, 03, 04.
 # Roy Hiu-yeung Chan <roy.chan@debian.org.hk>, 2004.
-# Lin-Chieh Shangkuan <r93066@csie.ntu.edu.tw> 2006.
 # Ching-Hung Lin <billlin@wshlab2.ee.kuas.edu.tw>, 2006.
 # Woodman Tuen <wmtuen@gmail.com>, 2007.
 # Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>,2008, 2009, 2010.
 # Wei-Lun Chao <chaoweilun@gmail.com>, 2010.
-#
+# pan93412 <pan93412@gmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 3.1.90\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-06-28 17:43+0000\n"
-"PO-Revision-Date: 2017-08-27 23:02+0800\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (traditional)\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/issues\n"
+"POT-Creation-Date: 2019-01-14 14:42+0000\n"
+"PO-Revision-Date: 2019-02-17 23:16+0800\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Lokalize 18.12.2\n"
 
 #. Translators: Do not translate the Name key
 #: data/default.desktop.in:4
@@ -220,10 +220,12 @@ msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "於「%s:%d」連接到字典伺服器逾時"
 
 #: libgdict/gdict-client-context.c:1891
+#, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "在字典伺服器上沒有定義主機名稱"
 
 #: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
+#, c-format
 msgid "Unable to create socket"
 msgstr "無法建構 socket 連線"
 
@@ -289,6 +291,7 @@ msgid ""
 msgstr "無法從字典來源定義檔案中取得「%s」關鍵字：%s"
 
 #: libgdict/gdict-source.c:779
+#, c-format
 msgid "Dictionary source does not have name"
 msgstr "字典伺服器沒有名稱"
 
@@ -356,76 +359,75 @@ msgid "_New Window"
 msgstr "新開視窗(_N)"
 
 #: src/gdict-app-menus.ui:12
-msgid "Preferences"
-msgstr "偏好設定"
-
-#: src/gdict-app-menus.ui:18
-msgid "Help"
-msgstr "求助"
-
-#: src/gdict-app-menus.ui:23
-msgid "About"
-msgstr "關於"
-
-#: src/gdict-app-menus.ui:27
-msgid "_Quit"
-msgstr "結束(_Q)"
-
-#: src/gdict-app-menus.ui:37
 msgid "_Save a Copy…"
 msgstr "儲存副本(_S)…"
 
-#: src/gdict-app-menus.ui:43
+#: src/gdict-app-menus.ui:18
 msgid "P_review"
 msgstr "預覽(_R)"
 
-#: src/gdict-app-menus.ui:48
+#: src/gdict-app-menus.ui:23
 msgid "_Print"
 msgstr "列印(_P)"
 
-#: src/gdict-app-menus.ui:55
+#: src/gdict-app-menus.ui:30
 msgid "_Find"
 msgstr "尋找(_F)"
 
-#: src/gdict-app-menus.ui:62
+#: src/gdict-app-menus.ui:37
 msgid "_View"
 msgstr "檢視(_V)"
 
-#: src/gdict-app-menus.ui:65
+#: src/gdict-app-menus.ui:40
 msgid "_Sidebar"
 msgstr "側面窗格(_S)"
 
-#: src/gdict-app-menus.ui:72
+#: src/gdict-app-menus.ui:47
 msgid "Similar _Words"
 msgstr "近似字詞(_W)"
 
-#: src/gdict-app-menus.ui:77
+#: src/gdict-app-menus.ui:52
 msgid "Dictionary Sources"
 msgstr "字典來源"
 
-#: src/gdict-app-menus.ui:82
+#: src/gdict-app-menus.ui:57
 msgid "Available St_rategies"
 msgstr "可用搜尋方法(_R)"
 
-#: src/gdict-app-menus.ui:89
+#: src/gdict-app-menus.ui:64
 msgid "_Go"
 msgstr "前往(_G)"
 
-#: src/gdict-app-menus.ui:92
+#: src/gdict-app-menus.ui:67
 msgid "_Previous Definition"
 msgstr "上一個字詞解釋(_P)"
 
-#: src/gdict-app-menus.ui:97
+#: src/gdict-app-menus.ui:72
 msgid "_Next Definition"
 msgstr "下一個字詞解釋(_N)"
 
-#: src/gdict-app-menus.ui:104
+#: src/gdict-app-menus.ui:79
 msgid "_First Definition"
 msgstr "第一個字詞解釋(_F)"
 
-#: src/gdict-app-menus.ui:109
+#: src/gdict-app-menus.ui:84
 msgid "_Last Definition"
 msgstr "最後一個字詞解釋(_L)"
+
+#: src/gdict-app-menus.ui:93
+#| msgid "Preferences"
+msgid "Pr_eferences"
+msgstr "偏好設定(_E)"
+
+#. The help button is always visible
+#: src/gdict-app-menus.ui:97 src/gdict-source-dialog.c:668
+msgid "_Help"
+msgstr "求助(_H)"
+
+#: src/gdict-app-menus.ui:102
+#| msgid "About Dictionary"
+msgid "_About Dictionary"
+msgstr "關於字典(_A)"
 
 #: src/gdict-app.c:47 src/gdict-app.c:76
 msgid "Words to look up"
@@ -463,7 +465,7 @@ msgstr "WORDS"
 msgid "Dictionary Preferences"
 msgstr "字典偏好設定"
 
-#: src/gdict-app.c:139 src/gdict-source-dialog.c:459
+#: src/gdict-app.c:139 src/gdict-source-dialog.c:465
 msgid "There was an error while displaying help"
 msgstr "顯示說明文件時發生錯誤"
 
@@ -484,7 +486,7 @@ msgstr "移除「%s」？"
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "這會從清單中將字典來源永久刪除。"
 
-#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:571
+#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:577
 #: src/gdict-window.c:822
 msgid "_Cancel"
 msgstr "取消(_C)"
@@ -522,7 +524,7 @@ msgstr "編輯"
 msgid "Edit the currently selected dictionary source"
 msgstr "編輯目前選擇的字典來源"
 
-#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:170
+#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:171
 msgid "Source"
 msgstr "來源"
 
@@ -546,65 +548,60 @@ msgstr "列印"
 msgid "Unable to display the preview: %s"
 msgstr "無法顯示預覽 %s"
 
-#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:404
+#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:410
 msgid "Unable to create a source file"
 msgstr "無法建構來源檔案"
 
-#: src/gdict-source-dialog.c:332 src/gdict-source-dialog.c:424
+#: src/gdict-source-dialog.c:338 src/gdict-source-dialog.c:430
 msgid "Unable to save source file"
 msgstr "無法儲存來源檔案"
 
 #. we just allow closing the dialog
-#: src/gdict-source-dialog.c:567 src/gdict-source-dialog.c:581
+#: src/gdict-source-dialog.c:573 src/gdict-source-dialog.c:587
 msgid "_Close"
 msgstr "關閉(_C)"
 
-#: src/gdict-source-dialog.c:572
+#: src/gdict-source-dialog.c:578
 msgid "_Add"
 msgstr "加入(_A)"
 
-#: src/gdict-source-dialog.c:580
+#: src/gdict-source-dialog.c:586
 msgid "C_ancel"
 msgstr "取消(_A)"
 
-#. The help button is always visible
-#: src/gdict-source-dialog.c:662
-msgid "_Help"
-msgstr "求助(_H)"
-
-#: src/gdict-source-dialog.ui:57
+#: src/gdict-source-dialog.ui:58
 msgid "_Description"
 msgstr "描述(_D)"
 
-#: src/gdict-source-dialog.ui:72
+#: src/gdict-source-dialog.ui:73
 msgid "_Port"
 msgstr "連接埠(_P)"
 
-#: src/gdict-source-dialog.ui:86
+#: src/gdict-source-dialog.ui:87
 msgid "_Hostname"
 msgstr "主機名稱(_H)"
 
-#: src/gdict-source-dialog.ui:100
+#: src/gdict-source-dialog.ui:101
 msgid "_Transport"
 msgstr "傳送(_T)"
 
-#: src/gdict-source-dialog.ui:114
+#: src/gdict-source-dialog.ui:115
 msgid "2628"
 msgstr "2628"
 
-#: src/gdict-source-dialog.ui:126
+#: src/gdict-source-dialog.ui:127
 msgid "dict.org"
 msgstr "dict.org"
 
-#: src/gdict-source-dialog.ui:138
+#: src/gdict-source-dialog.ui:139
 msgid "Source Name"
 msgstr "來源名稱"
 
-#: src/gdict-source-dialog.ui:197
+#: src/gdict-source-dialog.ui:198
 msgid "Dictionaries"
 msgstr "字典"
 
-#: src/gdict-source-dialog.ui:222
+#: src/gdict-source-dialog.ui:223
 msgid "Strategies"
 msgstr "搜尋方法"
 
@@ -674,6 +671,15 @@ msgstr "現有搜尋方法"
 #: src/gdict-window.c:1455
 msgid "Dictionary sources"
 msgstr "字典來源"
+
+#~ msgid "Help"
+#~ msgstr "求助"
+
+#~ msgid "About"
+#~ msgstr "關於"
+
+#~ msgid "_Quit"
+#~ msgstr "結束(_Q)"
 
 #~ msgid "_Save a Copy..."
 #~ msgstr "儲存副本(_S)…"
@@ -846,9 +852,6 @@ msgstr "字典來源"
 
 #~ msgid " - Look up words in dictionaries"
 #~ msgstr " - 在字典中查字詞"
-
-#~ msgid "About Dictionary"
-#~ msgstr "關於 Dictionary"
 
 #~ msgid "Available _Databases"
 #~ msgstr "現存資料庫(_D)"

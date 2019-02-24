@@ -8,17 +8,17 @@
 # Wouter Bolsterlee <wbolster@gnome.org>, 2006–2011.
 # Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011.
 # Erwin Poeze <donnut@outlook.com>, 2014.
-# Nathan Follens <nthn@unseen.is>, 2017.
+# Nathan Follens <nthn@unseen.is>, 2017, 2019.
 #
 # side bar = side pane = zijpaneel
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.master.nl\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-04-27 14:58+0000\n"
-"PO-Revision-Date: 2017-04-27 20:21+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
+"issues\n"
+"POT-Creation-Date: 2019-02-22 17:39+0000\n"
+"PO-Revision-Date: 2019-02-24 16:34+0100\n"
 "Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #. Translators: Do not translate the Name key
 #: data/default.desktop.in:4
@@ -115,7 +115,7 @@ msgstr "De naam van de gebruikte woordenboekbron"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr ""
-"de naam van de woordenboekbron die gebruikt wordt voor het ophalen van de "
+"De naam van de woordenboekbron die gebruikt wordt voor het ophalen van de "
 "definitie van woorden."
 
 #. Translators: Do not translate the Name key
@@ -232,11 +232,13 @@ msgstr ""
 "‘%s:%d’"
 
 #: libgdict/gdict-client-context.c:1891
+#, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Geen hostnaam opgegeven voor de woordenboekserver"
 
 # ontvanger?/socket/contactdoos
 #: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
+#, c-format
 msgid "Unable to create socket"
 msgstr "Kon geen socket aanmaken"
 
@@ -306,6 +308,7 @@ msgstr ""
 "woordenboekbrondefinitiebestand: %s"
 
 #: libgdict/gdict-source.c:779
+#, c-format
 msgid "Dictionary source does not have name"
 msgstr "Woordenboekbron heeft geen naam"
 
@@ -362,7 +365,7 @@ msgstr ""
 "Erwin Poeze\n"
 "Nathan Follens\n"
 "\n"
-"Kijk voor meer informatie op http://nl.gnome.org/"
+"Meer info over Gnome-NL http://nl.gnome.org/"
 
 # enkelvoud van woordenboek staat beter, meestal doorzoek
 # je maar 1 woordenboek tegelijk
@@ -375,76 +378,73 @@ msgid "_New Window"
 msgstr "_Nieuw venster"
 
 #: src/gdict-app-menus.ui:12
-msgid "Preferences"
-msgstr "Voorkeuren"
-
-#: src/gdict-app-menus.ui:18
-msgid "Help"
-msgstr "Hulp"
-
-#: src/gdict-app-menus.ui:23
-msgid "About"
-msgstr "Info"
-
-#: src/gdict-app-menus.ui:27
-msgid "_Quit"
-msgstr "_Afsluiten"
-
-#: src/gdict-app-menus.ui:37
 msgid "_Save a Copy…"
 msgstr "Een kopie op_slaan…"
 
-#: src/gdict-app-menus.ui:43
+#: src/gdict-app-menus.ui:18
 msgid "P_review"
 msgstr "Voor_beeld"
 
-#: src/gdict-app-menus.ui:48
+#: src/gdict-app-menus.ui:23
 msgid "_Print"
 msgstr "_Afdrukken"
 
-#: src/gdict-app-menus.ui:55
+#: src/gdict-app-menus.ui:30
 msgid "_Find"
 msgstr "_Vinden"
 
-#: src/gdict-app-menus.ui:62
+#: src/gdict-app-menus.ui:37
 msgid "_View"
 msgstr "Beel_d"
 
-#: src/gdict-app-menus.ui:65
+#: src/gdict-app-menus.ui:40
 msgid "_Sidebar"
 msgstr "_Zijpaneel"
 
-#: src/gdict-app-menus.ui:72
+#: src/gdict-app-menus.ui:47
 msgid "Similar _Words"
 msgstr "Vergelijkbare _woorden"
 
-#: src/gdict-app-menus.ui:77
+#: src/gdict-app-menus.ui:52
 msgid "Dictionary Sources"
 msgstr "Woordenboekbronnen"
 
-#: src/gdict-app-menus.ui:82
+#: src/gdict-app-menus.ui:57
 msgid "Available St_rategies"
 msgstr "Beschikbare _strategieën"
 
-#: src/gdict-app-menus.ui:89
+#: src/gdict-app-menus.ui:64
 msgid "_Go"
 msgstr "_Ga naar"
 
-#: src/gdict-app-menus.ui:92
+#: src/gdict-app-menus.ui:67
 msgid "_Previous Definition"
 msgstr "Vo_rige definitie"
 
-#: src/gdict-app-menus.ui:97
+#: src/gdict-app-menus.ui:72
 msgid "_Next Definition"
 msgstr "V_olgende definitie"
 
-#: src/gdict-app-menus.ui:104
+#: src/gdict-app-menus.ui:79
 msgid "_First Definition"
 msgstr "_Eerste definitie"
 
-#: src/gdict-app-menus.ui:109
+#: src/gdict-app-menus.ui:84
 msgid "_Last Definition"
 msgstr "_Laatste definitie"
+
+#: src/gdict-app-menus.ui:93
+msgid "Pr_eferences"
+msgstr "Voork_euren"
+
+#. The help button is always visible
+#: src/gdict-app-menus.ui:97 src/gdict-source-dialog.c:668
+msgid "_Help"
+msgstr "_Hulp"
+
+#: src/gdict-app-menus.ui:102
+msgid "_About Dictionary"
+msgstr "_Over Woordenboek"
 
 #: src/gdict-app.c:47 src/gdict-app.c:76
 msgid "Words to look up"
@@ -482,7 +482,7 @@ msgstr "WOORDEN"
 msgid "Dictionary Preferences"
 msgstr "Woordenboek-voorkeuren"
 
-#: src/gdict-app.c:139 src/gdict-source-dialog.c:459
+#: src/gdict-app.c:139 src/gdict-source-dialog.c:465
 msgid "There was an error while displaying help"
 msgstr "Er is een fout opgetreden bij het weergeven van de hulp"
 
@@ -503,7 +503,7 @@ msgstr "‘%s’ verwijderen?"
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Dit zal de woordenboekbron definitief verwijderen uit de lijst."
 
-#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:571
+#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:577
 #: src/gdict-window.c:822
 msgid "_Cancel"
 msgstr "_Annuleren"
@@ -543,7 +543,7 @@ msgstr "Bewerken"
 msgid "Edit the currently selected dictionary source"
 msgstr "De geselecteerde woordenboekbron bewerken"
 
-#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:170
+#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:171
 msgid "Source"
 msgstr "Bron"
 
@@ -565,65 +565,60 @@ msgstr "Afdrukken"
 msgid "Unable to display the preview: %s"
 msgstr "Kon voorbeeld niet weergeven: %s"
 
-#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:404
+#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:410
 msgid "Unable to create a source file"
 msgstr "Kon geen bronbestand aanmaken"
 
-#: src/gdict-source-dialog.c:332 src/gdict-source-dialog.c:424
+#: src/gdict-source-dialog.c:338 src/gdict-source-dialog.c:430
 msgid "Unable to save source file"
 msgstr "Kon bronbestand niet opslaan"
 
 #. we just allow closing the dialog
-#: src/gdict-source-dialog.c:567 src/gdict-source-dialog.c:581
+#: src/gdict-source-dialog.c:573 src/gdict-source-dialog.c:587
 msgid "_Close"
 msgstr "_Sluiten"
 
-#: src/gdict-source-dialog.c:572
+#: src/gdict-source-dialog.c:578
 msgid "_Add"
 msgstr "_Toevoegen"
 
-#: src/gdict-source-dialog.c:580
+#: src/gdict-source-dialog.c:586
 msgid "C_ancel"
 msgstr "A_nnuleren"
 
-#. The help button is always visible
-#: src/gdict-source-dialog.c:662
-msgid "_Help"
-msgstr "_Hulp"
-
-#: src/gdict-source-dialog.ui:57
+#: src/gdict-source-dialog.ui:58
 msgid "_Description"
 msgstr "_Beschrijving"
 
-#: src/gdict-source-dialog.ui:72
+#: src/gdict-source-dialog.ui:73
 msgid "_Port"
 msgstr "_Poort"
 
-#: src/gdict-source-dialog.ui:86
+#: src/gdict-source-dialog.ui:87
 msgid "_Hostname"
 msgstr "_Hostnaam"
 
-#: src/gdict-source-dialog.ui:100
+#: src/gdict-source-dialog.ui:101
 msgid "_Transport"
 msgstr "_Transport"
 
-#: src/gdict-source-dialog.ui:114
+#: src/gdict-source-dialog.ui:115
 msgid "2628"
 msgstr "2628"
 
-#: src/gdict-source-dialog.ui:126
+#: src/gdict-source-dialog.ui:127
 msgid "dict.org"
 msgstr "dict.org"
 
-#: src/gdict-source-dialog.ui:138
+#: src/gdict-source-dialog.ui:139
 msgid "Source Name"
 msgstr "Naam van bron"
 
-#: src/gdict-source-dialog.ui:197
+#: src/gdict-source-dialog.ui:198
 msgid "Dictionaries"
 msgstr "Woordenboeken"
 
-#: src/gdict-source-dialog.ui:222
+#: src/gdict-source-dialog.ui:223
 msgid "Strategies"
 msgstr "Strategieën"
 
@@ -694,6 +689,15 @@ msgstr "Beschikbare strategieën"
 #: src/gdict-window.c:1455
 msgid "Dictionary sources"
 msgstr "Woordenboekbronnen"
+
+#~ msgid "Help"
+#~ msgstr "Hulp"
+
+#~ msgid "About"
+#~ msgstr "Info"
+
+#~ msgid "_Quit"
+#~ msgstr "_Afsluiten"
 
 #~ msgid "_File"
 #~ msgstr "_Bestand"

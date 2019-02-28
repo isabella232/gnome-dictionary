@@ -6,12 +6,12 @@
 # FRancisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
 # 
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2015., 2017.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012 - 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: dictionary.HEAD\n"
-"POT-Creation-Date: 2017-06-29 14:34+0000\n"
+"POT-Creation-Date: 2019-02-22 17:39+0000\n"
 "PO-Revision-Date: 2017-07-25 10:07+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
@@ -35,9 +35,9 @@ msgstr ""
 #: C/index.page:11 C/introduction.page:10 C/keyboard-shortcuts.page:11
 #: C/pref.page:9 C/print-font.page:11 C/print.page:12
 #: C/prob-retrieving-definition.page:11 C/save-definition.page:10
-#: C/similar-words.page:11 C/source-add-local.page:11
-#: C/sources-default.page:10 C/sources-delete.page:11 C/sources-edit.page:10
-#: C/sources.page:12 C/sources-select.page:12 C/text-copy.page:11
+#: C/similar-words.page:11 C/source-add-local.page:11 C/sources-default.page:10
+#: C/sources-delete.page:11 C/sources-edit.page:10 C/sources.page:12
+#: C/sources-select.page:12 C/text-copy.page:11
 msgid "Sindhu S"
 msgstr "Sindhu S"
 
@@ -733,9 +733,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/print.page:84
-#| msgid ""
-#| "Chose your <link href=\"help:gnome-help/printing#paper\">printing "
-#| "settings</link>."
 msgid ""
 "Choose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
 "link>."
@@ -830,10 +827,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/save-definition.page:38
-#| msgid ""
-#| "Chose where you want to save the definition to and a name for the file. "
-#| "You may want to add a <file>.txt</file> file extension to the end of the "
-#| "file name."
 msgid ""
 "Choose where you want to save the definition to and a name for the file. You "
 "may want to add a <file>.txt</file> file extension to the end of the file "

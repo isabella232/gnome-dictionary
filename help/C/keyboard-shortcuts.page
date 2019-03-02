@@ -1,5 +1,5 @@
 <page xmlns="http://projectmallard.org/1.0/"
-      xmlns:ui="http://projectmallard.org/experimental/ui/"
+      xmlns:ui="http://projectmallard.org/ui/1.0"
       type="task"
       id="keyboard-shortcuts">
 
@@ -29,7 +29,7 @@
   <p>Keyboard shortcuts are combinations of keys that you can use instead of
   navigating through the menu. The following shortcuts are available:</p>
 
-  <table rules="rows" frame="top bottom" ui:expanded="yes">
+  <table rules="rows" frame="top bottom" ui:expanded="true">
     <title>Navigate around <app>Dictionary</app></title>
     <thead>
       <tr>
@@ -61,7 +61,7 @@
     </tbody>
   </table>
 
-  <table rules="rows" frame="top bottom" ui:expanded="yes">
+  <table rules="rows" frame="top bottom" ui:expanded="true">
     <title>Search shortcuts</title>
     <thead>
       <tr>
@@ -85,7 +85,7 @@
     </tbody>
   </table>
 
-  <table rules="rows" frame="top bottom" ui:expanded="yes">
+  <table rules="rows" frame="top bottom" ui:expanded="true">
     <title>Navigate within a definition</title>
     <thead>
       <tr>
@@ -113,7 +113,7 @@
     </tbody>
   </table>
 
-  <table rules="rows" frame="top bottom" ui:expanded="yes">
+  <table rules="rows" frame="top bottom" ui:expanded="true">
     <title><app>Dictionary</app> definitions shortcuts:</title>
     <thead>
       <tr>

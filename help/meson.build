@@ -23,5 +23,5 @@ gnome.yelp('gnome-dictionary',
            ],
            media: [
              'figures/gnome-dictionary-icon.png',
-             'figures/gnome-dictionary.png',
+             'figures/gnome-dictionary-3-26.png',
            ])

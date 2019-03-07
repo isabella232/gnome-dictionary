@@ -6,27 +6,27 @@
 # FRancisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
 # 
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2015, 2017.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: dictionary.HEAD\n"
-"POT-Creation-Date: 2017-06-29 14:34+0000\n"
-"PO-Revision-Date: 2017-07-25 10:07+0200\n"
+"POT-Creation-Date: 2019-03-02 21:18+0000\n"
+"PO-Revision-Date: 2019-03-07 11:37+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
-"Language: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 3.31.90\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2017\n"
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2019\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2005, 2007-2008.\n"
 "Francisco Javier F. Serrador <serrador@openshine.com> 2006."
 
@@ -35,9 +35,9 @@ msgstr ""
 #: C/index.page:11 C/introduction.page:10 C/keyboard-shortcuts.page:11
 #: C/pref.page:9 C/print-font.page:11 C/print.page:12
 #: C/prob-retrieving-definition.page:11 C/save-definition.page:10
-#: C/similar-words.page:11 C/source-add-local.page:11
-#: C/sources-default.page:10 C/sources-delete.page:11 C/sources-edit.page:10
-#: C/sources.page:12 C/sources-select.page:12 C/text-copy.page:11
+#: C/similar-words.page:11 C/source-add-local.page:11 C/sources-default.page:10
+#: C/sources-delete.page:11 C/sources-edit.page:10 C/sources.page:12
+#: C/sources-select.page:12 C/text-copy.page:11
 msgid "Sindhu S"
 msgstr "Sindhu S"
 
@@ -309,13 +309,17 @@ msgstr "Diccionario"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/introduction.page:38
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='figures/gnome-dictionary-applet.png' "
+#| "md5='538c7fa191540f99dd964963a1079677'"
 msgctxt "_"
 msgid ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
+"external ref='figures/gnome-dictionary-3-26.png' "
+"md5='ab6aa6e49972726676c39bf69a511303'"
 msgstr ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
+"external ref='figures/gnome-dictionary-3-26.png' "
+"md5='ab6aa6e49972726676c39bf69a511303'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:39
@@ -733,9 +737,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/print.page:84
-#| msgid ""
-#| "Chose your <link href=\"help:gnome-help/printing#paper\">printing "
-#| "settings</link>."
 msgid ""
 "Choose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
 "link>."
@@ -830,10 +831,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/save-definition.page:38
-#| msgid ""
-#| "Chose where you want to save the definition to and a name for the file. "
-#| "You may want to add a <file>.txt</file> file extension to the end of the "
-#| "file name."
 msgid ""
 "Choose where you want to save the definition to and a name for the file. You "
 "may want to add a <file>.txt</file> file extension to the end of the file "
@@ -1174,6 +1171,14 @@ msgstr ""
 
 #~ msgctxt "_"
 #~ msgid ""
+#~ "external ref='figures/gnome-dictionary.png' "
+#~ "md5='80df283344ecd9b03b88309f8ee9912d'"
+#~ msgstr ""
+#~ "external ref='figures/gnome-dictionary.png' "
+#~ "md5='80df283344ecd9b03b88309f8ee9912d'"
+
+#~ msgctxt "_"
+#~ msgid ""
 #~ "external ref='figures/gnome-dictionary-icon.png' "
 #~ "md5='2f50c3a71e57be0b41efd43c2f7fae60'"
 #~ msgstr ""
@@ -1211,14 +1216,6 @@ msgstr ""
 #~ msgstr ""
 #~ "external ref='figures/gnome-dictionary-preferences-print.png' "
 #~ "md5='12a65f07cb333db4c7ba743d1d12a00f'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/gnome-dictionary-applet.png' "
-#~ "md5='538c7fa191540f99dd964963a1079677'"
-#~ msgstr ""
-#~ "external ref='figures/gnome-dictionary-applet.png' "
-#~ "md5='538c7fa191540f99dd964963a1079677'"
 
 #~ msgctxt "_"
 #~ msgid ""

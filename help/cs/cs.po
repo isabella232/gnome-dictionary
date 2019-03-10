@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils gnome-2-28\n"
-"POT-Creation-Date: 2017-06-29 14:34+0000\n"
+"POT-Creation-Date: 2019-03-02 21:18+0000\n"
 "PO-Revision-Date: 2017-08-07 13:24+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -305,11 +305,11 @@ msgstr "Slovník"
 #: C/introduction.page:38
 msgctxt "_"
 msgid ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
+"external ref='figures/gnome-dictionary-3-26.png' "
+"md5='ab6aa6e49972726676c39bf69a511303'"
 msgstr ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
+"external ref='figures/gnome-dictionary-3-26.png' "
+"md5='ab6aa6e49972726676c39bf69a511303'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:39

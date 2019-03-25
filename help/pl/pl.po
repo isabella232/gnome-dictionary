@@ -1,14 +1,14 @@
 # Polish translation for gnome-dictionary help.
-# Copyright © 2017 the gnome-dictionary authors.
+# Copyright © 2017-2019 the gnome-dictionary authors.
 # This file is distributed under the same license as the gnome-dictionary help.
-# Piotr Drąg <piotrdrag@gmail.com>, 2017.
-# Aviary.pl <community-poland@mozilla.org>, 2017.
+# Piotr Drąg <piotrdrag@gmail.com>, 2017-2019.
+# Aviary.pl <community-poland@mozilla.org>, 2017-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary-help\n"
-"POT-Creation-Date: 2017-10-25 17:51+0000\n"
-"PO-Revision-Date: 2017-06-29 23:24+0200\n"
+"POT-Creation-Date: 2019-03-02 21:18+0000\n"
+"PO-Revision-Date: 2019-03-25 12:40+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -22,8 +22,8 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2017\n"
-"Aviary.pl <community-poland@mozilla.org>, 2017"
+"Piotr Drąg <piotrdrag@gmail.com>, 2017-2019\n"
+"Aviary.pl <community-poland@mozilla.org>, 2017-2019"
 
 #. (itstool) path: credit/name
 #: C/definition.page:11 C/dictionary-select.page:11 C/find.page:10
@@ -301,11 +301,11 @@ msgstr "Słownik"
 #: C/introduction.page:38
 msgctxt "_"
 msgid ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
+"external ref='figures/gnome-dictionary-3-26.png' "
+"md5='ab6aa6e49972726676c39bf69a511303'"
 msgstr ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
+"external ref='figures/gnome-dictionary-3-26.png' "
+"md5='ab6aa6e49972726676c39bf69a511303'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:39

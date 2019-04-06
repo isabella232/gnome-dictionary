@@ -1,13 +1,13 @@
 # German translation of the dictionary manual.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2008, 2012, 2017.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2008, 2012, 2017, 2019.
 # Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2013.
 # Christian Kirbach <christian.kirbach@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: dictionary\n"
-"POT-Creation-Date: 2017-06-29 14:34+0000\n"
-"PO-Revision-Date: 2017-07-24 16:06+0200\n"
+"POT-Creation-Date: 2019-03-02 21:18+0000\n"
+"PO-Revision-Date: 2019-04-06 10:49+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Mario Blättermann <mario.blaettermann@gmail.com>, 2008, 2012\n"
+"Mario Blättermann <mario.blaettermann@gmail.com>, 2008, 2012, 2017, 2019\n"
 "Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2013\n"
 "Christian Kirbach <christian.kirbach@gmail.com>, 2014\n"
 "Benjamin Steinwender <b@stbe.at>, 2015"
@@ -308,9 +308,9 @@ msgstr "Wörterbuch"
 #: C/introduction.page:38
 msgctxt "_"
 msgid ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
-msgstr "translated'"
+"external ref='figures/gnome-dictionary-3-26.png' "
+"md5='ab6aa6e49972726676c39bf69a511303'"
+msgstr "original'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:39

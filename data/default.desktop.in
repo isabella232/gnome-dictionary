@@ -1,5 +1,5 @@
 [Dictionary Source]
-# Translators: Do not translate the Name key
+# Translators: Do NOT translate or transliterate this text!
 Name=Default
 Comment=Default Dictionary Server
 Transport=dictd

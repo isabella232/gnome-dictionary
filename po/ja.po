@@ -1,12 +1,12 @@
 # gnome-dictionary ja.po.
-# Copyright (C) 1998-2013 gnome-dictionary's COPYRIGHT HOLDER
+# Copyright (C) 1998-2019 gnome-dictionary's COPYRIGHT HOLDER
 # Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
 # Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000-2002, 2009, 2011.
 # Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
-# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
 # KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2009, 2010.
 # Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2010, 2011.
@@ -15,6 +15,7 @@
 # Ikuya Awashiro <ikuya@fruitsbasket.info>, 2014.
 # Hajime Taira <htaira@redhat.com>, 2015.
 # Tsuji Kento <tuziemon@pclives.org>, 2016.
+# sicklylife <translation@sicklylife.jp>, 2019.
 #
 msgid ""
 msgstr ""
@@ -22,8 +23,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
 "issues\n"
 "POT-Creation-Date: 2019-07-25 07:23+0000\n"
-"PO-Revision-Date: 2019-01-27 22:53+0900\n"
-"Last-Translator: Tsuji Kento <tuziemon@pclives.org>\n"
+"PO-Revision-Date: 2019-08-28 20:15+0900\n"
+"Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -342,15 +343,22 @@ msgstr "辞書のオプションを表示する"
 msgid "translator-credits"
 msgstr ""
 "相花 毅 <takeshi.aihana@gmail.com>\n"
-"佐藤 暁 <ss@gnome.gr.jp>\n"
-"Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
-"Yuusuke Tahara <tahara@gnome.gr.jp>\n"
-"Yukihiro Nakai <nakai@gnome.gr.jp>\n"
 "草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n"
-"Eiichiro ITANI <emu@ceres.dti.ne.jp>\n"
-"やまねひでき <henrich@debian.or.jp>\n"
+"佐藤 暁 <ss@gnome.gr.jp>\n"
+"日本 GNOME ユーザー会 http://www.gnome.gr.jp/\n"
 "松澤 二郎 <jmatsuzawa@gnome.org>\n"
-"日本GNOMEユーザー会 http://www.gnome.gr.jp/"
+"やまねひでき <henrich@debian.or.jp>\n"
+"Eiichiro ITANI <emu@ceres.dti.ne.jp>\n"
+"Hajime Taira <htaira@redhat.com>\n"
+"Ikuya Awashiro <ikuya@fruitsbasket.info>\n"
+"KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\n"
+"sicklylife <translation@sicklylife.jp>\n"
+"Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
+"Takayoshi OKANO <kano@na.rim.or.jp>\n"
+"Tsuji Kento <tuziemon@pclives.org>\n"
+"Yasumichi Akahoshi <yasumichi@vinelinux.org>\n"
+"Yukihiro Nakai <nakai@gnome.gr.jp>\n"
+"Yuusuke Tahara <tahara@gnome.gr.jp>"
 
 #: src/gdict-about.c:55
 msgid "Look up words in dictionaries"
@@ -361,10 +369,8 @@ msgid "_New Window"
 msgstr "新しいウィンドウ(_N)"
 
 #: src/gdict-app-menus.ui:12
-#, fuzzy
-#| msgid "Save a Copy"
 msgid "_Save a Copy…"
-msgstr "検索結果の保存"
+msgstr "コピーを保存(_S)…"
 
 #: src/gdict-app-menus.ui:18
 msgid "P_review"

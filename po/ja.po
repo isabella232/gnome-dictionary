@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
 "issues\n"
-"POT-Creation-Date: 2019-01-14 14:42+0000\n"
+"POT-Creation-Date: 2019-07-25 07:23+0000\n"
 "PO-Revision-Date: 2019-01-27 22:53+0900\n"
 "Last-Translator: Tsuji Kento <tuziemon@pclives.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -30,11 +30,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#. Translators: Do not translate the Name key
-#: data/default.desktop.in:4
-msgid "Default"
-msgstr ""
 
 #: data/default.desktop.in:5
 msgid "Default Dictionary Server"
@@ -66,16 +61,12 @@ msgstr ""
 msgid "Dictionary"
 msgstr "辞書"
 
-#: data/org.gnome.Dictionary.desktop.in:5
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Dictionary.desktop.in:6
 msgid "word;synonym;definition;spelling;"
 msgstr ""
 "word;synonym;definition;spelling;単語;同義語;類義語;定義;意味;スペリング;スペ"
 "ル;つづり;綴り;Dictionary;辞書;辞典;"
-
-#. Translators: Do not translate the Icon key
-#: data/org.gnome.Dictionary.desktop.in:10
-msgid "accessories-dictionary"
-msgstr ""
 
 #: data/org.gnome.dictionary.gschema.xml:6
 msgid "The default database to use"
@@ -88,8 +79,8 @@ msgid ""
 "present in a dictionary source should be searched"
 msgstr ""
 "辞書ソースで使用するデフォルトの個人用データベースまたは個人用メタデータベー"
-"スの名前です。感嘆符 (“!”) にすると、辞書ソースにあるすべてのデータベースを"
-"検索対象にします。"
+"スの名前です。感嘆符 (“!”) にすると、辞書ソースにあるすべてのデータベースを検"
+"索対象にします。"
 
 #: data/org.gnome.dictionary.gschema.xml:11
 msgid "The default search strategy to use"
@@ -100,8 +91,8 @@ msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
 "available. The default strategy is “exact”, that is match exact words."
 msgstr ""
-"辞書ソースで使用するデフォルトの検索ルールです。デフォルトのルールは“exact”"
-"で、単語全体にマッチするものを検索します。"
+"辞書ソースで使用するデフォルトの検索ルールです。デフォルトのルール"
+"は“exact”で、単語全体にマッチするものを検索します。"
 
 #: data/org.gnome.dictionary.gschema.xml:16
 msgid "The font to be used when printing"
@@ -146,8 +137,7 @@ msgstr "“%s:%d”に接続している辞書サーバーはありません"
 #: libgdict/gdict-client-context.c:1058
 #, c-format
 msgid "Lookup failed for hostname “%s”: no suitable resources found"
-msgstr ""
-"ホスト名“%s”の検索に失敗しました: 適当なリソースが見つかりませんでした"
+msgstr "ホスト名“%s”の検索に失敗しました: 適当なリソースが見つかりませんでした"
 
 #: libgdict/gdict-client-context.c:1089
 #, c-format

@@ -1,22 +1,23 @@
 # Brazilian Portuguese translation for gnome-dictionary.
-# Copyright (C) 2015 gnome-dictionary's COPYRIGHT HOLDER
+# Copyright (C) 2019 gnome-dictionary's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-dictionary package.
 # Gabriel Barreto <gabrieljbl@gmail.com>, 2013.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2013, 2017.
 # Felipe Braga <fbobraga@gmail.com>, 2015.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2013-2019.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
-"POT-Creation-Date: 2017-06-29 14:34+0000\n"
-"PO-Revision-Date: 2017-09-08 19:19-0200\n"
+"POT-Creation-Date: 2019-03-02 21:18+0000\n"
+"PO-Revision-Date: 2019-09-08 20:13-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 1.0.0-beta1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.32.0\n"
 "X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -24,7 +25,7 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Gabriel Barreto <gabrieljbl@gmail.com>, 2013\n"
-"Rafael Fontenelle <rafaelff@gnome.org>, 2013, 2017"
+"Rafael Fontenelle <rafaelff@gnome.org>, 2013-2019"
 
 #. (itstool) path: credit/name
 #: C/definition.page:11 C/dictionary-select.page:11 C/find.page:10
@@ -308,13 +309,17 @@ msgstr "Dicionário"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/introduction.page:38
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='figures/gnome-dictionary-applet.png' "
+#| "md5='538c7fa191540f99dd964963a1079677'"
 msgctxt "_"
 msgid ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='80df283344ecd9b03b88309f8ee9912d'"
+"external ref='figures/gnome-dictionary-3-26.png' "
+"md5='ab6aa6e49972726676c39bf69a511303'"
 msgstr ""
-"external ref='figures/gnome-dictionary.png' "
-"md5='ae1a66e90cffc304d8eae34adb737667'"
+"external ref='figures/gnome-dictionary-3-26.png' "
+"md5='ab6aa6e49972726676c39bf69a511303'"
 
 #. (itstool) path: media/p
 #: C/introduction.page:39
@@ -732,9 +737,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/print.page:84
-#| msgid ""
-#| "Chose your <link href=\"help:gnome-help/printing#paper\">printing "
-#| "settings</link>."
 msgid ""
 "Choose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
 "link>."
@@ -830,10 +832,6 @@ msgstr ""
 
 #. (itstool) path: item/p
 #: C/save-definition.page:38
-#| msgid ""
-#| "Chose where you want to save the definition to and a name for the file. "
-#| "You may want to add a <file>.txt</file> file extension to the end of the "
-#| "file name."
 msgid ""
 "Choose where you want to save the definition to and a name for the file. You "
 "may want to add a <file>.txt</file> file extension to the end of the file "
@@ -1174,6 +1172,14 @@ msgstr ""
 
 #~ msgctxt "_"
 #~ msgid ""
+#~ "external ref='figures/gnome-dictionary.png' "
+#~ "md5='80df283344ecd9b03b88309f8ee9912d'"
+#~ msgstr ""
+#~ "external ref='figures/gnome-dictionary.png' "
+#~ "md5='ae1a66e90cffc304d8eae34adb737667'"
+
+#~ msgctxt "_"
+#~ msgid ""
 #~ "external ref='figures/gnome-dictionary-icon.png' "
 #~ "md5='2f50c3a71e57be0b41efd43c2f7fae60'"
 #~ msgstr ""
@@ -1211,14 +1217,6 @@ msgstr ""
 #~ msgstr ""
 #~ "external ref='figures/gnome-dictionary-preferences-print.png' "
 #~ "md5='abdd904567badd345956ce73e176ef95'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/gnome-dictionary-applet.png' "
-#~ "md5='538c7fa191540f99dd964963a1079677'"
-#~ msgstr ""
-#~ "external ref='figures/gnome-dictionary-applet.png' "
-#~ "md5='538c7fa191540f99dd964963a1079677'"
 
 #~ msgctxt "_"
 #~ msgid ""

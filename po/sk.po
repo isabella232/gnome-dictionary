@@ -11,10 +11,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"dictionary&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-06-28 17:43+0000\n"
-"PO-Revision-Date: 2017-09-02 11:39+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
+"issues\n"
+"POT-Creation-Date: 2019-09-28 20:50+0000\n"
+"PO-Revision-Date: 2020-01-31 10:23+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -22,17 +22,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 2.0.3\n"
-
-#. Translators: Do not translate the Name key
-#: data/default.desktop.in:4
-msgid "Default"
-msgstr "Default"
+"X-Generator: Poedit 2.2.4\n"
 
 # Dictionary source desription
 #: data/default.desktop.in:5
 msgid "Default Dictionary Server"
-msgstr "predvolený server slovníkov"
+msgstr "Predvolený server slovníkov"
 
 # desktop entry name
 #: data/org.gnome.Dictionary.appdata.xml.in:6
@@ -65,14 +60,10 @@ msgstr ""
 msgid "Dictionary"
 msgstr "Slovník"
 
-#: data/org.gnome.Dictionary.desktop.in:5
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Dictionary.desktop.in:6
 msgid "word;synonym;definition;spelling;"
 msgstr "slovo;synonymum;vysvetlenie;definícia;hláskovanie;pravopis;"
-
-#. Translators: Do not translate the Icon key
-#: data/org.gnome.Dictionary.desktop.in:10
-msgid "accessories-dictionary"
-msgstr "accessories-dictionary"
 
 # gsetting summary
 #: data/org.gnome.dictionary.gschema.xml:6
@@ -133,7 +124,7 @@ msgstr "spanish"
 # Dictionary source desription
 #: data/spanish.desktop.in:5
 msgid "Spanish Dictionaries"
-msgstr "španielske slovníky"
+msgstr "Španielske slovníky"
 
 #. Translators: Do not translate the Name key
 #: data/thai.desktop.in:4
@@ -143,7 +134,7 @@ msgstr "Thai"
 # Dictionary source desription
 #: data/thai.desktop.in:5
 msgid "Longdo Thai-English Dictionaries"
-msgstr "thajsko-anglické slovníky Longdo "
+msgstr "hajsko-anglické slovníky Longdo"
 
 # %s -> hostname
 # %d -> port
@@ -242,10 +233,12 @@ msgid "Connection timeout for the dictionary server at “%s:%d”"
 msgstr "Časový limit pripojenia pre server slovníka „%s:%d“ vypršal"
 
 #: libgdict/gdict-client-context.c:1891
+#, c-format
 msgid "No hostname defined for the dictionary server"
 msgstr "Nie je definovaný žiadny hostiteľ pre server slovníka"
 
 #: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
+#, c-format
 msgid "Unable to create socket"
 msgstr "Nepodarilo sa vytvoriť soket"
 
@@ -318,6 +311,7 @@ msgid ""
 msgstr "Nepodarilo sa získať kľúč „%s“ v súbore definície zdroja slovníka: %s"
 
 #: libgdict/gdict-source.c:779
+#, c-format
 msgid "Dictionary source does not have name"
 msgstr "Slovníkový zdroj nemá názov"
 
@@ -385,89 +379,86 @@ msgid "_New Window"
 msgstr "_Nové okno"
 
 #: src/gdict-app-menus.ui:12
-msgid "Preferences"
-msgstr "Nastavenia"
-
-#: src/gdict-app-menus.ui:18
-msgid "Help"
-msgstr "Pomocník"
-
-#: src/gdict-app-menus.ui:23
-msgid "About"
-msgstr "O programe"
-
-#: src/gdict-app-menus.ui:27
-msgid "_Quit"
-msgstr "U_končiť"
-
-#: src/gdict-app-menus.ui:37
 msgid "_Save a Copy…"
 msgstr "_Uložiť kópiu…"
 
 # menu /file
-#: src/gdict-app-menus.ui:43
+#: src/gdict-app-menus.ui:18
 msgid "P_review"
 msgstr "Ná_hľad pred tlačou"
 
 # menu /file
-#: src/gdict-app-menus.ui:48
+#: src/gdict-app-menus.ui:23
 msgid "_Print"
 msgstr "_Tlač"
 
 # menu /edit
-#: src/gdict-app-menus.ui:55
+#: src/gdict-app-menus.ui:30
 msgid "_Find"
 msgstr "_Nájsť"
 
 # menu /
-#: src/gdict-app-menus.ui:62
+#: src/gdict-app-menus.ui:37
 msgid "_View"
 msgstr "_Zobraziť"
 
 # menu /view
-#: src/gdict-app-menus.ui:65
+#: src/gdict-app-menus.ui:40
 msgid "_Sidebar"
 msgstr "_Bočný panel"
 
 # menu /view
-#: src/gdict-app-menus.ui:72
+#: src/gdict-app-menus.ui:47
 msgid "Similar _Words"
 msgstr "Podobné s_lová"
 
 # menu /view
-#: src/gdict-app-menus.ui:77
+#: src/gdict-app-menus.ui:52
 msgid "Dictionary Sources"
 msgstr "Zdroje slovníkov"
 
 # menu /view
-#: src/gdict-app-menus.ui:82
+#: src/gdict-app-menus.ui:57
 msgid "Available St_rategies"
 msgstr "Dostupné p_ostupy"
 
 # menu /
-#: src/gdict-app-menus.ui:89
+#: src/gdict-app-menus.ui:64
 msgid "_Go"
 msgstr "Prejsť _na"
 
 # menu /go
-#: src/gdict-app-menus.ui:92
+#: src/gdict-app-menus.ui:67
 msgid "_Previous Definition"
 msgstr "_Predchádzajúca definícia"
 
 # menu /go
-#: src/gdict-app-menus.ui:97
+#: src/gdict-app-menus.ui:72
 msgid "_Next Definition"
 msgstr "Ď_alšia definícia"
 
 # menu /go
-#: src/gdict-app-menus.ui:104
+#: src/gdict-app-menus.ui:79
 msgid "_First Definition"
 msgstr "P_rvá definícia"
 
 # menu /go
-#: src/gdict-app-menus.ui:109
+#: src/gdict-app-menus.ui:84
 msgid "_Last Definition"
 msgstr "Pos_ledná definícia"
+
+#: src/gdict-app-menus.ui:93
+msgid "Pr_eferences"
+msgstr "Pr_edvoľby"
+
+#. The help button is always visible
+#: src/gdict-app-menus.ui:97 src/gdict-source-dialog.c:668
+msgid "_Help"
+msgstr "_Pomocník"
+
+#: src/gdict-app-menus.ui:102
+msgid "_About Dictionary"
+msgstr "_O aplikácii Slovník"
 
 # cmd desc
 #: src/gdict-app.c:47 src/gdict-app.c:76
@@ -512,9 +503,9 @@ msgstr "SLOVÁ"
 
 #: src/gdict-app.c:108
 msgid "Dictionary Preferences"
-msgstr "Nastavenia programu Slovník"
+msgstr "Predvoľby aplikácie Slovník"
 
-#: src/gdict-app.c:139 src/gdict-source-dialog.c:459
+#: src/gdict-app.c:139 src/gdict-source-dialog.c:465
 msgid "There was an error while displaying help"
 msgstr "Pri zobrazovaní pomocníka sa vyskytla chyba"
 
@@ -537,7 +528,7 @@ msgstr "Odstrániť „%s“?"
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Týmto sa natrvalo odstráni slovníkový zdroj zo zoznamu."
 
-#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:571
+#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:577
 #: src/gdict-window.c:822
 msgid "_Cancel"
 msgstr "_Zrušiť"
@@ -581,7 +572,7 @@ msgid "Edit the currently selected dictionary source"
 msgstr "Upraví práve vybraný zdroj slovníka"
 
 # tab
-#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:170
+#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:171
 msgid "Source"
 msgstr "Zdroj"
 
@@ -605,73 +596,68 @@ msgstr "Tlač"
 msgid "Unable to display the preview: %s"
 msgstr "Nepodarilo sa zobraziť náhľad pred tlačou: %s"
 
-#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:404
+#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:410
 msgid "Unable to create a source file"
 msgstr "Nepodarilo sa vytvoriť zdrojový súbor"
 
-#: src/gdict-source-dialog.c:332 src/gdict-source-dialog.c:424
+#: src/gdict-source-dialog.c:338 src/gdict-source-dialog.c:430
 msgid "Unable to save source file"
 msgstr "Nepodarilo sa uložiť zdrojový súbor"
 
 # menu /file
 #. we just allow closing the dialog
-#: src/gdict-source-dialog.c:567 src/gdict-source-dialog.c:581
+#: src/gdict-source-dialog.c:573 src/gdict-source-dialog.c:587
 msgid "_Close"
 msgstr "Za_vrieť"
 
-#: src/gdict-source-dialog.c:572
+#: src/gdict-source-dialog.c:578
 msgid "_Add"
 msgstr "Prid_ať"
 
-#: src/gdict-source-dialog.c:580
+#: src/gdict-source-dialog.c:586
 msgid "C_ancel"
 msgstr "Z_rušiť"
 
-#. The help button is always visible
-#: src/gdict-source-dialog.c:662
-msgid "_Help"
-msgstr "_Pomocník"
-
 # label
-#: src/gdict-source-dialog.ui:57
+#: src/gdict-source-dialog.ui:58
 msgid "_Description"
 msgstr "P_opis"
 
 # label
-#: src/gdict-source-dialog.ui:72
+#: src/gdict-source-dialog.ui:73
 msgid "_Port"
 msgstr "_Port"
 
 # property nick
-#: src/gdict-source-dialog.ui:86
+#: src/gdict-source-dialog.ui:87
 msgid "_Hostname"
 msgstr "_Názov hostiteľa"
 
 # label
-#: src/gdict-source-dialog.ui:100
+#: src/gdict-source-dialog.ui:101
 msgid "_Transport"
 msgstr "Pr_enos"
 
-#: src/gdict-source-dialog.ui:114
+#: src/gdict-source-dialog.ui:115
 msgid "2628"
 msgstr "2628"
 
-#: src/gdict-source-dialog.ui:126
+#: src/gdict-source-dialog.ui:127
 msgid "dict.org"
 msgstr "dict.org"
 
 # entry text
-#: src/gdict-source-dialog.ui:138
+#: src/gdict-source-dialog.ui:139
 msgid "Source Name"
 msgstr "Názov zdroja"
 
 # tab
-#: src/gdict-source-dialog.ui:197
+#: src/gdict-source-dialog.ui:198
 msgid "Dictionaries"
 msgstr "Slovníky"
 
 # tab
-#: src/gdict-source-dialog.ui:222
+#: src/gdict-source-dialog.ui:223
 msgid "Strategies"
 msgstr "Postupy"
 
@@ -748,6 +734,21 @@ msgstr "Dostupné stratégie"
 #: src/gdict-window.c:1455
 msgid "Dictionary sources"
 msgstr "Zdroje slovníkov"
+
+#~ msgid "Default"
+#~ msgstr "Default"
+
+#~ msgid "accessories-dictionary"
+#~ msgstr "accessories-dictionary"
+
+#~ msgid "Help"
+#~ msgstr "Pomocník"
+
+#~ msgid "About"
+#~ msgstr "O programe"
+
+#~ msgid "_Quit"
+#~ msgstr "U_končiť"
 
 # menu /file
 #~ msgid "_Save a Copy..."
@@ -980,6 +981,3 @@ msgstr "Zdroje slovníkov"
 # cmd desc
 #~ msgid " - Look up words in dictionaries"
 #~ msgstr " - vyhľadá slová v slovníkoch"
-
-#~ msgid "About Dictionary"
-#~ msgstr "O programe Slovník"

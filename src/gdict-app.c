@@ -324,17 +324,47 @@ gdict_app_activate (GApplication *application)
 static void
 gdict_app_startup (GApplication *application)
 {
-  static const char *lookup_accels[2] = { "<Primary>l", NULL };
-  static const char *escape_accels[2] = { "Escape", NULL };
+  static const gchar *action_accels[] =
+  {
+    /* Win shortcuts */
+    "win.save-as",          "<Primary>s", NULL,
+    "win.preview",          "<Primary><Shift>p", NULL ,
+    "win.print",            "<Primary>p", NULL,
+    "win.find",             "<Primary>f", NULL,
+    "win.previous-def",     "Page_Up", NULL,
+    "win.next-def",         "Page_Down", NULL,
+    "win.first-def",        "Home", NULL,
+    "win.last-def",         "End", NULL,
+    "win.view-sidebar",     "F9", NULL,
+    "win.view-speller",     "<Primary>t", NULL,
+    "win.view-source",      "<Primary>d", NULL,
+    "win.view-strat",       "<Primary>r", NULL,
+    "win.lookup",           "<Primary>l", NULL,
+    "win.escape",           "Escape", NULL,
+    "win.help-overlay-ui",  "<Primary>question", NULL,
+    /* App shortcuts */
+    "app.new",              "<Primary>n", NULL,
+    "app.preferences",      "<Primary>comma", NULL,
+    "app.help",             "F1", NULL,
+    "app.close",            "<Primary>w", NULL,
+    "app.quit",             "<Primary>q", NULL,
+    NULL /* Terminating NULL */
+  };
+
+  g_set_application_name (_("Dictionary"));
 
   G_APPLICATION_CLASS (gdict_app_parent_class)->startup (application);
 
-  g_action_map_add_action_entries (G_ACTION_MAP (application),
-                                   app_entries, G_N_ELEMENTS (app_entries),
-                                   application);
+  g_action_map_add_action_entries (G_ACTION_MAP (application), app_entries,
+                                   G_N_ELEMENTS (app_entries), application);
 
-  gtk_application_set_accels_for_action (GTK_APPLICATION (application), "win.lookup", lookup_accels);
-  gtk_application_set_accels_for_action (GTK_APPLICATION (application), "win.escape", escape_accels);
+  GtkApplication *gtk_app = GTK_APPLICATION (application);
+  for (const char **it = action_accels;
+       it[0] != NULL;
+       it += g_strv_length ((char **) it) + 1)
+    {
+      gtk_application_set_accels_for_action (gtk_app, it[0], &it[1]);
+    }
 }
 
 static void

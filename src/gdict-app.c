@@ -168,13 +168,28 @@ gdict_app_cmd_quit (GSimpleAction *action,
   g_list_foreach (windows, (GFunc)gtk_widget_destroy, NULL);
 }
 
+static void
+gdict_app_cmd_close (GSimpleAction *action,
+          GVariant *variant,
+          gpointer user_data)
+{
+    GtkApplication *app = user_data;
+    GList *windows;
+
+    windows = gtk_application_get_windows (app);
+
+    if (windows != NULL)
+      gtk_window_close (windows->data);
+}
+
 static const GActionEntry app_entries[] =
 {
   { "new", gdict_app_cmd_new, NULL, NULL, NULL },
   { "preferences", gdict_app_cmd_preferences, NULL, NULL, NULL },
   { "help", gdict_app_cmd_help, NULL, NULL, NULL },
   { "about", gdict_app_cmd_about, NULL, NULL, NULL },
-  { "quit", gdict_app_cmd_quit, NULL, NULL, NULL }
+  { "quit", gdict_app_cmd_quit, NULL, NULL, NULL },
+  { "close", gdict_app_cmd_close, NULL, NULL, NULL }
 };
 
 static void

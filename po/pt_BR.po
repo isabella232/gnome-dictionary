@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of gnome-dictionary
-# Copyright (C) 1999-2019 the gnome-dictionary authors.
+# Copyright (C) 1999-2020 the gnome-dictionary authors.
 # This file is distributed under the same license as the gnome-dictionary package.
 # Alexandre Hautequest <hquest@fesppr.br>, 1999.
 # Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000.
@@ -21,29 +21,24 @@
 # Enrico Nicoletto <liverig@gmail.com>, 2013.
 # Fábio Nogueira <fnogueira@gnome.org>, 2014, 2016.
 # Felipe Braga <fbobraga@gmail.com>, 2015.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2013-2019.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2013-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-dictionary\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
 "issues\n"
-"POT-Creation-Date: 2019-02-24 15:36+0000\n"
-"PO-Revision-Date: 2019-02-26 22:39-0300\n"
+"POT-Creation-Date: 2020-04-14 07:49+0000\n"
+"PO-Revision-Date: 2020-07-18 09:46-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
-"Language-Team: Portuguese - Brazil <gnome-pt_br-list@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.31.90\n"
+"X-Generator: Gtranslator 3.36.0\n"
 "X-Project-Style: gnome\n"
-
-#. Translators: Do not translate the Name key
-#: data/default.desktop.in:4
-msgid "Default"
-msgstr "Default"
 
 #: data/default.desktop.in:5
 msgid "Default Dictionary Server"
@@ -56,7 +51,8 @@ msgstr "Dicionário do GNOME"
 #: data/org.gnome.Dictionary.appdata.xml.in:7
 #: data/org.gnome.Dictionary.desktop.in:4
 msgid "Check word definitions and spellings in an online dictionary"
-msgstr "Verificar definição e ortografia das palavras em um dicionário on-line"
+msgstr ""
+"Verifique definições e ortografia das palavras em um dicionário on-line"
 
 #: data/org.gnome.Dictionary.appdata.xml.in:9
 msgid ""
@@ -75,14 +71,10 @@ msgstr ""
 msgid "Dictionary"
 msgstr "Dicionário"
 
-#: data/org.gnome.Dictionary.desktop.in:5
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Dictionary.desktop.in:6
 msgid "word;synonym;definition;spelling;"
 msgstr "palavra;sinônimo;definição;ortografia;"
-
-#. Translators: Do not translate the Icon key
-#: data/org.gnome.Dictionary.desktop.in:10
-msgid "accessories-dictionary"
-msgstr "accessories-dictionary"
 
 #: data/org.gnome.dictionary.gschema.xml:6
 msgid "The default database to use"
@@ -448,7 +440,6 @@ msgid "_Last Definition"
 msgstr "Ú_ltima definição"
 
 #: src/gdict-app-menus.ui:93
-#| msgid "Preferences"
 msgid "Pr_eferences"
 msgstr "Pr_eferências"
 
@@ -458,7 +449,6 @@ msgid "_Help"
 msgstr "_Ajuda"
 
 #: src/gdict-app-menus.ui:102
-#| msgid "About Dictionary"
 msgid "_About Dictionary"
 msgstr "_Sobre o Dicionário"
 
@@ -701,6 +691,12 @@ msgstr "Estratégias disponíveis"
 #: src/gdict-window.c:1455
 msgid "Dictionary sources"
 msgstr "Fontes de dicionário"
+
+#~ msgid "Default"
+#~ msgstr "Default"
+
+#~ msgid "accessories-dictionary"
+#~ msgstr "accessories-dictionary"
 
 #~ msgid "Help"
 #~ msgstr "Ajuda"

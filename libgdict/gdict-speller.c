@@ -24,9 +24,7 @@
  * #GdictContext query, using a specific database and a matching strategy.
  */
 
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>

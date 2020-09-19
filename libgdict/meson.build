@@ -33,12 +33,15 @@ sources_c = [
 ]
 
 libgdict_enums = gnome.mkenums('gdict-enum-types', sources: sources_h,
-                               h_template: 'gdict-enum-types.h.in',
-                               c_template: 'gdict-enum-types.c.in',
-                               install_header: false)
+  h_template: 'gdict-enum-types.h.in',
+  c_template: 'gdict-enum-types.c.in',
+  install_header: false,
+)
+
 libgdict_marshal = gnome.genmarshal('gdict-marshal',
-                                    sources: 'gdict-marshal.list',
-                                    prefix: 'gdict_marshal')
+  sources: 'gdict-marshal.list',
+  prefix: 'gdict_marshal',
+)
 
 libgdict_version = meson.project_version().split('.')
 libgdict_major = libgdict_version[0].to_int()
@@ -46,7 +49,6 @@ libgdict_minor = libgdict_version[1].to_int()
 libgdict_micro = libgdict_version[2].to_int()
 
 libgdict_cflags = [
-  '-DHAVE_CONFIG_H',
   '-D_GNU_SOURCE',
   '-DG_LOG_DOMAIN="Gdict"',
   '-DDATADIR="@0@"'.format(gdict_datadir),
@@ -67,26 +69,23 @@ libgdict_cflags = [
   '-DGTK_DISABLE_SINGLE_INCLUDES',
 ]
 
-libgdict_ldflags = []
-if cc.get_id() == 'gcc'
-  libgdict_ldflags += [
-    '-Wl,-Bsymbolic-functions',
-    '-Wl,-z,relro',
-    '-Wl,-z,now',
-  ]
-endif
-
-libgdict_inc = include_directories('.')
+libgdict_ldflags = cc.get_supported_link_arguments([
+  '-Wl,-Bsymbolic-functions',
+  '-Wl,-z,relro',
+  '-Wl,-z,now',
+])
 
 libgdict_lib = static_library('libgdict-1.0',
-                              sources: sources_h_priv + sources_c + libgdict_enums + libgdict_marshal,
-                              dependencies: [ gio_dep, gtk_dep, ipv6_deps ],
-                              include_directories: [ root_dir, libgdict_inc ],
-                              c_args: common_cflags + debug_cflags + libgdict_cflags,
-                              link_args: libgdict_ldflags,
-                              install: false)
+  sources: sources_c + libgdict_enums + libgdict_marshal,
+  dependencies: [ gio_dep, gtk_dep, ipv6_deps ],
+  include_directories: root_inc,
+  c_args: common_cflags + debug_cflags + libgdict_cflags,
+  link_args: libgdict_ldflags,
+  install: false,
+)
 
 libgdict_dep = declare_dependency(sources: libgdict_enums + libgdict_marshal,
-                                  link_with: libgdict_lib,
-				  include_directories: [ libgdict_inc ],
-				  dependencies: [ gio_dep, gtk_dep, ipv6_deps ])
+  link_with: libgdict_lib,
+  include_directories: [ libgdict_inc ],
+  dependencies: [ gio_dep, gtk_dep, ipv6_deps ],
+)

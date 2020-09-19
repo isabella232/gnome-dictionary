@@ -356,6 +356,7 @@ gdict_database_chooser_constructor (GType                  type,
   gtk_widget_show (priv->treeview);
 
   hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+  gtk_style_context_add_class (gtk_widget_get_style_context (hbox), "inline-toolbar");
   priv->buttons_box = hbox;
 
   priv->refresh_button = gtk_button_new ();

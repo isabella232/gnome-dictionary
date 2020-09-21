@@ -34,7 +34,7 @@ main (int argc, char *argv[])
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
   textdomain (GETTEXT_PACKAGE);
 
-  g_set_prgname ("gnome-dictionary");
+  g_set_prgname (APPLICATION_ID);
 
   if (!gdict_create_config_dir ())
     exit (1);

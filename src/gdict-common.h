@@ -25,7 +25,7 @@
 
 G_BEGIN_DECLS
 
-gchar *  gdict_get_data_dir    (void) G_GNUC_MALLOC;
+gchar *  gdict_get_data_dir       (void) G_GNUC_MALLOC;
 gchar *  gdict_get_old_data_dir   (void) G_GNUC_MALLOC;
 gchar *  gdict_get_config_dir     (void) G_GNUC_MALLOC;
 
@@ -38,6 +38,8 @@ void     gdict_show_error_dialog  (GtkWindow   *parent,
 void     gdict_show_gerror_dialog (GtkWindow   *parent,
 				   const gchar *message,
 				   GError      *error);
+
+gboolean gdict_is_devel_build     (void);
 
 G_END_DECLS
 

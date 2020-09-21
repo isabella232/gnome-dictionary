@@ -241,3 +241,13 @@ gdict_show_gerror_dialog (GtkWindow   *parent,
   g_error_free (error);
   error = NULL;
 }
+
+gboolean
+gdict_is_devel_build (void)
+{
+#ifdef DEVELOPMENT_BUILD
+  return TRUE;
+#else
+  return FALSE;
+#endif
+}

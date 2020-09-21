@@ -365,14 +365,14 @@ gdict_app_init (GdictApp *app)
   g_application_add_main_option_entries (G_APPLICATION (app), gdict_app_goptions);
 
   /* Set main application icon */
-  gtk_window_set_default_icon_name ("org.gnome.Dictionary");
+  gtk_window_set_default_icon_name (APPLICATION_ID);
 }
 
 GApplication *
 gdict_app_new (void)
 {
   return g_object_new (gdict_app_get_type (),
-                       "application-id", "org.gnome.Dictionary",
+                       "application-id", APPLICATION_ID,
                        "resource-base-path", "/org/gnome/Dictionary",
                        "flags", G_APPLICATION_HANDLES_COMMAND_LINE,
                        NULL);

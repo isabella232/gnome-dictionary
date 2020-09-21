@@ -45,8 +45,8 @@ libgdict_marshal = gnome.genmarshal('gdict-marshal',
 
 libgdict_version = meson.project_version().split('.')
 libgdict_major = libgdict_version[0].to_int()
-libgdict_minor = libgdict_version[1].to_int()
-libgdict_micro = libgdict_version[2].to_int()
+libgdict_minor = libgdict_version[1] in ['alpha', 'beta', 'rc'] ? 0 : libgdict_version[1].to_int()
+libgdict_micro = 0
 
 libgdict_cflags = [
   '-D_GNU_SOURCE',

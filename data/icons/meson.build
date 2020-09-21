@@ -1,5 +1,7 @@
-install_data(
-  'scalable/org.gnome.Dictionary.svg',
+install_data([
+    'scalable/org.gnome.Dictionary.svg',
+    'scalable/org.gnome.Dictionary.Devel.svg',
+  ],
   install_dir: gdict_datadir / 'icons/hicolor/scalable/apps',
 )
 

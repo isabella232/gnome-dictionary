@@ -1,6 +1,13 @@
+desktop_conf = configuration_data()
+desktop_conf.set('icon', application_id)
+desktop_conf.set('application_id', application_id)
 i18n.merge_file('desktop',
-  input: 'org.gnome.Dictionary.desktop.in',
-  output: 'org.gnome.Dictionary.desktop',
+  input: configure_file(
+    input: 'org.gnome.Dictionary.desktop.in.in',
+    output: 'org.gnome.Dictionary.desktop.in',
+    configuration: desktop_conf,
+  ),
+  output: application_id + '.desktop',
   install: true,
   install_dir: gdict_datadir / 'applications',
   po_dir: po_dir,
@@ -11,14 +18,20 @@ desktop_file_validate = find_program('desktop-file-validate', required: false)
 if desktop_file_validate.found()
   test('validate-desktop',
     desktop_file_validate,
-    args: 'org.gnome.Dictionary.desktop',
+    args: application_id + '.desktop',
     workdir: meson.current_build_dir(),
   )
 endif
 
+appdata_conf = configuration_data()
+appdata_conf.set('application_id', application_id)
 i18n.merge_file('appdata',
-  input: 'org.gnome.Dictionary.appdata.xml.in',
-  output: 'org.gnome.Dictionary.appdata.xml',
+  input: configure_file(
+    input: 'org.gnome.Dictionary.appdata.xml.in.in',
+    output: 'org.gnome.Dictionary.appdata.xml.in',
+    configuration: appdata_conf,
+  ),
+  output: application_id + '.appdata.xml',
   install: true,
   install_dir: gdict_datadir / 'metainfo',
   po_dir: po_dir,
@@ -28,15 +41,16 @@ appstream_util = find_program('appstream-util', required: false)
 if appstream_util.found()
   test('validate-appdata',
     appstream_util,
-    args: [ 'validate', '--nonet', 'org.gnome.Dictionary.appdata.xml' ],
+    args: [ 'validate', '--nonet', application_id + '.appdata.xml' ],
     workdir: meson.current_build_dir(),
   )
 endif
 
 service_conf = configuration_data ()
 service_conf.set('bindir', gdict_bindir)
+service_conf.set('application_id', application_id)
 configure_file(input: 'org.gnome.Dictionary.service.in',
-  output: 'org.gnome.Dictionary.service',
+  output: application_id + '.service',
   configuration: service_conf,
   install_dir: gdict_servicedir,
 )

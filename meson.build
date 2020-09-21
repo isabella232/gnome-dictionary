@@ -1,4 +1,4 @@
-project('gnome-dictionary', 'c', version: '3.26.2',
+project('gnome-dictionary', 'c', version: '40.alpha',
         default_options: [
           'buildtype=debugoptimized',
           'c_std=c99',
@@ -6,6 +6,10 @@ project('gnome-dictionary', 'c', version: '3.26.2',
         ],
         license: 'GPLv2+',
         meson_version: '>= 0.54.0')
+
+gdict_version = meson.project_version().split('.')
+gdict_major_version = gdict_version[0].to_int()
+gdict_minor_version = gdict_version[1]
 
 # Paths for the pkg-config file
 gdict_prefix = get_option('prefix')
@@ -70,10 +74,17 @@ endif
 
 common_cflags = cc.get_supported_arguments(test_cflags)
 
+profile = get_option('profile')
 debug = get_option('debug')
 optimization = get_option('optimization')
 buildtype = get_option('buildtype')
 debug_cflags = []
+
+if profile == 'devel' or gdict_minor_version in ['alpha', 'beta', 'rc']
+  application_id = 'org.gnome.Dictionary.Devel'
+else
+  application_id = 'org.gnome.Dictionary'
+endif
 
 if debug
   debug_cflags += '-DGDICT_ENABLE_DEBUG'

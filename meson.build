@@ -141,4 +141,4 @@ subdir('data')
 subdir('help')
 
 # Post-installation trigger
-meson.add_install_script ('build-aux/meson/post-install.sh')
+meson.add_install_script ('build-aux/meson/post-install.py')

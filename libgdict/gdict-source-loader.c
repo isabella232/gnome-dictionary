@@ -24,9 +24,7 @@
  * files inside a set of paths and return a #GdictSource using its name.
  */
 
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -46,8 +44,6 @@
 #include "gdict-private.h"
 
 #define GDICT_SOURCE_FILE_SUFFIX	 	".desktop"
-
-#define GDICT_SOURCE_LOADER_GET_PRIVATE(obj)	(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_SOURCE_LOADER, GdictSourceLoaderPrivate))
 
 struct _GdictSourceLoaderPrivate
 {
@@ -76,38 +72,18 @@ enum
 
 static guint loader_signals[LAST_SIGNAL] = { 0 };
 
-
-
-G_DEFINE_TYPE (GdictSourceLoader, gdict_source_loader, G_TYPE_OBJECT);
-
+G_DEFINE_TYPE_WITH_PRIVATE (GdictSourceLoader, gdict_source_loader, G_TYPE_OBJECT)
 
 static void
 gdict_source_loader_finalize (GObject *object)
 {
-  GdictSourceLoaderPrivate *priv = GDICT_SOURCE_LOADER_GET_PRIVATE (object);
-  
-  if (priv->paths)
-    {
-      g_slist_foreach (priv->paths,
-      		       (GFunc) g_free,
-      		       NULL);
-      g_slist_free (priv->paths);
-      
-      priv->paths = NULL;
-    }
-  
-  if (priv->sources_by_name)
-    g_hash_table_destroy (priv->sources_by_name);
-  
-  if (priv->sources)
-    {
-      g_slist_foreach (priv->sources,
-      		       (GFunc) g_object_unref,
-      		       NULL);
-      g_slist_free (priv->sources);
-      
-      priv->sources = NULL;
-    }
+  GdictSourceLoader *self = GDICT_SOURCE_LOADER (object);
+  GdictSourceLoaderPrivate *priv = gdict_source_loader_get_instance_private (self);
+
+  g_clear_pointer (&priv->sources_by_name, g_hash_table_unref);
+
+  g_slist_free_full (priv->paths, g_free);
+  g_slist_free_full (priv->sources, g_object_unref);
   
   G_OBJECT_CLASS (gdict_source_loader_parent_class)->finalize (object);
 }
@@ -203,8 +179,6 @@ gdict_source_loader_class_init (GdictSourceLoaderClass *klass)
     		  gdict_marshal_VOID__OBJECT,
     		  G_TYPE_NONE, 1,
     		  GDICT_TYPE_SOURCE);
-  
-  g_type_class_add_private (klass, sizeof (GdictSourceLoaderPrivate));
 }
 
 static void
@@ -212,7 +186,7 @@ gdict_source_loader_init (GdictSourceLoader *loader)
 {
   GdictSourceLoaderPrivate *priv;
   
-  priv = GDICT_SOURCE_LOADER_GET_PRIVATE (loader);
+  priv = gdict_source_loader_get_instance_private (loader);
   loader->priv = priv;
   
   priv->paths = NULL;

@@ -7,7 +7,7 @@ Exec=gnome-dictionary
 Terminal=false
 Type=Application
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=org.gnome.Dictionary
+Icon=@application_id@
 StartupNotify=true
 Categories=GNOME;GTK;Office;Dictionary;
 NotShowIn=KDE;

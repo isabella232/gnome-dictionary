@@ -1,23 +1,27 @@
-project('gnome-dictionary', 'c', version: '3.26.2',
+project('gnome-dictionary', 'c', version: '40.alpha',
         default_options: [
           'buildtype=debugoptimized',
           'c_std=c99',
           'warning_level=1',
         ],
         license: 'GPLv2+',
-        meson_version: '>= 0.42.0')
+        meson_version: '>= 0.54.0')
+
+gdict_version = meson.project_version().split('.')
+gdict_major_version = gdict_version[0].to_int()
+gdict_minor_version = gdict_version[1]
 
 # Paths for the pkg-config file
 gdict_prefix = get_option('prefix')
-gdict_bindir = join_paths(gdict_prefix, get_option('bindir'))
-gdict_libdir = join_paths(gdict_prefix, get_option('libdir'))
-gdict_datadir = join_paths(gdict_prefix, get_option('datadir'))
-gdict_includedir = join_paths(gdict_prefix, get_option('includedir'))
-gdict_libexecdir = join_paths(gdict_prefix, get_option('libexecdir'))
-gdict_mandir = join_paths(gdict_prefix, get_option('mandir'))
-gdict_sysconfdir = join_paths(gdict_prefix, get_option('sysconfdir'))
-gdict_schemadir = join_paths (gdict_datadir, 'glib-2.0', 'schemas')
-gdict_servicedir = join_paths (gdict_datadir, 'dbus-1', 'services')
+gdict_bindir = gdict_prefix / get_option('bindir')
+gdict_libdir = gdict_prefix / get_option('libdir')
+gdict_datadir = gdict_prefix / get_option('datadir')
+gdict_includedir = gdict_prefix / get_option('includedir')
+gdict_libexecdir = gdict_prefix / get_option('libexecdir')
+gdict_mandir = gdict_prefix / get_option('mandir')
+gdict_sysconfdir = gdict_prefix / get_option('sysconfdir')
+gdict_schemadir = gdict_datadir / 'glib-2.0' / 'schemas'
+gdict_servicedir = gdict_datadir / 'dbus-1' / 'services'
 
 cc = meson.get_compiler('c')
 host_system = host_machine.system()
@@ -68,20 +72,27 @@ else
   test_cflags = []
 endif
 
-common_cflags = []
-foreach cflag: test_cflags
-  if cc.has_argument(cflag)
-    common_cflags += [ cflag ]
-  endif
-endforeach
+common_cflags = cc.get_supported_arguments(test_cflags)
 
-debug_cflags = []
+profile = get_option('profile')
+debug = get_option('debug')
+optimization = get_option('optimization')
 buildtype = get_option('buildtype')
-if buildtype == 'debug'
-  debug_cflags += [ '-DGDICT_ENABLE_DEBUG', ]
-elif buildtype == 'debugoptimized'
-  debug_cflags += [ '-DGDICT_ENABLE_DEBUG', '-DG_DISABLE_CAST_CHECKS', ]
-elif buildtype == 'release'
+debug_cflags = []
+
+if profile == 'devel' or gdict_minor_version in ['alpha', 'beta', 'rc']
+  application_id = 'org.gnome.Dictionary.Devel'
+else
+  application_id = 'org.gnome.Dictionary'
+endif
+
+if debug
+  debug_cflags += '-DGDICT_ENABLE_DEBUG'
+elif optimization in ['2', '3', 's']
+  debug_cflags += '-DG_DISABLE_CAST_CHECKS'
+endif
+
+if buildtype == 'release'
   debug_cflags += [ '-DG_DISABLE_ASSERT', '-DG_DISABLE_CHECKS', '-DG_DISABLE_CAST_CHECKS', ]
 endif
 
@@ -121,7 +132,9 @@ endif
 
 conf.set10('ENABLE_IPV6', use_ipv6)
 
-root_dir = include_directories('.')
+root_inc = include_directories('.')
+libgdict_inc = include_directories('libgdict')
+src_inc = include_directories('src')
 po_dir = join_paths(meson.current_source_dir(), 'po')
 
 configure_file(output: 'config.h', configuration: conf)
@@ -139,4 +152,4 @@ subdir('data')
 subdir('help')
 
 # Post-installation trigger
-meson.add_install_script ('build-aux/post-install.sh')
+meson.add_install_script ('build-aux/meson/post-install.py')

@@ -27,9 +27,7 @@
  * #GdictDatabaseChooser is available since Gdict 0.10
  */
 
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -46,9 +44,6 @@
 #include "gdict-private.h"
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
-
-#define GDICT_DATABASE_CHOOSER_GET_PRIVATE(obj) \
-(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_DATABASE_CHOOSER, GdictDatabaseChooserPrivate))
 
 struct _GdictDatabaseChooserPrivate
 {
@@ -108,9 +103,9 @@ enum
 
 static guint db_chooser_signals[LAST_SIGNAL] = { 0 };
 
-G_DEFINE_TYPE (GdictDatabaseChooser,
-               gdict_database_chooser,
-               GTK_TYPE_BOX)
+G_DEFINE_TYPE_WITH_PRIVATE (GdictDatabaseChooser,
+                            gdict_database_chooser,
+                            GTK_TYPE_BOX)
 
 static void
 set_gdict_context (GdictDatabaseChooser *chooser,
@@ -361,6 +356,7 @@ gdict_database_chooser_constructor (GType                  type,
   gtk_widget_show (priv->treeview);
 
   hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+  gtk_style_context_add_class (gtk_widget_get_style_context (hbox), "inline-toolbar");
   priv->buttons_box = hbox;
 
   priv->refresh_button = gtk_button_new ();
@@ -472,8 +468,6 @@ gdict_database_chooser_class_init (GdictDatabaseChooserClass *klass)
                   NULL, NULL,
                   gdict_marshal_VOID__VOID,
                   G_TYPE_NONE, 0);
-
-  g_type_class_add_private (gobject_class, sizeof (GdictDatabaseChooserPrivate));
 }
 
 static void
@@ -481,7 +475,7 @@ gdict_database_chooser_init (GdictDatabaseChooser *chooser)
 {
   GdictDatabaseChooserPrivate *priv;
 
-  chooser->priv = priv = GDICT_DATABASE_CHOOSER_GET_PRIVATE (chooser);
+  chooser->priv = priv = gdict_database_chooser_get_instance_private (chooser);
 
   gtk_orientable_set_orientation (GTK_ORIENTABLE (chooser), GTK_ORIENTATION_VERTICAL);
 

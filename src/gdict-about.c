@@ -18,9 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -30,6 +28,7 @@
 #include <gdk-pixbuf/gdk-pixbuf.h>
 
 #include "gdict-about.h"
+#include "gdict-common.h"
 
 void
 gdict_show_about_dialog (GtkWidget *parent)
@@ -51,21 +50,23 @@ gdict_show_about_dialog (GtkWidget *parent)
   };
 
   const gchar *translator_credits = _("translator-credits");
-  const gchar *copyright = "Copyright \xc2\xa9 2005-2006 Emmanuele Bassi";
+  const gchar *copyright = "Copyright \xc2\xa9 2005 Emmanuele Bassi";
   const gchar *comments = _("Look up words in dictionaries");
   
-  g_return_if_fail (GTK_IS_WIDGET (parent));
+  g_return_if_fail (GTK_IS_WINDOW (parent));
   
-  gtk_show_about_dialog (GTK_IS_WINDOW (parent) ? GTK_WINDOW (parent) : NULL,
-  			 "program-name", _("Dictionary"),
-  			 "version", VERSION,
-  			 "copyright", copyright,
-  			 "comments", comments,
-  			 "authors", authors,
-  			 "documenters", documenters,
-  			 "translator-credits", translator_credits,
-  			 "logo-icon-name", "org.gnome.Dictionary",
-  			 "license-type", GTK_LICENSE_GPL_2_0,
-			 "screen", gtk_widget_get_screen (parent),
-  			 NULL);
+  gtk_show_about_dialog (GTK_WINDOW (parent),
+                         "program-name",
+                           gdict_is_devel_build ()
+                             ? _("Dictionary (development build)")
+                             : _("Dictionary"),
+                         "version", VERSION,
+                         "copyright", copyright,
+                         "comments", comments,
+                         "authors", authors,
+                         "documenters", documenters,
+                         "translator-credits", translator_credits,
+                         "logo-icon-name", APPLICATION_ID,
+                         "license-type", GTK_LICENSE_GPL_2_0,
+                         NULL);
 }

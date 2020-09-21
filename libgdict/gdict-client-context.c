@@ -28,9 +28,7 @@
  * #GdictSource instead.
  */
 
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -157,7 +155,6 @@ enum
 
 static guint gdict_client_context_signals[LAST_SIGNAL] = { 0 };
 
-#define GDICT_CLIENT_CONTEXT_GET_PRIVATE(obj)	(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_CLIENT_CONTEXT, GdictClientContextPrivate))
 struct _GdictClientContextPrivate
 {
 #ifdef ENABLE_IPV6
@@ -193,8 +190,9 @@ static void gdict_client_context_iface_init (GdictContextIface *iface);
 G_DEFINE_TYPE_WITH_CODE (GdictClientContext,
                          gdict_client_context,
                          G_TYPE_OBJECT,
+                         G_ADD_PRIVATE (GdictClientContext)
                          G_IMPLEMENT_INTERFACE (GDICT_TYPE_CONTEXT,
-                                                gdict_client_context_iface_init));
+                                                gdict_client_context_iface_init))
 
 /* GObject methods */
 static void gdict_client_context_set_property (GObject      *object,
@@ -366,8 +364,6 @@ gdict_client_context_class_init (GdictClientContextClass *klass)
 
   klass->connected = gdict_client_context_real_connected;
   klass->disconnected = gdict_client_context_real_disconnected;
-  
-  g_type_class_add_private (gobject_class, sizeof (GdictClientContextPrivate));
 }
 
 static void
@@ -375,7 +371,7 @@ gdict_client_context_init (GdictClientContext *context)
 {
   GdictClientContextPrivate *priv;
   
-  priv = GDICT_CLIENT_CONTEXT_GET_PRIVATE (context);
+  priv = gdict_client_context_get_instance_private (context);
   context->priv = priv;
   
   priv->hostname = NULL;
@@ -405,8 +401,9 @@ gdict_client_context_set_property (GObject      *object,
 				   const GValue *value,
 				   GParamSpec   *pspec)
 {
-  GdictClientContextPrivate *priv = GDICT_CLIENT_CONTEXT_GET_PRIVATE (object);
-  
+  GdictClientContext *self = GDICT_CLIENT_CONTEXT (object);
+  GdictClientContextPrivate *priv = gdict_client_context_get_instance_private (self);
+
   switch (prop_id)
     {
     case PROP_HOSTNAME:
@@ -438,8 +435,9 @@ gdict_client_context_get_property (GObject    *object,
 				   GValue     *value,
 				   GParamSpec *pspec)
 {
-  GdictClientContextPrivate *priv = GDICT_CLIENT_CONTEXT_GET_PRIVATE (object);
-  
+  GdictClientContext *self = GDICT_CLIENT_CONTEXT (object);
+  GdictClientContextPrivate *priv = gdict_client_context_get_instance_private (self);
+
   switch (prop_id)
     {
     case PROP_STATUS:

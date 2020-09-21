@@ -18,9 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -242,4 +240,14 @@ gdict_show_gerror_dialog (GtkWindow   *parent,
             
   g_error_free (error);
   error = NULL;
+}
+
+gboolean
+gdict_is_devel_build (void)
+{
+#ifdef DEVELOPMENT_BUILD
+  return TRUE;
+#else
+  return FALSE;
+#endif
 }

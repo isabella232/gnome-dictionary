@@ -29,9 +29,7 @@
  * #GdictDatabaseChooserButton is available since Gdict 0.10
  */
 
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>

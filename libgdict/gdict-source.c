@@ -29,9 +29,7 @@
  * #GdictContext, already set up with the right parameters.
  */
 
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -60,9 +58,6 @@
 /* dictd transport keys */
 #define SOURCE_KEY_HOSTNAME	"Hostname"
 #define SOURCE_KEY_PORT		"Port"
-
-
-#define GDICT_SOURCE_GET_PRIVATE(obj)	(G_TYPE_INSTANCE_GET_PRIVATE ((obj), GDICT_TYPE_SOURCE, GdictSourcePrivate))
 
 struct _GdictSourcePrivate
 {
@@ -118,8 +113,7 @@ gdict_source_error_quark (void)
 }
 
 
-G_DEFINE_TYPE (GdictSource, gdict_source, G_TYPE_OBJECT);
-
+G_DEFINE_TYPE_WITH_PRIVATE (GdictSource, gdict_source, G_TYPE_OBJECT)
 
 
 static void
@@ -197,21 +191,17 @@ gdict_source_get_property (GObject    *object,
 static void
 gdict_source_finalize (GObject *object)
 {
-  GdictSourcePrivate *priv = GDICT_SOURCE_GET_PRIVATE (object);
+  GdictSource *self = GDICT_SOURCE (object);
+  GdictSourcePrivate *priv = gdict_source_get_instance_private (self);
   
   g_free (priv->filename);
-  
-  if (priv->keyfile)
-    g_key_file_free (priv->keyfile);
-  
   g_free (priv->name);
   g_free (priv->description);
-  
   g_free (priv->database);
   g_free (priv->strategy);
   
-  if (priv->context)
-    g_object_unref (priv->context);
+  g_clear_pointer (&priv->keyfile, g_key_file_unref);
+  g_clear_object (&priv->context);
   
   G_OBJECT_CLASS (gdict_source_parent_class)->finalize (object);
 }
@@ -338,8 +328,6 @@ gdict_source_class_init (GdictSourceClass *klass)
                                                         "The GdictContext bound to this source",
   				   			GDICT_TYPE_CONTEXT,
   				   			G_PARAM_READABLE));
-  
-  g_type_class_add_private (klass, sizeof (GdictSourcePrivate));
 }
 
 static void
@@ -347,20 +335,12 @@ gdict_source_init (GdictSource *source)
 {
   GdictSourcePrivate *priv;
   
-  priv = GDICT_SOURCE_GET_PRIVATE (source);
+  priv = gdict_source_get_instance_private (source);
   source->priv = priv;
   
-  priv->filename = NULL;
   priv->keyfile = g_key_file_new ();
-  
-  priv->name = NULL;
-  priv->description = NULL;
-  priv->editable = TRUE;
-  priv->database = NULL;
-  priv->strategy = NULL;
   priv->transport = GDICT_SOURCE_TRANSPORT_INVALID;
-  
-  priv->context = NULL;
+  priv->editable = TRUE;
 }
 
 /**

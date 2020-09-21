@@ -133,7 +133,6 @@ endif
 conf.set10('ENABLE_IPV6', use_ipv6)
 
 root_inc = include_directories('.')
-libgdict_inc = include_directories('libgdict')
 src_inc = include_directories('src')
 po_dir = join_paths(meson.current_source_dir(), 'po')
 
@@ -145,7 +144,6 @@ gtk_dep = dependency('gtk+-3.0', version: '>= 3.21.2')
 gnome = import('gnome')
 i18n = import('i18n')
 
-subdir('libgdict')
 subdir('src')
 subdir('po')
 subdir('data')

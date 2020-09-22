@@ -1,43 +1,49 @@
 # Ukrainian translation of the gnome-utils module.
 # Copyright (C) 1999 Free Software Foundation, Inc.
 # Yuri Syrota <rasta@renome.rovno.ua>, 1999.
-# Maxim Dziumanenko <dziumanenko@gmail.com>, 2002-2010
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2002-2010.
 # wanderlust <wanderlust@ukr.net>, 2009.
 # int_ua <xintx.ua@gmail.com>, 2010.
 # Korostil Daniel <ted.korostiled@gmail.com>, 2011, 2012.
 # Re. <ted.korostiled@gmail.com>, 2012.
 # Daniel Korostil <ted.korostiled@gmail.com>, 2013, 2014, 2015, 2016.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-04 14:00+0200\n"
-"PO-Revision-Date: 2016-03-04 14:02+0300\n"
-"Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
-"Language-Team: linux.org.ua\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/issues\n"
+"POT-Creation-Date: 2019-01-10 17:19+0000\n"
+"PO-Revision-Date: 2020-09-22 15:43+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 20.11.70\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/default.desktop.in.h:1
+#. Translators: Do not translate the Name key
+#: data/default.desktop.in:4
+msgid "Default"
+msgstr "Типовий"
+
+#: data/default.desktop.in:5
 msgid "Default Dictionary Server"
 msgstr "Типовий словниковий сервер"
 
-#: ../data/org.gnome.Dictionary.appdata.xml.in.h:1
+#: data/org.gnome.Dictionary.appdata.xml.in:6
 msgid "GNOME Dictionary"
 msgstr "Словник GNOME"
 
-#: ../data/org.gnome.Dictionary.appdata.xml.in.h:2
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:2
+#: data/org.gnome.Dictionary.appdata.xml.in:7
+#: data/org.gnome.Dictionary.desktop.in:4
 msgid "Check word definitions and spellings in an online dictionary"
 msgstr "Пошук слів та їх написання у інтерактивному словнику"
 
-#: ../data/org.gnome.Dictionary.appdata.xml.in.h:3
+#: data/org.gnome.Dictionary.appdata.xml.in:9
 msgid ""
 "GNOME Dictionary is a simple dictionary application that looks up "
 "definitions of words online. Though it looks up English definitions by "
@@ -49,298 +55,185 @@ msgstr ""
 "іспанську або додати інші мережеві словники, які використовують протокол "
 "DICT."
 
-#: ../src/gdict-app-menus.ui.h:1
-msgid "_New Window"
-msgstr "_Створити вікно"
-
-#: ../src/gdict-app-menus.ui.h:2
-msgid "Preferences"
-msgstr "Параметри"
-
-#: ../src/gdict-app-menus.ui.h:3
-msgid "Help"
-msgstr "Довідка"
-
-#: ../src/gdict-app-menus.ui.h:4
-msgid "About"
-msgstr "Про програму"
-
-#: ../src/gdict-app-menus.ui.h:5
-msgid "Quit"
-msgstr "Вийти"
-
-#: ../src/gdict-app-menus.ui.h:6
-msgid "_Save a Copy..."
-msgstr "З_берегти копію…"
-
-#: ../src/gdict-app-menus.ui.h:7
-msgid "P_review"
-msgstr "_Переглянути"
-
-#: ../src/gdict-app-menus.ui.h:8
-msgid "_Print"
-msgstr "_Надрукувати"
-
-#: ../src/gdict-app-menus.ui.h:9
-msgid "_Find"
-msgstr "З_найти"
-
-#: ../src/gdict-app-menus.ui.h:10
-msgid "_View"
-msgstr "П_ерегляд"
-
-#: ../src/gdict-app-menus.ui.h:11
-msgid "_Sidebar"
-msgstr "_Бічна панель"
-
-#: ../src/gdict-app-menus.ui.h:12
-msgid "Similar _Words"
-msgstr "Подібні _слова"
-
-#: ../src/gdict-app-menus.ui.h:13
-msgid "Dictionary Sources"
-msgstr "Додати джерела"
-
-#: ../src/gdict-app-menus.ui.h:14
-msgid "Available _Dictionaries"
-msgstr "Доступні _словники"
-
-#: ../src/gdict-app-menus.ui.h:15
-msgid "Available St_rategies"
-msgstr "Доступні с_тратегії"
-
-#: ../src/gdict-app-menus.ui.h:16
-msgid "_Go"
-msgstr "Пере_хід"
-
-#: ../src/gdict-app-menus.ui.h:17
-msgid "_Previous Definition"
-msgstr "_Попереднє значення"
-
-#: ../src/gdict-app-menus.ui.h:18
-msgid "_Next Definition"
-msgstr "_Наступне значення"
-
-#: ../src/gdict-app-menus.ui.h:19
-msgid "_First Definition"
-msgstr "П_ерше значення"
-
-#: ../src/gdict-app-menus.ui.h:20
-msgid "_Last Definition"
-msgstr "_Останнє значення"
-
-#: ../src/gdict-pref-dialog.ui.h:1
-msgid "_Select a dictionary source for looking up words:"
-msgstr "_Виберіть джерело словника для пошуку слів:"
-
-#: ../src/gdict-pref-dialog.ui.h:2
-msgid "Add a new dictionary source"
-msgstr "Додати нове джерело словників"
-
-#: ../src/gdict-pref-dialog.ui.h:3
-msgid "Remove the currently selected dictionary source"
-msgstr "Вилучити виділене джерело словників"
-
-#: ../src/gdict-pref-dialog.ui.h:4
-msgid "Edit"
-msgstr "Змінити"
-
-#: ../src/gdict-pref-dialog.ui.h:5
-msgid "Edit the currently selected dictionary source"
-msgstr "Редагувати поточно вибране джерело словників"
-
-#: ../src/gdict-pref-dialog.ui.h:6 ../src/gdict-source-dialog.ui.h:8
-msgid "Source"
-msgstr "Джерело"
-
-#: ../src/gdict-pref-dialog.ui.h:7
-msgid "_Print font:"
-msgstr "Шрифт д_руку:"
-
-#: ../src/gdict-pref-dialog.ui.h:8
-msgid "Set the font used for printing the definitions"
-msgstr "Встановити шрифт для друку значення"
-
-#: ../src/gdict-pref-dialog.ui.h:9
-msgid "Print"
-msgstr "Надрукувати"
-
-#: ../src/gdict-source-dialog.ui.h:1
-msgid "_Description"
-msgstr "_Опис"
-
-#: ../src/gdict-source-dialog.ui.h:2
-msgid "_Port"
-msgstr "П_орт"
-
-#: ../src/gdict-source-dialog.ui.h:3
-msgid "_Hostname"
-msgstr "Назва _вузла"
-
-#: ../src/gdict-source-dialog.ui.h:4
-msgid "_Transport"
-msgstr "_Транспорт"
-
-#: ../src/gdict-source-dialog.ui.h:5
-msgid "2628"
-msgstr "2628"
-
-#: ../src/gdict-source-dialog.ui.h:6
-msgid "dict.org"
-msgstr "dict.org"
-
-#: ../src/gdict-source-dialog.ui.h:7
-msgid "Source Name"
-msgstr "Назва джерела"
-
-#: ../src/gdict-source-dialog.ui.h:9
-msgid "Dictionaries"
-msgstr "Словники"
-
-#: ../src/gdict-source-dialog.ui.h:10
-msgid "Strategies"
-msgstr "Стратегії"
-
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:1 ../src/gdict-about.c:60
-#: ../src/gdict-window.c:500 ../src/gdict-window.c:1527
+#: data/org.gnome.Dictionary.desktop.in:3 src/gdict-about.c:60
+#: src/gdict-window.c:498 src/gdict-window.c:1500
 msgid "Dictionary"
 msgstr "Словник"
 
-#: ../data/org.gnome.Dictionary.desktop.in.in.h:3
+#: data/org.gnome.Dictionary.desktop.in:5
 msgid "word;synonym;definition;spelling;"
 msgstr "слово;синонім;значення;вимова;"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:1
+#. Translators: Do not translate the Icon key
+#: data/org.gnome.Dictionary.desktop.in:10
+msgid "accessories-dictionary"
+msgstr "accessories-dictionary"
+
+#: data/org.gnome.dictionary.gschema.xml:6
 msgid "The default database to use"
 msgstr "Типова база даних"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:2
+#: data/org.gnome.dictionary.gschema.xml:7
+#| msgid ""
+#| "The name of the default individual database or meta-database to use on a "
+#| "dictionary source. An exclamation mark (\"!\") means that all the "
+#| "databases present in a dictionary source should be searched"
 msgid ""
 "The name of the default individual database or meta-database to use on a "
-"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"dictionary source. An exclamation mark (“!”) means that all the databases "
 "present in a dictionary source should be searched"
 msgstr ""
 "Назва типової індивідуальної бази даних або мета бази даних на словниковому "
-"сервері. Знак оклику (\"!\") вказує, що пошук має відбуватись в усіх базах "
+"сервері. Знак оклику («!») вказує, що пошук має відбуватись в усіх базах "
 "даних сервера"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:3
+#: data/org.gnome.dictionary.gschema.xml:11
 msgid "The default search strategy to use"
 msgstr "Типова стратегія пошуку"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:4
+#: data/org.gnome.dictionary.gschema.xml:12
+#| msgid ""
+#| "The name of the default search strategy to use on a dictionary source, if "
+#| "available. The default strategy is 'exact', that is match exact words."
 msgid ""
 "The name of the default search strategy to use on a dictionary source, if "
-"available. The default strategy is 'exact', that is match exact words."
+"available. The default strategy is “exact”, that is match exact words."
 msgstr ""
 "Назва типової стратегії пошуку для сервера словника, якщо доступно. Типова "
-"стратегія 'exact', тобто точна відповідність словам."
+"стратегія «exact», тобто точна відповідність словам."
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:5
+#: data/org.gnome.dictionary.gschema.xml:16
 msgid "The font to be used when printing"
 msgstr "Шрифт, що використовується при друкуванні"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:6
+#: data/org.gnome.dictionary.gschema.xml:17
 msgid "The font to be used when printing a definition."
 msgstr "Шрифт, що використовується при друкуванні."
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:7
+#: data/org.gnome.dictionary.gschema.xml:21
 msgid "The name of the dictionary source used"
 msgstr "Назва сервера словника"
 
-#: ../data/org.gnome.dictionary.gschema.xml.h:8
+#: data/org.gnome.dictionary.gschema.xml:22
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr ""
 "Назва словникового сервера, що використовується для отримання визначень слів."
 
-#: ../data/spanish.desktop.in.h:1
+#. Translators: Do not translate the Name key
+#: data/spanish.desktop.in:4
+msgid "spanish"
+msgstr "іспанська"
+
+#: data/spanish.desktop.in:5
 msgid "Spanish Dictionaries"
 msgstr "Іспанські словники"
 
-#: ../data/thai.desktop.in.h:1
+#. Translators: Do not translate the Name key
+#: data/thai.desktop.in:4
+msgid "Thai"
+msgstr "тайська"
+
+#: data/thai.desktop.in:5
 msgid "Longdo Thai-English Dictionaries"
 msgstr "Тайсько-англійські словники Longdo"
 
-#: ../libgdict/gdict-client-context.c:775
+#: libgdict/gdict-client-context.c:775
 #, c-format
-msgid "No connection to the dictionary server at '%s:%d'"
-msgstr "Відсутнє з'єднання зі словниковим сервером '%s:%d'"
+#| msgid "No connection to the dictionary server at '%s:%d'"
+msgid "No connection to the dictionary server at “%s:%d”"
+msgstr "Відсутнє з'єднання зі словниковим сервером «%s:%d»"
 
-#: ../libgdict/gdict-client-context.c:1058
+#: libgdict/gdict-client-context.c:1058
 #, c-format
-msgid "Lookup failed for hostname '%s': no suitable resources found"
-msgstr "Помилка пошуку вузла '%s': не знайдено відповідний ресурс"
+#| msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
+msgstr "Помилка пошуку вузла «%s»: не знайдено відповідний ресурс"
 
-#: ../libgdict/gdict-client-context.c:1089
+#: libgdict/gdict-client-context.c:1089
 #, c-format
-msgid "Lookup failed for host '%s': %s"
-msgstr "Помилка пошуку вузла '%s': %s"
+#| msgid "Lookup failed for host '%s': %s"
+msgid "Lookup failed for host “%s”: %s"
+msgstr "Помилка пошуку вузла «%s»: %s"
 
-#: ../libgdict/gdict-client-context.c:1123
+#: libgdict/gdict-client-context.c:1123
 #, c-format
-msgid "Lookup failed for host '%s': host not found"
-msgstr "Помилка пошуку вузла '%s': вузол не знайдено"
+#| msgid "Lookup failed for host '%s': host not found"
+msgid "Lookup failed for host “%s”: host not found"
+msgstr "Помилка пошуку вузла «%s»: вузол не знайдено"
 
-#: ../libgdict/gdict-client-context.c:1175
+#: libgdict/gdict-client-context.c:1175
 #, c-format
+#| msgid ""
+#| "Unable to connect to the dictionary server at '%s:%d'. The server replied "
+#| "with code %d (server down)"
 msgid ""
-"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
 "with code %d (server down)"
 msgstr ""
-"Не вдалось з'єднатись зі словниковим сервером '%s:%d'. Сервер повернув код "
+"Не вдалось з'єднатись зі словниковим сервером «%s:%d». Сервер повернув код "
 "%d (сервер вимкнений)"
 
-#: ../libgdict/gdict-client-context.c:1194
+#: libgdict/gdict-client-context.c:1194
 #, c-format
+#| msgid ""
+#| "Unable to parse the dictionary server reply\n"
+#| ": '%s'"
 msgid ""
 "Unable to parse the dictionary server reply\n"
-": '%s'"
+": “%s”"
 msgstr ""
 "Не вдалось розібрати відповідь словникового сервера\n"
-": '%s'"
+": «%s»"
 
-#: ../libgdict/gdict-client-context.c:1223
+#: libgdict/gdict-client-context.c:1223
 #, c-format
-msgid "No definitions found for '%s'"
-msgstr "Немає значення для '%s'"
+#| msgid "No definitions found for '%s'"
+msgid "No definitions found for “%s”"
+msgstr "Немає визначень для «%s»"
 
-#: ../libgdict/gdict-client-context.c:1238
+#: libgdict/gdict-client-context.c:1238
 #, c-format
-msgid "Invalid database '%s'"
-msgstr "Неправильна база даних '%s'"
+#| msgid "Invalid database '%s'"
+msgid "Invalid database “%s”"
+msgstr "Неправильна база даних «%s»"
 
-#: ../libgdict/gdict-client-context.c:1253
+#: libgdict/gdict-client-context.c:1253
 #, c-format
-msgid "Invalid strategy '%s'"
-msgstr "Неправильна стратегія '%s'"
+#| msgid "Invalid strategy '%s'"
+msgid "Invalid strategy “%s”"
+msgstr "Неправильна стратегія «%s»"
 
-#: ../libgdict/gdict-client-context.c:1268
+#: libgdict/gdict-client-context.c:1268
 #, c-format
-msgid "Bad command '%s'"
-msgstr "Неправильна команда '%s'"
+#| msgid "Bad command '%s'"
+msgid "Bad command “%s”"
+msgstr "Неправильна команда «%s»"
 
-#: ../libgdict/gdict-client-context.c:1283
+#: libgdict/gdict-client-context.c:1283
 #, c-format
-msgid "Bad parameters for command '%s'"
-msgstr "Неправильні параметри для команди '%s'"
+#| msgid "Bad parameters for command '%s'"
+msgid "Bad parameters for command “%s”"
+msgstr "Неправильні параметри команди «%s»"
 
-#: ../libgdict/gdict-client-context.c:1298
+#: libgdict/gdict-client-context.c:1298
 #, c-format
-msgid "No databases found on dictionary server at '%s'"
-msgstr "Відсутні бази даних на словниковому сервері '%s'"
+#| msgid "No databases found on dictionary server at '%s'"
+msgid "No databases found on dictionary server at “%s”"
+msgstr "Немає баз даних на словниковому сервері «%s»"
 
-#: ../libgdict/gdict-client-context.c:1313
+#: libgdict/gdict-client-context.c:1313
 #, c-format
-msgid "No strategies found on dictionary server at '%s'"
-msgstr "Не знайдено стратегії на словниковому сервері '%s'"
+#| msgid "No strategies found on dictionary server at '%s'"
+msgid "No strategies found on dictionary server at “%s”"
+msgstr "Не знайдено стратегії на словниковому сервері «%s»"
 
-#: ../libgdict/gdict-client-context.c:1745
+#: libgdict/gdict-client-context.c:1745
 #, c-format
 msgid "Connection failed to the dictionary server at %s:%d"
 msgstr "Помилка з'єднанні словниковим сервером %s:%d"
 
-#: ../libgdict/gdict-client-context.c:1784
+#: libgdict/gdict-client-context.c:1784
 #, c-format
 msgid ""
 "Error while reading reply from server:\n"
@@ -349,513 +242,471 @@ msgstr ""
 "Помилка при читанні відповіді сервера:\n"
 "%s"
 
-#: ../libgdict/gdict-client-context.c:1857
+#: libgdict/gdict-client-context.c:1857
 #, c-format
-msgid "Connection timeout for the dictionary server at '%s:%d'"
-msgstr "Помилка з'єднання зі словниковим сервером за адресою \"%s:%d\""
+#| msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgid "Connection timeout for the dictionary server at “%s:%d”"
+msgstr "Помилка з'єднання зі словниковим сервером за адресою «%s:%d»"
 
-#: ../libgdict/gdict-client-context.c:1891
-#, c-format
+#: libgdict/gdict-client-context.c:1891
 msgid "No hostname defined for the dictionary server"
 msgstr "Не визначено назву вузла словникового сервера"
 
-#: ../libgdict/gdict-client-context.c:1927
-#: ../libgdict/gdict-client-context.c:1942
-#, c-format
+#: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
 msgid "Unable to create socket"
 msgstr "Не вдалось створити сокет"
 
-#: ../libgdict/gdict-client-context.c:1968
+#: libgdict/gdict-client-context.c:1968
 #, c-format
 msgid "Unable to set the channel as non-blocking: %s"
 msgstr "Не вдалось встановити канал для у не блокувальний режим: %s"
 
-#: ../libgdict/gdict-client-context.c:1983
+#: libgdict/gdict-client-context.c:1983
 #, c-format
-msgid "Unable to connect to the dictionary server at '%s:%d'"
-msgstr "Не вдалось з'єднатись зі словниковим сервером '%s:%d'"
+#| msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgid "Unable to connect to the dictionary server at “%s:%d”"
+msgstr "Не вдалось з'єднатись зі словниковим сервером «%s:%d»"
 
-#: ../libgdict/gdict-database-chooser.c:374
+#: libgdict/gdict-database-chooser.c:376
 msgid "Reload the list of available databases"
 msgstr "Перезавантажити список доступних баз даних"
 
-#: ../libgdict/gdict-database-chooser.c:386
+#: libgdict/gdict-database-chooser.c:388
 msgid "Clear the list of available databases"
 msgstr "Очистити список доступних баз даних"
 
-#: ../libgdict/gdict-database-chooser.c:840 ../libgdict/gdict-speller.c:767
-#: ../libgdict/gdict-strategy-chooser.c:775
+#: libgdict/gdict-database-chooser.c:842 libgdict/gdict-speller.c:767
+#: libgdict/gdict-strategy-chooser.c:775
 msgid "Error while matching"
 msgstr "Помилка при збіганні"
 
-#: ../libgdict/gdict-defbox.c:2390
+#: libgdict/gdict-defbox.c:2390
 msgid "Error while looking up definition"
 msgstr "Помилка при пошуку значення"
 
-#: ../libgdict/gdict-defbox.c:2432 ../libgdict/gdict-speller.c:725
+#: libgdict/gdict-defbox.c:2432 libgdict/gdict-speller.c:725
 msgid "Another search is in progress"
 msgstr "Триває інша операція пошуку "
 
-#: ../libgdict/gdict-defbox.c:2433 ../libgdict/gdict-speller.c:726
+#: libgdict/gdict-defbox.c:2433 libgdict/gdict-speller.c:726
 msgid "Please wait until the current search ends."
 msgstr "Зачекайте доки закінчиться поточна операція пошуку."
 
-#: ../libgdict/gdict-defbox.c:2472
+#: libgdict/gdict-defbox.c:2472
 msgid "Error while retrieving the definition"
 msgstr "Помилка при отриманні значення"
 
-#: ../libgdict/gdict-source.c:433
+#: libgdict/gdict-source.c:434
 #, c-format
-msgid "Invalid transport type '%d'"
-msgstr "Неправильний тип транспорту '%d'"
+#| msgid "Invalid transport type '%d'"
+msgid "Invalid transport type “%d”"
+msgstr "Неправильний тип транспорту «%d»"
 
-#: ../libgdict/gdict-source.c:461
+#: libgdict/gdict-source.c:462
 #, c-format
-msgid "No '%s' group found inside the dictionary source definition"
-msgstr "У визначенні джерела словників відсутня група '%s'"
+#| msgid "No '%s' group found inside the dictionary source definition"
+msgid "No “%s” group found inside the dictionary source definition"
+msgstr "У визначенні джерела словників відсутня група «%s»"
 
-#: ../libgdict/gdict-source.c:477 ../libgdict/gdict-source.c:501
-#: ../libgdict/gdict-source.c:525 ../libgdict/gdict-source.c:550
+#: libgdict/gdict-source.c:478 libgdict/gdict-source.c:511
+#: libgdict/gdict-source.c:535 libgdict/gdict-source.c:560
 #, c-format
-msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
-msgstr "У визначенні джерел словників не вдалось отримати ключ '%s': %s"
+#| msgid ""
+#| "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
+msgstr "У визначенні джерел словників не вдалось отримати ключ «%s»: %s"
 
-#: ../libgdict/gdict-source.c:575
+#: libgdict/gdict-source.c:585
 #, c-format
+#| msgid ""
+#| "Unable to get the '%s' key inside the dictionary source definition file: "
+#| "%s"
 msgid ""
-"Unable to get the '%s' key inside the dictionary source definition file: %s"
-msgstr "У файлі значення джерел словників не вдалось отримати ключ '%s': %s"
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
+msgstr "У файлі значення джерел словників не вдалось отримати ключ «%s»: %s"
 
-#: ../libgdict/gdict-source.c:769
-#, c-format
+#: libgdict/gdict-source.c:779
 msgid "Dictionary source does not have name"
 msgstr "Джерело словників не має назви"
 
-#: ../libgdict/gdict-source.c:778
+#: libgdict/gdict-source.c:788
 #, c-format
-msgid "Dictionary source '%s' has invalid transport '%s'"
-msgstr "Джерело словників '%s' має неправильний транспорт '%s'"
+#| msgid "Dictionary source '%s' has invalid transport '%s'"
+msgid "Dictionary source “%s” has invalid transport “%s”"
+msgstr "Джерело словників «%s» має неправильний транспорт «%s»"
 
-#: ../libgdict/gdict-source-chooser.c:280
+#: libgdict/gdict-source-chooser.c:280
 msgid "Reload the list of available sources"
 msgstr "Перезавантажити список доступних джерел"
 
-#: ../libgdict/gdict-speller.c:341
+#: libgdict/gdict-speller.c:341
 msgid "Clear the list of similar words"
 msgstr "Очистити список схожих слів"
 
-#: ../libgdict/gdict-strategy-chooser.c:350
+#: libgdict/gdict-strategy-chooser.c:350
 msgid "Reload the list of available strategies"
 msgstr "Перезавантажити список доступних стратегій"
 
-#: ../libgdict/gdict-strategy-chooser.c:361
+#: libgdict/gdict-strategy-chooser.c:361
 msgid "Clear the list of available strategies"
 msgstr "Очистити список доступних стратегій"
 
-#: ../libgdict/gdict-utils.c:96
+#: libgdict/gdict-utils.c:95
 msgid "GDict debugging flags to set"
 msgstr "Встановити прапорці налагодження для GDict"
 
-#: ../libgdict/gdict-utils.c:96 ../libgdict/gdict-utils.c:98
+#: libgdict/gdict-utils.c:95 libgdict/gdict-utils.c:97
 msgid "FLAGS"
 msgstr "ПРАПОРЦІ"
 
-#: ../libgdict/gdict-utils.c:98
+#: libgdict/gdict-utils.c:97
 msgid "GDict debugging flags to unset"
 msgstr "Зняти прапорці налагодження для GDict"
 
-#: ../libgdict/gdict-utils.c:157
+#: libgdict/gdict-utils.c:152
 msgid "GDict Options"
 msgstr "Параметри GDict"
 
-#: ../libgdict/gdict-utils.c:158
+#: libgdict/gdict-utils.c:153
 msgid "Show GDict Options"
 msgstr "Показувати параметри GDict"
 
-#: ../src/gdict-about.c:53
+#: src/gdict-about.c:53
 msgid "translator-credits"
 msgstr ""
 "Юрій Сирота <yuriy@beer.com>\n"
 "Максим Дзюманенко <dziumanenko@gmail.com>\n"
 "Daniel Korostil <ted.korostiled@gmail.com>"
 
-#: ../src/gdict-about.c:55
+#: src/gdict-about.c:55
 msgid "Look up words in dictionaries"
 msgstr "Пошук слів у словниках"
 
-#: ../src/gdict-app.c:47 ../src/gdict-app.c:76
+#: src/gdict-app-menus.ui:5
+msgid "_New Window"
+msgstr "_Створити вікно"
+
+#: src/gdict-app-menus.ui:12
+msgid "Preferences"
+msgstr "Параметри"
+
+#: src/gdict-app-menus.ui:18
+msgid "Help"
+msgstr "Довідка"
+
+#: src/gdict-app-menus.ui:23
+msgid "About"
+msgstr "Про програму"
+
+#: src/gdict-app-menus.ui:27
+#| msgid "Quit"
+msgid "_Quit"
+msgstr "Ви_йти"
+
+#: src/gdict-app-menus.ui:37
+#| msgid "Save a Copy"
+msgid "_Save a Copy…"
+msgstr "З_берегти копію…"
+
+#: src/gdict-app-menus.ui:43
+msgid "P_review"
+msgstr "_Переглянути"
+
+#: src/gdict-app-menus.ui:48
+msgid "_Print"
+msgstr "_Надрукувати"
+
+#: src/gdict-app-menus.ui:55
+msgid "_Find"
+msgstr "З_найти"
+
+#: src/gdict-app-menus.ui:62
+msgid "_View"
+msgstr "П_ерегляд"
+
+#: src/gdict-app-menus.ui:65
+msgid "_Sidebar"
+msgstr "_Бічна панель"
+
+#: src/gdict-app-menus.ui:72
+msgid "Similar _Words"
+msgstr "Подібні _слова"
+
+#: src/gdict-app-menus.ui:77
+msgid "Dictionary Sources"
+msgstr "Додати джерела"
+
+#: src/gdict-app-menus.ui:82
+msgid "Available St_rategies"
+msgstr "Доступні с_тратегії"
+
+#: src/gdict-app-menus.ui:89
+msgid "_Go"
+msgstr "Пере_хід"
+
+#: src/gdict-app-menus.ui:92
+msgid "_Previous Definition"
+msgstr "_Попереднє значення"
+
+#: src/gdict-app-menus.ui:97
+msgid "_Next Definition"
+msgstr "_Наступне значення"
+
+#: src/gdict-app-menus.ui:104
+msgid "_First Definition"
+msgstr "П_ерше значення"
+
+#: src/gdict-app-menus.ui:109
+msgid "_Last Definition"
+msgstr "_Останнє значення"
+
+#: src/gdict-app.c:47 src/gdict-app.c:76
 msgid "Words to look up"
 msgstr "Слова для пошуку"
 
-#: ../src/gdict-app.c:47 ../src/gdict-app.c:53
+#: src/gdict-app.c:47 src/gdict-app.c:53
 msgid "WORD"
 msgstr "СЛОВО"
 
-#: ../src/gdict-app.c:53
+#: src/gdict-app.c:53
 msgid "Words to match"
 msgstr "Слова для пошуку"
 
-#: ../src/gdict-app.c:59
+#: src/gdict-app.c:59
 msgid "Dictionary source to use"
 msgstr "Джерело словників"
 
-#: ../src/gdict-app.c:59 ../src/gdict-app.c:65 ../src/gdict-app.c:71
+#: src/gdict-app.c:59 src/gdict-app.c:65 src/gdict-app.c:71
 msgid "NAME"
 msgstr "НАЗВА"
 
-#: ../src/gdict-app.c:65
+#: src/gdict-app.c:65
 msgid "Database to use"
 msgstr "База даних"
 
-#: ../src/gdict-app.c:71
+#: src/gdict-app.c:71
 msgid "Strategy to use"
 msgstr "Стратегія пошуку"
 
-#: ../src/gdict-app.c:76
+#: src/gdict-app.c:76
 msgid "WORDS"
 msgstr "СЛОВА"
 
-#: ../src/gdict-app.c:108
+#: src/gdict-app.c:108
 msgid "Dictionary Preferences"
 msgstr "Параметри словника"
 
-#: ../src/gdict-app.c:130 ../src/gdict-source-dialog.c:452
+#: src/gdict-app.c:139 src/gdict-source-dialog.c:465
 msgid "There was an error while displaying help"
 msgstr "Помилка при показі довідки"
 
-#: ../src/gdict-pref-dialog.c:262
+#: src/gdict-pref-dialog.c:262
 msgid "View Dictionary Source"
 msgstr "Переглянути джерело словника"
 
-#: ../src/gdict-pref-dialog.c:328
+#: src/gdict-pref-dialog.c:328
 msgid "Add Dictionary Source"
 msgstr "Додати слово у словник"
 
-#: ../src/gdict-pref-dialog.c:372
+#: src/gdict-pref-dialog.c:372
 #, c-format
-msgid "Remove \"%s\"?"
+#| msgid "Remove \"%s\"?"
+msgid "Remove “%s”?"
 msgstr "Вилучити «%s»?"
 
-#: ../src/gdict-pref-dialog.c:374
+#: src/gdict-pref-dialog.c:374
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Це призведе до остаточного вилучення джерела словників зі списку."
 
-#: ../src/gdict-pref-dialog.c:377 ../src/gdict-source-dialog.c:564
-#: ../src/gdict-window.c:824
+#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:577
+#: src/gdict-window.c:822
 msgid "_Cancel"
 msgstr "_Скасувати"
 
-#: ../src/gdict-pref-dialog.c:378
+#: src/gdict-pref-dialog.c:378
 msgid "_Remove"
 msgstr "В_илучити"
 
-#: ../src/gdict-pref-dialog.c:396
+#: src/gdict-pref-dialog.c:396
 #, c-format
-msgid "Unable to remove source '%s'"
+#| msgid "Unable to remove source '%s'"
+msgid "Unable to remove source “%s”"
 msgstr "Не вдалось вилучити джерело «%s»"
 
-#: ../src/gdict-pref-dialog.c:443
+#: src/gdict-pref-dialog.c:443
 msgid "Edit Dictionary Source"
 msgstr "Змінити джерела словника"
 
-#: ../src/gdict-print.c:239 ../src/gdict-print.c:303
+#: src/gdict-pref-dialog.ui:34
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Виберіть джерело словника для пошуку слів:"
+
+#: src/gdict-pref-dialog.ui:96
+msgid "Add a new dictionary source"
+msgstr "Додати нове джерело словників"
+
+#: src/gdict-pref-dialog.ui:116
+msgid "Remove the currently selected dictionary source"
+msgstr "Вилучити виділене джерело словників"
+
+#: src/gdict-pref-dialog.ui:136
+msgid "Edit"
+msgstr "Змінити"
+
+#: src/gdict-pref-dialog.ui:137
+msgid "Edit the currently selected dictionary source"
+msgstr "Редагувати поточно вибране джерело словників"
+
+#: src/gdict-pref-dialog.ui:157 src/gdict-source-dialog.ui:171
+msgid "Source"
+msgstr "Джерело"
+
+#: src/gdict-pref-dialog.ui:187
+msgid "_Print font:"
+msgstr "Шрифт д_руку:"
+
+#: src/gdict-pref-dialog.ui:216
+msgid "Set the font used for printing the definitions"
+msgstr "Встановити шрифт для друку значення"
+
+#: src/gdict-pref-dialog.ui:241
+msgid "Print"
+msgstr "Надрукувати"
+
+#: src/gdict-print.c:237 src/gdict-print.c:301
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr "Не вдалось показати попередній перегляд: %s"
 
-#: ../src/gdict-source-dialog.c:316 ../src/gdict-source-dialog.c:404
+#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:410
 msgid "Unable to create a source file"
 msgstr "Не вдалось створити файл джерела"
 
-#: ../src/gdict-source-dialog.c:332 ../src/gdict-source-dialog.c:424
+#: src/gdict-source-dialog.c:338 src/gdict-source-dialog.c:430
 msgid "Unable to save source file"
 msgstr "Не вдалось створити файл джерела"
 
 #. we just allow closing the dialog
-#: ../src/gdict-source-dialog.c:560 ../src/gdict-source-dialog.c:574
+#: src/gdict-source-dialog.c:573 src/gdict-source-dialog.c:587
 msgid "_Close"
 msgstr "_Закрити"
 
-#: ../src/gdict-source-dialog.c:565
+#: src/gdict-source-dialog.c:578
 msgid "_Add"
 msgstr "_Додати"
 
-#: ../src/gdict-source-dialog.c:573
+#: src/gdict-source-dialog.c:586
 msgid "C_ancel"
 msgstr "_Скасувати"
 
 #. The help button is always visible
-#: ../src/gdict-source-dialog.c:655
+#: src/gdict-source-dialog.c:668
 msgid "_Help"
 msgstr "_Довідка"
 
-#: ../src/gdict-window.c:415
-#, c-format
-msgid "No dictionary source available with name '%s'"
-msgstr "Відсутнє джерело з назвою '%s'"
+#: src/gdict-source-dialog.ui:58
+msgid "_Description"
+msgstr "_Опис"
 
-#: ../src/gdict-window.c:419
+#: src/gdict-source-dialog.ui:73
+msgid "_Port"
+msgstr "П_орт"
+
+#: src/gdict-source-dialog.ui:87
+msgid "_Hostname"
+msgstr "Назва _вузла"
+
+#: src/gdict-source-dialog.ui:101
+msgid "_Transport"
+msgstr "_Транспорт"
+
+#: src/gdict-source-dialog.ui:115
+msgid "2628"
+msgstr "2628"
+
+#: src/gdict-source-dialog.ui:127
+msgid "dict.org"
+msgstr "dict.org"
+
+#: src/gdict-source-dialog.ui:139
+msgid "Source Name"
+msgstr "Назва джерела"
+
+#: src/gdict-source-dialog.ui:198
+msgid "Dictionaries"
+msgstr "Словники"
+
+#: src/gdict-source-dialog.ui:223
+msgid "Strategies"
+msgstr "Стратегії"
+
+#: src/gdict-window.c:413
+#, c-format
+#| msgid "No dictionary source available with name '%s'"
+msgid "No dictionary source available with name “%s”"
+msgstr "Відсутнє джерело з назвою «%s»"
+
+#: src/gdict-window.c:417
 msgid "Unable to find dictionary source"
 msgstr "Не вдалось знайти джерело словника"
 
-#: ../src/gdict-window.c:435
+#: src/gdict-window.c:433
 #, c-format
-msgid "No context available for source '%s'"
-msgstr "Недоступний контекст для джерела '%s'"
+#| msgid "No context available for source '%s'"
+msgid "No context available for source “%s”"
+msgstr "Недоступний контекст для джерела «%s»"
 
-#: ../src/gdict-window.c:439
+#: src/gdict-window.c:437
 msgid "Unable to create a context"
 msgstr "Не вдалось створити контекст"
 
-#: ../src/gdict-window.c:498
+#: src/gdict-window.c:496
 #, c-format
-msgid "%s - Dictionary"
+#| msgid "%s - Dictionary"
+msgid "%s — Dictionary"
 msgstr "%s — Словник"
 
-#: ../src/gdict-window.c:821
+#: src/gdict-window.c:819
 msgid "Save a Copy"
 msgstr "Зберегти копію"
 
-#: ../src/gdict-window.c:825
+#: src/gdict-window.c:823
 msgid "_Save"
 msgstr "З_берегти"
 
-#: ../src/gdict-window.c:831
+#: src/gdict-window.c:829
 msgid "Untitled document"
 msgstr "Документ без заголовка"
 
-#: ../src/gdict-window.c:852
+#: src/gdict-window.c:850
 #, c-format
-msgid "Error while writing to '%s'"
-msgstr "Помилка при запису у '%s'"
+#| msgid "Error while writing to '%s'"
+msgid "Error while writing to “%s”"
+msgstr "Помилка при записі до «%s»"
 
 #. speller
-#: ../src/gdict-window.c:1213
+#: src/gdict-window.c:1211
 msgid "Double-click on the word to look up"
 msgstr "Двічі клацніть на слові для пошуку"
 
 #. strat-chooser
-#: ../src/gdict-window.c:1219
+#: src/gdict-window.c:1217
 msgid "Double-click on the matching strategy to use"
 msgstr "Двічі клацніть на відповідній стратегії її використання"
 
 #. source-chooser
-#: ../src/gdict-window.c:1224
+#: src/gdict-window.c:1222
 msgid "Double-click on the source to use"
 msgstr "Двічі клацніть на джерелі для його вибору"
 
-#: ../src/gdict-window.c:1424
+#: src/gdict-window.c:1408
 msgid "Similar words"
 msgstr "Подібні слова"
 
-#: ../src/gdict-window.c:1455
+#: src/gdict-window.c:1439
 msgid "Available strategies"
 msgstr "Доступні стратегії"
 
-#: ../src/gdict-window.c:1471
+#: src/gdict-window.c:1455
 msgid "Dictionary sources"
 msgstr "Джерела словників"
-
-#~ msgid "_File"
-#~ msgstr "_Файл"
-
-#~ msgid "_New"
-#~ msgstr "_Створити"
-
-#~ msgid "_Copy"
-#~ msgstr "_Скопіювати"
-
-#~ msgid "Select _All"
-#~ msgstr "Вибрати _все"
-
-#~ msgid "Find Ne_xt"
-#~ msgstr "Зна_йти наступне"
-
-#~ msgid "Find Pre_vious"
-#~ msgstr "Знайти _попереднє"
-
-#~ msgid "S_tatusbar"
-#~ msgstr "_Рядок стану"
-
-#~ msgid "H_ostname:"
-#~ msgstr "Назва в_узла:"
-
-#~ msgid "Client Name"
-#~ msgstr "Назва клієнту"
-
-#~ msgid "The name of the client of the context object"
-#~ msgstr "Назва клієнту об'єкту контексту"
-
-#~ msgid "The hostname of the dictionary server to connect to"
-#~ msgstr "Назва вузла словникового сервера"
-
-#~ msgid "Port"
-#~ msgstr "Порт"
-
-#~ msgid "The port of the dictionary server to connect to"
-#~ msgstr "Порт словникового сервера"
-
-#~ msgid "Status"
-#~ msgstr "Стан"
-
-#~ msgid "The status code as returned by the dictionary server"
-#~ msgstr "Код статусу, який повертається словниковим сервером"
-
-#~ msgid "Local Only"
-#~ msgstr "Лише локальні"
-
-#~ msgid "Whether the context uses only local dictionaries or not"
-#~ msgstr "Чи контекст використовує лише локальні словники"
-
-#~ msgid "Not found"
-#~ msgstr "Не знайдено"
-
-#~ msgid "F_ind:"
-#~ msgstr "З_найти:"
-
-#~ msgid "_Previous"
-#~ msgstr "Поп_ереднє"
-
-#~ msgid "_Next"
-#~ msgstr "_Наступне"
-
-#~ msgid "Filename"
-#~ msgstr "Назва файлу"
-
-#~ msgid "The filename used by this dictionary source"
-#~ msgstr "Назва файлу, що використовується цим джерелом словників"
-
-#~ msgid "Name"
-#~ msgstr "Назва"
-
-#~ msgid "The display name of this dictionary source"
-#~ msgstr "Екрана назва цього джерела словників"
-
-#~ msgid "Description"
-#~ msgstr "Опис"
-
-#~ msgid "The description of this dictionary source"
-#~ msgstr "Опис цього джерела словників"
-
-#~ msgid "Editable"
-#~ msgstr "Можна редагувати"
-
-#~ msgid "Whether the dictionary source is editable or not"
-#~ msgstr "Чи джерело словника можна редагувати, чи ні"
-
-#~ msgid "Database"
-#~ msgstr "База даних"
-
-#~ msgid "The default database of this dictionary source"
-#~ msgstr "Типова база даних цього джерела словників"
-
-#~ msgid "Strategy"
-#~ msgstr "Стратегія"
-
-#~ msgid "The default strategy of this dictionary source"
-#~ msgstr "Типова стратегія цього джерела словників"
-
-#~ msgid "Transport"
-#~ msgstr "Транспорт"
-
-#~ msgid "The transport mechanism used by this dictionary source"
-#~ msgstr "Механізм транспорту, що використовується сервером"
-
-#~ msgid "Context"
-#~ msgstr "Контекст"
-
-#~ msgid "The GdictContext bound to this source"
-#~ msgstr "Об'єкт GdictContext, що пов'язаний з цим джерелом"
-
-#~ msgid "Paths"
-#~ msgstr "Шляхи"
-
-#~ msgid "Search paths used by this object"
-#~ msgstr "Шляхи пошуку, що використовуються цим об'єктом "
-
-#~ msgid "Sources"
-#~ msgstr "Джерела"
-
-#~ msgid "Dictionary sources found"
-#~ msgstr "Знайдено джерела словників"
-
-#~ msgid "The GdictContext object used to get the word definition"
-#~ msgstr "Об'єкт GdictContext використовується для отримання значення слова"
-
-#~ msgid "The database used to query the GdictContext"
-#~ msgstr "База даних, що використовується для запиту GdictContext"
-
-#~ msgid "The strategy used to query the GdictContext"
-#~ msgstr "Стратегія, що використовується для запиту GdictContext"
-
-#~ msgid "Searching for '%s'..."
-#~ msgstr "Пошук «%s»…"
-
-#~ msgid "No definitions found"
-#~ msgstr "Не знайдено значень"
-
-#~ msgid "A definition found"
-#~ msgid_plural "%d definitions found"
-#~ msgstr[0] "знайдено %d значення"
-#~ msgstr[1] "знайдено %d значення"
-#~ msgstr[2] "знайдено %d значень"
-
-#~ msgid "Dictionary source `%s' selected"
-#~ msgstr "Виділено джерело словників `%s'"
-
-#~ msgid "Strategy `%s' selected"
-#~ msgstr "Вибрано стратегію «%s»"
-
-#~ msgid "Database `%s' selected"
-#~ msgstr "Виділена база даних `%s'"
-
-#~ msgid "Word `%s' selected"
-#~ msgstr "Виділено слово `%s'"
-
-#~ msgid "Double-click on the database to use"
-#~ msgstr "Двічі клацніть на базі даних для її вибору"
-
-#~ msgid "Look _up"
-#~ msgstr "З_найти"
-
-#~ msgid "Available dictionaries"
-#~ msgstr "Доступні словники"
-
-#~ msgid " - Look up words in dictionaries"
-#~ msgstr " - Пошук слів у словниках"
-
-#~ msgid "About Dictionary"
-#~ msgstr "Про словник"
-
-#~ msgid "Available _Databases"
-#~ msgstr "Доступні _бази даних"
-
-#~ msgid "New look up"
-#~ msgstr "Новий пошук"
-
-#~ msgid "Preview this document"
-#~ msgstr "Попередній перегляд документу"
-
-#~ msgid "_Print..."
-#~ msgstr "_Надрукувати…"
-
-#~ msgid "Print this document"
-#~ msgstr "Надрукувати документ"
-
-#~ msgid "Find a word or phrase in the document"
-#~ msgstr "Знайти слово чи фразу у документі"
-
-#~ msgid "Go to the previous definition"
-#~ msgstr "Перейти до попереднього значення"
-
-#~ msgid "Go to the next definition"
-#~ msgstr "Перейти до наступного значення"
-
-#~ msgid "Go to the first definition"
-#~ msgstr "Перейти до першого значення"
-
-#~ msgid "Go to the last definition"
-#~ msgstr "Перейти до останнього значення"
-
-#~ msgid "_Contents"
-#~ msgstr "_Зміст"

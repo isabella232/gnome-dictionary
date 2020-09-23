@@ -1,11 +1,13 @@
-project('gnome-dictionary', 'c', version: '40.alpha',
-        default_options: [
-          'buildtype=debugoptimized',
-          'c_std=c99',
-          'warning_level=1',
-        ],
-        license: 'GPLv2+',
-        meson_version: '>= 0.54.0')
+project('gnome-dictionary', 'c',
+  version: '40.alpha',
+  default_options: [
+    'buildtype=debugoptimized',
+    'c_std=c99',
+    'warning_level=1',
+  ],
+  license: 'GPL-2.0-or-later',
+  meson_version: '>= 0.54.0',
+)
 
 gdict_version = meson.project_version().split('.')
 gdict_major_version = gdict_version[0].to_int()

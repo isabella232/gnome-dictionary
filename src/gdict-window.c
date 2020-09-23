@@ -84,14 +84,14 @@ enum
 static GParamSpec *gdict_window_properties[LAST_PROP] = { NULL, };
 static guint gdict_window_signals[LAST_SIGNAL] = { 0 };
 
-static const GtkTargetEntry drop_types[] =
+static GtkTargetEntry drop_types[] =
 {
-  { "text/plain",    0, 0 },
-  { "TEXT",          0, 0 },
-  { "STRING",        0, 0 },
-  { "UTF8_STRING",   0, 0 },
+  { (char *) "text/plain",    0, 0 },
+  { (char *) "TEXT",          0, 0 },
+  { (char *) "STRING",        0, 0 },
+  { (char *) "UTF8_STRING",   0, 0 },
 };
-static const guint n_drop_types = G_N_ELEMENTS (drop_types);
+static guint n_drop_types = G_N_ELEMENTS (drop_types);
 
 
 

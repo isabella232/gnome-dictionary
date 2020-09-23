@@ -227,6 +227,7 @@ gdict_speller_get_property (GObject    *gobject,
       break;
     case PROP_COUNT:
       g_value_set_int (value, speller->priv->results);
+      break;
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (gobject, prop_id, pspec);
       break;

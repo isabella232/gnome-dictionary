@@ -71,7 +71,7 @@ gdict_get_config_dir (void)
   return retval;
 }
 
-gboolean
+static gboolean
 gdict_migrate_configs (void)
 {
   gchar *old_data_dir_name; // this one was used for configs only

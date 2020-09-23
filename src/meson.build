@@ -1,7 +1,121 @@
-libgdict_version = meson.project_version().split('.')
-libgdict_major = libgdict_version[0].to_int()
-libgdict_minor = libgdict_version[1] in ['alpha', 'beta', 'rc'] ? 0 : libgdict_version[1].to_int()
-libgdict_micro = 0
+cc = meson.get_compiler('c')
+
+conf = configuration_data()
+conf.set_quoted('PACKAGE_NAME', meson.project_name())
+conf.set_quoted('PACKAGE_VERSION', meson.project_version())
+conf.set_quoted('PACKAGE_STRING', '@0@-@1@'.format(meson.project_name(), meson.project_version()))
+conf.set_quoted('PACKAGE_DATADIR', gdict_datadir)
+conf.set_quoted('PACKAGE_LIBDIR', gdict_libdir)
+conf.set_quoted('PACKAGE_LOCALE_DIR', join_paths(gdict_datadir, 'locale'))
+conf.set_quoted('PACKAGE_LIBEXECDIR', gdict_libexecdir)
+conf.set('VERSION', 'PACKAGE_VERSION')
+conf.set('GETTEXT_PACKAGE', 'PACKAGE_NAME')
+conf.set('LOCALEDIR', 'PACKAGE_LOCALE_DIR')
+conf.set10('ENABLE_NLS', true) # Always enabled
+conf.set('HAVE_UNISTD_H', cc.has_header('unistd.h'))
+
+# Compiler flags
+if cc.get_id() == 'gcc' or cc.get_id() == 'clang'
+  test_cflags = [
+    '-fno-strict-aliasing',
+    '-Wno-c++11-extensions',
+    '-Wno-missing-include-dirs',
+    '-Wno-typedef-redefinition',
+    '-Wcast-align',
+    '-Wduplicated-branches',
+    '-Wduplicated-cond',
+    '-Wformat=2',
+    '-Wformat-nonliteral',
+    '-Wformat-security',
+    '-Wignored-qualifiers',
+    '-Wimplicit-function-declaration',
+    '-Wlogical-op',
+    '-Wmisleading-indentation',
+    '-Wmissing-format-attribute',
+    '-Wmissing-include-dirs',
+    '-Wmissing-noreturn',
+    '-Wnested-externs',
+    '-Wnull-dereference',
+    '-Wold-style-definition',
+    '-Wpointer-arith',
+    '-Wshadow',
+    '-Wstrict-prototypes',
+    '-Wundef',
+    '-Wuninitialized',
+    '-Wunused',
+    '-Werror=address',
+    '-Werror=array-bounds',
+    '-Werror=empty-body',
+    '-Werror=implicit',
+    '-Werror=implicit-fallthrough',
+    '-Werror=init-self',
+    '-Werror=int-to-pointer-cast',
+    '-Werror=main',
+    '-Werror=missing-braces',
+    '-Werror=missing-declarations',
+    '-Werror=missing-prototypes',
+    '-Werror=nonnull',
+    '-Werror=pointer-to-int-cast',
+    '-Werror=redundant-decls',
+    '-Werror=return-type',
+    '-Werror=sequence-point',
+    '-Werror=trigraphs',
+    '-Werror=vla',
+    '-Werror=write-strings',
+  ]
+else
+  test_cflags = []
+endif
+
+common_cflags = cc.get_supported_arguments(test_cflags)
+
+debug_cflags = []
+if debug
+  debug_cflags += '-DGDICT_ENABLE_DEBUG'
+elif optimization in ['2', '3', 's']
+  debug_cflags += '-DG_DISABLE_CAST_CHECKS'
+endif
+
+if buildtype == 'release'
+  debug_cflags += [ '-DG_DISABLE_ASSERT', '-DG_DISABLE_CHECKS', '-DG_DISABLE_CAST_CHECKS', ]
+endif
+
+ipv6_deps = []
+
+if use_ipv6
+  ipv6_prog = '''
+#include <sys/socket.h>
+#include <sys/types.h>
+
+int main (void) {
+  struct sockaddr_storage ss;
+  socket(AF_INET6, SOCK_STREAM, 0);
+  return 0;
+}
+  '''
+  has_ipv6 = cc.compiles(ipv6_prog, name: 'AF_INET6 is available')
+  has_getaddrinfo = cc.has_function('getaddrinfo')
+
+  # Look for getaddrinfo in all the known places
+  if not has_getaddrinfo
+    found_getaddrinfo = false
+    foreach l: [ 'bsd', 'socket', 'inet' ]
+      dep = cc.find_library(l, required: false)
+      if not found_getaddrinfo and dep.found()
+        has_getaddrinfo = cc.has_function('getaddrinfo', dependencies: dep)
+        if has_getaddrinfo
+          ipv6_deps += dep
+        endif
+      endif
+    endforeach
+  endif
+
+  use_ipv6 = has_ipv6 and has_getaddrinfo
+endif
+
+conf.set10('ENABLE_IPV6', use_ipv6)
+
+configure_file(output: 'config.h', configuration: conf)
 
 gdict_headers = [
   'gdict-context.h',
@@ -72,12 +186,12 @@ gdict_cflags = [
   '-DAPPLICATION_ID="@0@"'.format(application_id),
   '-DGDICTSOURCESDIR="@0@"'.format(join_paths(gdict_datadir, 'gdict-1.0', 'sources')),
   '-DGDICT_ENABLE_INTERNALS=1',
-  '-DGDICT_MAJOR_VERSION=@0@'.format(libgdict_major),
-  '-DGDICT_MINOR_VERSION=@0@'.format(libgdict_minor),
-  '-DGDICT_MICRO_VERSION=@0@'.format(libgdict_micro),
+  '-DGDICT_MAJOR_VERSION=@0@'.format(gdict_major_version),
+  '-DGDICT_MINOR_VERSION=@0@'.format(gdict_minor_version),
+  '-DGDICT_MICRO_VERSION=@0@'.format(gdict_micro_version),
 ]
 
-if profile == 'devel' or gdict_minor_version in ['alpha', 'beta', 'rc']
+if profile == 'devel' or gdict_is_devel
   gdict_cflags += [
     '-DDEVELOPMENT_BUILD',
   ]
@@ -85,10 +199,12 @@ endif
 
 mathlib = cc.find_library('m', required: false)
 
+gio_dep = dependency('gio-2.0', version: '>= 2.42.0')
+gtk_dep = dependency('gtk+-3.0', version: '>= 3.21.2')
+
 executable('gnome-dictionary',
   sources: [ app_sources, gdict_enums, gdict_marshal, gdict_resources ],
-  c_args: gdict_cflags,
+  c_args: [ common_cflags, debug_cflags, gdict_cflags ],
   dependencies: [ gio_dep, gtk_dep, ipv6_deps, mathlib ],
-  include_directories: root_inc,
   install: true,
 )

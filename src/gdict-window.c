@@ -84,14 +84,14 @@ enum
 static GParamSpec *gdict_window_properties[LAST_PROP] = { NULL, };
 static guint gdict_window_signals[LAST_SIGNAL] = { 0 };
 
-static const GtkTargetEntry drop_types[] =
+static GtkTargetEntry drop_types[] =
 {
-  { "text/plain",    0, 0 },
-  { "TEXT",          0, 0 },
-  { "STRING",        0, 0 },
-  { "UTF8_STRING",   0, 0 },
+  { (char *) "text/plain",    0, 0 },
+  { (char *) "TEXT",          0, 0 },
+  { (char *) "STRING",        0, 0 },
+  { (char *) "UTF8_STRING",   0, 0 },
 };
-static const guint n_drop_types = G_N_ELEMENTS (drop_types);
+static guint n_drop_types = G_N_ELEMENTS (drop_types);
 
 
 
@@ -302,7 +302,7 @@ gdict_window_error_cb (GdictContext *context,
   if (error->code == GDICT_CONTEXT_ERROR_NO_MATCH)
     {
       GdictSource *source;
-      GdictContext *context;
+      GdictContext *source_context;
 
       gdict_window_set_sidebar_visible (window, TRUE);
       gdict_sidebar_view_page (GDICT_SIDEBAR (window->sidebar),
@@ -314,18 +314,15 @@ gdict_window_error_cb (GdictContext *context,
        */
       source = gdict_source_loader_get_source (window->loader,
 		      			       window->source_name);
-      context = gdict_source_get_context (source);
+      source_context = gdict_source_get_context (source);
 
-      gdict_speller_set_context (GDICT_SPELLER (window->speller),
-		      		 context);
-      g_object_unref (context);
+      gdict_speller_set_context (GDICT_SPELLER (window->speller), source_context);
+      g_object_unref (source_context);
       g_object_unref (source);
       
-      gdict_speller_set_strategy (GDICT_SPELLER (window->speller),
-			          window->strategy);
+      gdict_speller_set_strategy (GDICT_SPELLER (window->speller), window->strategy);
       
-      gdict_speller_match (GDICT_SPELLER (window->speller),
-		           window->word);
+      gdict_speller_match (GDICT_SPELLER (window->speller), window->word);
     }
 
   /* unset the word and update the UI */

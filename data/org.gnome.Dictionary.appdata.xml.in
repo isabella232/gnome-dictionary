@@ -31,6 +31,11 @@
   <project_group>GNOME</project_group>
   <translation type="gettext">gnome-dictionary</translation>
   <releases>
+    <release version="3.26.1" date="2017-10-01">
+      <description>
+        <p>Restore the ability to add a dictionary source.</p>
+      </description>
+    </release>
     <release version="3.26.0" date="2017-09-12">
       <description>
         <p>A new stable release of the venerable Dictionary for GNOME. This

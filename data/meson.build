@@ -41,7 +41,6 @@ subdir('icons')
 # Dictionary sources
 sources = [
   'default.desktop',
-  'spanish.desktop',
   'thai.desktop',
 ]
 

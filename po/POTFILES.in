@@ -13,6 +13,7 @@ src/gdict-app.c
 src/gdict-client-context.c
 src/gdict-database-chooser.c
 src/gdict-defbox.c
+src/gdict-help-overlay.ui
 src/gdict-pref-dialog.c
 src/gdict-pref-dialog.ui
 src/gdict-print.c

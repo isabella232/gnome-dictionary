@@ -624,6 +624,7 @@ gdict_show_pref_dialog (GtkWidget         *parent,
         {
           gtk_window_set_transient_for (GTK_WINDOW (dialog), GTK_WINDOW (parent));
           gtk_window_set_destroy_with_parent (GTK_WINDOW (dialog), TRUE);
+          gtk_window_set_modal (GTK_WINDOW (dialog), TRUE);
           g_object_set_data_full (G_OBJECT (parent), "gdict-pref-dialog",
                                   dialog,
                                   g_object_unref);

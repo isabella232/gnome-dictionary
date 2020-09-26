@@ -1,10 +1,9 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
+data/appdata/org.gnome.Dictionary.appdata.xml.in.in
 data/default.desktop.in
-data/org.gnome.Dictionary.appdata.xml.in.in
 data/org.gnome.Dictionary.desktop.in.in
 data/org.gnome.dictionary.gschema.xml
-data/spanish.desktop.in
 data/thai.desktop.in
 src/gdict-about.c
 src/gdict-app-menus.ui

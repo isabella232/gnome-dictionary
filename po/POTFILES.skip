@@ -1,5 +1,4 @@
 # List of source files that should *not* be translated.
 # Please keep this file sorted alphabetically.
+data/appdata/org.gnome.Dictionary.appdata.xml.in
 data/org.gnome.Dictionary.desktop.in
-# Workaround for automake 1.15
-sub/data/org.gnome.Dictionary.desktop.in

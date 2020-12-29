@@ -1,20 +1,20 @@
-# 
 # Translators:
 # Assumpta, 2020
 # Ma. Teresa Guix <maite.guix@gmail.com>, 2020
 # Jaume Jorba <jaume.jorba@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: dictionary\n"
 "POT-Creation-Date: 2020-10-05 16:06+0000\n"
 "PO-Revision-Date: 2020-11-04 07:43+0000\n"
 "Last-Translator: Jaume Jorba <jaume.jorba@gmail.com>, 2020\n"
-"Language-Team: Catalan (https://www.transifex.com/softcatala/teams/62837/ca/)\n"
+"Language-Team: Catalan (https://www.transifex.com/softcatala/teams/62837/"
+"ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -27,9 +27,9 @@ msgstr "Jaume Jorba <jaume.jorba@gmail.com>, 2020"
 #: C/index.page:11 C/introduction.page:10 C/keyboard-shortcuts.page:11
 #: C/pref.page:9 C/print-font.page:11 C/print.page:12
 #: C/prob-retrieving-definition.page:11 C/save-definition.page:10
-#: C/similar-words.page:11 C/source-add-local.page:11
-#: C/sources-default.page:10 C/sources-delete.page:11 C/sources-edit.page:10
-#: C/sources.page:12 C/sources-select.page:12 C/text-copy.page:11
+#: C/similar-words.page:11 C/source-add-local.page:11 C/sources-default.page:10
+#: C/sources-delete.page:11 C/sources-edit.page:10 C/sources.page:12
+#: C/sources-select.page:12 C/text-copy.page:11
 msgid "Sindhu S"
 msgstr "Sindhu S"
 
@@ -72,16 +72,16 @@ msgstr "Cercar una paraula o terme"
 #. (itstool) path: page/p
 #: C/definition.page:29
 msgid ""
-"You can use <app>Dictionary</app> to look up the meaning of a <em>term</em>."
-" A term can be a single word such as <input>apple</input> or a compound word"
-" such as <input>chopping board</input>. The search result may also show you "
+"You can use <app>Dictionary</app> to look up the meaning of a <em>term</em>. "
+"A term can be a single word such as <input>apple</input> or a compound word "
+"such as <input>chopping board</input>. The search result may also show you "
 "the origin, importance and usage of a word. To look up a term:"
 msgstr ""
-"Podeu utilitzar el <app>Diccionari</app> per cercar el significat d'un "
+"Podeu utilitzar el <app>Diccionari</app> per a cercar el significat d'un "
 "<em>terme</em>. Un terme pot ser una paraula com <input>magrana</input> o "
 "una paraula composta com <input>espanta-sogres</input>. El resultat de la "
 "cerca també us pot mostrar l'origen, la importància i l'ús d'una paraula. "
-"Per cercar un terme:"
+"Per a cercar un terme:"
 
 #. (itstool) path: item/p
 #: C/definition.page:37
@@ -91,25 +91,27 @@ msgstr "Escriviu el terme que vulgueu cercar al <gui>cercador</gui>."
 
 #. (itstool) path: item/p
 #: C/definition.page:41
-msgid "Press <key>Return</key> or <gui style=\"button\">Look up:</gui> to search."
-msgstr "Premeu <key>Retorn</key> o <gui style=\"button\">Cerca:</gui> per cercar."
+msgid ""
+"Press <key>Return</key> or <gui style=\"button\">Look up:</gui> to search."
+msgstr ""
+"Premeu <key>Retorn</key> o <gui style=\"button\">Cerca:</gui> per a cercar."
 
 #. (itstool) path: page/p
 #: C/definition.page:46
 msgid ""
 "<app>Dictionary</app> will search your selected dictionary source and show "
-"you the result from the first dictionary in the source. To view results from"
-" the other dictionaries that are in the same source, select <link xref"
-"=\"similar-words\"><guiseq><gui style=\"menu\">View</gui> <gui "
-"style=\"menuitem\">Similar Words</gui></guiseq></link> to pop up a sidebar "
-"that shows all the results."
+"you the result from the first dictionary in the source. To view results from "
+"the other dictionaries that are in the same source, select <link xref="
+"\"similar-words\"><guiseq><gui style=\"menu\">View</gui> <gui style="
+"\"menuitem\">Similar Words</gui></guiseq></link> to pop up a sidebar that "
+"shows all the results."
 msgstr ""
 "<app>Diccionari</app> cerca al diccionari seleccionat i mostra el resultat "
-"del primer diccionari font. Per veure els resultats d'altres diccionaris que"
-" es troben a la mateixa font, seleccioneu <link xref=\"similar-"
-"words\"><guiseq><gui style=\"menu\">Vista</gui> i <gui "
-"style=\"menuitem\">Paraules semblants</gui></guiseq></link> per fer aparèixer"
-" una barra lateral que mostra tots els resultats."
+"del primer diccionari font. Per a veure els resultats d'altres diccionaris "
+"que es troben a la mateixa font, seleccioneu <link xref=\"similar-words"
+"\"><guiseq><gui style=\"menu\">Vista</gui> i <gui style=\"menuitem"
+"\">Paraules semblants</gui></guiseq></link> per a fer aparèixer una barra "
+"lateral que mostra tots els resultats."
 
 #. (itstool) path: page/title
 #: C/dictionary-select.page:25
@@ -133,15 +135,13 @@ msgstr "Selecciona un diccionari"
 #. (itstool) path: item/p
 #: C/dictionary-select.page:34
 msgid ""
-"Select <guiseq><gui style=\"menu\">View</gui> <gui "
-"style=\"menuitem\">Available Databases</gui></guiseq>. A sidebar listing the"
-" available dictionaries for your currently selected dictionary source will "
-"open."
+"Select <guiseq><gui style=\"menu\">View</gui> <gui style=\"menuitem"
+"\">Available Databases</gui></guiseq>. A sidebar listing the available "
+"dictionaries for your currently selected dictionary source will open."
 msgstr ""
-"Seleccioneu <guiseq><gui style=\"menu\">Vista</gui> <gui "
-"style=\"menuitem\">Bases de dades disponibles</gui></guiseq>. S'obrirà una "
-"barra lateral amb els diccionaris disponibles per a la font de diccionari "
-"seleccionada."
+"Seleccioneu <guiseq><gui style=\"menu\">Vista</gui> <gui style=\"menuitem"
+"\">Bases de dades disponibles</gui></guiseq>. S'obrirà una barra lateral amb "
+"els diccionaris disponibles per a la font de diccionari seleccionada."
 
 #. (itstool) path: item/p
 #: C/dictionary-select.page:40
@@ -190,41 +190,40 @@ msgstr ""
 #. (itstool) path: steps/title
 #: C/find.page:32
 msgid "To find definitions:"
-msgstr "Per trobar definicions:"
+msgstr "Per a trobar definicions:"
 
 #. (itstool) path: item/p
 #: C/find.page:34
 msgid ""
-"Select <guiseq><gui style=\"menu\">Edit</gui> <gui "
-"style=\"menuitem\">Find</gui></guiseq>."
+"Select <guiseq><gui style=\"menu\">Edit</gui> <gui style=\"menuitem\">Find</"
+"gui></guiseq>."
 msgstr ""
-"Seleccioneu <guiseq><gui style=\"menu\">Edita</gui> <gui "
-"style=\"menuitem\">Cerca</gui></guiseq>."
+"Seleccioneu <guiseq><gui style=\"menu\">Edita</gui> <gui style=\"menuitem"
+"\">Cerca</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/find.page:38
 msgid ""
-"The <gui>Find</gui> bar will appear at the bottom of the "
-"<app>Dictionary</app> window. Type in your search term to search within the "
-"definition that is currently displayed."
+"The <gui>Find</gui> bar will appear at the bottom of the <app>Dictionary</"
+"app> window. Type in your search term to search within the definition that "
+"is currently displayed."
 msgstr ""
 "La barra <gui>Cerca</gui> apareixerà a la part inferior de la finestra "
-"<app>Diccionari</app>. Escriviu el vostre terme de cerca per cercar dins de "
-"la definició que es mostra actualment."
+"<app>Diccionari</app>. Escriviu el vostre terme de cerca per a cercar dins "
+"de la definició que es mostra actualment."
 
 #. (itstool) path: item/p
 #: C/find.page:43
 msgid ""
-"Click <gui style=\"button\">Previous</gui> or <gui "
-"style=\"button\">Next</gui> to scroll through the results. The search will "
-"not wrap around: in other words, it will not go to the top of the page when "
-"you are on the last result and click <gui style=\"button\">Next</gui>."
+"Click <gui style=\"button\">Previous</gui> or <gui style=\"button\">Next</"
+"gui> to scroll through the results. The search will not wrap around: in "
+"other words, it will not go to the top of the page when you are on the last "
+"result and click <gui style=\"button\">Next</gui>."
 msgstr ""
-"Feu clic a <gui style=\"button\">Anterior</gui> o <gui "
-"style=\"button\">Següent</gui> per desplaçar-vos pels resultats. La cerca no"
-" es tancarà: en altres paraules, no anirà a la part superior de la pàgina "
-"quan estigueu a l'últim resultat i feu clic a <gui "
-"style=\"button\">Següent</gui>."
+"Feu clic a <gui style=\"button\">Anterior</gui> o <gui style=\"button"
+"\">Següent</gui> per a desplaçar-vos pels resultats. La cerca no es tancarà: "
+"en altres paraules, no anirà a la part superior de la pàgina quan estigueu a "
+"l'últim resultat i feu clic a <gui style=\"button\">Següent</gui>."
 
 #. (itstool) path: info/title
 #: C/index.page:8
@@ -271,14 +270,14 @@ msgstr "Introducció"
 #: C/introduction.page:28
 msgid ""
 "<app>Dictionary</app> is an application for looking up term definitions. It "
-"searches for definitions using an online <app>DICT</app> server. The default"
-" <app>DICT</app> server is at <sys "
-"href=\"http://dict.org\">http://dict.org</sys>."
+"searches for definitions using an online <app>DICT</app> server. The default "
+"<app>DICT</app> server is at <sys href=\"http://dict.org\">http://dict.org</"
+"sys>."
 msgstr ""
-"<app>Diccionari</app>és una aplicació per cercar definicions de termes. "
+"<app>Diccionari</app>és una aplicació per a cercar definicions de termes. "
 "Cerca definicions utilitzant un servidor <app>DICT</app>. El servidor per "
-"defecte <app>DICT</app> és a <sys "
-"href=\"http://dict.org\">http://dict.org</sys>."
+"defecte <app>DICT</app> és a <sys href=\"http://dict.org\">http://dict.org</"
+"sys>."
 
 #. (itstool) path: page/p
 #: C/introduction.page:33
@@ -286,8 +285,8 @@ msgid ""
 "Start using <app>Dictionary</app> by <link xref=\"definition\">looking up a "
 "definition</link>!"
 msgstr ""
-"Comenceu a utilitzar el <app>diccionari</app> <link "
-"xref=\"definition\">cercant una definició</link>."
+"Comenceu a utilitzar el <app>diccionari</app> <link xref=\"definition"
+"\">cercant una definició</link>."
 
 #. (itstool) path: figure/title
 #: C/introduction.page:37
@@ -312,17 +311,17 @@ msgstr ""
 #: C/introduction.page:39
 msgid "Screenshot showing the <app>Dictionary</app> main window."
 msgstr ""
-"Captura de pantalla que mostra la finestra principal de "
-"<app>Diccionari</app>."
+"Captura de pantalla que mostra la finestra principal de <app>Diccionari</"
+"app>."
 
 #. (itstool) path: info/desc
 #: C/keyboard-shortcuts.page:23
 msgid ""
-"You can use keyboard shortcuts to navigate around <app>Dictionary</app> more"
-" efficiently."
+"You can use keyboard shortcuts to navigate around <app>Dictionary</app> more "
+"efficiently."
 msgstr ""
-"Podeu utilitzar les dreceres de teclat per navegar per <app>Diccionari</app>"
-" amb més eficiència."
+"Podeu utilitzar les dreceres de teclat per a navegar per <app>Diccionari</"
+"app> amb més eficiència."
 
 #. (itstool) path: page/title
 #: C/keyboard-shortcuts.page:27
@@ -542,10 +541,10 @@ msgid ""
 "a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, "
 "California, 94041, USA."
 msgstr ""
-"Creative Commons Atribució Compartir Igual 3.0 Llicència no portada. Per "
+"Creative Commons Atribució Compartir Igual 3.0 Llicència no portada. Per a "
 "veure una còpia d'aquesta llicència, visiteu <_:link-1/> o envieu un correu "
-"a Creative Commons, 444 Castro Street, Suite 900, Mountain View, California,"
-" 94041, USA."
+"a Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, "
+"94041, USA."
 
 #. (itstool) path: info/desc
 #: C/pref.page:15
@@ -570,10 +569,10 @@ msgstr "Imprimeix el tipus de lletra"
 #. (itstool) path: page/p
 #: C/print-font.page:29
 msgid ""
-"You can change the default font face and size that are used for printing the"
-" definitions."
+"You can change the default font face and size that are used for printing the "
+"definitions."
 msgstr ""
-"Podeu canviar el tipus de lletra per defecte i la mida que s'utilitzen per "
+"Podeu canviar el tipus de lletra per defecte i la mida que s'utilitzen per a "
 "imprimir les definicions."
 
 #. (itstool) path: steps/title
@@ -584,13 +583,11 @@ msgstr "Canvia el tipus de lletra"
 #. (itstool) path: item/p
 #: C/print-font.page:35
 msgid ""
-"Select <guiseq><gui style=\"menu\">Dictionary</gui> <gui "
-"style=\"menuitem\">Preferences</gui> <gui "
-"style=\"tab\">Print</gui></guiseq>."
+"Select <guiseq><gui style=\"menu\">Dictionary</gui> <gui style=\"menuitem"
+"\">Preferences</gui> <gui style=\"tab\">Print</gui></guiseq>."
 msgstr ""
-"Seleccioneu <guiseq><gui style=\"menu\">Diccionari</gui> <gui "
-"style=\"menuitem\">Preferències</gui> <gui "
-"style=\"tab\">Imprimeix</gui></guiseq>."
+"Seleccioneu <guiseq><gui style=\"menu\">Diccionari</gui> <gui style="
+"\"menuitem\">Preferències</gui> <gui style=\"tab\">Imprimeix</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/print-font.page:40
@@ -606,20 +603,19 @@ msgstr "Seleccioneu el tipus de lletra a utilitzar."
 #: C/print-font.page:46
 msgid ""
 "Drag the slider to the right to increase the font size or left to decrease "
-"it. Alternatively, you can type in the font size in the text box, or use the"
-" <gui>-</gui> and <gui>+</gui> buttons to decrease and increase the font "
-"size."
+"it. Alternatively, you can type in the font size in the text box, or use the "
+"<gui>-</gui> and <gui>+</gui> buttons to decrease and increase the font size."
 msgstr ""
-"Arrossegueu el control lliscant cap a la dreta per augmentar la mida de la "
-"lletra o cap a l'esquerra per reduir-la. Com a alternativa, podeu escriure "
+"Arrossegueu el control lliscant cap a la dreta per a augmentar la mida de la "
+"lletra o cap a l'esquerra per a reduir-la. Com a alternativa, podeu escriure "
 "la mida de la lletra al quadre de text, o utilitzar els botons <gui>-</gui> "
-"i <gui>+</gui> per disminuir i augmentar la mida de la lletra."
+"i <gui>+</gui> per a disminuir i augmentar la mida de la lletra."
 
 #. (itstool) path: item/p
 #: C/print-font.page:52
 msgid "Click <gui style=\"button\">Select</gui> to save your font settings."
 msgstr ""
-"Feu clic a <gui style=\"button\">Selecciona</gui> per desar la vostra "
+"Feu clic a <gui style=\"button\">Selecciona</gui> per a desar la vostra "
 "configuració."
 
 #. (itstool) path: page/p
@@ -628,8 +624,8 @@ msgid ""
 "The definition is not reflowed for printing, so if you choose a large font "
 "size, some of the text may be cut off."
 msgstr ""
-"La definició no es redimensiona per a la impressió, de manera que si es tria una "
-"mida de lletra gran, es pot tallar part del text."
+"La definició no es redimensiona per a la impressió, de manera que si es tria "
+"una mida de lletra gran, es pot tallar part del text."
 
 #. (itstool) path: info/desc
 #: C/print.page:24
@@ -646,22 +642,22 @@ msgstr "Imprimeix una definició"
 msgid ""
 "You can print a definition to paper or a file. Before printing, you should "
 "preview the definition as it would be printed to check that the text fits "
-"onto the page, especially if you have changed the <link xref=\"print-"
-"font\">print font</link> size."
+"onto the page, especially if you have changed the <link xref=\"print-font"
+"\">print font</link> size."
 msgstr ""
 "Podeu imprimir una definició en paper o en un fitxer. Abans d'imprimir, heu "
-"de previsualitzar la definició tal com s'imprimiria per comprovar que el "
-"text s'adapta a la pàgina, sobretot si heu canviat la mida de la <link xref"
-"=\"print-font\">font d'impressió</link>."
+"de previsualitzar la definició tal com s'imprimiria per a comprovar que el "
+"text s'adapta a la pàgina, sobretot si heu canviat la mida de la <link xref="
+"\"print-font\">font d'impressió</link>."
 
 #. (itstool) path: item/p
 #: C/print.page:40
 msgid ""
-"Select <guiseq><gui style=\"menu\">File</gui> <gui "
-"style=\"menuitem\">Preview</gui></guiseq>."
+"Select <guiseq><gui style=\"menu\">File</gui> <gui style=\"menuitem"
+"\">Preview</gui></guiseq>."
 msgstr ""
-"Seleccioneu <guiseq><gui style=\"menu\">Fitxer</gui> <gui "
-"style=\"menuitem\">Previsualitza</gui></guiseq>."
+"Seleccioneu <guiseq><gui style=\"menu\">Fitxer</gui> <gui style=\"menuitem"
+"\">Previsualitza</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/print.page:44
@@ -676,8 +672,8 @@ msgstr ""
 #: C/print.page:48
 msgid "Use the toolbar to browse pages, adjust zoom level and page width."
 msgstr ""
-"Utilitzeu la barra d'eines per navegar per les pàgines, ajustar el nivell de"
-" zoom i l'amplada de la pàgina."
+"Utilitzeu la barra d'eines per a navegar per les pàgines, ajustar el nivell "
+"de zoom i l'amplada de la pàgina."
 
 #. (itstool) path: item/p
 #: C/print.page:52
@@ -685,37 +681,37 @@ msgid ""
 "Click the <gui style=\"button\">Print this document</gui> to print the "
 "definition or close the window to end the preview."
 msgstr ""
-"Feu clic a <gui style=\"button\">Imprimeix aquest document</gui> per imprimir"
-" la definició o tancar la finestra per acabar la previsualització."
+"Feu clic a <gui style=\"button\">Imprimeix aquest document</gui> per a "
+"imprimir la definició o tancar la finestra per acabar la previsualització."
 
 #. (itstool) path: note/p
 #: C/print.page:58
 msgid ""
-"The print button in the toolbar may not always work. If it does not work for"
-" you, close the window and select <guiseq><gui style=\"menu\">File</gui> "
-"<gui style=\"menuitem\">Print</gui></guiseq>."
+"The print button in the toolbar may not always work. If it does not work for "
+"you, close the window and select <guiseq><gui style=\"menu\">File</gui> <gui "
+"style=\"menuitem\">Print</gui></guiseq>."
 msgstr ""
 "És possible que el botó d'impressió de la barra d'eines no sempre funcioni. "
-"Si no us funciona, tanqueu la finestra i seleccioneu <guiseq><gui "
-"style=\"menu\">Fitxer</gui> <gui style=\"menuitem\">Imprimeix</gui></guiseq>."
+"Si no us funciona, tanqueu la finestra i seleccioneu <guiseq><gui style="
+"\"menu\">Fitxer</gui> <gui style=\"menuitem\">Imprimeix</gui></guiseq>."
 
 #. (itstool) path: section/p
 #: C/print.page:69
 msgid ""
-"You need to <link href=\"help:gnome-help/printing\">have a printer set "
-"up</link> to be able to print to paper."
+"You need to <link href=\"help:gnome-help/printing\">have a printer set up</"
+"link> to be able to print to paper."
 msgstr ""
-"Heu de <link href=\"help:gnome-help/printing\">tenir la impressora "
-"encesa</link> per imprimir sobre paper."
+"Heu de <link href=\"help:gnome-help/printing\">tenir la impressora encesa</"
+"link> per a imprimir sobre paper."
 
 #. (itstool) path: item/p
 #: C/print.page:74
 msgid ""
-"Select <guiseq><gui style=\"menu\">File</gui> <gui "
-"style=\"menuitem\">Print</gui> <gui style=\"tab\">General</gui></guiseq>."
+"Select <guiseq><gui style=\"menu\">File</gui> <gui style=\"menuitem\">Print</"
+"gui> <gui style=\"tab\">General</gui></guiseq>."
 msgstr ""
-"Seleccioneu <guiseq><gui style=\"menu\">Fitxer</gui> <gui "
-"style=\"menuitem\">Imprimeix</gui> <gui style=\"tab\">General</gui></guiseq>."
+"Seleccioneu <guiseq><gui style=\"menu\">Fitxer</gui> <gui style=\"menuitem"
+"\">Imprimeix</gui> <gui style=\"tab\">General</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/print.page:79
@@ -723,23 +719,24 @@ msgid ""
 "Select the printer that you want to use from the list of printers or select "
 "<gui href=\"help:gnome-help/print-to-file\">Print to File</gui>."
 msgstr ""
-"Seleccioneu la impressora que vulgueu utilitzar de la llista d'impressores o"
-" seleccioneu <gui href=\"help:gnome-help/print-to-file\">Imprimeix en un "
+"Seleccioneu la impressora que vulgueu utilitzar de la llista d'impressores o "
+"seleccioneu <gui href=\"help:gnome-help/print-to-file\">Imprimeix en un "
 "fitxer</gui>."
 
 #. (itstool) path: item/p
 #: C/print.page:84
 msgid ""
-"Choose your <link href=\"help:gnome-help/printing#paper\">printing "
-"settings</link>."
+"Choose your <link href=\"help:gnome-help/printing#paper\">printing settings</"
+"link>."
 msgstr ""
-"Seleccioneu la vostra <link href=\"help:gnome-"
-"help/printing#paper\">configuració d'impressió</link>."
+"Seleccioneu la vostra <link href=\"help:gnome-help/printing#paper"
+"\">configuració d'impressió</link>."
 
 #. (itstool) path: item/p
 #: C/print.page:88
 msgid "Press <gui style=\"button\">Print</gui> to print the definition."
-msgstr "Premeu<gui style=\"button\">Imprimeix</gui> per imprimir la definició."
+msgstr ""
+"Premeu<gui style=\"button\">Imprimeix</gui> per a imprimir la definició."
 
 #. (itstool) path: info/desc
 #: C/prob-retrieving-definition.page:23
@@ -755,34 +752,34 @@ msgstr "No es poden trobar les definicions"
 #: C/prob-retrieving-definition.page:29
 msgid ""
 "If you see the error message <sys>Error while retrieving definition</sys> "
-"when looking up a definition from any of the <link xref=\"sources-"
-"select\">selected dictionaries</link>, the problem is more likely one of the"
-" following:"
+"when looking up a definition from any of the <link xref=\"sources-select"
+"\">selected dictionaries</link>, the problem is more likely one of the "
+"following:"
 msgstr ""
-"Si visualitzeu el missatge d'error <sys>Error obtenint les definicions</sys>"
-" quan es busca una definició de qualsevol dels <link xref=\"sources-"
-"select\">diccionaris seleccionats</link>, el més probable és que el problema"
-" sigui un dels següents:"
+"Si visualitzeu el missatge d'error <sys>Error obtenint les definicions</sys> "
+"quan es busca una definició de qualsevol dels <link xref=\"sources-select"
+"\">diccionaris seleccionats</link>, el més probable és que el problema sigui "
+"un dels següents:"
 
 #. (itstool) path: item/p
 #: C/prob-retrieving-definition.page:36
 msgid ""
-"One or more of the selected <app>DICT</app> servers that are used to look up"
-" definitions may not be working. You can try waiting a while before <link "
+"One or more of the selected <app>DICT</app> servers that are used to look up "
+"definitions may not be working. You can try waiting a while before <link "
 "xref=\"definition\">looking up</link> the definition again."
 msgstr ""
-"Un o més dels servidors <app>DICT</app> que s'utilitzen per cercar "
-"definicions pot no funcionar. Podeu esperar una estona abans de <link "
-"xref=\"definition\">cercar</link> la definició de nou."
+"Un o més dels servidors <app>DICT</app> que s'utilitzen per a cercar "
+"definicions pot no funcionar. Podeu esperar una estona abans de <link xref="
+"\"definition\">cercar</link> la definició de nou."
 
 #. (itstool) path: item/p
 #: C/prob-retrieving-definition.page:42
 msgid ""
-"You may not have a working Internet connection. For <app>Dictionary</app> to"
-" look up terms, your computer <link href=\"help:gnome-help/net\">must be "
-"able to connect</link> to <sys href=\"http://dict.org\">dict.org</sys>."
+"You may not have a working Internet connection. For <app>Dictionary</app> to "
+"look up terms, your computer <link href=\"help:gnome-help/net\">must be able "
+"to connect</link> to <sys href=\"http://dict.org\">dict.org</sys>."
 msgstr ""
-"És possible que no tingueu connexió a Internet. Per cercar termes al "
+"És possible que no tingueu connexió a Internet. Per a cercar termes al "
 "<app>Diccionari</app>, l'ordinador <link href=\"help:gnome-help/net\">ha de "
 "poder-se connectar</link> a <sys href=\"http://dict.org\">dict.org</sys>."
 
@@ -808,22 +805,22 @@ msgstr ""
 #. (itstool) path: steps/title
 #: C/save-definition.page:32
 msgid "To save a definition:"
-msgstr "Per desar una definició:"
+msgstr "Per a desar una definició:"
 
 #. (itstool) path: item/p
 #: C/save-definition.page:34
 msgid ""
-"Select <guiseq><gui style=\"menu\">File</gui> <gui style=\"menuitem\">Save a"
-" Copy…</gui></guiseq>."
+"Select <guiseq><gui style=\"menu\">File</gui> <gui style=\"menuitem\">Save a "
+"Copy…</gui></guiseq>."
 msgstr ""
-"Seleccioneu <guiseq><gui style=\"menu\">Fitxer</gui> <gui "
-"style=\"menuitem\">Desa una còpia…</gui></guiseq>."
+"Seleccioneu <guiseq><gui style=\"menu\">Fitxer</gui> <gui style=\"menuitem"
+"\">Desa una còpia…</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/save-definition.page:38
 msgid ""
-"Choose where you want to save the definition to and a name for the file. You"
-" may want to add a <file>.txt</file> file extension to the end of the file "
+"Choose where you want to save the definition to and a name for the file. You "
+"may want to add a <file>.txt</file> file extension to the end of the file "
 "name."
 msgstr ""
 "Trieu on voleu desar la definició i el nom del fitxer. Podeu voler afegir "
@@ -832,7 +829,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/save-definition.page:43
 msgid "Press <gui style=\"button\">Save</gui> to save the definition."
-msgstr "Premeu <gui style=\"button\">Desa</gui> per desar la definició."
+msgstr "Premeu <gui style=\"button\">Desa</gui> per a desar la definició."
 
 #. (itstool) path: info/desc
 #: C/similar-words.page:23
@@ -846,7 +843,7 @@ msgid ""
 "dictionaries. To check if there are search results in other dictionaries:"
 msgstr ""
 "<app>Diccionari</app> només mostrarà la definició d'un dels vostres "
-"diccionaris. Per comprovar si hi ha resultats en altres diccionaris:"
+"diccionaris. Per a comprovar si hi ha resultats en altres diccionaris:"
 
 #. (itstool) path: item/p
 #: C/similar-words.page:34
@@ -856,13 +853,11 @@ msgstr "<link xref=\"definition\">Cerca</link> el terme desitjat."
 #. (itstool) path: item/p
 #: C/similar-words.page:37
 msgid ""
-"If the sidebar is not already visible, select <guiseq><gui "
-"style=\"menu\">View</gui> <gui style=\"menuitem\">Similar "
-"Words</gui></guiseq>."
+"If the sidebar is not already visible, select <guiseq><gui style=\"menu"
+"\">View</gui> <gui style=\"menuitem\">Similar Words</gui></guiseq>."
 msgstr ""
-"Si la barra lateral no és visible, seleccioneu <guiseq><gui "
-"style=\"menu\">Vista</gui> <gui style=\"menuitem\">Paraules "
-"semblants</gui></guiseq>."
+"Si la barra lateral no és visible, seleccioneu <guiseq><gui style=\"menu"
+"\">Vista</gui> <gui style=\"menuitem\">Paraules semblants</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/similar-words.page:42
@@ -871,8 +866,8 @@ msgid ""
 "dictionaries in your selected dictionary source. To view the similar word, "
 "double click on the entry."
 msgstr ""
-"La barra lateral <gui>Paraules semblants</gui>mostra els resultats de la "
-"cerca d'altres diccionaris al vostre diccionari font. Per veure la paraula "
+"La barra lateral <gui>Paraules semblants</gui> mostra els resultats de la "
+"cerca d'altres diccionaris al vostre diccionari font. Per a veure la paraula "
 "semblant, feu doble clic a l'entrada."
 
 #. (itstool) path: page/title
@@ -889,14 +884,13 @@ msgstr "Estableix una font de diccionari per defecte"
 #: C/sources-default.page:26
 msgid ""
 "When you first use <app>Dictionary</app>, it should have some pre-installed "
-"dictionaries that you can use. You can change the default <link "
-"xref=\"sources\">dictionary source</link> to one that you would prefer to "
-"use instead."
+"dictionaries that you can use. You can change the default <link xref="
+"\"sources\">dictionary source</link> to one that you would prefer to use "
+"instead."
 msgstr ""
 "Quan utilitzeu per primera vegada <app>Diccionari</app>, hi ha diccionaris "
-"preinstal·lats que podeu utilitzar. Podeu canviar el <link "
-"xref=\"sources\">diccionari font</link> a un altre que us estimeu més "
-"utilitzar."
+"preinstal·lats que podeu utilitzar. Podeu canviar el <link xref=\"sources"
+"\">diccionari font</link> a un altre que us estimeu més utilitzar."
 
 #. (itstool) path: steps/title
 #: C/sources-default.page:32
@@ -906,11 +900,11 @@ msgstr "Canvia la font del diccionari per defecte:"
 #. (itstool) path: item/p
 #: C/sources-default.page:34
 msgid ""
-"Select <guiseq><gui><app>Dictionary</app></gui> <gui "
-"style=\"menu\">Preferences</gui> <gui style=\"tab\">Source</gui></guiseq>."
+"Select <guiseq><gui><app>Dictionary</app></gui> <gui style=\"menu"
+"\">Preferences</gui> <gui style=\"tab\">Source</gui></guiseq>."
 msgstr ""
-"Seleccioneu <guiseq><gui><app>Diccionari</app></gui> <gui "
-"style=\"menu\">Preferències</gui> <gui style=\"tab\">Font</gui></guiseq>."
+"Seleccioneu <guiseq><gui><app>Diccionari</app></gui> <gui style=\"menu"
+"\">Preferències</gui> <gui style=\"tab\">Font</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/sources-default.page:39
@@ -931,11 +925,11 @@ msgstr "Suprimeix una font del diccionari"
 #. (itstool) path: page/p
 #: C/sources-delete.page:27
 msgid ""
-"If you no longer need a specific <link xref=\"sources\">dictionary "
-"source</link> or if one stops working for you, you may want to delete it."
+"If you no longer need a specific <link xref=\"sources\">dictionary source</"
+"link> or if one stops working for you, you may want to delete it."
 msgstr ""
-"Si ja no necessiteu un <link xref=\"sources\">diccionari font</link> o si un"
-" deixa de funcionar, podeu voler esborrar-lo."
+"Si ja no necessiteu un <link xref=\"sources\">diccionari font</link> o si un "
+"deixa de funcionar, podeu voler esborrar-lo."
 
 #. (itstool) path: steps/title
 #: C/sources-delete.page:32
@@ -945,13 +939,11 @@ msgstr "Seleccioneu una font de diccionari:"
 #. (itstool) path: item/p
 #: C/sources-delete.page:34
 msgid ""
-"Select <guiseq><gui style=\"menu\"><app>Dictionary</app></gui> <gui "
-"style=\"menuitem\">Preferences</gui> <gui "
-"style=\"tab\">Source</gui></guiseq>."
+"Select <guiseq><gui style=\"menu\"><app>Dictionary</app></gui> <gui style="
+"\"menuitem\">Preferences</gui> <gui style=\"tab\">Source</gui></guiseq>."
 msgstr ""
 "Seleccioneu <guiseq><gui style=\"menu\"><app>Diccionari</app></gui> <gui "
-"style=\"menuitem\">Preferències</gui> <gui "
-"style=\"tab\">Font</gui></guiseq>."
+"style=\"menuitem\">Preferències</gui> <gui style=\"tab\">Font</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/sources-delete.page:39
@@ -983,24 +975,22 @@ msgid ""
 "You can customize a <link xref=\"sources\">dictionary source</link> to "
 "update details such as its description or remote address."
 msgstr ""
-"Podeu personalitzar el <link xref=\"sources\">diccionari font</link> per "
+"Podeu personalitzar el <link xref=\"sources\">diccionari font</link> per a "
 "actualitzar detalls, com la descripció o l'adreça remota."
 
 #. (itstool) path: steps/title
 #: C/sources-edit.page:30
 msgid "To edit a dictionary source:"
-msgstr "Per editar una font de diccionari:"
+msgstr "Per a editar una font de diccionari:"
 
 #. (itstool) path: item/p
 #: C/sources-edit.page:32
 msgid ""
-"Select <guiseq><gui style=\"menu\">Dictionary</gui> <gui "
-"style=\"menuitem\">Preferences</gui> <gui "
-"style=\"tab\">Source</gui></guiseq>."
+"Select <guiseq><gui style=\"menu\">Dictionary</gui> <gui style=\"menuitem"
+"\">Preferences</gui> <gui style=\"tab\">Source</gui></guiseq>."
 msgstr ""
-"Seleccioneu <guiseq><gui style=\"menu\">Diccionari</gui> <gui "
-"style=\"menuitem\">Preferències</gui> <gui "
-"style=\"tab\">Font</gui></guiseq>."
+"Seleccioneu <guiseq><gui style=\"menu\">Diccionari</gui> <gui style="
+"\"menuitem\">Preferències</gui> <gui style=\"tab\">Font</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/sources-edit.page:37
@@ -1046,7 +1036,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/sources-edit.page:64
 msgid "Press <gui style=\"button\">Close</gui> to save the settings."
-msgstr "Premeu <gui style=\"button\">Tanca</gui>per desar la configuració."
+msgstr "Premeu <gui style=\"button\">Tanca</gui>per a desar la configuració."
 
 #. (itstool) path: info/desc
 #: C/sources.page:24
@@ -1056,10 +1046,10 @@ msgstr "Gestiona diverses fonts de diccionari."
 #. (itstool) path: page/p
 #: C/sources.page:30
 msgid ""
-"<app>Dictionary</app> uses <em>dictionary sources</em> to look up words that"
-" you search for. Dictionary sources are collections of one or more "
-"dictionary databases which are usually online, but can be installed on your "
-"machine as well."
+"<app>Dictionary</app> uses <em>dictionary sources</em> to look up words that "
+"you search for. Dictionary sources are collections of one or more dictionary "
+"databases which are usually online, but can be installed on your machine as "
+"well."
 msgstr ""
 "<app>Diccionari</app> utilitza les <em>fonts de diccionaris</em> per buscar "
 "les paraules que cerqueu. Les fonts del diccionari són col·leccions d'una o "
@@ -1082,8 +1072,8 @@ msgid ""
 "You can change the <link xref=\"sources\">dictionary source</link> that you "
 "are currently using without changing your default preferences."
 msgstr ""
-"Podeu canviar la <link xref=\"sources\">font del diccionari</link> que esteu"
-" utilitzant sense canviar les vostres preferències predeterminades."
+"Podeu canviar la <link xref=\"sources\">font del diccionari</link> que esteu "
+"utilitzant sense canviar les vostres preferències predeterminades."
 
 #. (itstool) path: steps/title
 #: C/sources-select.page:32
@@ -1093,11 +1083,11 @@ msgstr "Canvia temporalment la font del diccionari:"
 #. (itstool) path: item/p
 #: C/sources-select.page:34
 msgid ""
-"Select <guiseq><gui style=\"menu\">View</gui> <gui "
-"style=\"menuitem\">Dictionary Sources</gui></guiseq>."
+"Select <guiseq><gui style=\"menu\">View</gui> <gui style=\"menuitem"
+"\">Dictionary Sources</gui></guiseq>."
 msgstr ""
-"Seleccioneu <guiseq><gui style=\"menu\">Vista</gui> <gui "
-"style=\"menuitem\">Fonts de diccionaris</gui></guiseq>."
+"Seleccioneu <guiseq><gui style=\"menu\">Vista</gui> <gui style=\"menuitem"
+"\">Fonts de diccionaris</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/sources-select.page:38
@@ -1132,22 +1122,22 @@ msgstr "Copiar una definició"
 #: C/text-copy.page:35
 msgid ""
 "Select the text that you want to copy in <app>Dictionary</app>. "
-"Alternatively, you can select the whole definition using <guiseq><gui "
-"style=\"menu\">Edit</gui> <gui style=\"menuitem\">Select All</gui></guiseq>."
+"Alternatively, you can select the whole definition using <guiseq><gui style="
+"\"menu\">Edit</gui> <gui style=\"menuitem\">Select All</gui></guiseq>."
 msgstr ""
 "Seleccioneu el text que vulgueu copiar a <app>Diccionari</app>. "
 "Alternativament podeu seleccionar tota la definició utilitzant<guiseq><gui "
-"style=\"menu\">Edita</gui> <gui style=\"menuitem\">Selecciona-ho "
-"tot</gui></guiseq>."
+"style=\"menu\">Edita</gui> <gui style=\"menuitem\">Selecciona-ho tot</gui></"
+"guiseq>."
 
 #. (itstool) path: item/p
 #: C/text-copy.page:41
 msgid ""
-"Select <guiseq><gui style=\"menu\">Edit</gui> <gui "
-"style=\"menuitem\">Copy</gui></guiseq>."
+"Select <guiseq><gui style=\"menu\">Edit</gui> <gui style=\"menuitem\">Copy</"
+"gui></guiseq>."
 msgstr ""
-"Seleccioneu <guiseq><gui style=\"menu\">Edita</gui> <gui "
-"style=\"menuitem\">Copia</gui></guiseq>."
+"Seleccioneu <guiseq><gui style=\"menu\">Edita</gui> <gui style=\"menuitem"
+"\">Copia</gui></guiseq>."
 
 #. (itstool) path: item/p
 #: C/text-copy.page:45

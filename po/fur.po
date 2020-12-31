@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-dictionary master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
 "issues\n"
-"POT-Creation-Date: 2019-01-14 14:42+0000\n"
-"PO-Revision-Date: 2019-02-04 16:38+0100\n"
+"POT-Creation-Date: 2020-12-10 15:51+0000\n"
+"PO-Revision-Date: 2020-12-31 09:22+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -17,27 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#. Translators: Do not translate the Name key
-#: data/default.desktop.in:4
-msgid "Default"
-msgstr "Default"
-
-#: data/default.desktop.in:5
-msgid "Default Dictionary Server"
-msgstr "Servidôr di dizionari predefinît"
-
-#: data/org.gnome.Dictionary.appdata.xml.in:6
+#: data/appdata/org.gnome.Dictionary.appdata.xml.in.in:6
 msgid "GNOME Dictionary"
-msgstr "Dizionari GNOME"
+msgstr "Dizionari di GNOME"
 
-#: data/org.gnome.Dictionary.appdata.xml.in:7
-#: data/org.gnome.Dictionary.desktop.in:4
+#: data/appdata/org.gnome.Dictionary.appdata.xml.in.in:7
+#: data/org.gnome.Dictionary.desktop.in.in:4
 msgid "Check word definitions and spellings in an online dictionary"
 msgstr "Controle definizions e ortografie di peraulis suntun dizionari in rêt"
 
-#: data/org.gnome.Dictionary.appdata.xml.in:9
+#: data/appdata/org.gnome.Dictionary.appdata.xml.in.in:9
 msgid ""
 "GNOME Dictionary is a simple dictionary application that looks up "
 "definitions of words online. Though it looks up English definitions by "
@@ -49,19 +40,23 @@ msgstr ""
 "ricercjis in inglês, al è pussibil passâ al spagnûl o zontâ altris "
 "dizionaris in rêt che a fasin ûs dal protocol DICT."
 
-#: data/org.gnome.Dictionary.desktop.in:3 src/gdict-about.c:60
-#: src/gdict-window.c:498 src/gdict-window.c:1500
+#: data/appdata/org.gnome.Dictionary.appdata.xml.in.in:34
+msgid "The GNOME Project"
+msgstr "Il progjet GNOME"
+
+#: data/default.desktop.in:5
+msgid "Default Dictionary Server"
+msgstr "Servidôr di dizionari predefinît"
+
+#: data/org.gnome.Dictionary.desktop.in.in:3 src/gdict-about.c:62
+#: src/gdict-app.c:369 src/gdict-window.c:495 src/gdict-window.c:1511
 msgid "Dictionary"
 msgstr "Dizionari"
 
-#: data/org.gnome.Dictionary.desktop.in:5
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Dictionary.desktop.in.in:6
 msgid "word;synonym;definition;spelling;"
 msgstr "peraule;peraulis;sinonims;definizion;definizions;ortografie;"
-
-#. Translators: Do not translate the Icon key
-#: data/org.gnome.Dictionary.desktop.in:10
-msgid "accessories-dictionary"
-msgstr "accessories-dictionary"
 
 #: data/org.gnome.dictionary.gschema.xml:6
 msgid "The default database to use"
@@ -109,15 +104,6 @@ msgstr ""
 "Non de sorzint di dizionari doprade par vê lis definizions des peraulis."
 
 #. Translators: Do not translate the Name key
-#: data/spanish.desktop.in:4
-msgid "spanish"
-msgstr "spanish"
-
-#: data/spanish.desktop.in:5
-msgid "Spanish Dictionaries"
-msgstr "Dizionaris spagnui"
-
-#. Translators: Do not translate the Name key
 #: data/thai.desktop.in:4
 msgid "Thai"
 msgstr "Thai"
@@ -126,228 +112,17 @@ msgstr "Thai"
 msgid "Longdo Thai-English Dictionaries"
 msgstr "Dizionaris Longdo Thai-Inglês"
 
-#: libgdict/gdict-client-context.c:775
-#, c-format
-msgid "No connection to the dictionary server at “%s:%d”"
-msgstr "Nissune conession al servidôr di dizionari a “%s:%d”"
-
-#: libgdict/gdict-client-context.c:1058
-#, c-format
-msgid "Lookup failed for hostname “%s”: no suitable resources found"
-msgstr "Ricercje falide pal non host “%s”: nissune risorse adeguade cjatade"
-
-#: libgdict/gdict-client-context.c:1089
-#, c-format
-msgid "Lookup failed for host “%s”: %s"
-msgstr "Ricercje falide pal host “%s”: %s"
-
-#: libgdict/gdict-client-context.c:1123
-#, c-format
-msgid "Lookup failed for host “%s”: host not found"
-msgstr "Ricercje falide pal host “%s”: host no cjatât"
-
-#: libgdict/gdict-client-context.c:1175
-#, c-format
-msgid ""
-"Unable to connect to the dictionary server at “%s:%d”. The server replied "
-"with code %d (server down)"
-msgstr ""
-"Impussibil tacâsi al servidôr di dizionari a “%s:%d”. Il servidôr al à "
-"rispuindût cul codiç %d (servidôr no atîf)"
-
-#: libgdict/gdict-client-context.c:1194
-#, c-format
-msgid ""
-"Unable to parse the dictionary server reply\n"
-": “%s”"
-msgstr ""
-"Impussibil analizâ la rispueste dal servidôr dal dizionari\n"
-": “%s”"
-
-#: libgdict/gdict-client-context.c:1223
-#, c-format
-msgid "No definitions found for “%s”"
-msgstr "Nissune definizion cjatade par “%s”"
-
-#: libgdict/gdict-client-context.c:1238
-#, c-format
-msgid "Invalid database “%s”"
-msgstr "Base di dâts “%s” no valide"
-
-#: libgdict/gdict-client-context.c:1253
-#, c-format
-msgid "Invalid strategy “%s”"
-msgstr "Strategjie “%s” no valide"
-
-#: libgdict/gdict-client-context.c:1268
-#, c-format
-msgid "Bad command “%s”"
-msgstr "Comant “%s” no bon"
-
-#: libgdict/gdict-client-context.c:1283
-#, c-format
-msgid "Bad parameters for command “%s”"
-msgstr "Parametris no juscj par il comant “%s”"
-
-#: libgdict/gdict-client-context.c:1298
-#, c-format
-msgid "No databases found on dictionary server at “%s”"
-msgstr "Nissune base di dâts cjatade tal servidôr di dizionari a “%s”"
-
-#: libgdict/gdict-client-context.c:1313
-#, c-format
-msgid "No strategies found on dictionary server at “%s”"
-msgstr "Nissune strategjie cjatade tal servidôr di dizionari a “%s”"
-
-#: libgdict/gdict-client-context.c:1745
-#, c-format
-msgid "Connection failed to the dictionary server at %s:%d"
-msgstr "Conession falide al servidôr di dizionari a «%s:%d»"
-
-#: libgdict/gdict-client-context.c:1784
-#, c-format
-msgid ""
-"Error while reading reply from server:\n"
-"%s"
-msgstr ""
-"Erôr intant che si leieve le rispueste dal servidôr:\n"
-"%s"
-
-#: libgdict/gdict-client-context.c:1857
-#, c-format
-msgid "Connection timeout for the dictionary server at “%s:%d”"
-msgstr "Conession scjadude al servidôr di dizionari a “%s:%d”"
-
-#: libgdict/gdict-client-context.c:1891
-#, c-format
-msgid "No hostname defined for the dictionary server"
-msgstr "Nissun non host definît pal servidôr di dizionari"
-
-#: libgdict/gdict-client-context.c:1927 libgdict/gdict-client-context.c:1942
-#, c-format
-msgid "Unable to create socket"
-msgstr "Impussibil creâ il socket"
-
-#: libgdict/gdict-client-context.c:1968
-#, c-format
-msgid "Unable to set the channel as non-blocking: %s"
-msgstr "Impussibil disponi il canâl come no-blocant: %s"
-
-#: libgdict/gdict-client-context.c:1983
-#, c-format
-msgid "Unable to connect to the dictionary server at “%s:%d”"
-msgstr "Impussibil conetisi al servidôr di dizionari a “%s:%d”"
-
-#: libgdict/gdict-database-chooser.c:376
-msgid "Reload the list of available databases"
-msgstr "Cjarie di gnûf la liste des basis di dâts disponibilis"
-
-#: libgdict/gdict-database-chooser.c:388
-msgid "Clear the list of available databases"
-msgstr "Nete la liste des basis di dâts disponibilis"
-
-#: libgdict/gdict-database-chooser.c:842 libgdict/gdict-speller.c:767
-#: libgdict/gdict-strategy-chooser.c:775
-msgid "Error while matching"
-msgstr "Erôr intant che si cirive"
-
-#: libgdict/gdict-defbox.c:2390
-msgid "Error while looking up definition"
-msgstr "Erôr intant che si cirive la definizion"
-
-#: libgdict/gdict-defbox.c:2432 libgdict/gdict-speller.c:725
-msgid "Another search is in progress"
-msgstr "Une altre ricercje e je in côrs"
-
-#: libgdict/gdict-defbox.c:2433 libgdict/gdict-speller.c:726
-msgid "Please wait until the current search ends."
-msgstr "Spietâ fintremai che la ricercje atuâl no sedi finide."
-
-#: libgdict/gdict-defbox.c:2472
-msgid "Error while retrieving the definition"
-msgstr "Erôr intant che si otignive la definizion"
-
-#: libgdict/gdict-source.c:434
-#, c-format
-msgid "Invalid transport type “%d”"
-msgstr "Gjenar di traspuart no valit “%d”"
-
-#: libgdict/gdict-source.c:462
-#, c-format
-msgid "No “%s” group found inside the dictionary source definition"
-msgstr "Nissun grup “%s” cjatât te definizion de sorzint dizionari"
-
-#: libgdict/gdict-source.c:478 libgdict/gdict-source.c:511
-#: libgdict/gdict-source.c:535 libgdict/gdict-source.c:560
-#, c-format
-msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
-msgstr ""
-"Impussibil otignî la clâf “%s” di dentri de definizion de sorzint di "
-"dizionari : %s"
-
-#: libgdict/gdict-source.c:585
-#, c-format
-msgid ""
-"Unable to get the “%s” key inside the dictionary source definition file: %s"
-msgstr ""
-"Impussibil otignî la clâf “%s” di dentri dal file di definizion de sorzint "
-"di dizionari: %s"
-
-#: libgdict/gdict-source.c:779
-#, c-format
-msgid "Dictionary source does not have name"
-msgstr "La sorzint dizionari no à un non"
-
-#: libgdict/gdict-source.c:788
-#, c-format
-msgid "Dictionary source “%s” has invalid transport “%s”"
-msgstr "La sorzint dizionari “%s” e à traspuart “%s” no valit"
-
-#: libgdict/gdict-source-chooser.c:280
-msgid "Reload the list of available sources"
-msgstr "Torne a cjariâ la liste das sorzints disponibii"
-
-#: libgdict/gdict-speller.c:341
-msgid "Clear the list of similar words"
-msgstr "Nete la liste des peraulis similis"
-
-#: libgdict/gdict-strategy-chooser.c:350
-msgid "Reload the list of available strategies"
-msgstr "Torne a cjamâ la liste des strategjiis disponibilis"
-
-#: libgdict/gdict-strategy-chooser.c:361
-msgid "Clear the list of available strategies"
-msgstr "Nete la liste des strategjiis disponibilis"
-
-#: libgdict/gdict-utils.c:95
-msgid "GDict debugging flags to set"
-msgstr "Opzions di debug di GDict di configurâ"
-
-#: libgdict/gdict-utils.c:95 libgdict/gdict-utils.c:97
-msgid "FLAGS"
-msgstr "OPZIONS"
-
-#: libgdict/gdict-utils.c:97
-msgid "GDict debugging flags to unset"
-msgstr "Opzions di debug di GDict di no configurâ"
-
-#: libgdict/gdict-utils.c:152
-msgid "GDict Options"
-msgstr "Opzions di GDict"
-
-#: libgdict/gdict-utils.c:153
-msgid "Show GDict Options"
-msgstr "Mostre opzions GDict"
-
-#: src/gdict-about.c:53
+#: src/gdict-about.c:52
 msgid "translator-credits"
-msgstr ""
-"Traduzion mantignude di:\n"
-"  Fabio Tomat <f.t.public [at] gmail.com>"
+msgstr "Fabio Tomat <f.t.publig@gmail.com>"
 
-#: src/gdict-about.c:55
+#: src/gdict-about.c:54
 msgid "Look up words in dictionaries"
 msgstr "Cîr peraulis sui dizionaris"
+
+#: src/gdict-about.c:61
+msgid "Dictionary (development build)"
+msgstr "Dizionari (version di svilup)"
 
 #: src/gdict-app-menus.ui:5
 msgid "_New Window"
@@ -355,7 +130,7 @@ msgstr "_Gnûf barcon"
 
 #: src/gdict-app-menus.ui:12
 msgid "_Save a Copy…"
-msgstr "_Salve une copie..."
+msgstr "_Salve une copie…"
 
 #: src/gdict-app-menus.ui:18
 msgid "P_review"
@@ -399,7 +174,7 @@ msgstr "Definizion pr_ecedente"
 
 #: src/gdict-app-menus.ui:72
 msgid "_Next Definition"
-msgstr "prossime defini_zion"
+msgstr "Defini_zion sucessive"
 
 #: src/gdict-app-menus.ui:79
 msgid "_First Definition"
@@ -413,87 +188,347 @@ msgstr "U_ltime definizion"
 msgid "Pr_eferences"
 msgstr "Pr_eferencis"
 
+#: src/gdict-app-menus.ui:97
+msgid "_Keyboard Shortcuts"
+msgstr "Scurtis di _tastiere"
+
 #. The help button is always visible
-#: src/gdict-app-menus.ui:97 src/gdict-source-dialog.c:668
+#: src/gdict-app-menus.ui:101 src/gdict-source-dialog.c:666
 msgid "_Help"
 msgstr "_Jutori"
 
-#: src/gdict-app-menus.ui:102
+#: src/gdict-app-menus.ui:106
 msgid "_About Dictionary"
 msgstr "_Informazions su Dizionari"
 
-#: src/gdict-app.c:47 src/gdict-app.c:76
+#: src/gdict-app.c:45 src/gdict-app.c:74
 msgid "Words to look up"
 msgstr "Peraulis di cirî"
 
-#: src/gdict-app.c:47 src/gdict-app.c:53
+#: src/gdict-app.c:45 src/gdict-app.c:51
 msgid "WORD"
 msgstr "PERAULE"
 
-#: src/gdict-app.c:53
+#: src/gdict-app.c:51
 msgid "Words to match"
 msgstr "Peraulis di cirî"
 
-#: src/gdict-app.c:59
+#: src/gdict-app.c:57
 msgid "Dictionary source to use"
 msgstr "Sorzint dizionari di doprâ"
 
-#: src/gdict-app.c:59 src/gdict-app.c:65 src/gdict-app.c:71
+#: src/gdict-app.c:57 src/gdict-app.c:63 src/gdict-app.c:69
 msgid "NAME"
 msgstr "Non"
 
-#: src/gdict-app.c:65
+#: src/gdict-app.c:63
 msgid "Database to use"
 msgstr "Base di dâts di doprâ"
 
-#: src/gdict-app.c:71
+#: src/gdict-app.c:69
 msgid "Strategy to use"
 msgstr "Strategjie di doprâ"
 
-#: src/gdict-app.c:76
+#: src/gdict-app.c:74
 msgid "WORDS"
 msgstr "PERAULIS"
 
-#: src/gdict-app.c:108
+#: src/gdict-app.c:106
 msgid "Dictionary Preferences"
 msgstr "Preferencis di Dizionari"
 
-#: src/gdict-app.c:139 src/gdict-source-dialog.c:465
+#: src/gdict-app.c:137 src/gdict-source-dialog.c:463
 msgid "There was an error while displaying help"
 msgstr "Al è saltât fûr un erôr tal mostrâ il jutori"
 
-#: src/gdict-pref-dialog.c:262
+#: src/gdict-client-context.c:773
+#, c-format
+msgid "No connection to the dictionary server at “%s:%d”"
+msgstr "Nissune conession al servidôr di dizionari a “%s:%d”"
+
+#: src/gdict-client-context.c:1056
+#, c-format
+msgid "Lookup failed for hostname “%s”: no suitable resources found"
+msgstr "Ricercje falide pal non host “%s”: nissune risorse adeguade cjatade"
+
+#: src/gdict-client-context.c:1087
+#, c-format
+msgid "Lookup failed for host “%s”: %s"
+msgstr "Ricercje falide pal host “%s”: %s"
+
+#: src/gdict-client-context.c:1121
+#, c-format
+msgid "Lookup failed for host “%s”: host not found"
+msgstr "Ricercje falide pal host “%s”: host no cjatât"
+
+#: src/gdict-client-context.c:1173
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at “%s:%d”. The server replied "
+"with code %d (server down)"
+msgstr ""
+"Impussibil tacâsi al servidôr di dizionari a “%s:%d”. Il servidôr al à "
+"rispuindût cul codiç %d (servidôr no atîf)"
+
+#: src/gdict-client-context.c:1192
+#, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": “%s”"
+msgstr ""
+"Impussibil analizâ la rispueste dal servidôr dal dizionari\n"
+": “%s”"
+
+#: src/gdict-client-context.c:1221
+#, c-format
+msgid "No definitions found for “%s”"
+msgstr "Nissune definizion cjatade par “%s”"
+
+#: src/gdict-client-context.c:1236
+#, c-format
+msgid "Invalid database “%s”"
+msgstr "Base di dâts “%s” no valide"
+
+#: src/gdict-client-context.c:1251
+#, c-format
+msgid "Invalid strategy “%s”"
+msgstr "Strategjie “%s” no valide"
+
+#: src/gdict-client-context.c:1266
+#, c-format
+msgid "Bad command “%s”"
+msgstr "Comant “%s” no bon"
+
+#: src/gdict-client-context.c:1281
+#, c-format
+msgid "Bad parameters for command “%s”"
+msgstr "Parametris no juscj par il comant “%s”"
+
+#: src/gdict-client-context.c:1296
+#, c-format
+msgid "No databases found on dictionary server at “%s”"
+msgstr "Nissune base di dâts cjatade tal servidôr di dizionari a “%s”"
+
+#: src/gdict-client-context.c:1311
+#, c-format
+msgid "No strategies found on dictionary server at “%s”"
+msgstr "Nissune strategjie cjatade tal servidôr di dizionari a “%s”"
+
+#: src/gdict-client-context.c:1743
+#, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "Conession falide al servidôr di dizionari a «%s:%d»"
+
+#: src/gdict-client-context.c:1782
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr ""
+"Erôr intant che si leieve le rispueste dal servidôr:\n"
+"%s"
+
+#: src/gdict-client-context.c:1855
+#, c-format
+msgid "Connection timeout for the dictionary server at “%s:%d”"
+msgstr "Conession scjadude al servidôr di dizionari a “%s:%d”"
+
+#: src/gdict-client-context.c:1889
+#, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "Nissun non host definît pal servidôr di dizionari"
+
+#: src/gdict-client-context.c:1925 src/gdict-client-context.c:1940
+#, c-format
+msgid "Unable to create socket"
+msgstr "Impussibil creâ il socket"
+
+#: src/gdict-client-context.c:1966
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr "Impussibil disponi il canâl come no-blocant: %s"
+
+#: src/gdict-client-context.c:1981
+#, c-format
+msgid "Unable to connect to the dictionary server at “%s:%d”"
+msgstr "Impussibil conetisi al servidôr di dizionari a “%s:%d”"
+
+#: src/gdict-database-chooser.c:372
+msgid "Reload the list of available databases"
+msgstr "Cjarie di gnûf la liste des basis di dâts disponibilis"
+
+#: src/gdict-database-chooser.c:384
+msgid "Clear the list of available databases"
+msgstr "Nete la liste des basis di dâts disponibilis"
+
+#: src/gdict-database-chooser.c:836 src/gdict-speller.c:766
+#: src/gdict-strategy-chooser.c:773
+msgid "Error while matching"
+msgstr "Erôr intant che si cirive"
+
+#: src/gdict-defbox.c:2388
+msgid "Error while looking up definition"
+msgstr "Erôr intant che si cirive la definizion"
+
+#: src/gdict-defbox.c:2430 src/gdict-speller.c:724
+msgid "Another search is in progress"
+msgstr "Une altre ricercje e je in côrs"
+
+#: src/gdict-defbox.c:2431 src/gdict-speller.c:725
+msgid "Please wait until the current search ends."
+msgstr "Spietâ fintremai che la ricercje atuâl no sedi finide."
+
+#: src/gdict-defbox.c:2470
+msgid "Error while retrieving the definition"
+msgstr "Erôr intant che si otignive la definizion"
+
+#: src/gdict-help-overlay.ui:13
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Gjenerâl"
+
+#: src/gdict-help-overlay.ui:18
+msgctxt "shortcut window"
+msgid "Show help"
+msgstr "Mostre jutori"
+
+#: src/gdict-help-overlay.ui:24
+msgctxt "shortcut window"
+msgid "Show keyboard shortcuts"
+msgstr "Mostre scurtis di tastiere"
+
+#: src/gdict-help-overlay.ui:32
+msgctxt "shortcut window"
+msgid "Open a new window"
+msgstr "Vierç un gnûf barcon"
+
+#: src/gdict-help-overlay.ui:39
+msgctxt "shortcut window"
+msgid "Close current window"
+msgstr "Siere il barcon atuâl"
+
+#: src/gdict-help-overlay.ui:45
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Jes"
+
+#: src/gdict-help-overlay.ui:53
+msgctxt "shortcut window"
+msgid "Preferences"
+msgstr "Preferencis"
+
+#: src/gdict-help-overlay.ui:60
+msgctxt "shortcut window"
+msgid "View sidebar"
+msgstr "Viôt la sbare laterâl"
+
+#: src/gdict-help-overlay.ui:68
+msgctxt "shortcut window"
+msgid "Dictionary definitions"
+msgstr "Definizions di dizionari"
+
+#: src/gdict-help-overlay.ui:73
+msgctxt "shortcut window"
+msgid "Similar words"
+msgstr "Peraulis similis"
+
+#: src/gdict-help-overlay.ui:80
+msgctxt "shortcut window"
+msgid "Dictionary sources"
+msgstr "Sorzints dai dizionari"
+
+#: src/gdict-help-overlay.ui:87
+msgctxt "shortcut window"
+msgid "Available strategies"
+msgstr "Strategjiis disponibilis"
+
+#: src/gdict-help-overlay.ui:95
+msgctxt "shortcut window"
+msgid "Navigate within a definition"
+msgstr "Navighe tal didentri di une definizion"
+
+#: src/gdict-help-overlay.ui:100
+msgctxt "shortcut window"
+msgid "Previous definition"
+msgstr "Definizion precedente"
+
+#: src/gdict-help-overlay.ui:107
+msgctxt "shortcut window"
+msgid "Next definition"
+msgstr "Definizion sucessive"
+
+#: src/gdict-help-overlay.ui:114
+msgctxt "shortcut window"
+msgid "First definition"
+msgstr "Prime definizion"
+
+#: src/gdict-help-overlay.ui:121
+msgctxt "shortcut window"
+msgid "Last definition"
+msgstr "Ultime definizion"
+
+#: src/gdict-help-overlay.ui:129
+msgctxt "shortcut window"
+msgid "Others"
+msgstr "Altris"
+
+#: src/gdict-help-overlay.ui:134
+msgctxt "shortcut window"
+msgid "Search within a definition"
+msgstr "Cîr dentri di une definizion"
+
+#: src/gdict-help-overlay.ui:141
+msgctxt "shortcut window"
+msgid "Find in text"
+msgstr "Cjate tal test"
+
+#: src/gdict-help-overlay.ui:148
+msgctxt "shortcut window"
+msgid "Save as copy"
+msgstr "Salve une copie"
+
+#: src/gdict-help-overlay.ui:155
+msgctxt "shortcut window"
+msgid "Print preview"
+msgstr "Stampe anteprime"
+
+#: src/gdict-help-overlay.ui:162
+msgctxt "shortcut window"
+msgid "Print"
+msgstr "Stampe"
+
+#: src/gdict-pref-dialog.c:260
 msgid "View Dictionary Source"
 msgstr "Mostre sorzint dizionari"
 
-#: src/gdict-pref-dialog.c:328
+#: src/gdict-pref-dialog.c:326
 msgid "Add Dictionary Source"
 msgstr "Zonte sorzint dizionari"
 
-#: src/gdict-pref-dialog.c:372
+#: src/gdict-pref-dialog.c:370
 #, c-format
 msgid "Remove “%s”?"
 msgstr "Gjavâ “%s”?"
 
-#: src/gdict-pref-dialog.c:374
+#: src/gdict-pref-dialog.c:372
 msgid "This will permanently remove the dictionary source from the list."
 msgstr "Chest al gjavarà par simpri la sorzint dizionari de liste."
 
-#: src/gdict-pref-dialog.c:377 src/gdict-source-dialog.c:577
-#: src/gdict-window.c:822
+#: src/gdict-pref-dialog.c:375 src/gdict-source-dialog.c:575
+#: src/gdict-window.c:819
 msgid "_Cancel"
 msgstr "_Anule"
 
-#: src/gdict-pref-dialog.c:378
+#: src/gdict-pref-dialog.c:376
 msgid "_Remove"
 msgstr "_Gjave"
 
-#: src/gdict-pref-dialog.c:396
+#: src/gdict-pref-dialog.c:394
 #, c-format
 msgid "Unable to remove source “%s”"
 msgstr "Impussibil gjavâ la sorzint “%s”"
 
-#: src/gdict-pref-dialog.c:443
+#: src/gdict-pref-dialog.c:441
 msgid "Edit Dictionary Source"
 msgstr "Modifiche sorzint dizionari"
 
@@ -533,29 +568,33 @@ msgstr "Stabilìs il gjenar di caratar doprât pe stampe des definizions"
 msgid "Print"
 msgstr "Stampe"
 
-#: src/gdict-print.c:237 src/gdict-print.c:301
+#: src/gdict-print.c:235 src/gdict-print.c:299
 #, c-format
 msgid "Unable to display the preview: %s"
 msgstr "Impussibil mostrâ la anteprime: %s"
 
-#: src/gdict-source-dialog.c:316 src/gdict-source-dialog.c:410
+#: src/gdict-source-chooser.c:278
+msgid "Reload the list of available sources"
+msgstr "Torne a cjariâ la liste das sorzints disponibii"
+
+#: src/gdict-source-dialog.c:314 src/gdict-source-dialog.c:408
 msgid "Unable to create a source file"
 msgstr "Impussibil creâ un file sorzint"
 
-#: src/gdict-source-dialog.c:338 src/gdict-source-dialog.c:430
+#: src/gdict-source-dialog.c:336 src/gdict-source-dialog.c:428
 msgid "Unable to save source file"
 msgstr "Impussibil salvâ il file sorzint"
 
 #. we just allow closing the dialog
-#: src/gdict-source-dialog.c:573 src/gdict-source-dialog.c:587
+#: src/gdict-source-dialog.c:571 src/gdict-source-dialog.c:585
 msgid "_Close"
 msgstr "Sie_re"
 
-#: src/gdict-source-dialog.c:578
+#: src/gdict-source-dialog.c:576
 msgid "_Add"
 msgstr "_Zonte"
 
-#: src/gdict-source-dialog.c:586
+#: src/gdict-source-dialog.c:584
 msgid "C_ancel"
 msgstr "A_nule"
 
@@ -595,81 +634,158 @@ msgstr "Dizionaris"
 msgid "Strategies"
 msgstr "Strategjiis"
 
-#: src/gdict-window.c:413
+#: src/gdict-source.c:414
+#, c-format
+msgid "Invalid transport type “%d”"
+msgstr "Gjenar di traspuart no valit “%d”"
+
+#: src/gdict-source.c:442
+#, c-format
+msgid "No “%s” group found inside the dictionary source definition"
+msgstr "Nissun grup “%s” cjatât te definizion de sorzint dizionari"
+
+#: src/gdict-source.c:458 src/gdict-source.c:491 src/gdict-source.c:515
+#: src/gdict-source.c:540
+#, c-format
+msgid "Unable to get the “%s” key inside the dictionary source definition: %s"
+msgstr ""
+"Impussibil otignî la clâf “%s” di dentri de definizion de sorzint di "
+"dizionari : %s"
+
+#: src/gdict-source.c:565
+#, c-format
+msgid ""
+"Unable to get the “%s” key inside the dictionary source definition file: %s"
+msgstr ""
+"Impussibil otignî la clâf “%s” di dentri dal file di definizion de sorzint "
+"di dizionari: %s"
+
+#: src/gdict-source.c:759
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr "La sorzint dizionari no à un non"
+
+#: src/gdict-source.c:768
+#, c-format
+msgid "Dictionary source “%s” has invalid transport “%s”"
+msgstr "La sorzint dizionari “%s” e à traspuart “%s” no valit"
+
+#: src/gdict-speller.c:340
+msgid "Clear the list of similar words"
+msgstr "Nete la liste des peraulis similis"
+
+#: src/gdict-strategy-chooser.c:348
+msgid "Reload the list of available strategies"
+msgstr "Torne a cjamâ la liste des strategjiis disponibilis"
+
+#: src/gdict-strategy-chooser.c:359
+msgid "Clear the list of available strategies"
+msgstr "Nete la liste des strategjiis disponibilis"
+
+#: src/gdict-window.c:410
 #, c-format
 msgid "No dictionary source available with name “%s”"
 msgstr "Nissune sorzint dizionari disponibile cul non “%s”"
 
-#: src/gdict-window.c:417
+#: src/gdict-window.c:414
 msgid "Unable to find dictionary source"
 msgstr "Impussibil cjatâ la sorzint dizionari"
 
-#: src/gdict-window.c:433
+#: src/gdict-window.c:430
 #, c-format
 msgid "No context available for source “%s”"
 msgstr "Nissun contest disponibil pe sorzint “%s”"
 
-#: src/gdict-window.c:437
+#: src/gdict-window.c:434
 msgid "Unable to create a context"
 msgstr "Impussibil creâ un contest"
 
-#: src/gdict-window.c:496
+#: src/gdict-window.c:493
 #, c-format
 msgid "%s — Dictionary"
 msgstr "%s — Dizionari"
 
-#: src/gdict-window.c:819
+#: src/gdict-window.c:816
 msgid "Save a Copy"
 msgstr "Salve une copie"
 
-#: src/gdict-window.c:823
+#: src/gdict-window.c:820
 msgid "_Save"
 msgstr "_Salve"
 
-#: src/gdict-window.c:829
+#: src/gdict-window.c:826
 msgid "Untitled document"
 msgstr "Document cence titul"
 
-#: src/gdict-window.c:850
+#: src/gdict-window.c:847
 #, c-format
 msgid "Error while writing to “%s”"
 msgstr "Erôr intant che si scriveve su “%s”"
 
 #. speller
-#: src/gdict-window.c:1211
+#: src/gdict-window.c:1216
 msgid "Double-click on the word to look up"
 msgstr "Fâ dopli clic su la peraule di cirî"
 
 #. strat-chooser
-#: src/gdict-window.c:1217
+#: src/gdict-window.c:1222
 msgid "Double-click on the matching strategy to use"
 msgstr "Fâ dopli clic su la strategjie di confront di doprâ"
 
 #. source-chooser
-#: src/gdict-window.c:1222
+#: src/gdict-window.c:1227
 msgid "Double-click on the source to use"
 msgstr "Fâ dopli clic su la sorzint di doprâ"
 
-#: src/gdict-window.c:1408
+#: src/gdict-window.c:1419
 msgid "Similar words"
 msgstr "Peraulis similis"
 
-#: src/gdict-window.c:1439
+#: src/gdict-window.c:1450
 msgid "Available strategies"
 msgstr "Strategjiis disponibilis"
 
-#: src/gdict-window.c:1455
+#: src/gdict-window.c:1466
 msgid "Dictionary sources"
 msgstr "Sorzints dizionari"
+
+#: src/gdict-utils.c:93
+msgid "GDict debugging flags to set"
+msgstr "Opzions di debug di GDict di configurâ"
+
+#: src/gdict-utils.c:93 src/gdict-utils.c:95
+msgid "FLAGS"
+msgstr "OPZIONS"
+
+#: src/gdict-utils.c:95
+msgid "GDict debugging flags to unset"
+msgstr "Opzions di debug di GDict di no configurâ"
+
+#: src/gdict-utils.c:150
+msgid "GDict Options"
+msgstr "Opzions di GDict"
+
+#: src/gdict-utils.c:151
+msgid "Show GDict Options"
+msgstr "Mostre opzions GDict"
+
+#~ msgid "Default"
+#~ msgstr "Default"
+
+#~ msgid "accessories-dictionary"
+#~ msgstr "accessories-dictionary"
+
+#~ msgid "spanish"
+#~ msgstr "spanish"
+
+#~ msgid "Spanish Dictionaries"
+#~ msgstr "Dizionaris spagnui"
 
 #~ msgid "Help"
 #~ msgstr "Jutori"
 
 #~ msgid "About"
 #~ msgstr "Informazions"
-
-#~ msgid "_Quit"
-#~ msgstr "_Jes"
 
 #~ msgid "_Save a Copy..."
 #~ msgstr "_Salve une copie..."
@@ -787,9 +903,6 @@ msgstr "Sorzints dizionari"
 
 #~ msgid "Select _All"
 #~ msgstr "_Selezione dut"
-
-#~ msgid "Find Ne_xt"
-#~ msgstr "Cjate _prossim"
 
 #~ msgid "Find Pre_vious"
 #~ msgstr "Cjate prece_dent"

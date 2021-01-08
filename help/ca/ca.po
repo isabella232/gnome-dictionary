@@ -274,7 +274,7 @@ msgid ""
 "<app>DICT</app> server is at <sys href=\"http://dict.org\">http://dict.org</"
 "sys>."
 msgstr ""
-"<app>Diccionari</app>és una aplicació per a cercar definicions de termes. "
+"<app>Diccionari</app> és una aplicació per a cercar definicions de termes. "
 "Cerca definicions utilitzant un servidor <app>DICT</app>. El servidor per "
 "defecte <app>DICT</app> és a <sys href=\"http://dict.org\">http://dict.org</"
 "sys>."
@@ -682,7 +682,7 @@ msgid ""
 "definition or close the window to end the preview."
 msgstr ""
 "Feu clic a <gui style=\"button\">Imprimeix aquest document</gui> per a "
-"imprimir la definició o tancar la finestra per acabar la previsualització."
+"imprimir la definició o tancar la finestra per a acabar la previsualització."
 
 #. (itstool) path: note/p
 #: C/print.page:58
@@ -967,7 +967,7 @@ msgstr ""
 #. (itstool) path: page/title
 #: C/sources-edit.page:24
 msgid "Edit a dictionary source"
-msgstr "Edita una font de diccionari"
+msgstr "Editar una font de diccionari"
 
 #. (itstool) path: page/p
 #: C/sources-edit.page:26
@@ -1036,7 +1036,7 @@ msgstr ""
 #. (itstool) path: item/p
 #: C/sources-edit.page:64
 msgid "Press <gui style=\"button\">Close</gui> to save the settings."
-msgstr "Premeu <gui style=\"button\">Tanca</gui>per a desar la configuració."
+msgstr "Premeu <gui style=\"button\">Tanca</gui> per a desar la configuració."
 
 #. (itstool) path: info/desc
 #: C/sources.page:24
@@ -1051,7 +1051,7 @@ msgid ""
 "databases which are usually online, but can be installed on your machine as "
 "well."
 msgstr ""
-"<app>Diccionari</app> utilitza les <em>fonts de diccionaris</em> per buscar "
+"<app>Diccionari</app> utilitza les <em>fonts de diccionaris</em> per a buscar "
 "les paraules que cerqueu. Les fonts del diccionari són col·leccions d'una o "
 "més bases de dades de diccionaris que solen estar en línia, però que també "
 "es poden instal·lar a la vostra màquina."
@@ -1126,7 +1126,7 @@ msgid ""
 "\"menu\">Edit</gui> <gui style=\"menuitem\">Select All</gui></guiseq>."
 msgstr ""
 "Seleccioneu el text que vulgueu copiar a <app>Diccionari</app>. "
-"Alternativament podeu seleccionar tota la definició utilitzant<guiseq><gui "
+"Alternativament podeu seleccionar tota la definició utilitzant <guiseq><gui "
 "style=\"menu\">Edita</gui> <gui style=\"menuitem\">Selecciona-ho tot</gui></"
 "guiseq>."
 

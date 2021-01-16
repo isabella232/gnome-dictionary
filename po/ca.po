@@ -46,7 +46,7 @@ msgstr ""
 "El Diccionari del GNOME és una aplicació de diccionari senzilla que cerca "
 "definicions de paraules en línia. Tot i que per defecte cerca les "
 "definicions en anglès, podeu canviar fàcilment al castellà o altres "
-"diccionaris en línia fent servir el protocol DICT per adaptar-se a les "
+"diccionaris en línia fent servir el protocol DICT per a adaptar-se a les "
 "vostres necessitats."
 
 #: data/appdata/org.gnome.Dictionary.appdata.xml.in.in:34
@@ -62,7 +62,8 @@ msgstr "Servidor de diccionari predeterminat"
 msgid "Dictionary"
 msgstr "Diccionari"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Dictionary.desktop.in.in:6
 msgid "word;synonym;definition;spelling;"
 msgstr "paraula;sinònim;definició;ortografia;"
@@ -96,11 +97,11 @@ msgstr ""
 
 #: data/org.gnome.dictionary.gschema.xml:16
 msgid "The font to be used when printing"
-msgstr "El tipus de lletra a utilitzar per imprimir"
+msgstr "El tipus de lletra a utilitzar per a imprimir"
 
 #: data/org.gnome.dictionary.gschema.xml:17
 msgid "The font to be used when printing a definition."
-msgstr "El tipus de lletra a utilitzar per imprimir una definició."
+msgstr "El tipus de lletra a utilitzar per a imprimir una definició."
 
 #: data/org.gnome.dictionary.gschema.xml:21
 msgid "The name of the dictionary source used"
@@ -110,7 +111,7 @@ msgstr "El nom de la font de diccionari utilitzada"
 msgid ""
 "The name of the dictionary source used to retrieve the definitions of words."
 msgstr ""
-"El nom de la font de diccionari utilitzada per obtenir les definicions de "
+"El nom de la font de diccionari utilitzada per a obtenir les definicions de "
 "les paraules."
 
 #. Translators: Do not translate the Name key
@@ -183,7 +184,7 @@ msgstr "Est_ratègies disponibles"
 
 #: src/gdict-app-menus.ui:64
 msgid "_Go"
-msgstr "_Vés"
+msgstr "_Ves"
 
 #: src/gdict-app-menus.ui:67
 msgid "_Previous Definition"
@@ -578,7 +579,7 @@ msgstr "Font"
 
 #: src/gdict-pref-dialog.ui:187
 msgid "_Print font:"
-msgstr "Ti_pus de lletra per imprimir:"
+msgstr "Ti_pus de lletra per a imprimir:"
 
 #: src/gdict-pref-dialog.ui:216
 msgid "Set the font used for printing the definitions"
@@ -746,7 +747,7 @@ msgstr "S'ha produït un error en escriure a «%s»"
 #. speller
 #: src/gdict-window.c:1216
 msgid "Double-click on the word to look up"
-msgstr "Feu un doble clic a la paraula per cercar-la"
+msgstr "Feu un doble clic a la paraula per a cercar-la"
 
 #. strat-chooser
 #: src/gdict-window.c:1222
@@ -789,222 +790,3 @@ msgstr "Opcions del GDict"
 #: src/gdict-utils.c:151
 msgid "Show GDict Options"
 msgstr "Mostra les opcions del GDict"
-
-#~ msgid "Default"
-#~ msgstr "Default"
-
-#~ msgid "accessories-dictionary"
-#~ msgstr "accessories-dictionary"
-
-#~ msgid "spanish"
-#~ msgstr "castellà"
-
-#~ msgid "Spanish Dictionaries"
-#~ msgstr "Diccionaris de castellà"
-
-#~ msgid "Help"
-#~ msgstr "Ajuda"
-
-#~ msgid "About"
-#~ msgstr "Quant a"
-
-#~ msgid "_File"
-#~ msgstr "_Filtre"
-
-#~ msgid "_New"
-#~ msgstr "_Nou"
-
-#~ msgid "_Save a Copy..."
-#~ msgstr "_Desa una còpia..."
-
-#~ msgid "_Copy"
-#~ msgstr "_Copia"
-
-#~ msgid "Select _All"
-#~ msgstr "_Selecciona-ho tot"
-
-#~ msgid "Find Pre_vious"
-#~ msgstr "Cerca l'an_terior"
-
-#~ msgid "S_tatusbar"
-#~ msgstr "Barra d'_estat"
-
-#~ msgid "Available _Dictionaries"
-#~ msgstr "Diccionaris _disponibles"
-
-#~ msgid "H_ostname:"
-#~ msgstr "_Ordinador:"
-
-#~ msgid "Client Name"
-#~ msgstr "Nom del client"
-
-#~ msgid "The name of the client of the context object"
-#~ msgstr "El nom del client de l'objecte context"
-
-#~ msgid "The hostname of the dictionary server to connect to"
-#~ msgstr "El nom de l'ordinador del servidor de diccionari a on connectar"
-
-#~ msgid "Port"
-#~ msgstr "Port"
-
-#~ msgid "The port of the dictionary server to connect to"
-#~ msgstr "El port del servidor de diccionari a on connectar"
-
-#~ msgid "Status"
-#~ msgstr "Estat"
-
-#~ msgid "The status code as returned by the dictionary server"
-#~ msgstr "El codi d'estat retornat pel servidor de diccionari"
-
-#~ msgid "Local Only"
-#~ msgstr "Només local"
-
-#~ msgid "Whether the context uses only local dictionaries or not"
-#~ msgstr "Si el context utilitza només diccionaris locals"
-
-#~ msgid "Not found"
-#~ msgstr "No s'ha trobat"
-
-#~ msgid "F_ind:"
-#~ msgstr "Ce_rca:"
-
-#~ msgid "_Previous"
-#~ msgstr "_Anterior"
-
-#~ msgid "_Next"
-#~ msgstr "_Següent"
-
-#~ msgid "Filename"
-#~ msgstr "Nom del fitxer"
-
-#~ msgid "The filename used by this dictionary source"
-#~ msgstr "Nom de fitxer utilitzat per aquesta font de diccionari"
-
-#~ msgid "Name"
-#~ msgstr "Nom"
-
-#~ msgid "The display name of this dictionary source"
-#~ msgstr "El nom d'aquesta font de diccionari"
-
-#~ msgid "Description"
-#~ msgstr "Descripció"
-
-#~ msgid "The description of this dictionary source"
-#~ msgstr "Descripció d'aquesta font de diccionari"
-
-#~ msgid "Editable"
-#~ msgstr "Editable"
-
-#~ msgid "Whether the dictionary source is editable or not"
-#~ msgstr "Si la font de diccionari és editable o no"
-
-#~ msgid "Database"
-#~ msgstr "Base de dades"
-
-#~ msgid "The default database of this dictionary source"
-#~ msgstr "La base de dades per defecte d'aquesta font de diccionari"
-
-#~ msgid "Strategy"
-#~ msgstr "Estratègia"
-
-#~ msgid "The default strategy of this dictionary source"
-#~ msgstr "L'estratègia per defecte d'aquesta font de diccionari"
-
-#~ msgid "Transport"
-#~ msgstr "Transport"
-
-#~ msgid "The transport mechanism used by this dictionary source"
-#~ msgstr "El mecanisme de transport d'aquesta font de diccionari"
-
-#~ msgid "Context"
-#~ msgstr "Context"
-
-#~ msgid "The GdictContext bound to this source"
-#~ msgstr "L'objecte GdictContext lligat a aquesta font"
-
-#~ msgid "Paths"
-#~ msgstr "Camins"
-
-#~ msgid "Search paths used by this object"
-#~ msgstr "Camins de cerca utilitzats per aquest objecte"
-
-#~ msgid "Sources"
-#~ msgstr "Fonts"
-
-#~ msgid "Dictionary sources found"
-#~ msgstr "Fonts de diccionaris trobades"
-
-#~ msgid "The GdictContext object used to get the word definition"
-#~ msgstr ""
-#~ "L'objecte GdictContext utilitzat per obtenir la definició de la paraula"
-
-#~ msgid "The database used to query the GdictContext"
-#~ msgstr "La base de dades que vulgueu emprar per consultar el GdictContext"
-
-#~ msgid "The strategy used to query the GdictContext"
-#~ msgstr "L'estratègia que vulgueu emprar per consultar el GdictContext"
-
-#~ msgid "Searching for '%s'..."
-#~ msgstr "S'està cercant «%s»..."
-
-#~ msgid "No definitions found"
-#~ msgstr "No s'ha trobat cap definició"
-
-#~ msgid "A definition found"
-#~ msgid_plural "%d definitions found"
-#~ msgstr[0] "S'ha trobat una definició"
-#~ msgstr[1] "S'han trobat %d definicions"
-
-#~ msgid "Dictionary source `%s' selected"
-#~ msgstr "S'ha seleccionat la font de diccionari «%s»"
-
-#~ msgid "Strategy `%s' selected"
-#~ msgstr "S'ha seleccionat l'estratègia «%s»"
-
-#~ msgid "Database `%s' selected"
-#~ msgstr "S'ha seleccionat la base de dades «%s»"
-
-#~ msgid "Word `%s' selected"
-#~ msgstr "S'ha seleccionat la paraula «%s»"
-
-#~ msgid "Double-click on the database to use"
-#~ msgstr "Feu doble clic a la base de dades que vulgueu emprar"
-
-#~ msgid "Look _up"
-#~ msgstr "_Cerca"
-
-#~ msgid "Available dictionaries"
-#~ msgstr "Diccionaris disponibles"
-
-#~ msgid " - Look up words in dictionaries"
-#~ msgstr " - Cerca paraules a diccionaris"
-
-#~ msgid "Available _Databases"
-#~ msgstr "Bases de _dades disponibles"
-
-#~ msgid "New look up"
-#~ msgstr "Nova cerca"
-
-#~ msgid "Preview this document"
-#~ msgstr "Previsualitza aquest document"
-
-#~ msgid "_Print..."
-#~ msgstr "Im_primeix..."
-
-#~ msgid "Print this document"
-#~ msgstr "Imprimeix aquest document"
-
-#~ msgid "Find a word or phrase in the document"
-#~ msgstr "Cerca una paraula o frase al document"
-
-#~ msgid "Go to the previous definition"
-#~ msgstr "Vés a la definició anterior"
-
-#~ msgid "Go to the next definition"
-#~ msgstr "Vés a la definició següent"
-
-#~ msgid "Go to the first definition"
-#~ msgstr "Vés a la primera definició"
-
-#~ msgid "_Contents"
-#~ msgstr "_Continguts"

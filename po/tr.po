@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-dictionary/"
 "issues\n"
 "POT-Creation-Date: 2020-12-10 15:51+0000\n"
-"PO-Revision-Date: 2021-02-04 01:42+0300\n"
+"PO-Revision-Date: 2021-02-04 01:43+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -353,7 +353,7 @@ msgstr "Sözlük sunucusu için makine adı tanımlanmadı"
 #: src/gdict-client-context.c:1925 src/gdict-client-context.c:1940
 #, c-format
 msgid "Unable to create socket"
-msgstr "\vYuva oluşturulamadı"
+msgstr "Yuva oluşturulamadı"
 
 #: src/gdict-client-context.c:1966
 #, c-format

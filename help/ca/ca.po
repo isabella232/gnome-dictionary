@@ -414,7 +414,7 @@ msgstr "Cerca dreceres"
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:75
 msgid "<key>/</key> or <keyseq><key>Ctrl</key><key>F</key></keyseq>"
-msgstr "<key>/</key> or <keyseq><key>Ctrl</key><key>F</key></keyseq>"
+msgstr "<key>/</key> o <keyseq><key>Ctrl</key><key>F</key></keyseq>"
 
 #. (itstool) path: td/p
 #: C/keyboard-shortcuts.page:78
